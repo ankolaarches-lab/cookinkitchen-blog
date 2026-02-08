@@ -67,7 +67,7 @@ class KitchenTools:
         publisher = PublisherFactory.get_publisher()
         
         # Priority: Write to Next.js Content Folder for our integrated site
-        blog_content_dir = "blog/src/content/blogs"
+        blog_content_dir = "src/content/blogs"
         os.makedirs(blog_content_dir, exist_ok=True)
         
         # Sanitize filename: Replace spaces with hyphens, lowercase, remove special chars

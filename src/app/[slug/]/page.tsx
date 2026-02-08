@@ -9,8 +9,7 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
-    // Solve for async params in Next.js 15+
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const postData = await getPostData(slug);
 
