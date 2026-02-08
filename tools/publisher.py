@@ -38,11 +38,11 @@ class GhostPublisher(CMSPublisher):
 class PublisherFactory:
     @staticmethod
     def get_publisher():
-        cms_type = os.getenv("CMS_TYPE", "wordpress").lower()
+        cms_type = os.getenv("CMS_TYPE", "none").lower()
         if cms_type == "wordpress":
-            return WordPressPublisher(
-                url=os.getenv("WP_URL"),
-                username=os.getenv("WP_USERNAME"),
-                application_password=os.getenv("WP_APP_PASSWORD")
-            )
+            url = os.getenv("WP_URL")
+            username = os.getenv("WP_USERNAME")
+            password = os.getenv("WP_APP_PASSWORD")
+            if url and username and password:
+                return WordPressPublisher(url, username, password)
         return None
