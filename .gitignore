@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.db
+
+# Node
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.local
+
+# Blog specific
+blog/node_modules/
+blog/.next/
+blog/out/
+
+# Brain/Artifacts (Optional, but usually good to keep local)
+.gemini/
+brain/
