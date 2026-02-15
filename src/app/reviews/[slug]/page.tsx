@@ -122,6 +122,129 @@ A stand mixer is the heart of any serious baking kitchen. We tested the top mode
 The KitchenAid Artisan remains the gold standard, but the Cuisinart offers excellent value for casual bakers.
     `,
   },
+  {
+    slug: "best-nonstick-pan-2026",
+    title: "Best Non-Stick Pan for Every Budget",
+    excerpt: "We cooked 200+ eggs to find the best non-stick pans. From budget-friendly to premium, here are our top picks.",
+    category: "Cookware",
+    rating: 4.6,
+    date: "Jan 28, 2026",
+    image: "🥘",
+    affiliateLink: "https://amzn.to/EXAMPLE-nonstick",
+    content: `
+## The Great Egg Test
+
+Wefried over 200 eggs to test non-stick performance. Here's what we learned.
+
+### Best Overall: T-fal Ultimate Hard Anodized
+
+This pan delivers excellent non-stick performance at a reasonable price. The thermo-spot indicator shows when the pan is ready, and it works on all cooktops.
+
+### Best Premium: All-Clad Hard Anodized
+
+If you're willing to invest, the All-Clad offers restaurant-quality performance. It's durable, heats evenly, and the non-stick coating lasts for years.
+
+### Best Budget: T-fal E93808
+
+For under $30, this pan outperforms many competitors twice its price. It's lightweight and perfect for beginners.
+
+### How We Tested
+- Egg release test (no butter)
+- Scrambled eggs
+- Fish fillets
+- Durability after 6 months of daily use
+    `,
+  },
+  {
+    slug: "best-dutch-oven",
+    title: "Best Dutch Oven: Le Creuset vs. Lodge vs. Amazon",
+    excerpt: "Braising, bread baking, and soup — we tested the top Dutch ovens to find the best value.",
+    category: "Cookware",
+    rating: 4.9,
+    date: "Jan 25, 2026",
+    image: "🥄",
+    affiliateLink: "https://amzn.to/EXAMPLE-dutchoven",
+    content: `
+## The Braising Champion
+
+Dutch ovens are the most versatile pot in any kitchen. We tested the top brands for braising, baking, and everyday cooking.
+
+### Best Overall: Le Creuset Enameled Cast Iron
+
+The gold standard. Even heat distribution, beautiful enamel that lasts generations, and excellent self-basting lid.
+
+### Best Value: Lodge Enameled Cast Iron
+
+Nearly half the price of Le Creuset with nearly identical performance. The enamel isn't as colorful, but it gets the job done beautifully.
+
+### Best Budget: AmazonBasics Enameled Cast Iron
+
+Surprisingly good for the price. Great for beginners who want to try Dutch oven cooking without a big investment.
+
+### Our Recommendation
+If you bake bread, the Le Creuset's weight is essential. For everyday cooking, Lodge offers the best value.
+    `,
+  },
+  {
+    slug: "best-kitchen-scale",
+    title: "Best Kitchen Scales for Baking & Meal Prep",
+    excerpt: "Precise measurements matter. We tested 12 kitchen scales for accuracy, design, and durability.",
+    category: "Gadgets",
+    rating: 4.4,
+    date: "Jan 20, 2026",
+    image: "⚖️",
+    affiliateLink: "https://amzn.to/EXAMPLE-scale",
+    content: `
+## Why You Need a Scale
+
+Baking is chemistry. Volume measurements are imprecise — a cup of flour can weigh anywhere from 120 to 180 grams depending on how you scoop. A kitchen scale ensures consistent results.
+
+### Best Overall: OXO Good Grips Pop Scale
+
+Sleek design, precise accuracy, and the pop-up display is genius for measuring large quantities.
+
+### Best Digital: AWS-1000 Digital Scale
+
+Under $20 and incredibly accurate. Perfect for serious meal preppers.
+
+### Best Smart Scale: Withings Body Composition
+
+If you want body composition tracking alongside cooking, this is the premium option.
+
+### Our Pick
+The OXO Pop Scale balances precision, design, and price perfectly for home bakers.
+    `,
+  },
+  {
+    slug: "best-cutting-board",
+    title: "Best Cutting Boards: Wood vs. Plastic vs. Glass",
+    excerpt: "Your knives deserve the right board. We tested the most popular cutting boards for durability and hygiene.",
+    category: "Gadgets",
+    rating: 4.5,
+    date: "Jan 15, 2026",
+    image: "🪵",
+    affiliateLink: "https://amzn.to/EXAMPLE-board",
+    content: `
+## The Board Basics
+
+Your cutting board affects both knife edge life and food safety. Here's what we learned testing 15 boards.
+
+### Best Wood: John Boos Maple Block
+
+The professional choice. Maple is gentle on knives and has natural antimicrobial properties. These boards last decades.
+
+### Best Plastic: OXO Good Grips
+
+Affordable, dishwasher-safe, and replaceable. Great for raw meat where sanitation is key.
+
+### Best Bamboo: SimpleHouseware Bamboo
+
+Eco-friendly and naturally antimicrobial. Softer than wood but still knife-friendly.
+
+### Our Pick
+We recommend having both: a large wood board for vegetables and a dedicated plastic board for raw meat.
+    `,
+  },
 ];
 
 export function generateStaticParams() {

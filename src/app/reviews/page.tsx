@@ -44,9 +44,49 @@ const reviews = [
     date: "Feb 2, 2026",
     image: "🥣",
   },
+  {
+    id: 5,
+    slug: "best-nonstick-pan-2026",
+    title: "Best Non-Stick Pan for Every Budget",
+    excerpt: "We cooked 200+ eggs to find the best non-stick pans. From budget-friendly to premium, here are our top picks.",
+    category: "Cookware",
+    rating: 4.6,
+    date: "Jan 28, 2026",
+    image: "🥘",
+  },
+  {
+    id: 6,
+    slug: "best-dutch-oven",
+    title: "Best Dutch Oven: Le Creuset vs. Lodge vs. Amazon",
+    excerpt: "Braising, bread baking, and soup — we tested the top Dutch ovens to find the best value.",
+    category: "Cookware",
+    rating: 4.9,
+    date: "Jan 25, 2026",
+    image: "🥄",
+  },
+  {
+    id: 7,
+    slug: "best-kitchen-scale",
+    title: "Best Kitchen Scales for Baking & Meal Prep",
+    excerpt: "Precise measurements matter. We tested 12 kitchen scales for accuracy, design, and durability.",
+    category: "Gadgets",
+    rating: 4.4,
+    date: "Jan 20, 2026",
+    image: "⚖️",
+  },
+  {
+    id: 8,
+    slug: "best-cutting-board",
+    title: "Best Cutting Boards: Wood vs. Plastic vs. Glass",
+    excerpt: "Your knives deserve the right board. We tested the most popular cutting boards for durability and hygiene.",
+    category: "Gadgets",
+    rating: 4.5,
+    date: "Jan 15, 2026",
+    image: "🪵",
+  },
 ];
 
-const categories = ["All", "Knives", "Cookware", "Appliances"];
+const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets"];
 
 export default function ReviewsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
