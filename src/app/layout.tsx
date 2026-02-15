@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "CookinKitchen - Your Kitchen Companion",
   description: "Discover recipes, cooking tools, and kitchen essentials. Expert reviews and recommendations for home cooks.",
   keywords: ["cooking", "kitchen", "recipes", "kitchen tools", "cookware", "reviews"],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "CookinKitchen - Your Kitchen Companion",
     description: "Discover recipes, cooking tools, and kitchen essentials.",

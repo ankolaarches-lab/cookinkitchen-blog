@@ -1,88 +1,100 @@
 import Link from "next/link";
 
-const featuredTools = [
+const recentReviews = [
   {
-    name: "Chef's Knife",
-    description: "The essential tool every kitchen needs. Sharp, balanced, and perfect for any cutting task.",
+    title: "Best Chef's Knives for Home Cooks",
+    category: "Knives",
+    slug: "best-chef-knives-home-cooks",
     image: "🔪",
   },
   {
-    name: "Cast Iron Skillet",
-    description: "Versatile cookware that goes from stovetop to oven. Perfect for searing, baking, and frying.",
-    image: "🍳",
+    title: "Dutch Oven Comparison",
+    category: "Cookware",
+    slug: "best-dutch-oven",
+    image: "🥄",
   },
   {
-    name: "Stand Mixer",
-    description: "Bake with ease. Perfect for doughs, batters, and whipping cream in minutes.",
+    title: "Stand Mixer Showdown",
+    category: "Appliances",
+    slug: "kitchenaid-vs-cuisinart-stand-mixer",
     image: "🥣",
   },
   {
-    name: "Instant Pot",
-    description: "Pressure cook, slow cook, and more. Transform meals from hours to minutes.",
-    image: "🫕",
+    title: "Non-Stick Pan Guide",
+    category: "Cookware",
+    slug: "best-nonstick-pan-2026",
+    image: "🥘",
   },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-orange-100 to-amber-50 py-20">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="font-playfair text-5xl text-orange-900 mb-6">
-            Welcome to CookinKitchen
+      {/* Simple Hero */}
+      <section className="bg-orange-600 text-white py-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
+            CookinKitchen 🍳
           </h1>
-          <p className="font-lato text-xl text-stone-700 mb-8 max-w-2xl mx-auto">
-            Your ultimate companion for culinary adventures. Discover recipes, 
-            find the best kitchen tools, and elevate your cooking game.
+          <p className="font-lato text-lg text-orange-100 mb-6">
+            Honest reviews of kitchen tools that actually work.
           </p>
-          <Link 
-            href="/reviews" 
-            className="inline-block bg-orange-600 text-white px-8 py-3 rounded-full font-lato font-bold hover:bg-orange-700 transition shadow-md"
-          >
-            Explore Reviews
-          </Link>
+          <div className="flex gap-4 justify-center">
+            <Link 
+              href="/reviews" 
+              className="bg-white text-orange-700 px-6 py-2 rounded-full font-lato font-bold hover:bg-orange-50 transition"
+            >
+              Read Reviews
+            </Link>
+            <Link 
+              href="/buying-guides" 
+              className="border-2 border-white text-white px-6 py-2 rounded-full font-lato font-bold hover:bg-white/10 transition"
+            >
+              Buying Guides
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Featured Tools Section */}
-      <section className="py-16 max-w-6xl mx-auto px-4">
-        <h2 className="font-playfair text-3xl text-stone-800 text-center mb-12">
-          Featured Kitchen Tools
+      {/* Recent Reviews */}
+      <section className="py-12 max-w-5xl mx-auto px-4">
+        <h2 className="font-playfair text-2xl text-stone-800 mb-6">
+          Recent Reviews
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredTools.map((tool) => (
-            <div 
-              key={tool.name}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow p-6"
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {recentReviews.map((review) => (
+            <Link
+              key={review.slug}
+              href={`/reviews/${review.slug}`}
+              className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4"
             >
-              <div className="text-5xl mb-4 text-center">{tool.image}</div>
-              <h3 className="font-playfair text-xl text-stone-800 mb-2 text-center">
-                {tool.name}
+              <div className="text-3xl mb-2">{review.image}</div>
+              <h3 className="font-playfair text-base text-stone-800 mb-1">
+                {review.title}
               </h3>
-              <p className="font-lato text-stone-600 text-center text-sm">
-                {tool.description}
-              </p>
-            </div>
+              <span className="text-xs text-stone-500 font-lato">{review.category}</span>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-amber-100 py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-playfair text-3xl text-orange-900 mb-4">
-            Ready to Upgrade Your Kitchen?
-          </h2>
-          <p className="font-lato text-stone-700 mb-8">
-            Check out our detailed reviews and find the perfect tools for your cooking style.
-          </p>
-          <Link 
-            href="/reviews" 
-            className="inline-block bg-orange-600 text-white px-8 py-3 rounded-full font-lato font-bold hover:bg-orange-700 transition shadow-md"
-          >
-            Browse All Reviews
-          </Link>
+      {/* Categories */}
+      <section className="py-8 bg-stone-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/reviews" className="bg-white px-4 py-2 rounded-full text-sm font-lato text-stone-600 hover:shadow-md transition">
+              🔪 Knives
+            </Link>
+            <Link href="/reviews" className="bg-white px-4 py-2 rounded-full text-sm font-lato text-stone-600 hover:shadow-md transition">
+              🍳 Cookware
+            </Link>
+            <Link href="/reviews" className="bg-white px-4 py-2 rounded-full text-sm font-lato text-stone-600 hover:shadow-md transition">
+              🧰 Appliances
+            </Link>
+            <Link href="/reviews" className="bg-white px-4 py-2 rounded-full text-sm font-lato text-stone-600 hover:shadow-md transition">
+              ⚡ Gadgets
+            </Link>
+          </div>
         </div>
       </section>
     </div>
