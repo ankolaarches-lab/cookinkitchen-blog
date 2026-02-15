@@ -245,6 +245,278 @@ Eco-friendly and naturally antimicrobial. Softer than wood but still knife-frien
 We recommend having both: a large wood board for vegetables and a dedicated plastic board for raw meat.
     `,
   },
+  {
+    slug: "best-santoku-knife",
+    title: "Best Santoku Knife: Japanese Precision",
+    excerpt: "The santoku is a versatile Japanese knife. We tested the top options for home cooks.",
+    category: "Knives",
+    rating: 4.7,
+    date: "Jan 12, 2026",
+    image: "🔪",
+    affiliateLink: "https://amzn.to/EXAMPLE-santoku",
+    content: `
+## Japanese Precision
+
+The santoku meaning "three virtues" excels at slicing, dicing, and mincing. We tested the top santoku knives to find the best for home cooks.
+
+### Our Top Pick: Shun Classic Santoku
+
+The Shun Classic offers exceptional sharpness and the hollow edge reduces friction for cleaner cuts. It's lightweight and perfectly balanced.
+
+### Best Value: Victorinox Swiss Classic Santoku
+
+Victorinox delivers again with an affordable option that outperforms knives twice its price.
+
+### How We Tested
+- Vegetable dicing tests
+- Fish slicing
+- Mincing herbs
+- Comfort during extended use
+    `,
+  },
+  {
+    slug: "best-blender-2026",
+    title: "Best Blender: Vitamix vs. Ninja vs. Oster",
+    excerpt: "Smoothies, soups, and frozen drinks — we tested the best blenders for every budget.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Jan 10, 2026",
+    image: "🫗",
+    affiliateLink: "https://amzn.to/EXAMPLE-blender",
+    content: `
+## The Blender Showdown
+
+From morning smoothies to hot soups, we tested 12 blenders to find the best options for every kitchen.
+
+### Best Overall: Vitamix 5200
+
+The Vitamix delivers restaurant-quality blending at home. Powerful motor, durable construction, and excellent warranty.
+
+### Best Value: Ninja Professional Blender
+
+Ninja offers great performance at a fraction of the price. Perfect for smoothies and basic blending tasks.
+
+### Best for Smoothies: Oster Pro 1200
+
+The Oster Pro's blender bottle system makes on-the-go smoothies a breeze.
+    `,
+  },
+  {
+    slug: "best-coffee-maker",
+    title: "Best Coffee Maker: Drip vs. Pour Over vs. French Press",
+    excerpt: "Morning coffee matters. We tested 15 coffee makers to find the perfect brew.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Jan 8, 2026",
+    image: "☕",
+    affiliateLink: "https://amzn.to/EXAMPLE-coffee",
+    content: `
+## Brewing Excellence
+
+We tested drip coffee makers, pour-over systems, and French presses to find your perfect morning cup.
+
+### Best Drip: Bonavita Connoisseur
+
+Consistent brewing temperature and pre-infusion mode make this our top drip pick.
+
+### Best Pour Over: Chemex
+
+The classic pour-over produces clean, bright coffee that's hard to beat.
+
+### Best Value: Hamilton Beach Single Serve
+
+Great coffee doesn't have to be expensive. This brewer delivers solid results.
+    `,
+  },
+  {
+    slug: "best-air-fryer",
+    title: "Best Air Fryer: Ninja vs. Philips vs. Cosori",
+    excerpt: "Crispy food with less oil. We tested the top air fryers for performance and ease of use.",
+    category: "Appliances",
+    rating: 4.4,
+    date: "Jan 5, 2026",
+    image: "🍟",
+    affiliateLink: "https://amzn.to/EXAMPLE-airfryer",
+    content: `
+## Crispy Without the Oil
+
+Air fryers have revolutionized home cooking. We tested the top models to find which delivers the crispiest results.
+
+### Best Overall: Ninja Air Fryer XXL
+
+Large capacity, consistent results, and versatile cooking functions make this our top pick.
+
+### Best Premium: Philips Premium Airfryer XXL
+
+The Philips delivers restaurant-quality air frying with its unique basket design.
+
+### Best Value: Cosori Air Fryer
+
+Affordable and reliable, Cosori offers great results without breaking the bank.
+    `,
+  },
+  {
+    slug: "best-knife-sharpener",
+    title: "Best Knife Sharpener: Chef'sChoice vs. Work Sharp",
+    excerpt: "A dull knife is dangerous. We tested sharpeners to keep your blades razor-sharp.",
+    category: "Gadgets",
+    rating: 4.3,
+    date: "Jan 3, 2026",
+    image: "⚡",
+    affiliateLink: "https://amzn.to/EXAMPLE-sharpener",
+    content: `
+## Keep Your Blades Sharp
+
+A sharp knife is safer than a dull one. We tested the top knife sharpeners for ease of use and results.
+
+### Best Overall: Chef'sChoice 15
+
+Electric sharpening made easy. The 3-stage system delivers consistent, razor-sharp edges.
+
+### Best Manual: Work Sharp Kitchen Knife Sharpener
+
+Manual control lets you achieve the exact edge you want. Great for knife enthusiasts.
+
+### Best Value: Idhone Diamond Sharpener
+
+Affordable and effective for quick touch-ups between full sharpenings.
+    `,
+  },
+  {
+    slug: "best-mesh-strainer",
+    title: "Best Kitchen Strainer & Colander",
+    excerpt: "From pasta to flour, we tested the best strainers for everyday kitchen use.",
+    category: "Gadgets",
+    rating: 4.2,
+    date: "Jan 1, 2026",
+    image: "🥣",
+    affiliateLink: "https://amzn.to/EXAMPLE-strainer",
+    content: `
+## Essential Kitchen Tools
+
+Every kitchen needs reliable strainers. We tested the best options for pasta, flour, and more.
+
+### Best Mesh Strainer: OXO Good Grips
+
+Fine mesh catches everything, and the sturdy handle makes straining easy.
+
+### Best Colander: RSVP Endurance
+
+The perfect size for draining pasta, with stable feet that won't tip.
+
+### Best Set: Spring Chef Mesh Strainer Set
+
+Multiple sizes cover all your straining needs.
+    `,
+  },
+  {
+    slug: "best-measuring-cups",
+    title: "Best Measuring Cups: Liquid vs. Dry",
+    excerpt: "Precise measurements lead to better cooking. We tested the top measuring cup sets.",
+    category: "Gadgets",
+    rating: 4.4,
+    date: "Dec 28, 2025",
+    image: "🧪",
+    affiliateLink: "https://amzn.to/EXAMPLE-measuring",
+    content: `
+## Measure Right
+
+Accurate measurements are the foundation of great cooking. We tested measuring cups for precision and ease.
+
+### Best Liquid: OXO Good Grips
+
+The angled measurement cup lets you see markings from above. Genius design.
+
+### Best Dry: KitchenAid Dry Measuring Cups
+
+Stainless steel set with nested storage. The smooth interior makes dumping easy.
+
+### Best Set: rachIO Rocketry Measuring Cups
+
+Everything you need in one comprehensive set.
+    `,
+  },
+  {
+    slug: "best-spatula-set",
+    title: "Best Spatula Set: Silicone vs. Wood",
+    excerpt: "Every kitchen needs reliable spatulas. We tested the best options for cooking and baking.",
+    category: "Gadgets",
+    rating: 4.5,
+    date: "Dec 25, 2025",
+    image: "🥄",
+    affiliateLink: "https://amzn.to/EXAMPLE-spatula",
+    content: `
+## Essential Tools
+
+Spatulas are workhorses in any kitchen. We tested the best for flipping, scraping, and more.
+
+### Best Silicone: OXO Good Grips
+
+Heat-resistant, sturdy, and the angled edge gets into corners perfectly.
+
+### Best Wood: Juniper Spoonula
+
+The unique spoon-spatula hybrid is incredibly versatile.
+
+### Best Set: StarPack Home Stainless Steel
+
+This set includes everything you need and lasts forever.
+    `,
+  },
+  {
+    slug: "best-frying-pan",
+    title: "Best Frying Pan: Stainless Steel Showdown",
+    excerpt: "From searing steak to scrambled eggs, we tested the best stainless steel pans.",
+    category: "Cookware",
+    rating: 4.7,
+    date: "Dec 22, 2025",
+    image: "🍳",
+    affiliateLink: "https://amzn.to/EXAMPLE-fryingpan",
+    content: `
+## The All-Clad Showdown
+
+Stainless steel pans are kitchen workhorses. We tested the top options for heat distribution and durability.
+
+### Best Overall: All-Clad D3 Stainless Steel
+
+The gold standard. Even heating, riveted handles, and a lifetime warranty.
+
+### Best Value: Cuisinart Chef's Classic
+
+Excellent performance at a fraction of the All-Clad price.
+
+### Best Budget: T-fal Ultimate Hard Anodized
+
+Great non-stick performance with the durability of hard anodized aluminum.
+    `,
+  },
+  {
+    slug: "best-electric-kettle",
+    title: "Best Electric Kettle: Bonavita vs. Fellow vs. Hamilton Beach",
+    excerpt: "Boil water faster and smarter. We tested the best electric kettles for tea and coffee.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Dec 20, 2025",
+    image: "🫖",
+    affiliateLink: "https://amzn.to/EXAMPLE-kettle",
+    content: `
+## Hot Water on Demand
+
+Electric kettles are faster than stovetop. We tested the best for temperature control and speed.
+
+### Best Overall: Fellow Stagg EKG
+
+Beautiful design meets precision temperature control. The pour is perfect.
+
+### Best Value: Hamilton Beach 1.7L
+
+Fast boiling at an affordable price. Simple and reliable.
+
+### Best Gooseneck: Bonavita Connoisseur
+
+The gooseneck gives you precise control for pour-over coffee.
+    `,
+  },
 ];
 
 export function generateStaticParams() {

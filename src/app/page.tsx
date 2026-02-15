@@ -24,6 +24,28 @@ const featuredProducts = [
     image: "🥣",
     slug: "kitchenaid-vs-cuisinart-stand-mixer",
   },
+  {
+    name: "Shun Santoku Knife",
+    price: "$169.95",
+    rating: 4.7,
+    image: "🔪",
+    slug: "best-santoku-knife",
+    badge: "Japanese",
+  },
+  {
+    name: "Vitamix 5200 Blender",
+    price: "$549.95",
+    rating: 4.8,
+    image: "🫗",
+    slug: "best-blender-2026",
+  },
+  {
+    name: "Ninja Air Fryer XXL",
+    price: "$149.99",
+    rating: 4.6,
+    image: "🍟",
+    slug: "best-air-fryer",
+  },
 ];
 
 const reviews = [
@@ -48,32 +70,53 @@ const reviews = [
     category: "Appliances",
     rating: 4.7,
   },
+  {
+    title: "Best Santoku Knife",
+    excerpt: "Japanese precision knives tested. Find your perfect slicer.",
+    slug: "best-santoku-knife",
+    category: "Knives",
+    rating: 4.7,
+  },
+  {
+    title: "Best Blender Showdown",
+    excerpt: "Vitamix vs Ninja vs Oster — we made 100 smoothies to find the winner.",
+    slug: "best-blender-2026",
+    category: "Appliances",
+    rating: 4.5,
+  },
+  {
+    title: "Best Air Fryer Review",
+    excerpt: "Crispy food with less oil. We tested Ninja, Philips, and Cosori.",
+    slug: "best-air-fryer",
+    category: "Appliances",
+    rating: 4.4,
+  },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <section className="bg-gray-900 text-white">
+        <div className="max-w-6xl mx py-16 md:py-24">
           <div className="text-center">
-            <div className="text-6xl mb-6">🍳</div>
+            <div className="text-6xl-auto px-6 mb-6">🍳</div>
             <h1 className="font-bold text-4xl md:text-5xl mb-4 tracking-tight">
               CookinKitchen
             </h1>
-            <p className="text-lg md:text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               We test kitchen tools so you don't have to. Real reviews, real results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="#products" 
-                className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition shadow-lg"
+                className="bg-emerald-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition shadow-lg"
               >
                 Shop Top Rated
               </Link>
               <Link 
                 href="#reviews" 
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
+                className="border-2 border-gray-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
               >
                 Read Reviews
               </Link>
@@ -98,7 +141,7 @@ export default function Home() {
                 <div className="bg-gray-100 p-8 text-center text-5xl">{product.image}</div>
                 <div className="p-5">
                   {product.badge && (
-                    <span className="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-2 py-1 rounded-full mb-2">
+                    <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-2 py-1 rounded-full mb-2">
                       {product.badge}
                     </span>
                   )}
@@ -106,7 +149,7 @@ export default function Home() {
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-amber-500">⭐ {product.rating}</span>
                     <span className="text-gray-400">•</span>
-                    <span className="font-bold text-orange-600">{product.price}</span>
+                    <span className="font-bold text-emerald-600">{product.price}</span>
                   </div>
                   <Link 
                     href={`/reviews/${product.slug}`}
@@ -120,7 +163,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-8">
-            <Link href="/buying-guides" className="text-orange-600 font-medium hover:underline">
+            <Link href="/buying-guides" className="text-emerald-600 font-medium hover:underline">
               View all products →
             </Link>
           </div>
@@ -152,7 +195,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{review.title}</h3>
                 <p className="text-gray-500 text-sm line-clamp-2">{review.excerpt}</p>
-                <span className="inline-block mt-4 text-orange-600 text-sm font-medium">
+                <span className="inline-block mt-4 text-emerald-600 text-sm font-medium">
                   Read full review →
                 </span>
               </Link>
@@ -160,7 +203,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-8">
-            <Link href="/reviews" className="inline-block bg-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-700 transition">
+            <Link href="/reviews" className="inline-block bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-700 transition">
               View All Reviews
             </Link>
           </div>
@@ -178,7 +221,7 @@ export default function Home() {
           </p>
           <a 
             href="mailto:hello@cookinkitchen.online" 
-            className="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+            className="inline-block bg-emerald-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition"
           >
             Request a Review
           </a>
