@@ -3,6 +3,7 @@ import Link from "next/link";
 const reviews = [
   {
     id: 1,
+    slug: "best-chef-knives-home-cooks",
     title: "Best Chef's Knives for Home Cooks",
     excerpt: "We tested 15 chef's knives to find the perfect balance of sharpness, comfort, and durability.",
     category: "Knives",
@@ -12,6 +13,7 @@ const reviews = [
   },
   {
     id: 2,
+    slug: "cast-iron-vs-carbon-steel",
     title: "Cast Iron vs. Carbon Steel: Which is Right?",
     excerpt: "A deep dive into two kitchen essentials. We compare heat retention, maintenance, and cooking results.",
     category: "Cookware",
@@ -21,6 +23,7 @@ const reviews = [
   },
   {
     id: 3,
+    slug: "instant-pot-vs-ninja-foodi",
     title: "Instant Pot Duo vs. Ninja Foodi",
     excerpt: "Two popular multicookers face off. Which one deserves a spot on your countertop?",
     category: "Appliances",
@@ -30,6 +33,7 @@ const reviews = [
   },
   {
     id: 4,
+    slug: "kitchenaid-vs-cuisinart-stand-mixer",
     title: "Stand Mixer Showdown: KitchenAid vs. Cuisinart",
     excerpt: "From dough to buttercream, we put these iconic mixers to the test.",
     category: "Appliances",
@@ -81,9 +85,9 @@ export default function ReviewsPage() {
                   <span className="font-lato text-sm text-stone-500">
                     {review.date}
                   </span>
-                  <button className="text-orange-600 font-lato font-bold hover:text-orange-700 transition">
+                  <Link href={`/reviews/${review.slug}`} className="text-orange-600 font-lato font-bold hover:text-orange-700 transition">
                     Read More →
-                  </button>
+                  </Link>
                 </div>
               </div>
             </article>
