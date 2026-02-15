@@ -224,14 +224,14 @@ export default function ReviewsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-amber-50 py-12">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
             Kitchen Tool Reviews
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-stone-600 max-w-2xl mx-auto">
             Expert-tested reviews to help you buy smarter. We may earn a commission from Amazon links.
           </p>
         </div>
@@ -245,7 +245,7 @@ export default function ReviewsPage() {
               className={`px-4 py-2 rounded-full text-sm font-medium transition ${
                 activeCategory === cat
                   ? "bg-emerald-600 text-white"
-                  : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                  : "bg-white text-stone-600 hover:bg-amber-100 border border-amber-200"
               }`}
             >
               {cat}
@@ -270,17 +270,17 @@ export default function ReviewsPage() {
                   </span>
                   <div className="flex items-center gap-1">
                     <span className="text-amber-400">★</span>
-                    <span className="text-sm font-medium text-gray-700">{review.rating}</span>
+                    <span className="text-sm font-medium text-stone-700">{review.rating}</span>
                   </div>
                 </div>
-                <h2 className="font-semibold text-lg text-gray-900 mb-2">
+                <h2 className="font-semibold text-lg text-stone-900 mb-2">
                   {review.title}
                 </h2>
-                <p className="text-gray-500 text-sm mb-4 line-clamp-2">
+                <p className="text-stone-500 text-sm mb-4 line-clamp-2">
                   {review.excerpt}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{review.date}</span>
+                  <span className="text-xs text-stone-400">{review.date}</span>
                   <a 
                     href={review.amazonLink}
                     target="_blank"
@@ -296,7 +296,7 @@ export default function ReviewsPage() {
         </div>
 
         {filteredReviews.length === 0 && (
-          <p className="text-center text-gray-500 py-8">
+          <p className="text-center text-stone-500 py-8">
             No reviews in this category yet.
           </p>
         )}
@@ -323,9 +323,9 @@ export default function ReviewsPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email" 
                   required
-                  className="px-4 py-3 rounded-lg text-gray-900 w-full max-w-xs"
+                  className="px-4 py-3 rounded-lg text-stone-900 w-full max-w-xs"
                 />
-                <button type="submit" className="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                <button type="submit" className="bg-stone-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-stone-800 transition">
                   Subscribe
                 </button>
               </form>

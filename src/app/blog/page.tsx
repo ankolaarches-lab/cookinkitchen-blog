@@ -111,14 +111,14 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-amber-50 py-12">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
             Kitchen Blog
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-stone-600 max-w-2xl mx-auto">
             Guides, tutorials, and recipes to make you a better home cook.
           </p>
         </div>
@@ -138,16 +138,16 @@ export default function BlogPage() {
                   <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-medium">
                     {post.category}
                   </span>
-                  <span className="text-xs text-gray-400">{post.readTime}</span>
+                  <span className="text-xs text-stone-400">{post.readTime}</span>
                 </div>
-                <h2 className="font-semibold text-lg text-gray-900 mb-2">
+                <h2 className="font-semibold text-lg text-stone-900 mb-2">
                   {post.title}
                 </h2>
-                <p className="text-gray-500 text-sm mb-4 line-clamp-2">
+                <p className="text-stone-500 text-sm mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{post.date}</span>
+                  <span className="text-xs text-stone-400">{post.date}</span>
                   <span className="text-emerald-600 text-sm font-medium hover:underline cursor-pointer">
                     Read More →
                   </span>
@@ -169,9 +169,9 @@ export default function BlogPage() {
             <input 
               type="email" 
               placeholder="Enter your email" 
-              className="px-4 py-3 rounded-lg text-gray-900 w-full max-w-xs"
+              className="px-4 py-3 rounded-lg text-stone-900 w-full max-w-xs"
             />
-            <button className="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+            <button className="bg-stone-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-stone-800 transition">
               Subscribe
             </button>
           </div>
