@@ -255,25 +255,29 @@ export default function ReviewsPage() {
 
         {/* Reviews Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredReviews.map((review) => (
-            <article 
+          {filteredReviews.map((review, idx) => (
+            <Link
               key={review.id}
-              className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
+              href={`/reviews/${review.slug}`}
+              className="group block bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-amber-300 transform hover:-translate-y-2 cursor-pointer"
+              style={{animationDelay: `${idx * 0.05}s`}}
             >
-              <div className="bg-gradient-to-br from-emerald-50 to-gray-100 p-8 text-center">
-                <div className="text-6xl">{review.image}</div>
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 text-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <div className="text-6xl group-hover:scale-110 transition-transform duration-300">{review.image}</div>
+                <span className="absolute top-2 right-2 text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">🔥</span>
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-bold">
                     {review.category}
                   </span>
                   <div className="flex items-center gap-1">
                     <span className="text-amber-400">★</span>
-                    <span className="text-sm font-medium text-stone-700">{review.rating}</span>
+                    <span className="text-sm font-bold text-stone-700">{review.rating}</span>
                   </div>
                 </div>
-                <h2 className="font-semibold text-lg text-stone-900 mb-2">
+                <h2 className="font-bold text-lg text-stone-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">
                   {review.title}
                 </h2>
                 <p className="text-stone-500 text-sm mb-4 line-clamp-2">
@@ -281,17 +285,12 @@ export default function ReviewsPage() {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-stone-400">{review.date}</span>
-                  <a 
-                    href={review.amazonLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-emerald-600 text-sm font-medium hover:underline"
-                  >
-                    Check Price on Amazon →
-                  </a>
+                  <span className="inline-flex items-center gap-1 text-emerald-600 text-sm font-bold group-hover:translate-x-1 transition-transform duration-300">
+                    Read Review →
+                  </span>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 
