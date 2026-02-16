@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Lato, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
 
 const lato = Lato({ 
   weight: ["400", "700"],
@@ -112,6 +113,7 @@ export default function RootLayout({
             <p className="text-sm">As an Amazon Associate, we earn from qualifying purchases.</p>
           </div>
         </footer>
+        <ChatWidget />
       </body>
     </html>
   );
