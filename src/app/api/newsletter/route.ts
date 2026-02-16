@@ -20,12 +20,14 @@ export async function POST(request: Request) {
   console.log('Attempting Mailchimp signup:', { email, DATACENTER, LIST_ID });
 
   try {
+    // Extract datacenter from API key (format: key-usX)
+    const dc = API_KEY.split('-')[1] || 'us6';
     const response = await fetch(
-      `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
+      `https://${dc}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
       {
         method: 'POST',
         headers: {
-          'Authorization': `apikey ${API_KEY}`,
+          'Authorization': `Basic ${Buffer.from('anystring:' + API_KEY).toString('base64')}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
