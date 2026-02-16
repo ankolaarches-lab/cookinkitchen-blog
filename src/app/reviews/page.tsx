@@ -5,6 +5,17 @@ import { useState } from "react";
 
 const reviews = [
   {
+    id: 19,
+    slug: "best-kitchen-utensils-set",
+    title: "Best Kitchen Utensil Sets for Every Cook",
+    excerpt: "From sautéing to serving, we tested the top utensil sets to find the perfect tools for your kitchen.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Feb 16, 2026",
+    image: "🥄",
+    amazonLink: "https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20",
+  },
+  {
     id: 1,
     slug: "best-chef-knives-home-cooks",
     title: "Best Chef's Knives for Home Cooks",
@@ -204,7 +215,7 @@ const reviews = [
   },
 ];
 
-const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets"];
+const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils"];
 
 export default function ReviewsPage() {
 const categoryGradients: Record<string, string> = {
@@ -212,6 +223,7 @@ const categoryGradients: Record<string, string> = {
   "Cookware": "from-teal-50 to-cyan-100",
   "Appliances": "from-blue-50 to-indigo-100",
   "Gadgets": "from-violet-50 to-purple-100",
+  "Kitchen Utensils": "from-orange-50 to-amber-100",
 };
 
 const categoryIcons: Record<string, string> = {
@@ -219,6 +231,7 @@ const categoryIcons: Record<string, string> = {
   "Cookware": "🍳",
   "Appliances": "🫕",
   "Gadgets": "⚙️",
+  "Kitchen Utensils": "🥄",
 };
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
