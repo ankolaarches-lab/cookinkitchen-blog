@@ -207,7 +207,19 @@ const reviews = [
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets"];
 
 export default function ReviewsPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
+const categoryGradients: Record<string, string> = {
+  "Knives": "from-slate-100 to-slate-200",
+  "Cookware": "from-amber-100 to-orange-100",
+  "Appliances": "from-blue-100 to-indigo-100",
+  "Gadgets": "from-emerald-100 to-teal-100",
+};
+
+const categoryIcons: Record<string, string> = {
+  "Knives": "🔪",
+  "Cookware": "🍳",
+  "Appliances": "🫕",
+  "Gadgets": "⚙️",
+};
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -262,10 +274,10 @@ export default function ReviewsPage() {
               className="group block bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-amber-300 transform hover:-translate-y-2 cursor-pointer"
               style={{animationDelay: `${idx * 0.05}s`}}
             >
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                <div className="text-6xl group-hover:scale-110 transition-transform duration-300">{review.image}</div>
-                <span className="absolute top-2 right-2 text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">🔥</span>
+              <div className={`bg-gradient-to-br ${categoryGradients[review.category] || "from-amber-50 to-orange-50"} p-8 text-center relative overflow-hidden`}>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <div className="text-5xl mb-2 group-hover:scale-110 transition-transform duration-300">{review.image}</div>
+                <div className="text-sm font-medium text-stone-500">{categoryIcons[review.category] || "⭐"}</div>
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between mb-3">

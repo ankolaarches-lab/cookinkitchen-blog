@@ -550,21 +550,24 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
       <div className="max-w-3xl mx-auto px-4">
         <Link 
           href="/reviews" 
-          className="inline-flex items-center text-orange-600 hover:text-orange-700 mb-8 font-lato"
+          className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-8 font-lato font-medium transition"
         >
           ← Back to Reviews
         </Link>
         
         <article>
           <div className="flex items-center gap-4 mb-4">
-            <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-lato">
+            <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-lato font-medium">
               {review.category}
             </span>
-            <span className="font-lato text-amber-600 font-bold">⭐ {review.rating}</span>
-            <span className="font-lato text-stone-500 text-sm">{review.date}</span>
+            <span className="font-lato text-amber-500 font-bold">★ {review.rating}</span>
+            <span className="font-lato text-stone-400 text-sm">{review.date}</span>
           </div>
           
-          <div className="text-6xl mb-6">{review.image}</div>
+          <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 rounded-2xl p-10 text-center mb-8 shadow-inner">
+            <div className="text-6xl mb-4">{review.image}</div>
+            <div className="text-sm text-stone-500 font-lato">Tested & Recommended</div>
+          </div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">
             {review.title}
@@ -593,20 +596,24 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           </div>
           
           {/* Affiliate CTA */}
-          <div className="mt-12 bg-orange-50 rounded-xl p-6 border border-orange-200">
-            <h3 className="font-playfair text-xl text-stone-800 mb-3">
-              🔪 Buy on Amazon
-            </h3>
-            <p className="font-lato text-stone-600 mb-4">
+          <div className="mt-12 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-2 border-emerald-200 shadow-lg">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-3xl">🛒</span>
+              <h3 className="font-playfair text-2xl text-stone-800">
+                Get This Product
+              </h3>
+            </div>
+            <p className="font-lato text-stone-600 mb-6">
               We may earn a commission when you buy through our links — at no extra cost to you.
             </p>
             <a 
               href={review.affiliateLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-lato font-bold hover:bg-orange-700 transition"
+              className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-xl font-lato font-bold hover:bg-emerald-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Shop Now on Amazon →
+              Shop on Amazon
+              <span>→</span>
             </a>
           </div>
         </article>
