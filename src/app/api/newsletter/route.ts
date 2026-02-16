@@ -7,47 +7,48 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Valid email required' }, { status: 400 });
   }
 
-  // Mailchimp API configuration
   const API_KEY = process.env.MAILCHIMP_API_KEY;
   const LIST_ID = process.env.MAILCHIMP_LIST_ID;
-  const DATACENTER = 'us6'; // Hardcoded for now
 
+  // Debug: return what's loaded (without exposing full key)
   if (!API_KEY || !LIST_ID) {
-    console.log('Newsletter signup (demo mode):', email, { API_KEY: !!API_KEY, LIST_ID: !!LIST_ID });
-    return NextResponse.json({ success: true, message: 'Subscribed! (demo mode)' });
+    return NextResponse.json({ 
+      error: 'Config missing',
+      hasKey: !!API_KEY,
+      hasList: !!LIST_ID,
+      keyPrefix: API_KEY ? API_KEY.substring(0, 8) + '...' : null
+    });
   }
 
-  console.log('Attempting Mailchimp signup:', { email, DATACENTER, LIST_ID });
+  const dc = API_KEY.split('-')[1] || 'us6';
+  const url = `https://${dc}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
+  const auth = Buffer.from('anystring:' + API_KEY).toString('base64');
 
   try {
-    // Extract datacenter from API key (format: key-usX)
-    const dc = API_KEY.split('-')[1] || 'us6';
-    const response = await fetch(
-      `https://${dc}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,
-      {
-        method: 'POST',
-        headers: {
-          'Authorization': `Basic ${Buffer.from('anystring:' + API_KEY).toString('base64')}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email_address: email,
-          status: 'subscribed',
-        }),
-      }
-    );
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Basic ${auth}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email_address: email,
+        status: 'subscribed',
+      }),
+    });
 
-    if (response.status >= 400) {
-      const data = await response.json();
-      if (data.title === 'Member Exists') {
-        return NextResponse.json({ success: true, message: 'Already subscribed!' });
-      }
-      throw new Error(data.detail || 'Subscription failed');
+    const data = await response.json();
+    
+    if (!response.ok) {
+      return NextResponse.json({ 
+        error: data.detail || data.title || 'Failed',
+        mailchimpError: data,
+        status: response.status 
+      });
     }
 
     return NextResponse.json({ success: true, message: 'Subscribed!' });
   } catch (error) {
-    console.error('Newsletter error:', error);
-    return NextResponse.json({ error: 'Subscription failed' }, { status: 500 });
+    return NextResponse.json({ error: String(error) }, { status: 500 });
   }
 }
