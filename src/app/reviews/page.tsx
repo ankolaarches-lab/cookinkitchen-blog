@@ -268,9 +268,20 @@ const reviews = [
     image: "🥄",
     amazonLink: "https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20",
   },
+  {
+    id: 25,
+    slug: "best-baking-sheets-2026",
+    title: "Best Baking Sheets 2026: Ultimate Buying Guide",
+    excerpt: "From cookie sheets to jelly roll pans — we tested the best baking sheets for every budget.",
+    category: "Cookware",
+    rating: 4.9,
+    date: "Feb 16, 2026",
+    image: "🍪",
+    amazonLink: "https://www.amazon.com/Nordic-Ware-Natural-Commercial-Bakers/dp/B00004OSWA?tag=cookinkitchen-20",
+  },
 ];
 
-const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils"];
+const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
 
 export default function ReviewsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
