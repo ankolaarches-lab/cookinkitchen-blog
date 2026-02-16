@@ -13,10 +13,11 @@ export async function POST(request: Request) {
   const DATACENTER = 'us6'; // Hardcoded for now
 
   if (!API_KEY || !LIST_ID) {
-    // For demo: just log and return success
-    console.log('Newsletter signup (demo mode):', email);
+    console.log('Newsletter signup (demo mode):', email, { API_KEY: !!API_KEY, LIST_ID: !!LIST_ID });
     return NextResponse.json({ success: true, message: 'Subscribed! (demo mode)' });
   }
+
+  console.log('Attempting Mailchimp signup:', { email, DATACENTER, LIST_ID });
 
   try {
     const response = await fetch(
