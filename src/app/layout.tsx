@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Inter } from "next/font/google";
+import { Lato, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({ 
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-lato",
+});
+
+const playfair = Playfair_Display({ 
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -62,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lato.variable} ${playfair.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -82,22 +91,25 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} antialiased bg-gray-50 text-gray-900`}>
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <body className="antialiased pattern-bg">
+        <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
           <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <Link href="/" className="font-bold text-xl">🍳 CookinKitchen</Link>
-            <div className="flex gap-6 text-sm font-medium">
-              <Link href="/" className="text-gray-600 hover:text-emerald-600 transition">Home</Link>
-              <Link href="/reviews" className="text-gray-600 hover:text-emerald-600 transition">Reviews</Link>
-              <Link href="/blog" className="text-gray-600 hover:text-emerald-600 transition">Blog</Link>
-              <Link href="/buying-guides" className="text-gray-600 hover:text-emerald-600 transition">Guides</Link>
+            <Link href="/" className="font-serif text-2xl font-bold text-stone-800 hover:text-orange-600 transition-colors">
+              <span className="text-3xl">🍳</span> CookinKitchen
+            </Link>
+            <div className="flex gap-8 text-sm font-medium">
+              <Link href="/" className="animated-link text-stone-600 hover:text-orange-600 transition">Home</Link>
+              <Link href="/reviews" className="animated-link text-stone-600 hover:text-orange-600 transition">Reviews</Link>
+              <Link href="/blog" className="animated-link text-stone-600 hover:text-orange-600 transition">Blog</Link>
+              <Link href="/buying-guides" className="animated-link text-stone-600 hover:text-orange-600 transition">Guides</Link>
             </div>
           </nav>
         </header>
         <main>{children}</main>
-        <footer className="bg-gray-900 text-gray-400 py-8">
-          <div className="max-w-6xl mx-auto px-6 text-center text-sm">
-            <p>© 2026 CookinKitchen. As an Amazon Associate, we earn from qualifying purchases.</p>
+        <footer className="bg-stone-900 text-stone-400 py-12 mt-16">
+          <div className="max-w-6xl mx-auto px-6 text-center">
+            <p className="font-serif text-lg text-stone-300 mb-2">© 2026 CookinKitchen</p>
+            <p className="text-sm">As an Amazon Associate, we earn from qualifying purchases.</p>
           </div>
         </footer>
       </body>

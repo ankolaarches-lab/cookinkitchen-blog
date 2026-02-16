@@ -342,7 +342,7 @@ Great coffee doesn't have to be expensive. This brewer delivers solid results.
     rating: 4.4,
     date: "Jan 5, 2026",
     image: "🍟",
-    affiliateLink: "https://amzn.to/EXAMPLE-airfryer",
+    affiliateLink: "https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20",
     content: `
 ## Crispy Without the Oil
 
@@ -352,13 +352,19 @@ Air fryers have revolutionized home cooking. We tested the top models to find wh
 
 Large capacity, consistent results, and versatile cooking functions make this our top pick.
 
+[Check Price on Amazon →](https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20)
+
 ### Best Premium: Philips Premium Airfryer XXL
 
 The Philips delivers restaurant-quality air frying with its unique basket design.
 
+[Check Price on Amazon →](https://www.amazon.com/dp/B07YDY6WR6?tag=cookinkitchen-20)
+
 ### Best Value: Cosori Air Fryer
 
 Affordable and reliable, Cosori offers great results without breaking the bank.
+
+[Check Price on Amazon →](https://www.amazon.com/dp/B07WVWR56H?tag=cookinkitchen-20)
     `,
   },
   {
