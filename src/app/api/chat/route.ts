@@ -52,12 +52,14 @@ Guidelines:
 
     const data = await response.json();
     
+    console.log("MiniMax response:", JSON.stringify(data));
+    
     if (data.choices && data.choices.length > 0) {
       const assistantMessage = data.choices[0].message?.content || "I apologize, but I couldn't generate a response. Please try again.";
       return NextResponse.json({ response: assistantMessage });
     } else {
       return NextResponse.json(
-        { error: "Invalid response from AI" },
+        { error: "Invalid response from AI", debug: data },
         { status: 500 }
       );
     }
