@@ -642,25 +642,23 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           </div>
           
           {/* Affiliate CTA */}
-          <div className="mt-12 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-2 border-emerald-200 shadow-lg">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">🛒</span>
-              <h3 className="font-playfair text-2xl text-stone-800">
-                Get This Product
-              </h3>
-            </div>
-            <p className="font-lato text-stone-600 mb-6">
-              We may earn a commission when you buy through our links — at no extra cost to you.
+          <div className="mt-12 bg-stone-100 rounded-xl p-6 border border-stone-200">
+            <h3 className="font-semibold text-lg text-stone-800 mb-3">
+              Where to Buy
+            </h3>
+            <p className="text-stone-500 text-sm mb-4">
+              We may earn a commission when you buy through our links.
             </p>
-            <a 
-              href={review.affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-xl font-lato font-bold hover:bg-emerald-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Shop on Amazon
-              <span>→</span>
-            </a>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <a 
+                href={review.affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-600 font-medium hover:underline"
+              >
+                Check Price on Amazon
+              </a>
+            </div>
           </div>
         </article>
       </div>

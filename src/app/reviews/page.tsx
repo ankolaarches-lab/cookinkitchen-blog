@@ -79,7 +79,7 @@ const reviews = [
     rating: 4.9,
     date: "Jan 25, 2026",
     image: "🥄",
-    amazonLink: "https://amzn.to/3MG2mFH",
+    amazonLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
   },
   {
     id: 7,
@@ -218,6 +218,7 @@ const reviews = [
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils"];
 
 export default function ReviewsPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
 const categoryGradients: Record<string, string> = {
   "Knives": "from-slate-100 to-gray-200",
   "Cookware": "from-teal-50 to-cyan-100",
