@@ -301,6 +301,17 @@ const reviews = [
     image: "📦",
     amazonLink: "https://www.amazon.com/OXO-Grips-POP-Container-Set/dp/B00W5IWIZ2?tag=cookinkitchen-20",
   },
+  {
+    id: 28,
+    slug: "best-knife-blocks",
+    title: "Best Knife Blocks & Storage",
+    excerpt: "Keep knives organized and safe. We tested blocks, magnetic strips, and drawer organizers.",
+    category: "Gadgets",
+    rating: 4.6,
+    date: "Feb 16, 2026",
+    image: "🔪",
+    amazonLink: "https://www.amazon.com/W%C3%BCsthof-7-Slot-Knife-Block/dp/B000K9I6Q4?tag=cookinkitchen-20",
+  },
 ];
 
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
