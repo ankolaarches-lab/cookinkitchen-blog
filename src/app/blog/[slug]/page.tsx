@@ -9,7 +9,7 @@ const blogPosts = [
     category: "Guide",
     date: "Feb 12, 2026",
     readTime: "5 min read",
-    image: "🔪",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Why Your Knife Matters
@@ -79,7 +79,7 @@ The best knife is one that feels comfortable in your hand. We recommend trying a
     category: "Guide",
     date: "Feb 9, 2026",
     readTime: "7 min read",
-    image: "🍳",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## The Foundation of a Great Kitchen
@@ -158,7 +158,7 @@ Start with #1-5, then add the rest as your budget allows. Quality tools last a l
     category: "Tutorial",
     date: "Feb 6, 2026",
     readTime: "6 min read",
-    image: "🥘",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## The Magic of Cast Iron
@@ -216,7 +216,7 @@ Time to re-season your pan.
     category: "Tutorial",
     date: "Feb 3, 2026",
     readTime: "8 min read",
-    image: "🥕",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Why Knife Skills Matter
@@ -272,7 +272,7 @@ Start with onions (lots of practice needed!) and work your way up to more delica
     category: "Guide",
     date: "Jan 30, 2026",
     readTime: "6 min read",
-    image: "🍳",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Understanding Cookware Safety
@@ -329,7 +329,7 @@ With so many options, it's hard to know what's truly safe. Let's separate fact f
     category: "Recipes",
     date: "Jan 25, 2026",
     readTime: "10 min read",
-    image: "🥣",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Your Stand Mixer Is a Game-Changer
@@ -401,7 +401,7 @@ Mix with paddle, knead, rest, roll thin, cut into shapes.
     category: "Recipes",
     date: "Jan 20, 2026",
     readTime: "8 min read",
-    image: "🫕",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Why the Instant Pot?
@@ -466,7 +466,7 @@ It's a pressure cooker, slow cooker, rice cooker, and more in one. Here's your w
     category: "Guide",
     date: "Jan 15, 2026",
     readTime: "5 min read",
-    image: "🔪",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## The Great Debate
@@ -526,7 +526,7 @@ Both are excellent everyday knives. Here's how to choose.
     category: "Tutorial",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    image: "🍟",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Air Frying 101
@@ -595,7 +595,7 @@ Temperature drops. Let it cook without checking.
     category: "Guide",
     date: "Jan 5, 2026",
     readTime: "7 min read",
-    image: "⚡",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Affordable Upgrades
@@ -654,7 +654,7 @@ Replacement container if you need extras.
     category: "Tutorial",
     date: "Jan 1, 2026",
     readTime: "5 min read",
-    image: "⚡",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Honing vs. Sharpening
@@ -712,7 +712,7 @@ Signs your knife needs replacing:
     category: "Guide",
     date: "Dec 28, 2025",
     readTime: "4 min read",
-    image: "🫗",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
     amazonLink: "#",
     content: `
 ## Know the Difference
@@ -802,17 +802,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         
         <article className="bg-white rounded-2xl shadow-lg overflow-hidden">
           {/* Hero */}
-          <div className="bg-gradient-to-br from-amber-100 to-orange-100 p-12 text-center">
-            <div className="text-7xl mb-4">{post.image}</div>
+          <div className="relative h-64 bg-gradient-to-br from-amber-100 to-orange-100">
+            <img 
+              src={post.image} 
+              alt={post.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/30"></div>
+            <div className="absolute bottom-8 left-0 right-0 text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <span className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">
                 {post.category}
               </span>
-              <span className="text-stone-500">{post.readTime}</span>
+              <span className="text-stone-200">{post.readTime}</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-stone-800">
+            <h1 className="text-3xl md:text-4xl font-bold text-white">
               {post.title}
             </h1>
+            </div>
           </div>
           
           {/* Content */}

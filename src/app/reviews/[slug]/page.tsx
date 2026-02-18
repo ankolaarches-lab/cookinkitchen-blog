@@ -21,7 +21,7 @@ const reviews = [
     category: "Kitchen Utensils",
     rating: 4.6,
     date: "Feb 16, 2026",
-    image: "🥄",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20",
     content: `
 ## The Essential Toolkit
@@ -67,7 +67,7 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     category: "Knives",
     rating: 4.8,
     date: "Feb 10, 2026",
-    image: "🔪",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20",
     content: `
 ## The Search for the Perfect Blade
@@ -97,7 +97,7 @@ For those on a budget, the Victorinox Swiss Classic offers incredible value. It'
     category: "Cookware",
     rating: 4.5,
     date: "Feb 8, 2026",
-    image: "🍳",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Skillet-12-inch/dp/B00006JSUA?tag=cookinkitchen-20",
     content: `
 ## The Showdown
@@ -127,7 +127,7 @@ For most home cooks, carbon steel offers the best balance of performance and usa
     category: "Appliances",
     rating: 4.3,
     date: "Feb 5, 2026",
-    image: "🫕",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Instant-Pot-Duo-Electric-Pressure/dp/B00FLBUERN?tag=cookinkitchen-20",
     content: `
 ## Multicooker Madness
@@ -157,7 +157,7 @@ For traditional pressure cooking, the Instant Pot wins. For versatility and air-
     category: "Appliances",
     rating: 4.7,
     date: "Feb 2, 2026",
-    image: "🥣",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20",
     content: `
 ## Mixing It Up
@@ -187,7 +187,7 @@ The KitchenAid Artisan remains the gold standard, but the Cuisinart offers excel
     category: "Cookware",
     rating: 4.6,
     date: "Jan 28, 2026",
-    image: "🥘",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/T-fal-E93808-Professional-Nonstick-Dishwasher/dp/B000W5XHQW?tag=cookinkitchen-20",
     content: `
 ## The Great Egg Test
@@ -220,7 +220,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     category: "Cookware",
     rating: 4.9,
     date: "Jan 25, 2026",
-    image: "🥄",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
     content: `
 ## The Braising Champion
@@ -256,7 +256,7 @@ If you bake bread, the Le Creuset's weight is essential. For everyday cooking, L
     category: "Gadgets",
     rating: 4.4,
     date: "Jan 20, 2026",
-    image: "⚖️",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/OXO-Stainless-Compact-Grip-11-Pound/dp/B079D9F86W?tag=cookinkitchen-20",
     content: `
 ## Why You Need a Scale
@@ -286,7 +286,7 @@ The OXO Pop Scale balances precision, design, and price perfectly for home baker
     category: "Gadgets",
     rating: 4.5,
     date: "Jan 15, 2026",
-    image: "🪵",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/OXO-GOOD-Grips-Cutting-17-Inch/dp/B00E6GUF5W?tag=cookinkitchen-20",
     content: `
 ## The Board Basics
@@ -316,7 +316,7 @@ We recommend having both: a large wood board for vegetables and a dedicated plas
     category: "Knives",
     rating: 4.7,
     date: "Jan 12, 2026",
-    image: "🔪",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Shun-DM0706-Classic-7-Inch-Santoku/dp/B0000Y7LYM?tag=cookinkitchen-20",
     content: `
 ## Japanese Precision
@@ -459,7 +459,7 @@ Affordable and effective for quick touch-ups between full sharpenings.
     category: "Gadgets",
     rating: 4.2,
     date: "Jan 1, 2026",
-    image: "🥣",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Cuisinox-Stainless-Steel-Strainer/dp/B0002H7F9E?tag=cookinkitchen-20",
     content: `
 ## Essential Kitchen Tools
@@ -513,7 +513,7 @@ Everything you need in one comprehensive set.
     category: "Gadgets",
     rating: 4.5,
     date: "Dec 25, 2025",
-    image: "🥄",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Stainless-Steel-Spatula-Set-Utensil/dp/B07XJ8C8F5?tag=cookinkitchen-20",
     content: `
 ## Essential Tools
@@ -540,7 +540,7 @@ This set includes everything you need and lasts forever.
     category: "Cookware",
     rating: 4.7,
     date: "Dec 22, 2025",
-    image: "🍳",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/All-Clad-Stainless-Tri-Ply-Cookware/dp/B000X5OC1K?tag=cookinkitchen-20",
     content: `
 ## The All-Clad Showdown

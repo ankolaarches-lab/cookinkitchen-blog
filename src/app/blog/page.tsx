@@ -8,7 +8,7 @@ const blogPosts = [
     category: "Guide",
     date: "Feb 12, 2026",
     readTime: "5 min read",
-    image: "🔪",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
   },
   {
     slug: "kitchen-essentials-2026",
@@ -17,7 +17,7 @@ const blogPosts = [
     category: "Guide",
     date: "Feb 9, 2026",
     readTime: "7 min read",
-    image: "🍳",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
   },
   {
     slug: "cast-iron-care",
@@ -26,7 +26,7 @@ const blogPosts = [
     category: "Tutorial",
     date: "Feb 6, 2026",
     readTime: "6 min read",
-    image: "🥘",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
   },
   {
     slug: "knife-skills-101",
@@ -35,7 +35,7 @@ const blogPosts = [
     category: "Tutorial",
     date: "Feb 3, 2026",
     readTime: "8 min read",
-    image: "🥕",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
   },
   {
     slug: "non-toxic-cookware",
@@ -44,7 +44,7 @@ const blogPosts = [
     category: "Guide",
     date: "Jan 30, 2026",
     readTime: "6 min read",
-    image: "🍳",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
   },
   {
     slug: "stand-mixer-recipes",
@@ -53,7 +53,7 @@ const blogPosts = [
     category: "Recipes",
     date: "Jan 25, 2026",
     readTime: "10 min read",
-    image: "🥣",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
   },
   {
     slug: "instant-pot-basics",
@@ -62,7 +62,7 @@ const blogPosts = [
     category: "Recipes",
     date: "Jan 20, 2026",
     readTime: "8 min read",
-    image: "🫕",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
   },
   {
     slug: "knife-vs-santoku",
@@ -71,7 +71,7 @@ const blogPosts = [
     category: "Guide",
     date: "Jan 15, 2026",
     readTime: "5 min read",
-    image: "🔪",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
   },
   {
     slug: "air-fryer-tips",
@@ -80,7 +80,7 @@ const blogPosts = [
     category: "Tutorial",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    image: "🍟",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
   },
   {
     slug: "best-kitchen-gadgets-2026",
@@ -89,7 +89,7 @@ const blogPosts = [
     category: "Guide",
     date: "Jan 5, 2026",
     readTime: "7 min read",
-    image: "⚡",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
   },
   {
     slug: "seasoning-guide",
@@ -98,7 +98,7 @@ const blogPosts = [
     category: "Tutorial",
     date: "Jan 1, 2026",
     readTime: "5 min read",
-    image: "⚡",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
   },
   {
     slug: "blender-vs-food-processor",
