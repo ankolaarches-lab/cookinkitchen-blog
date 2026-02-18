@@ -1,6 +1,18 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+const categoryImages: Record<string, string> = {
+  "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
+  "Knives": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
+  "Cookware": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
+  "Appliances": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+  "Gadgets": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=800&h=400&fit=crop",
+};
+
+const getImageUrl = (category: string): string => {
+  return categoryImages[category] || "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop";
+};
+
 const reviews = [
   {
     slug: "best-kitchen-utensils-set",
@@ -610,9 +622,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <span className="font-lato text-stone-400 text-sm">{review.date}</span>
           </div>
           
-          <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-rose-50 rounded-2xl p-10 text-center mb-8 shadow-inner">
-            <div className="text-6xl mb-4">{review.image}</div>
-            <div className="text-sm text-stone-500 font-lato">Tested & Recommended</div>
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+            <img 
+              src={getImageUrl(review.category)} 
+              alt={review.title}
+              className="w-full h-64 object-cover"
+            />
           </div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">

@@ -26,9 +26,12 @@ export default function Page() {
             <span className="font-lato text-stone-400 text-sm">Feb 17, 2026</span>
           </div>
           
-          <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-rose-50 rounded-2xl p-10 text-center mb-8 shadow-inner">
-            <div className="text-6xl mb-4">🍳</div>
-            <div className="text-sm text-stone-500 font-lato">Tested & Recommended</div>
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+            <img 
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop" 
+              alt="Carbon Steel Wok cooking" 
+              className="w-full h-auto"
+            />
           </div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">

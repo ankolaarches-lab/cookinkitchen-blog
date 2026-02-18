@@ -3,6 +3,18 @@
 import Link from "next/link";
 import { useState } from "react";
 
+const categoryImages: Record<string, string> = {
+  "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop",
+  "Knives": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=250&fit=crop",
+  "Cookware": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=250&fit=crop",
+  "Appliances": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400&h=250&fit=crop",
+  "Gadgets": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=250&fit=crop",
+};
+
+const getImageUrl = (category: string): string => {
+  return categoryImages[category] || "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop";
+};
+
 const reviews = [
   {
     id: 19,
@@ -407,10 +419,12 @@ const categoryIcons: Record<string, string> = {
               className="group block bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-emerald-300 transform hover:-translate-y-2 cursor-pointer"
               style={{animationDelay: `${idx * 0.05}s`}}
             >
-              <div className={`bg-gradient-to-br ${categoryGradients[review.category] || "from-emerald-50 to-teal-50"} p-8 text-center relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                <div className="text-5xl mb-2 group-hover:scale-110 transition-transform duration-300">{review.image}</div>
-                <div className="text-sm font-medium text-stone-500">{categoryIcons[review.category] || "⭐"}</div>
+              <div className={`bg-gradient-to-br ${categoryGradients[review.category] || "from-emerald-50 to-teal-50"} p-0 text-center relative overflow-hidden`}>
+                <img 
+                  src={getImageUrl(review.category)} 
+                  alt={review.title}
+                  className="w-full h-40 object-cover"
+                />
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between mb-3">
