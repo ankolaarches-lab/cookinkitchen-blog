@@ -17,9 +17,12 @@ export default function Page() {
             <span className="font-lato text-emerald-500 font-bold">★ 4.7</span>
             <span className="font-lato text-stone-400 text-sm">Feb 17, 2026</span>
           </div>
-          <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-rose-50 rounded-2xl p-10 text-center mb-8 shadow-inner">
-            <div className="text-6xl mb-4">🔪</div>
-            <div className="text-sm text-stone-500 font-lato">Tested & Recommended</div>
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+            <img 
+              src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop" 
+              alt="Best Kitchen Knife Sets" 
+              className="w-full h-64 object-cover"
+            />
           </div>
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">Best Kitchen Knife Sets: Complete Guide</h1>
           <p className="font-lato text-xl text-stone-600 mb-8">We tested knife sets from budget to premium to find the best combinations for every kitchen and budget.</p>
