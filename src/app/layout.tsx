@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     default: "CookinKitchen - Expert Kitchen Tool Reviews & Buying Guides",
     template: "%s | CookinKitchen",
   },
+  verification: {
+    google: "google-site-verification-code",
+  },
   description: "Honest, expert reviews of kitchen tools. Find the best chef's knives, cookware, and appliances. Real testing, real recommendations.",
   keywords: ["kitchen tool reviews", "best chef knife", "cookware reviews", "appliance reviews", "kitchen equipment", "buying guide"],
   authors: [{ name: "CookinKitchen" }],
