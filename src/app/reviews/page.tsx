@@ -324,6 +324,17 @@ const reviews = [
     image: "🔪",
     amazonLink: "https://www.amazon.com/W%C3%BCsthof-7-Slot-Knife-Block/dp/B000K9I6Q4?tag=cookinkitchen-20",
   },
+  {
+    id: 29,
+    slug: "best-cast-iron-care",
+    title: "Best Cast Iron Care Products 2026",
+    excerpt: "Keep your cast iron in perfect condition. We tested the best care kits, seasoning oils, and chain mail scrubbers.",
+    category: "Cookware",
+    rating: 4.8,
+    date: "Feb 18, 2026",
+    image: "🍳",
+    amazonLink: "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Care/dp/B01N20M549?tag=cookinkitchen-20",
+  },
 ];
 
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
