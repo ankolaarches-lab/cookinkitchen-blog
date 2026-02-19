@@ -335,6 +335,17 @@ const reviews = [
     image: "🍳",
     amazonLink: "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Care/dp/B01N20M549?tag=cookinkitchen-20",
   },
+  {
+    id: 30,
+    slug: "best-air-fryer-2026",
+    title: "Best Air Fryers 2026",
+    excerpt: "Crispy results with less oil. We tested Ninja, Instant Pot, and more to find the best air fryers.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Feb 18, 2026",
+    image: "🍟",
+    amazonLink: "https://www.amazon.com/Ninja-Foodi-Proof-15-Quart-Professional/dp/B09B8DQ3FG?tag=cookinkitchen-20",
+  },
 ];
 
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
