@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+// Using standard img tags
 
 const featuredProducts = [
   {
@@ -161,10 +161,11 @@ export default function Home() {
                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-stone-200"
               >
                 <div className="bg-white p-4 text-center h-48 flex items-center justify-center relative">
-                  <Image 
+                  <img 
                     src={product.image} 
                     alt={product.name}
-                    fill
+                    width={200}
+                    height={150}
                     className="object-contain p-2"
                   />
                 </div>
@@ -248,10 +249,11 @@ export default function Home() {
                   <span className="text-emerald-600 font-bold">★ {review.rating}</span>
                 </div>
                 <div className="relative h-32 mb-3 w-full">
-                  <Image 
+                  <img 
                     src={review.image} 
                     alt={review.title}
-                    fill
+                    width={300}
+                    height={150}
                     className="object-contain"
                   />
                 </div>
