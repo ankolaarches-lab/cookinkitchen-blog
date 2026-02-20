@@ -18,6 +18,17 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 21,
+    slug: "best-jar-openers",
+    title: "Best Jar Openers 2026 - For Weak Hands & Easy Opening",
+    excerpt: "Struggling with stuck lids? We tested the best jar openers for seniors, weak hands, and everyone in between.",
+    category: "Gadgets",
+    rating: 4.6,
+    date: "Feb 20, 2026",
+    image: "🫙",
+    amazonLink: "https://www.amazon.com/OXO-Good-Grips-Jar-Opener/dp/B000W5IYG0?tag=cookinkitchen-20",
+  },
+  {
     id: 20,
     slug: "best-kitchen-utensils-2026",
     title: "Best Kitchen Utensils 2026 - Complete Guide",
