@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     google: "google-site-verification-code",
   },
   description: "Honest, expert reviews of kitchen tools. Find the best chef's knives, cookware, and appliances. Real testing, real recommendations.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   keywords: ["kitchen tool reviews", "best chef knife", "cookware reviews", "appliance reviews", "kitchen equipment", "buying guide"],
   authors: [{ name: "CookinKitchen" }],
   creator: "CookinKitchen",

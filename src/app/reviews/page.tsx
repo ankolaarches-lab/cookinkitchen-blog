@@ -9,6 +9,7 @@ const categoryImages: Record<string, string> = {
   "Cookware": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=250&fit=crop",
   "Appliances": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400&h=250&fit=crop",
   "Gadgets": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=250&fit=crop",
+  "Cutting Boards": "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=400&h=250&fit=crop",
 };
 
 const getImageUrl = (category: string): string => {
@@ -16,6 +17,17 @@ const getImageUrl = (category: string): string => {
 };
 
 const reviews = [
+  {
+    id: 20,
+    slug: "best-kitchen-utensils-2026",
+    title: "Best Kitchen Utensils 2026 - Complete Guide",
+    excerpt: "From spatulas to ladles, we tested the best kitchen utensils for every cooking need in 2026.",
+    category: "Kitchen Utensils",
+    rating: 4.7,
+    date: "Feb 20, 2026",
+    image: "🥄",
+    amazonLink: "https://www.amazon.com/OXO-Good-Grips-3-Piece-Stainless/dp/B00XMDNV5O?tag=cookinkitchen-20",
+  },
   {
     id: 19,
     slug: "best-kitchen-utensils-set",
@@ -334,6 +346,17 @@ const reviews = [
     date: "Feb 18, 2026",
     image: "🍳",
     amazonLink: "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Care/dp/B01N20M549?tag=cookinkitchen-20",
+  },
+  {
+    id: 31,
+    slug: "best-cutting-boards-2026",
+    title: "Best Cutting Boards 2026",
+    excerpt: "From plastic to premium wood. We tested the best cutting boards for every kitchen and budget.",
+    category: "Cutting Boards",
+    rating: 4.7,
+    date: "Feb 19, 2026",
+    image: "🔪",
+    amazonLink: "https://www.amazon.com/Teakhaus-Proteak-End-Grain-Cutting/dp/B000J2J4Q0?tag=cookinkitchen-20",
   },
   {
     id: 30,

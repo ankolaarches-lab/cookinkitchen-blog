@@ -283,6 +283,8 @@ export default function Home() {
               { name: "Cookware", count: 8 },
               { name: "Appliances", count: 15 },
               { name: "Gadgets", count: 10 },
+              { name: "Baking Sheets", count: 3 },
+              { name: "Cutting Boards", count: 1 },
             ].map((cat) => (
               <Link
                 key={cat.name}
@@ -354,4 +356,3 @@ export default function Home() {
     </div>
   );
 }
-<!-- force rebuild Wed Feb 18 22:25:27 PST 2026 -->
