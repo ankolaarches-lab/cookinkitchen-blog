@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const categoryImages: Record<string, string> = {
   "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop",
+  "Wooden Utensils": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=250&fit=crop",
   "Knives": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=250&fit=crop",
   "Cookware": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=250&fit=crop",
   "Appliances": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400&h=250&fit=crop",
@@ -17,6 +18,17 @@ const getImageUrl = (category: string): string => {
 };
 
 const reviews = [
+  {
+    id: 22,
+    slug: "best-wooden-kitchen-utensils",
+    title: "Best Wooden Kitchen Utensils 2026 - Natural & Durable",
+    excerpt: "From teak to acacia, we tested the best wooden spoons, spatulas, and utensil sets for every kitchen.",
+    category: "Kitchen Utensils",
+    rating: 4.7,
+    date: "Feb 21, 2026",
+    image: "🪵",
+    amazonLink: "https://www.amazon.com/CAROTE-Wooden-Kitchen-Utensils/dp/B07XJ8CX8N?tag=cookinkitchen-20",
+  },
   {
     id: 21,
     slug: "best-jar-openers",

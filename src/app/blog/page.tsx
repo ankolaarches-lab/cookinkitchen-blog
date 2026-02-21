@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const kitchenImages = [
   "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
@@ -61,8 +62,8 @@ const blogPosts = [
     slug: "instant-pot-beginner-guide",
     title: "Instant Pot Beginner Guide: Master Your Electric Pressure Cooker",
     excerpt: "New to Instant Pot? Our comprehensive beginner guide covers everything from basic functions to delicious first recipes.",
-    category: date: "Feb "Guide",
-    19, 2026",
+    category: "Guide",
+    date: "Feb 19, 2026",
     readTime: "10 min read",
     image: getImage(4),
   },
@@ -505,10 +506,11 @@ export default function Blog() {
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
             >
               <div className="relative h-48 bg-gray-100">
-                <img
+                <Image 
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <span className="absolute top-4 left-4 bg-white/90 text-stone-700 text-xs font-medium px-3 py-1 rounded-full">
                   {post.category}

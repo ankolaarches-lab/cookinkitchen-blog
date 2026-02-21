@@ -15,7 +15,7 @@ const featuredProducts = [
     name: "Lodge Dutch Oven",
     price: "$59.99",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf5?w=600&h=400&fit=crop",
     slug: "best-dutch-oven",
     badge: "Best Value",
     amazonLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
@@ -24,24 +24,24 @@ const featuredProducts = [
     name: "KitchenAid Stand Mixer",
     price: "$449.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
     slug: "kitchenaid-vs-cuisinart-stand-mixer",
     amazonLink: "https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20",
   },
   {
-    name: "Shun Santoku Knife",
-    price: "$169.95",
+    name: "OXO Salad Spinner",
+    price: "$27.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    slug: "best-santoku-knife",
-    badge: "Japanese",
-    amazonLink: "https://www.amazon.com/Shun-DM0706-Classic-7-Inch-Santoku/dp/B0000Y7LYM?tag=cookinkitchen-20",
+    image: "https://images.unsplash.com/photo-1519160558534-579f5106e43f?w=600&h=400&fit=crop",
+    slug: "best-salad-spinners",
+    badge: "Top Rated",
+    amazonLink: "https://www.amazon.com/OXO-Good-Grips-Salad-Spinner/dp/B00NIXHW08?tag=cookinkitchen-20",
   },
   {
     name: "Ninja Blender",
     price: "$99.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
     slug: "best-blender-2026",
     amazonLink: "https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20",
   },
@@ -49,7 +49,7 @@ const featuredProducts = [
     name: "Ninja Air Fryer XXL",
     price: "$149.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1626132647523-66dbeac34534?w=600&h=400&fit=crop",
     slug: "best-air-fryer",
     amazonLink: "https://www.amazon.com/Ninja-Digital-4-Quart-Recipe-Creator/dp/B09GB5JTRY?tag=cookinkitchen-20",
   },
@@ -70,7 +70,7 @@ const reviews = [
     slug: "best-dutch-oven",
     category: "Cookware",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf5?w=600&h=400&fit=crop",
   },
   {
     title: "Stand Mixer Showdown",
@@ -78,15 +78,15 @@ const reviews = [
     slug: "kitchenaid-vs-cuisinart-stand-mixer",
     category: "Appliances",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
   },
   {
-    title: "Best Santoku Knife",
-    excerpt: "Japanese precision knives tested. Find your perfect slicer.",
-    slug: "best-santoku-knife",
-    category: "Knives",
+    title: "Best Wooden Kitchen Utensils",
+    excerpt: "From teak to acacia — we tested the best wooden spoons and spatulas.",
+    slug: "best-wooden-kitchen-utensils",
+    category: "Kitchen Utensils",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
   },
   {
     title: "Best Blender Showdown",
@@ -94,7 +94,7 @@ const reviews = [
     slug: "best-blender-2026",
     category: "Appliances",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
   },
   {
     title: "Best Air Fryer Review",
@@ -102,7 +102,7 @@ const reviews = [
     slug: "best-air-fryer",
     category: "Appliances",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=600&h=400&fit=crop",
   },
 ];
 
@@ -205,23 +205,6 @@ export default function Home() {
             We've spent hundreds of hours testing kitchen tools so you can cook with confidence. 
             No sponsored reviews, no fluff — just honest findings from our test kitchen.
           </p>
-        </div>
-      </section>
-
-      {/* AI Assistant Hint */}
-      <section className="py-8 bg-white border-t border-stone-200">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="flex items-center justify-center gap-3 p-4 bg-emerald-50 rounded-lg border border-emerald-100">
-            <div className="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-              </svg>
-            </div>
-            <span className="text-stone-700 font-medium">Need help choosing?</span>
-            <Link href="mailto:hello@cookinkitchen.online" className="text-emerald-600 font-semibold hover:underline">
-              Ask AI →
-            </Link>
-          </div>
         </div>
       </section>
 
