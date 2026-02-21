@@ -1,5 +1,25 @@
 import Link from "next/link";
 
+const kitchenImages = [
+  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556909113-6f2586d46001?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=800&h=400&fit=crop",
+];
+
+const getImage = (index: number) => kitchenImages[index % kitchenImages.length];
+
 const blogPosts = [
   {
     slug: "chefs-knives-how-to-choose",
@@ -8,7 +28,7 @@ const blogPosts = [
     category: "Guide",
     date: "Feb 19, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
+    image: getImage(0),
   },
   {
     slug: "dutch-ovens-bread-baking-braising",
@@ -17,7 +37,7 @@ const blogPosts = [
     category: "Guide",
     date: "Feb 19, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
+    image: getImage(1),
   },
   {
     slug: "cast-iron-care-seasoning-guide",
@@ -26,7 +46,7 @@ const blogPosts = [
     category: "Tutorial",
     date: "Feb 19, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+    image: getImage(2),
   },
   {
     slug: "air-fryer-recipes-tips",
@@ -35,494 +55,481 @@ const blogPosts = [
     category: "Recipes",
     date: "Feb 19, 2026",
     readTime: "9 min read",
-    image: "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=800&h=400&fit=crop",
+    image: getImage(3),
   },
   {
     slug: "instant-pot-beginner-guide",
     title: "Instant Pot Beginner Guide: Master Your Electric Pressure Cooker",
     excerpt: "New to Instant Pot? Our comprehensive beginner guide covers everything from basic functions to delicious first recipes.",
-    category: "Guide",
-    date: "Feb 19, 2026",
+    category: date: "Feb "Guide",
+    19, 2026",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=400&fit=crop",
+    image: getImage(4),
   },
   {
     slug: "stand-mixer-baking-basics",
-    title: "Stand Mixer Baking Basics: From Dough to Delicious",
-    excerpt: "Unlock the full potential of your stand mixer with our baking guide. Perfect breads, cookies, and more await.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "knife-sets-what-to-look-for",
-    title: "Knife Sets: What to Look for When Buying",
-    excerpt: "Complete guide to choosing the best knife set for your kitchen. We cover essential knives, quality indicators, and top recommendations.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "food-processor-time-saving-tips",
-    title: "Food Processor Time-Saving Tips and Techniques",
-    excerpt: "Transform your meal prep with these food processor tips. Chop, slice, and blend faster than ever before.",
+    title: "Stand Mixer Baking Basics: Dough, Batter, and More",
+    excerpt: "Unlock the full potential of your stand mixer. From perfect doughs to fluffy meringues, we show you how.",
     category: "Tutorial",
     date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "rice-cooker-recipes-beyond-rice",
-    title: "Rice Cooker Recipes: Cooking Beyond Rice",
-    excerpt: "Your rice cooker can do so much more! Discover surprising recipes from oatmeal to soups and everything in between.",
-    category: "Recipes",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "sous-vide-precision-cooking",
-    title: "Sous Vide Cooking: Precision at Home",
-    excerpt: "Master sous vide cooking for perfectly cooked meals every time. Learn about equipment, techniques, and delicious recipes.",
-    category: "Guide",
-    date: "Feb 19, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&h=400&fit=crop",
+    image: getImage(5),
   },
   {
-    slug: "coffee-grinders-fresh-coffee",
-    title: "Coffee Grinders: The Secret to Fresh Coffee",
-    excerpt: "Discover why grinding your own coffee beans transforms your morning cup. We compare grinders and share brewing tips.",
+    slug: "knives-101-everything-you-need-to-know",
+    title: "Kitchen Knives 101: Everything You Need to Know",
+    excerpt: "A comprehensive guide to kitchen knives. Learn about different blade types, sharpening techniques, and how to build your knife collection.",
     category: "Guide",
     date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=400&fit=crop",
+    readTime: "12 min read",
+    image: getImage(6),
   },
   {
-    slug: "electric-kettles-coffee-tea",
-    title: "Electric Kettles: Perfect for Coffee and Tea",
-    excerpt: "Elevate your hot beverage game with the right electric kettle. Temperature control and speed matter.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "food-storage-containers-organization",
-    title: "Food Storage Containers: Kitchen Organization Guide",
-    excerpt: "Organize your pantry and keep food fresh with the best storage containers. A tidy kitchen starts here.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909112-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "vacuum-sealers-meal-prep",
-    title: "Vacuum Sealers: Meal Prep Game Changer",
-    excerpt: "Extend food freshness and simplify meal prep with vacuum sealing. Learn about equipment and best practices.",
+    slug: "nonstick-cookware-pros-cons",
+    title: "Nonstick Cookware: Pros, Cons, and Best Practices",
+    excerpt: "Is nonstick cookware right for you? We break down the benefits, drawbacks, and how to care for your pans.",
     category: "Guide",
     date: "Feb 19, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+    image: getImage(7),
   },
   {
-    slug: "nonstick-pans-care",
-    title: "Nonstick Pan Care: Making Your Pans Last",
-    excerpt: "Protect your investment with proper nonstick pan care. Tips for cleaning, storage, and extending pan life.",
-    category: "Tutorial",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "carbon-steel-wok-stir-fry",
-    title: "Carbon Steel Wok: Perfect Stir Fry at Home",
-    excerpt: "Master wok cooking with a carbon steel pan. From seasoning to high-heat techniques, become a stir-fry pro.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "bakeware-essentials",
-    title: "Bakeware Essentials: Sheets, Muffin Tins & More",
-    excerpt: "Build your baking arsenal with essential bakeware. We cover baking sheets, muffin tins, and must-have items.",
+    slug: "cutting-board-guide-materials",
+    title: "Cutting Board Guide: Wood, Plastic, and Glass Compared",
+    excerpt: "Find the perfect cutting board for your kitchen. We compare materials, durability, and knife care considerations.",
     category: "Guide",
     date: "Feb 19, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+    image: getImage(8),
   },
   {
-    slug: "kitchen-utensils-essentials",
-    title: "Kitchen Utensils: Essential Tools Every Cook Needs",
-    excerpt: "Stock your kitchen with essential utensils. From spatulas to ladles, we cover must-have tools for home cooks.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909112-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "knife-blocks-storage",
-    title: "Knife Blocks: Safe and Stylish Storage",
-    excerpt: "Protect your knives and showcase your style with the right knife block. Options for every kitchen aesthetic.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "cutting-boards-material-guide",
-    title: "Cutting Boards: Material Guide for Every Need",
-    excerpt: "Wood, plastic, or bamboo? Find the perfect cutting board for your kitchen with our comprehensive material guide.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "measuring-tools-accuracy",
-    title: "Measuring Tools: Precision in Every Recipe",
-    excerpt: "Baking success starts with accurate measurements. Learn about cups, spoons, scales, and when each matters.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "mixing-bowls-basics",
-    title: "Mixing Bowls: The Foundation of Cooking",
-    excerpt: "From mixing batter to serving salads, mixing bowls are kitchen essentials. Find the perfect set for your needs.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "spatulas-silicone-vs-wood",
-    title: "Spatulas: Silicone vs Wood - Which is Best?",
-    excerpt: "The great spatula debate resolved. Compare silicone and wood spatulas for cooking and baking applications.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "whisks-types-uses",
-    title: "Whisks: Types and Their Perfect Uses",
-    excerpt: "Not all whisks are created equal. Learn about different types and which is best for beating, folding, and more.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "tongs-kitchen-multitasker",
-    title: "Tongs: The Ultimate Kitchen Multitasker",
-    excerpt: "Why tongs are the most versatile tool in your kitchen. From flipping meat to tossing salads, discover their potential.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "salt-pepper-fresh-seasoning",
-    title: "Salt and Pepper Grinders: Fresh Seasoning Guide",
-    excerpt: "Elevate your dishes with freshly ground spices. Learn why it matters and find the perfect grinders.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "mandolines-slice-perfectly",
-    title: "Mandolines: Slice Perfectly Every Time",
-    excerpt: "Master uniform slicing with a mandoline. From julienne to wavy cuts, achieve professional results at home.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "garlic-presses-worth-it",
-    title: "Garlic Presses: Are They Worth It?",
-    excerpt: "The great garlic press debate. We explore whether this gadget earns its place in your kitchen.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "pizza-cutters-types",
-    title: "Pizza Cutters: Types and Best Uses",
-    excerpt: "Wheel vs rocker? Find the perfect pizza cutter for clean slices every time. We compare options.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "cheese-graters-guide",
-    title: "Cheese Graters: For Every Type of Cheese",
-    excerpt: "From parmesan to cheddar, find the right grater for each cheese. Elevate your cheese dishes.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "colanders-draining-guide",
-    title: "Colanders: The Complete Draining Guide",
-    excerpt: "Perfect pasta drainage every time. Learn about different colander styles and which is right for you.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "salad-spinners-crisp-greens",
-    title: "Salad Spinners: For Crispy Greens",
-    excerpt: "Get perfectly dry salad greens with a quality spinner. Reviews and tips for the best results.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "rolling-pins-pastry-basics",
-    title: "Rolling Pins: Pastry Basics for Home Bakers",
-    excerpt: "Master pie crusts, pastry, and more with the right rolling pin. French taper vs classic - we explain.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "casserole-dishes-one-dish",
-    title: "Casserole Dishes: One-Dish Meal Solutions",
-    excerpt: "Discover the best casserole dishes for comforting one-pot meals. From lasagna to chicken pot pie.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "lazy-susans-cabinet-organization",
-    title: "Lazy Susans: Maximize Cabinet Space",
-    excerpt: "Transform cluttered cabinets with a lazy susan. Organize spices, condiments, and more efficiently.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "pizza-ovens-indoor-outdoor",
-    title: "Pizza Ovens: Indoor and Outdoor Options",
-    excerpt: "Pizza oven buying guide. From countertop to outdoor ovens, make restaurant-quality pizza at home.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "pressure-cookers-fast-meals",
-    title: "Pressure Cookers: Fast Meals Made Easy",
-    excerpt: "Master pressure cooking for quick, flavorful meals. Tips, tricks, and recipe ideas inside.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "slow-cookers-set-forget",
-    title: "Slow Cookers: Set It and Forget It Cooking",
-    excerpt: "Embrace convenient slow cooking. From stews to pulled pork, perfect hands-off meals await.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "toaster-ovens-versatile",
-    title: "Toaster Ovens: The Versatile Countertop Appliance",
-    excerpt: "More than just toast! Discover the many uses for your toaster oven, from baking to roasting.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "hand-mixers-lightweight",
-    title: "Hand Mixers: The Lightweight Alternative",
-    excerpt: "When a stand mixer is overkill, reach for a hand mixer. Perfect for quick baking tasks and light jobs.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "bread-makers-homemade",
-    title: "Bread Makers: Fresh Homemade Bread Daily",
-    excerpt: "Wake up to the smell of fresh bread. Learn about bread makers and simple recipes to get started.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "woks-chinese-cooking",
-    title: "Woks: Authentic Chinese Cooking at Home",
-    excerpt: "Master wok cooking for authentic Asian dishes. From stir-fry to steaming, unlock versatile techniques.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "grill-pans-indoor-grilling",
-    title: "Grill Pans: Indoor Grilling Year-Round",
-    excerpt: "Get those grill marks anytime with an indoor grill pan. Perfect for apartments and winter grilling.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "kitchen-scales-baking-precision",
-    title: "Kitchen Scales: Baking Precision",
-    excerpt: "Why professional bakers rely on scales. Improve your baking accuracy with the right kitchen scale.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "stand-mixer-attachments-guide",
-    title: "Stand Mixer Attachments: Expand Your Possibilities",
-    excerpt: "Your stand mixer can do more than mix! Discover attachments for pasta, ice cream, and more.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "blender-vs-food-processor",
-    title: "Blender vs Food Processor: Which Do You Need?",
-    excerpt: "Both are kitchen powerhouses, but for different jobs. We break down when to use each appliance.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "cookware-materials-guide",
-    title: "Best Cookware Materials: Cast Iron, Stainless, Carbon Steel, Nonstick",
-    excerpt: "Compare cookware materials to find your perfect pans. We break down pros, cons, and best uses.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "kitchen-organization-tips",
-    title: "Kitchen Organization Tips for a Clutter-Free Space",
-    excerpt: "Transform your kitchen with smart organization strategies. Maximize space and find everything easily.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "must-have-kitchen-gadgets",
-    title: "Must-Have Kitchen Gadgets for Every Cook",
-    excerpt: "Upgrade your cooking with essential gadgets. Our curated list of must-have tools for home kitchens.",
-    category: "Guide",
-    date: "Feb 19, 2026",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  },
-  {
-    slug: "kitchen-essentials-beginners",
-    title: "Kitchen Essentials for Beginners: Start Cooking Today",
-    excerpt: "New to cooking? Start here with the essential tools and ingredients every beginner needs in their kitchen.",
+    slug: "blender-buying-guide",
+    title: "Blender Buying Guide: Finding the Perfect Blend",
+    excerpt: "From smoothies to soups, learn what to look for in a blender. We review top models for every budget.",
     category: "Guide",
     date: "Feb 19, 2026",
     readTime: "9 min read",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+    image: getImage(9),
+  },
+  {
+    slug: "measuring-cups-spoons-accuracy",
+    title: "Measuring Cups and Spoons: Precision in Baking",
+    excerpt: "Why accurate measurements matter in cooking and baking. Our guide to the best measuring tools for your kitchen.",
+    category: "Tutorial",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(10),
+  },
+  {
+    slug: "spatula-spoon-set-essentials",
+    title: "Kitchen Utensil Sets: Spatulas, Spoons, and More",
+    excerpt: "The essential utensils every kitchen needs. We review top-rated sets and help you build your collection.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(11),
+  },
+  {
+    slug: "food-processor-time-saver",
+    title: "Food Processor: The Ultimate Time-Saver",
+    excerpt: "Chop, slice, and shred in seconds. Discover how a food processor can revolutionize your meal prep.",
+    category: "Appliances",
+    date: "Feb 19, 2026",
+    readTime: "8 min read",
+    image: getImage(12),
+  },
+  {
+    slug: "rice-cooker-beyond-rice",
+    title: "Rice Cooker: Beyond Just Rice",
+    excerpt: "Your rice cooker can do so much more. From oatmeal to cakes, explore unexpected recipes.",
+    category: "Recipes",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(13),
+  },
+  {
+    slug: "slow-cooker-comfort-food",
+    title: "Slow Cooker Comfort Food: Set It and Forget It",
+    excerpt: "Easy, hands-off recipes for your slow cooker. Perfect for busy weeknights and meal prep.",
+    category: "Recipes",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(14),
+  },
+  {
+    slug: "espresso-machine-home",
+    title: "Bringing the Cafe Home: Espresso Machines Reviewed",
+    excerpt: "From manual to automatic, we review the best home espresso machines for coffee lovers.",
+    category: "Appliances",
+    date: "Feb 19, 2026",
+    readTime: "10 min read",
+    image: getImage(0),
+  },
+  {
+    slug: "coffee-grinder-fresh",
+    title: "Freshly Ground Coffee: Why a Grinder Matters",
+    excerpt: "Upgrade your morning coffee with a quality grinder. We explain burr vs. blade and top picks.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(1),
+  },
+  {
+    slug: "toaster-oven-versatility",
+    title: "Toaster Oven: The Versatile Countertop Appliance",
+    excerpt: "More than just toast! Discover recipes and tips for getting the most from your toaster oven.",
+    category: "Appliances",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(2),
+  },
+  {
+    slug: "mandoline-slicer-precision",
+    title: "Mandoline Slicer: Precision Slicing Made Easy",
+    excerpt: "Get restaurant-quality cuts at home. Our guide to using and choosing a mandoline slicer.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(3),
+  },
+  {
+    slug: "kitchen-scale-baking-precision",
+    title: "Why Every Baker Needs a Kitchen Scale",
+    excerpt: "Ditch the measuring cups for precision baking. We review top kitchen scales for accuracy.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(4),
+  },
+  {
+    slug: "salt-pepper-grinders",
+    title: "Salt and Pepper Grinders: Elevate Your Seasoning",
+    excerpt: "Freshly ground seasoning makes a difference. Our top picks for grinders and why they matter.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "4 min read",
+    image: getImage(5),
+  },
+  {
+    slug: "whisk-buying-guide",
+    title: "Whisk Buying Guide: Balloon, Flat, and Beyond",
+    excerpt: "From beating eggs to mixing batter, find the right whisk for every kitchen task.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(6),
+  },
+  {
+    slug: "tongs-kitchen-essential",
+    title: "Tongs: The Ultimate Kitchen Tool",
+    excerpt: "Why tongs are the most versatile tool in your kitchen. Our top picks for every use.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "4 min read",
+    image: getImage(7),
+  },
+  {
+    slug: "colander-pasta-strainer",
+    title: "Colanders and Strainers: Drain with Ease",
+    excerpt: "From pasta to rinsed vegetables, find the perfect strainer for your kitchen needs.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(8),
+  },
+  {
+    slug: "mixing-bowls-set",
+    title: "Nesting Mixing Bowls: A Kitchen Essential",
+    excerpt: "Why every kitchen needs a good set of mixing bowls. Our top picks for size, material, and durability.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(9),
+  },
+  {
+    slug: "rolling-pin-guide",
+    title: "Rolling Pin Guide: French, Wood, and Silicone",
+    excerpt: "Find the perfect rolling pin for pie crusts, cookies, and more. We compare styles and materials.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(10),
+  },
+  {
+    slug: "baking-sheet-review",
+    title: "Baking Sheets Reviewed: Cookie Sheets and Sheet Pans",
+    excerpt: "From cookies to roasted veggies, find the best baking sheets for your oven. Aluminum vs. nonstick vs. silicone.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(11),
+  },
+  {
+    slug: "muffin-tin-baking",
+    title: "Muffin Tins: Cupcake, Muffin, and Beyond",
+    excerpt: "Our guide to muffin tins for cupcakes, muffins, and savory baked goods. Material and size comparisons.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(12),
+  },
+  {
+    slug: "casserole-dish-essentials",
+    title: "Casserole Dishes: Comfort Food Essentials",
+    excerpt: "From lasagna to enchiladas, find the perfect casserole dish. Glass vs. ceramic vs. cast iron.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(13),
+  },
+  {
+    slug: "pressure-cooker-safety",
+    title: "Pressure Cooker Safety: Tips and Best Practices",
+    excerpt: "Use your pressure cooker safely and effectively. Expert tips for perfect results every time.",
+    category: "Tutorial",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(14),
+  },
+  {
+    slug: "wok-buying-guide",
+    title: "Wok Buying Guide: Carbon Steel, Cast Iron, and Nonstick",
+    excerpt: "Master stir-fry with the right wok. We compare materials and help you choose the perfect pan.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "8 min read",
+    image: getImage(0),
+  },
+  {
+    slug: "grill-pan-indoor",
+    title: "Indoor Grill Pans: Year-Round Grilling",
+    excerpt: "Get grill marks indoors with the right grill pan. Our top picks for gas, electric, and induction.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(1),
+  },
+  {
+    slug: "sauté-pan-skillet",
+    title: "Sauté Pan vs. Skillet: What's the Difference?",
+    excerpt: "Understand cookware terminology and choose the right pan for sautéing, frying, and more.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(2),
+  },
+  {
+    slug: "saucepan-essentials",
+    title: "Saucepans: The Workhorses of Your Kitchen",
+    excerpt: "From sauces to grains, saucepans are kitchen essentials. Our guide to choosing the best ones.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(3),
+  },
+  {
+    slug: "stockpot-soups-stocks",
+    title: "Stockpot Guide: Soups, Stocks, and Pasta",
+    excerpt: "A good stockpot is a kitchen cornerstone. Find the right size and material for your needs.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(4),
+  },
+  {
+    slug: "knife-sharpener-guide",
+    title: "Knife Sharpener Guide: Keep Your Blades Razor Sharp",
+    excerpt: "Hone and sharpen your knives like a pro. We review sharpeners from manual to electric.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(5),
+  },
+  {
+    slug: "kitchen-organizer-ideas",
+    title: "Kitchen Organization: Maximize Your Space",
+    excerpt: "Smart storage solutions for a clutter-free kitchen. Drawer organizers, cabinet systems, and more.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "8 min read",
+    image: getImage(6),
+  },
+  {
+    slug: "food-storage-containers",
+    title: "Food Storage Containers: Keep Food Fresh Longer",
+    excerpt: "From glass to plastic, find the best food storage containers for your kitchen and fridge.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(7),
+  },
+  {
+    slug: "vacuum-sealer-benefits",
+    title: "Food Vacuum Sealer: Extend Freshness and Save Money",
+    excerpt: "Reduce food waste with vacuum sealing. Our guide to the best countertop and handheld sealers.",
+    category: "Appliances",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(8),
+  },
+  {
+    slug: "hand-mixer-vs-stand",
+    title: "Hand Mixer vs. Stand Mixer: Which Do You Need?",
+    excerpt: "Compare handheld and stand mixers to find the right tool for your baking needs and budget.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(9),
+  },
+  {
+    slug: "electric-kettle-guide",
+    title: "Electric Kettles: Fast Boiling for Tea and More",
+    excerpt: "Speed up your morning routine with an electric kettle. We review top picks for temperature control and capacity.",
+    category: "Appliances",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(10),
+  },
+  {
+    slug: "cheese-grater-types",
+    title: "Cheese Graters: Box, Rotary, and Microplane Compared",
+    excerpt: "From parmesan to cheddar, find the right grater for every cheese. Our comprehensive guide.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(11),
+  },
+  {
+    slug: "pizza-cutter-guide",
+    title: "Pizza Cutters: Wheel vs. Rocking Blade",
+    excerpt: "Get perfect pizza slices every time. We compare pizza cutter styles and top picks.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "4 min read",
+    image: getImage(12),
+  },
+  {
+    slug: "garlic-press-utility",
+    title: "Garlic Press: Is It Worth the Counter Space?",
+    excerpt: "Mince garlic in seconds with a press. Our review of top models and alternatives.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "4 min read",
+    image: getImage(13),
+  },
+  {
+    slug: "salad-spinner-review",
+    title: "Salad Spinners: Dry Your Greens in Seconds",
+    excerpt: "Get perfectly dry salad greens with a spinner. We review the best for every budget.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(14),
+  },
+  {
+    slug: "lazy-susan-turntable",
+    title: "Lazy Susan Turntables: Organize Your Cabinets",
+    excerpt: "Maximize corner cabinet space with a rotating turntable. Our organizational tips and product picks.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "5 min read",
+    image: getImage(0),
+  },
+  {
+    slug: "bread-maker-home",
+    title: "Bread Makers: Fresh Bread with Zero Effort",
+    excerpt: "Wake up to the smell of fresh bread. Our guide to the best home bread makers.",
+    category: "Appliances",
+    date: "Feb 19, 2026",
+    readTime: "7 min read",
+    image: getImage(1),
+  },
+  {
+    slug: "sous-vide-precision",
+    title: "Sous Vide: Precision Cooking at Home",
+    excerpt: "Restaurant-quality results with sous vide. Our guide to getting started with precision cooking.",
+    category: "Guide",
+    date: "Feb 19, 2026",
+    readTime: "9 min read",
+    image: getImage(2),
+  },
+  {
+    slug: "thermometer-cooking",
+    title: "Instant-Read Thermometers: Perfect Temperature Every Time",
+    excerpt: "Take the guesswork out of cooking with a reliable thermometer. We review top instant-read models.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "6 min read",
+    image: getImage(3),
+  },
+  {
+    slug: "kitchen-timer-digital",
+    title: "Digital Kitchen Timers: Never Overcook Again",
+    excerpt: "Multiple timers, loud alarms, and smart features. Find the perfect kitchen timer for your cooking.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "4 min read",
+    image: getImage(4),
+  },
+  {
+    slug: "trivet-hot-pads",
+    title: "Trivets and Hot Pads: Protect Your Counters",
+    excerpt: "From silicone to woven, protect surfaces with the right trivets and pot holders.",
+    category: "Gadgets",
+    date: "Feb 19, 2026",
+    readTime: "4 min read",
+    image: getImage(5),
   },
 ];
 
-export default function BlogPage() {
+export default function Blog() {
   return (
-    <div className="min-h-screen bg-amber-50 py-12">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+    <div className="min-h-screen bg-stone-50">
+      <header className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Kitchen Blog
           </h1>
-          <p className="text-stone-600 max-w-2xl mx-auto">
-            Guides, tutorials, and recipes to make you a better home cook.
+          <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
+            Tips, guides, and reviews for your kitchen
           </p>
         </div>
+      </header>
 
-        {/* Blog Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.map((post, idx) => (
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="grid gap-8 md:grid-cols-2">
+          {blogPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group block bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-amber-300 transform hover:-translate-y-2 cursor-pointer"
-              style={{animationDelay: `${idx * 0.05}s`}}
+              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
             >
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-6 text-center relative overflow-hidden h-40 flex items-center justify-center">
-                <img src={post.image} alt={post.title} className="w-full h-full object-cover rounded-lg" />
+              <div className="relative h-48 bg-gray-100">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover"
+                />
+                <span className="absolute top-4 left-4 bg-white/90 text-stone-700 text-xs font-medium px-3 py-1 rounded-full">
+                  {post.category}
+                </span>
               </div>
-              <div className="p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-bold">
-                    {post.category}
-                  </span>
-                  <span className="text-xs text-stone-400">{post.readTime}</span>
-                </div>
-                <h2 className="font-bold text-lg text-stone-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+              <div className="p-6">
+                <h2 className="text-xl font-bold text-stone-900 mb-2 group-hover:text-emerald-600 transition">
                   {post.title}
                 </h2>
-                <p className="text-stone-500 text-sm mb-4 line-clamp-2">
+                <p className="text-stone-600 text-sm mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-stone-400">{post.date}</span>
-                  <span className="inline-flex items-center gap-1 text-emerald-600 text-sm font-bold group-hover:translate-x-1 transition-transform duration-300">
-                    Read More →
-                  </span>
+                <div className="flex items-center justify-between text-xs text-stone-500">
+                  <span>{post.date}</span>
+                  <span>{post.readTime}</span>
                 </div>
               </div>
             </Link>
           ))}
         </div>
-
-        {/* Newsletter CTA */}
-        <div className="mt-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-8 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">
-            Get Kitchen Tips Weekly!
-          </h3>
-          <p className="text-amber-100 mb-6 max-w-lg mx-auto">
-            Join 10,000+ home cooks getting our best tips and recipes every week.
-          </p>
-          <div className="flex gap-2 justify-center max-w-md mx-auto">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="px-4 py-3 rounded-lg text-stone-900 w-full max-w-xs"
-            />
-            <button className="bg-stone-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-stone-800 transition">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
   );
 }
