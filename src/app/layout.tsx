@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Lato, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
 
@@ -100,6 +101,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased pattern-bg">
+        <Analytics />
         <header className="bg-white/90 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-50 shadow-sm">
           <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link href="/" className="font-serif text-2xl font-bold text-gray-900 hover:text-teal-600 transition-colors">

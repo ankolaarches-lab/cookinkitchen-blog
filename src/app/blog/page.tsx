@@ -23,6 +23,33 @@ const getImage = (index: number) => kitchenImages[index % kitchenImages.length];
 
 const blogPosts = [
   {
+    slug: "instant-read-thermometer-guide-2026",
+    title: "Instant Read Thermometer Guide: Perfect Temperature Every Time",
+    excerpt: "Why every home cook needs an instant read thermometer. We explain when to use it, ideal temperatures for different foods, and our top picks.",
+    category: "Guide",
+    date: "Mar 2, 2026",
+    readTime: "5 min read",
+    image: getImage(0),
+  },
+  {
+    slug: "air-fryer-accessories-guide",
+    title: "Air Fryer Accessories: Get More From Your Appliance",
+    excerpt: "Your air fryer can do so much more than french fries. Discover accessories that expand what you can cook and make cleanup easier.",
+    category: "Guide",
+    date: "Mar 2, 2026",
+    readTime: "6 min read",
+    image: getImage(1),
+  },
+  {
+    slug: "kitchen-shears-essential-guide",
+    title: "Why You Need Kitchen Shears: The Unsung Hero of Kitchen Tools",
+    excerpt: "Kitchen shears are more than scissors. From herbs to chicken, learn how the right shears can revolutionize your prep work.",
+    category: "Guide",
+    date: "Mar 2, 2026",
+    readTime: "4 min read",
+    image: getImage(2),
+  },
+  {
     slug: "chefs-knives-how-to-choose",
     title: "How to Choose the Perfect Chef's Knife: A Complete Guide",
     excerpt: "Master the art of selecting your ideal chef's knife. Learn about blade materials, handle types, size options, and find the perfect knife for your cooking style.",
