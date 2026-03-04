@@ -104,6 +104,14 @@ const reviews = [
     rating: 4.4,
     image: "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=600&h=400&fit=crop",
   },
+  {
+    title: "Best Knife Storage Solutions 2026",
+    excerpt: "Keep your knives safe and sharp. We tested blocks, magnetic strips, and drawer organizers.",
+    slug: "best-knife-storage-2026",
+    category: "Knives",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+  },
 ];
 
 export default function Home() {
