@@ -447,6 +447,28 @@ const reviews = [
     image: "🍟",
     amazonLink: "https://www.amazon.com/Ninja-Foodi-Proof-15-Quart-Professional/dp/B09B8DQ3FG?tag=cookinkitchen-20",
   },
+  {
+    id: 31,
+    slug: "ninja-air-fryer-pro-6-in-1",
+    title: "Ninja Air Fryer Pro XL 6-in-1 Review (AF181)",
+    excerpt: "Complete review of the Ninja Air Fryer Pro XL 6-in-1.-quart capacity, MaxCrisp technology, and versatile cooking functions tested.",
+    category: "Appliances",
+    rating: 4.8,
+    date: "Mar 6, 2026",
+    image: "🍳",
+    amazonLink: "https://www.amazon.com/Ninja-Air-Fryer-Pro-XL-6-in-1/dp/B0B7T1VJGP?tag=cookinkitchen-20",
+  },
+  {
+    id: 32,
+    slug: "cosori-air-fryer",
+    title: "Cosori Air Fryer Review 2026 - Premium 5.8 Quart",
+    excerpt: "In-depth review of the Cosori Air Fryer 5.8 Quart. Sleek design, ceramic nonstick basket, and 12 cooking presets tested.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 6, 2026",
+    image: "🍟",
+    amazonLink: "https://www.amazon.com/COSORI-5-8-Quart-Air-Fryer/dp/B07GWLBJP7?tag=cookinkitchen-20",
+  },
 ];
 
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
