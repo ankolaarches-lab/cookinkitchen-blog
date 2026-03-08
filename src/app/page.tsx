@@ -1,5 +1,5 @@
 import Link from "next/link";
-// Using standard img tags
+import RefinedCard from "@/components/RefinedCard";
 
 const featuredProducts = [
   {
@@ -9,56 +9,29 @@ const featuredProducts = [
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     slug: "best-chef-knives-home-cooks",
     badge: "Best Seller",
-    amazonLink: "https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20",
   },
   {
     name: "Lodge Dutch Oven",
     price: "$59.99",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf5?w=600&h=400&fit=crop",
+    image: "/images/dutch-oven.png",
     slug: "best-dutch-oven",
     badge: "Best Value",
-    amazonLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
   },
   {
     name: "KitchenAid Stand Mixer",
     price: "$449.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
+    image: "/images/stand-mixer.png",
     slug: "kitchenaid-vs-cuisinart-stand-mixer",
-    amazonLink: "https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20",
-  },
-  {
-    name: "OXO Salad Spinner",
-    price: "$27.99",
-    rating: 4.7,
-    image: "https://images.unsplash.com/photo-1519160558534-579f5106e43f?w=600&h=400&fit=crop",
-    slug: "best-salad-spinners",
-    badge: "Top Rated",
-    amazonLink: "https://www.amazon.com/OXO-Good-Grips-Salad-Spinner/dp/B00NIXHW08?tag=cookinkitchen-20",
-  },
-  {
-    name: "Ninja Blender",
-    price: "$99.99",
-    rating: 4.6,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
-    slug: "best-blender-2026",
-    amazonLink: "https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20",
-  },
-  {
-    name: "Ninja Air Fryer XXL",
-    price: "$149.99",
-    rating: 4.6,
-    image: "https://images.unsplash.com/photo-1626132647523-66dbeac34534?w=600&h=400&fit=crop",
-    slug: "best-air-fryer",
-    amazonLink: "https://www.amazon.com/Ninja-Digital-4-Quart-Recipe-Creator/dp/B09GB5JTRY?tag=cookinkitchen-20",
+    badge: "Editor's Choice",
   },
 ];
 
-const reviews = [
+const latestReviews = [
   {
     title: "Best Chef's Knives for Home Cooks",
-    excerpt: "We tested 15 chef's knives. Here are our top picks for every budget.",
+    excerpt: "We tested 15 chef's knives to find the perfect balance of sharpness, comfort, and durability.",
     slug: "best-chef-knives-home-cooks",
     category: "Knives",
     rating: 4.8,
@@ -70,7 +43,7 @@ const reviews = [
     slug: "best-dutch-oven",
     category: "Cookware",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf5?w=600&h=400&fit=crop",
+    image: "/images/dutch-oven.png",
   },
   {
     title: "Stand Mixer Showdown",
@@ -78,270 +51,184 @@ const reviews = [
     slug: "kitchenaid-vs-cuisinart-stand-mixer",
     category: "Appliances",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Best Wooden Kitchen Utensils",
-    excerpt: "From teak to acacia — we tested the best wooden spoons and spatulas.",
-    slug: "best-wooden-kitchen-utensils",
-    category: "Kitchen Utensils",
-    rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Best Blender Showdown",
-    excerpt: "Vitamix vs Ninja vs Oster — we made 100 smoothies to find the winner.",
-    slug: "best-blender-2026",
-    category: "Appliances",
-    rating: 4.5,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Best Air Fryer Review",
-    excerpt: "Crispy food with less oil. We tested Ninja, Philips, and Cosori.",
-    slug: "best-air-fryer",
-    category: "Appliances",
-    rating: 4.4,
-    image: "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Best Knife Storage Solutions 2026",
-    excerpt: "Keep your knives safe and sharp. We tested blocks, magnetic strips, and drawer organizers.",
-    slug: "best-knife-storage-2026",
-    category: "Knives",
-    rating: 4.7,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "/images/stand-mixer.png",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-stone-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 text-8xl">cook</div>
+      <section className="relative mesh-gradient py-32 md:py-48 overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+          <div className="absolute top-10 left-10 text-[20vw] font-black text-white/10 select-none uppercase tracking-tighter">chef</div>
         </div>
-        
-        <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-32">
-          <div className="text-center">
-            <h1 className="font-bold text-4xl md:text-6xl mb-6 tracking-tight">
-              CookinKitchen
-            </h1>
-            <p className="text-lg md:text-xl text-stone-300 mb-4 max-w-2xl mx-auto">
-              Independent kitchen tool reviews. We test products so you don't have to.
-            </p>
-            <p className="text-emerald-400 mb-8 font-medium">
-              Fresh reviews added weekly
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="#products" 
-                className="bg-emerald-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-700 transition"
-              >
-                Shop Top Rated
-              </Link>
-              <Link 
-                href="#reviews" 
-                className="border-2 border-stone-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition"
-              >
-                Read Reviews
-              </Link>
-            </div>
+
+        <div className="relative max-w-6xl mx-auto px-6 text-center">
+          <div className="inline-block px-4 py-1.5 mb-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-md">
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-400">
+              Intelligence Briefing // 2026 Edition
+            </span>
+          </div>
+
+          <h1 className="font-serif font-black text-5xl md:text-8xl text-white mb-8 tracking-tighter leading-[0.9]">
+            The Future of <br />
+            <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+              Kitchen Intelligence
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-2xl text-slate-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+            Independent, data-driven reviews for the modern culinary enthusiast.
+            We analyze performance, durability, and value so you don't have to.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link
+              href="/reviews"
+              className="px-10 py-5 bg-emerald-500 text-white rounded-xl font-black uppercase tracking-widest text-sm hover:bg-emerald-400 transition-all duration-300 shadow-xl shadow-emerald-500/20 hover:scale-105"
+            >
+              Access Intelligence
+            </Link>
+            <Link
+              href="#featured"
+              className="px-10 py-5 bg-white/10 text-white border border-white/20 backdrop-blur-md rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all duration-300 hover:scale-105"
+            >
+              Top Rated Gear
+            </Link>
           </div>
         </div>
-      </section>
 
-      {/* Featured Products - Link to Review Pages */}
-      <section id="products" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-stone-800 text-center mb-2">
-            Top Rated Products
-          </h2>
-          <p className="text-center text-stone-500 mb-10">
-            Hand-picked products with the best reviews — click to read our full analysis
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {featuredProducts.map((product, idx) => (
-              <div 
-                key={product.name} 
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-stone-200"
-              >
-                <div className="bg-white p-4 text-center h-48 flex items-center justify-center relative">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    width={200}
-                    height={150}
-                    className="object-contain p-2"
-                  />
-                </div>
-                <div className="p-6">
-                  {product.badge && (
-                    <span className="inline-block bg-stone-100 text-stone-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                      {product.badge}
-                    </span>
-                  )}
-                  <h3 className="font-semibold text-lg text-stone-800 mb-2">{product.name}</h3>
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="text-emerald-600 font-bold">★ {product.rating}</span>
-                    <span className="text-stone-300">|</span>
-                    <span className="font-semibold text-stone-700">{product.price}</span>
-                  </div>
-                  <Link 
-                    href={`/reviews/${product.slug}`}
-                    className="block w-full bg-stone-800 text-white text-center py-3 rounded-lg font-medium hover:bg-stone-700 transition flex items-center justify-center gap-2"
-                  >
-                    Read Why We Recommend
-                    <span>→</span>
-                  </Link>
-                </div>
+        {/* Floating Stat Ticker */}
+        <div className="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-xl border-t border-white/10 py-6">
+          <div className="max-w-6xl mx-auto px-6 flex justify-around items-center opacity-60">
+            {[
+              { label: "Reports", value: "450+" },
+              { label: "Accuracy", value: "99.2%" },
+              { label: "Updated", value: "Live" },
+              { label: "Expertise", value: "Elite" }
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-white font-black text-xl uppercase tracking-tighter">{stat.value}</div>
+                <div className="text-[9px] text-gray-400 font-bold uppercase tracking-widest">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-stone-100">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-stone-800 mb-4">
-            Independent Testing, Honest Recommendations
-          </h2>
-          <p className="text-stone-600 leading-relaxed">
-            We've spent hundreds of hours testing kitchen tools so you can cook with confidence. 
-            No sponsored reviews, no fluff — just honest findings from our test kitchen.
-          </p>
-        </div>
-      </section>
-
-      {/* Reviews */}
-      <section id="reviews" className="py-16 bg-white">
+      {/* Featured Intelligence - Grid */}
+      <section id="featured" className="py-32 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-stone-800 text-center mb-2">
-            Latest Reviews
-          </h2>
-          <p className="text-center text-stone-500 mb-10">
-            In-depth testing by our kitchen experts
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {reviews.map((review) => (
-              <Link
-                key={review.slug}
-                href={`/reviews/${review.slug}`}
-                className="block bg-stone-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-stone-200"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-stone-200 text-stone-600 text-xs font-semibold px-3 py-1 rounded-full">
-                    {review.category}
-                  </span>
-                  <span className="text-emerald-600 font-bold">★ {review.rating}</span>
-                </div>
-                <div className="relative h-32 mb-3 w-full">
-                  <img 
-                    src={review.image} 
-                    alt={review.title}
-                    width={300}
-                    height={150}
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="font-semibold text-stone-800 mb-2">{review.title}</h3>
-                <p className="text-stone-500 text-sm">{review.excerpt}</p>
-                <span className="inline-block mt-4 text-emerald-600 font-medium">
-                  Read full review →
-                </span>
-              </Link>
-            ))}
-          </div>
-          
-          <div className="text-center mt-10">
-            <Link href="/reviews" className="inline-block bg-stone-800 text-white px-8 py-3 rounded-lg font-medium hover:bg-stone-700 transition">
-              View All Reviews →
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div className="max-w-xl">
+              <span className="text-emerald-600 text-xs font-black uppercase tracking-[0.2em] mb-4 block">Selected Personnel Picks</span>
+              <h2 className="font-serif text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+                Top Rated Culinary Instruments
+              </h2>
+            </div>
+            <Link href="/reviews" className="group flex items-center gap-3 text-sm font-black uppercase tracking-widest text-emerald-600 hover:text-emerald-700 transition">
+              Explore Full Catalog
+              <span className="text-xl group-hover:translate-x-2 transition-transform">→</span>
             </Link>
           </div>
-        </div>
-      </section>
 
-      {/* Category Links */}
-      <section className="py-12 bg-stone-100">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: "Knives", count: 12 },
-              { name: "Cookware", count: 8 },
-              { name: "Appliances", count: 15 },
-              { name: "Gadgets", count: 10 },
-              { name: "Baking Sheets", count: 3 },
-              { name: "Cutting Boards", count: 1 },
-            ].map((cat) => (
-              <Link
-                key={cat.name}
-                href="/reviews"
-                className="bg-white hover:bg-stone-50 text-stone-700 px-5 py-2 rounded-full font-medium transition border border-stone-200 flex items-center gap-2"
-              >
-                <span>{cat.name}</span>
-                <span className="bg-stone-200 px-2 py-0.5 rounded-full text-sm">{cat.count}</span>
-              </Link>
+          <div className="grid md:grid-cols-3 gap-10">
+            {featuredProducts.map((product) => (
+              <RefinedCard
+                key={product.name}
+                title={product.name}
+                image={product.image}
+                price={product.price}
+                rating={product.rating}
+                slug={product.slug}
+                badge={product.badge}
+              />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Affiliate Disclosure */}
-      <section className="py-6 bg-white border-t border-stone-200">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-sm text-stone-500">
-            <strong>Our Promise:</strong> We independently test all products. When you buy through our links, 
-            we may earn a commission at no extra cost to you. This helps support our work.
+      {/* Philosophy Section */}
+      <section className="py-40 bg-gray-950 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&h=900&fit=crop')] bg-cover bg-fixed grayscale"></div>
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
+          <h2 className="font-serif text-4xl md:text-6xl font-black mb-10 leading-tight">
+            Independent. Honest. <br />
+            <span className="text-emerald-400 italic">Absolute.</span>
+          </h2>
+          <p className="text-xl text-gray-400 leading-relaxed font-light mb-12">
+            We've spent thousands of hours in the test kitchen so you don't have to.
+            No sponsored fluff. No biased takes. Just pure, unadulterated kitchen intelligence
+            designed for those who take their craft seriously.
           </p>
+          <div className="w-24 h-1 bg-emerald-500 mx-auto"></div>
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="py-12 bg-emerald-50">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-stone-900 mb-3">
-            Get New Reviews First!
-          </h2>
-          <p className="text-stone-600 mb-6">
-            Subscribe to get the latest kitchen gear reviews delivered to your inbox.
-          </p>
-          <form method="POST" action="/api/newsletter" className="flex gap-2 justify-center max-w-md mx-auto">
-            <input 
-              type="email" 
-              name="email"
-              placeholder="Enter your email" 
-              required
-              className="px-4 py-3 rounded-lg text-stone-900 w-full max-w-xs"
-            />
-            <button type="submit" className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">
-              Subscribe
-            </button>
-          </form>
-          <p className="text-xs text-stone-500 mt-3">
-            We respect your privacy. Unsubscribe anytime.
-          </p>
+      {/* Latest Analysis Feed */}
+      <section className="py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <span className="text-emerald-600 text-xs font-black uppercase tracking-[0.2em] mb-4 block">Intelligence Reports</span>
+            <h2 className="font-serif text-4xl md:text-5xl font-black text-gray-900">
+              Latest Field Analyses
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            {latestReviews.map((review) => (
+              <RefinedCard
+                key={review.slug}
+                title={review.title}
+                excerpt={review.excerpt}
+                image={review.image}
+                category={review.category}
+                rating={review.rating}
+                slug={review.slug}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-stone-900 text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Have a product request?
-          </h2>
-          <p className="text-stone-400 mb-6">
-            We're always testing new kitchen tools. Let us know what you'd like to see reviewed next.
-          </p>
-          <a 
-            href="mailto:hello@cookinkitchen.online" 
-            className="inline-block bg-emerald-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-emerald-700 transition"
-          >
-            Request a Review
-          </a>
+      {/* Intelligence Protocol (CTA) */}
+      <section className="py-32 bg-emerald-600 text-white">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="font-serif text-4xl md:text-6xl font-black mb-8 leading-tight">
+              Stay Ahead of the Protocol.
+            </h2>
+            <p className="text-xl text-emerald-100 mb-10 font-light">
+              Get weekly intelligence briefings on the latest gear, techniques, and data-driven deals.
+            </p>
+            <form className="flex flex-col sm:flex-row gap-4 max-w-md">
+              <input
+                type="email"
+                placeholder="SECURE_EMAIL@DOMAIN.COM"
+                className="flex-grow px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/40 font-bold tracking-widest outline-none focus:bg-white/20 transition"
+              />
+              <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-black uppercase tracking-widest text-[11px] hover:bg-black transition">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div className="glass-premium p-12 rounded-3xl border-emerald-400/30">
+            <h3 className="font-serif text-2xl font-bold mb-6">Analytic Summary</h3>
+            <ul className="space-y-6">
+              {[
+                "15+ New Reports Weekly",
+                "Data-Driven Price Tracking",
+                "Exclusive Tool Deep-Dives",
+                "Community Intelligence Access"
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-4 group">
+                  <span className="w-8 h-8 rounded-full bg-emerald-400/20 flex items-center justify-center text-emerald-200 group-hover:scale-110 transition-transform">✓</span>
+                  <span className="text-emerald-100 font-bold tracking-wide">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
     </div>

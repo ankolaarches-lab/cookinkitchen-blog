@@ -8,13 +8,13 @@ import ChatWidget from "@/components/ChatWidget";
 
 const GA_MEASUREMENT_ID = "G-QD97JPDF91";
 
-const lato = Lato({ 
+const lato = Lato({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-lato",
 });
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
 });
@@ -119,26 +119,63 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased pattern-bg">
+      <body className="antialiased pattern-bg selection:bg-emerald-100 selection:text-emerald-900">
         <Analytics />
-        <header className="bg-white/90 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-50 shadow-sm">
-          <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <Link href="/" className="font-serif text-2xl font-bold text-gray-900 hover:text-teal-600 transition-colors">
-              <span className="text-3xl">🍳</span> <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">CookinKitchen</span>
+        <header className="glass-premium sticky top-0 z-50 transition-all duration-300">
+          <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+            <Link href="/" className="font-serif text-3xl font-black text-gray-900 hover:text-emerald-700 transition-all group flex items-center gap-3">
+              <span className="scale-110 group-hover:rotate-12 transition-transform">🍳</span>
+              <span className="bg-gradient-to-r from-teal-700 to-emerald-600 bg-clip-text text-transparent">
+                CookinKitchen
+              </span>
             </Link>
-            <div className="flex gap-8 text-sm font-medium">
-              <Link href="/" className="animated-link text-gray-600 hover:text-teal-600 transition">Home</Link>
-              <Link href="/reviews" className="animated-link text-gray-600 hover:text-teal-600 transition">Reviews</Link>
-              <Link href="/blog" className="animated-link text-gray-600 hover:text-teal-600 transition">Blog</Link>
-              <Link href="/buying-guides" className="animated-link text-gray-600 hover:text-teal-600 transition">Guides</Link>
+            <div className="hidden md:flex gap-10 text-[13px] font-bold uppercase tracking-[0.15em]">
+              <Link href="/" className="animated-link text-gray-500 hover:text-emerald-600 transition">Home</Link>
+              <Link href="/reviews" className="animated-link text-gray-500 hover:text-emerald-600 transition">Reviews</Link>
+              <Link href="/blog" className="animated-link text-gray-500 hover:text-emerald-600 transition">Blog</Link>
+              <Link href="/buying-guides" className="animated-link text-gray-500 hover:text-emerald-600 transition">Guides</Link>
             </div>
+            <button className="md:hidden text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
           </nav>
         </header>
         <main>{children}</main>
-        <footer className="bg-stone-900 text-stone-400 py-12 mt-16">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <p className="font-serif text-lg text-stone-300 mb-2">© 2026 CookinKitchen</p>
-            <p className="text-sm">As an Amazon Associate, we earn from qualifying purchases.</p>
+        <footer className="bg-gray-950 text-gray-500 py-20 mt-32 border-t border-gray-900">
+          <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div className="col-span-2">
+              <Link href="/" className="font-serif text-2xl font-bold text-white mb-6 block">
+                CookinKitchen
+              </Link>
+              <p className="text-sm leading-relaxed max-w-sm">
+                The intelligence-driven platform for the modern culinary enthusiast.
+                We test, analyze, and report so you can cook with absolute confidence.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-6">Intelligence</h4>
+              <ul className="space-y-4 text-sm">
+                <li><Link href="/reviews" className="hover:text-emerald-400 transition">Latest Reports</Link></li>
+                <li><Link href="/blog" className="hover:text-emerald-400 transition">Tech Analysis</Link></li>
+                <li><Link href="/buying-guides" className="hover:text-emerald-400 transition">Buying Protocols</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-6">Legal</h4>
+              <p className="text-[11px] leading-relaxed">
+                As an Amazon Associate, we earn from qualifying purchases.
+                All logos and brands are property of their respective owners.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-6xl mx-auto px-6 mt-20 pt-8 border-t border-gray-900/50 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p className="text-xs uppercase tracking-[0.2em]">© 2026 CookinKitchen Intelligence Ops</p>
+            <div className="flex gap-8 text-xs font-bold uppercase tracking-widest">
+              <a href="#" className="hover:text-emerald-400 transition">Twitter</a>
+              <a href="#" className="hover:text-emerald-400 transition">Instagram</a>
+            </div>
           </div>
         </footer>
         <ChatWidget />
