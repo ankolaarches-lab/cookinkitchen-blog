@@ -563,86 +563,89 @@ export function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((p) => p.slug === slug);
-  
+
   if (!post) {
     notFound();
   }
 
   return (
-    <div className="min-h-screen bg-amber-50 py-12">
+    <div className="min-h-screen py-12">
       <div className="max-w-3xl mx-auto px-6">
-        <Link 
-          href="/blog" 
-          className="inline-flex items-center gap-2 text-stone-600 hover:text-amber-600 mb-8 font-medium"
+        <Link
+          href="/blog"
+          className="inline-flex items-center gap-2 text-stone-500 hover:text-emerald-600 mb-8 font-bold text-sm tracking-wider uppercase transition-colors"
         >
-          ← Back to Blog
+          ← Back to Intelligence Hub
         </Link>
-        
-        <article className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div className="relative h-64 bg-gradient-to-br from-amber-100 to-orange-100">
-            <img 
-              src={post.image} 
+
+        <article className="glass-premium bg-white rounded-3xl shadow-sm border border-stone-200 overflow-hidden">
+          <div className="relative h-80 bg-slate-900">
+            <img
+              src={post.image}
               alt={post.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-60 mix-blend-overlay"
             />
-            <div className="absolute inset-0 bg-black/30"></div>
-            <div className="absolute bottom-8 left-0 right-0 text-center px-4">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <span className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                {post.category}
-              </span>
-              <span className="text-stone-200">{post.readTime}</span>
-            </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white">
-              {post.title}
-            </h1>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+            <div className="absolute bottom-10 left-0 right-0 px-8 md:px-12">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-lg shadow-emerald-900/20">
+                  {post.category}
+                </span>
+                <span className="text-emerald-50 text-sm font-medium tracking-wide">{post.readTime}</span>
+              </div>
+              <h1 className="font-serif text-3xl md:text-5xl font-black text-white leading-tight">
+                {post.title}
+              </h1>
             </div>
           </div>
-          
-          <div className="p-8">
-            <div className="prose prose-stone max-w-none">
+
+          <div className="p-8 md:p-12">
+            <div className="prose prose-stone prose-lg max-w-none font-lato text-slate-600 prose-headings:font-playfair prose-headings:text-slate-900 prose-a:text-emerald-600 hover:prose-a:text-emerald-700">
               {post.content.split('\n').map((paragraph, i) => {
                 if (paragraph.startsWith('## ')) {
-                  return <h2 key={i} className="text-2xl font-bold text-stone-800 mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
+                  return <h2 key={i} className="text-3xl font-black mt-12 mb-6 tracking-tight">{paragraph.replace('## ', '')}</h2>;
                 }
                 if (paragraph.startsWith('### ')) {
-                  return <h3 key={i} className="text-xl font-bold text-stone-700 mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
+                  return <h3 key={i} className="text-xl font-bold mt-8 mb-4 border-b border-emerald-100 pb-2 inline-block">{paragraph.replace('### ', '')}</h3>;
                 }
                 if (paragraph.startsWith('- ')) {
-                  return <li key={i} className="ml-4 mb-2 text-stone-600">{paragraph.replace('- ', '')}</li>;
+                  return <li key={i} className="ml-4 mb-2">{paragraph.replace('- ', '')}</li>;
                 }
                 if (paragraph.match(/^\d+\./)) {
-                  return <p key={i} className="font-bold text-stone-700 mt-4 mb-2">{paragraph}</p>;
+                  return <p key={i} className="font-bold text-slate-800 mt-6 mb-2">{paragraph}</p>;
                 }
                 if (paragraph.startsWith('[Shop on Amazon')) {
                   const urlMatch = paragraph.match(/href="([^"]+)"/);
                   const url = urlMatch ? urlMatch[1] : '#';
-                  return <p key={i} className="my-4"><a href={url} target="_blank" rel="noopener noreferrer" className="text-amber-600 font-bold hover:underline">{paragraph.replace(/.*→/, '').trim()}</a></p>;
+                  return <p key={i} className="my-6"><a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 no-underline text-sm uppercase tracking-wider">{paragraph.replace(/.*→/, '').trim()} →</a></p>;
                 }
                 if (paragraph.startsWith('- [')) {
                   const linkMatch = paragraph.match(/\[([^\]]+)\]\(([^)]+)\)/);
                   if (linkMatch) {
-                    return <p key={i} className="ml-4 mb-2"><a href={linkMatch[2]} className="text-amber-600 hover:underline">{linkMatch[1]}</a></p>;
+                    return <p key={i} className="ml-4 mb-2"><Link href={linkMatch[2]} className="text-emerald-600 font-medium hover:text-emerald-700 hover:underline">{linkMatch[1]}</Link></p>;
                   }
                 }
                 if (paragraph.trim()) {
-                  return <p key={i} className="mb-4 text-stone-600 leading-relaxed">{paragraph}</p>;
+                  return <p key={i} className="mb-6 leading-relaxed">{paragraph}</p>;
                 }
                 return null;
               })}
             </div>
-            
-            <div className="mt-10 p-6 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl text-white text-center">
-              <h3 className="font-bold text-lg mb-2">Love this guide?</h3>
-              <p className="mb-4">Check out our recommended products on Amazon.</p>
-              <a 
-                href={post.amazonLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-amber-600 px-6 py-2 rounded-lg font-bold hover:bg-amber-50 transition"
-              >
-                🛒 Shop on Amazon
-              </a>
+
+            <div className="mt-16 p-10 bg-slate-950 rounded-2xl border border-emerald-900/30 text-center relative overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=400&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
+              <div className="relative z-10">
+                <h3 className="font-serif text-2xl font-bold text-white mb-3">Upgrade Your Arsenal</h3>
+                <p className="text-emerald-50 mb-8 font-medium">Equip your kitchen with the exact gear our analysts recommend.</p>
+                <a
+                  href={post.amazonLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-8 py-4 rounded-xl font-bold hover:from-emerald-500 hover:to-teal-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-300 transform hover:-translate-y-1 text-sm uppercase tracking-wider"
+                >
+                  Acquire Equipment
+                </a>
+              </div>
             </div>
           </div>
         </article>
