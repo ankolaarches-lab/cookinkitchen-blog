@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import ComparisonTable from "@/components/ComparisonTable";
 import ProsCons from "@/components/ProsCons";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const categoryImages: Record<string, string> = {
   "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
@@ -839,6 +840,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           </div>
         </article>
       </div>
+
+      <StickyMobileCTA
+        productName={review.title}
+        affiliateLink={review.affiliateLink || "#"}
+      />
     </div>
   );
 }
