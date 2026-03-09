@@ -615,9 +615,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   return <p key={i} className="font-bold text-slate-800 mt-6 mb-2">{paragraph}</p>;
                 }
                 if (paragraph.startsWith('[Shop on Amazon')) {
-                  const urlMatch = paragraph.match(/href="([^"]+)"/);
+                  const urlMatch = paragraph.match(/\]\(([^)]+)\)/);
                   const url = urlMatch ? urlMatch[1] : '#';
-                  return <p key={i} className="my-6"><a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 no-underline text-sm uppercase tracking-wider">{paragraph.replace(/.*→/, '').trim()} →</a></p>;
+                  return <p key={i} className="my-6"><a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 no-underline text-sm uppercase tracking-wider">Shop on Amazon →</a></p>;
                 }
                 if (paragraph.startsWith('- [')) {
                   const linkMatch = paragraph.match(/\[([^\]]+)\]\(([^)]+)\)/);
