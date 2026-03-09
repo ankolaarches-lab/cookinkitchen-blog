@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const GA_MEASUREMENT_ID = "G-QD97JPDF91";
 
@@ -151,7 +152,12 @@ export default function RootLayout({
           </nav>
         </header>
         <main>{children}</main>
-        <footer className="bg-gray-950 text-gray-500 py-20 mt-32 border-t border-gray-900">
+
+        <div className="px-6 mt-16 pb-16">
+          <NewsletterSignup />
+        </div>
+
+        <footer className="bg-gray-950 text-gray-500 py-20 border-t border-gray-900">
           <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-12">
             <div className="col-span-2">
               <Link href="/" className="font-serif text-2xl font-bold text-white mb-6 block">
