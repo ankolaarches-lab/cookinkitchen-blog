@@ -7,6 +7,7 @@ import ProsCons from "@/components/ProsCons";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import RelatedContent from "@/components/RelatedContent";
 import AuthorBio from "@/components/AuthorBio";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const categoryImages: Record<string, string> = {
   "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
@@ -705,13 +706,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="max-w-3xl mx-auto px-4">
-        <Link
-          href="/reviews"
-          className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-8 font-lato font-medium transition"
-        >
-          ← Back to Reviews
-        </Link>
+      <div className="max-w-4xl mx-auto px-6">
+        <Breadcrumbs items={[
+          { label: 'Intelligence Hub', href: '/' },
+          { label: 'Reviews', href: '/reviews' },
+          { label: review.title, href: `/reviews/${review.slug}` }
+        ]} />
 
         <article>
           <div className="flex items-center gap-4 mb-4">

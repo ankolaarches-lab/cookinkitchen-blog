@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import RelatedContent from "@/components/RelatedContent";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
@@ -572,12 +573,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <div className="min-h-screen py-12">
       <div className="max-w-3xl mx-auto px-6">
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 text-stone-500 hover:text-emerald-600 mb-8 font-bold text-sm tracking-wider uppercase transition-colors"
-        >
-          ← Back to Intelligence Hub
-        </Link>
+        <Breadcrumbs items={[
+          { label: 'Intelligence Hub', href: '/' },
+          { label: 'Blog', href: '/blog' },
+          { label: post.title, href: `/blog/${post.slug}` }
+        ]} />
 
         <article className="glass-premium bg-white rounded-3xl shadow-sm border border-stone-200 overflow-hidden">
           <div className="relative h-80 bg-slate-900">
