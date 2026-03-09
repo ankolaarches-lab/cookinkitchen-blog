@@ -513,46 +513,49 @@ const blogPosts = [
 export default function Blog() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <header className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Kitchen Blog
+      <header className="bg-slate-950 text-white py-24 relative overflow-hidden border-b border-stone-800">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&h=900&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <h1 className="font-serif text-5xl md:text-6xl font-black mb-6 tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">
+            Intelligence Hub
           </h1>
-          <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
-            Tips, guides, and reviews for your kitchen
+          <p className="font-lato text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            Data-driven culinary techniques, equipment maintenance protocols, and advanced kitchen analysis.
           </p>
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        <div className="grid gap-8 md:grid-cols-2">
+      <main className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
+              className="group glass-premium bg-white rounded-3xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
-              <div className="relative h-48 bg-gray-100">
-                <Image 
+              <div className="relative h-56 bg-slate-100 overflow-hidden">
+                <Image
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
-                <span className="absolute top-4 left-4 bg-white/90 text-stone-700 text-xs font-medium px-3 py-1 rounded-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                <span className="absolute top-4 left-4 bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
                   {post.category}
                 </span>
               </div>
-              <div className="p-6">
-                <h2 className="text-xl font-bold text-stone-900 mb-2 group-hover:text-emerald-600 transition">
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-serif text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2 leading-snug">
                   {post.title}
                 </h2>
-                <p className="text-stone-600 text-sm mb-4 line-clamp-2">
+                <p className="font-lato text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center justify-between text-xs text-stone-500">
+                <div className="flex items-center justify-between text-xs font-bold text-slate-400 uppercase tracking-widest pt-4 border-t border-stone-100 mt-auto">
                   <span>{post.date}</span>
-                  <span>{post.readTime}</span>
+                  <span className="text-emerald-600 bg-emerald-50 px-2 py-1 rounded-md">{post.readTime}</span>
                 </div>
               </div>
             </Link>
