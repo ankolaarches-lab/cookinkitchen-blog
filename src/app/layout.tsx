@@ -21,19 +21,19 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "CookinKitchen - Expert Kitchen Tool Reviews & Buying Guides",
-    template: "%s | CookinKitchen",
+    default: "CookinKitchen | Elite Culinary Instruments & Intelligence",
+    template: "%s | CookinKitchen Laboratory",
   },
   verification: {
     google: "google-site-verification-code",
   },
-  description: "Honest, expert reviews of kitchen tools. Find the best chef's knives, cookware, and appliances. Real testing, real recommendations.",
+  description: "Independent, data-driven analysis of professional kitchen tools. We test performance, durability, and ergonomic value for the modern culinary enthusiast.",
   icons: {
     icon: "/favicon.ico",
     apple: "/favicon.png",
   },
-  keywords: ["kitchen tool reviews", "best chef knife", "cookware reviews", "appliance reviews", "kitchen equipment", "buying guide"],
-  authors: [{ name: "CookinKitchen" }],
+  keywords: ["kitchen intelligence", "culinary instruments", "professional gear reviews", "data-driven cooking", "kitchen gear analysis"],
+  authors: [{ name: "CookinKitchen Intelligence Unit" }],
   creator: "CookinKitchen",
   publisher: "CookinKitchen",
   formatDetection: {
@@ -46,15 +46,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://cookinkitchen.online",
-    siteName: "CookinKitchen",
-    title: "CookinKitchen - Expert Kitchen Tool Reviews & Buying Guides",
-    description: "Honest, expert reviews of kitchen tools. Find the best chef's knives, cookware, and appliances.",
+    siteName: "CookinKitchen Intelligence",
+    title: "CookinKitchen | Elite Culinary Instruments & Intelligence",
+    description: "Independent, data-driven analysis of professional kitchen tools. Professional gear for professional cooks.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CookinKitchen - Kitchen Tool Reviews",
+        alt: "CookinKitchen Intelligence Protocol",
       },
     ],
   },

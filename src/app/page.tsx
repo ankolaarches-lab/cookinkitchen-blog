@@ -1,5 +1,11 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import RefinedCard from "@/components/RefinedCard";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Access elite culinary intelligence. Expert reviews on chef knives, dutch ovens, and professional kitchen gear.",
+};
 
 const featuredProducts = [
   {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 const categoryImages: Record<string, string> = {
   "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
@@ -629,6 +630,34 @@ The gooseneck gives you precise control for pour-over coffee.
   },
 ];
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const review = reviews.find((r) => r.slug === slug);
+
+  if (!review) {
+    return {
+      title: "Review Not Found",
+    };
+  }
+
+  return {
+    title: review.title,
+    description: review.excerpt,
+    openGraph: {
+      title: review.title,
+      description: review.excerpt,
+      type: "article",
+      publishedTime: review.date,
+      images: [
+        {
+          url: review.image || "https://cookinkitchen.online/images/og-image.jpg",
+          alt: review.title,
+        },
+      ],
+    },
+  };
+}
+
 export function generateStaticParams() {
   return reviews.map((review) => ({
     slug: review.slug,
@@ -638,21 +667,46 @@ export function generateStaticParams() {
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const review = reviews.find((r) => r.slug === slug);
-  
+
   if (!review) {
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": review.title.split(":")[0].trim(),
+    "description": review.excerpt,
+    "image": review.image,
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": review.rating,
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "CookinKitchen Intelligence Unit"
+      },
+      "datePublished": review.date
+    }
+  };
+
   return (
     <div className="min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-3xl mx-auto px-4">
-        <Link 
-          href="/reviews" 
+        <Link
+          href="/reviews"
           className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-8 font-lato font-medium transition"
         >
           ← Back to Reviews
         </Link>
-        
+
         <article>
           <div className="flex items-center gap-4 mb-4">
             <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-lato font-medium">
@@ -661,23 +715,23 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <span className="font-lato text-emerald-500 font-bold">★ {review.rating}</span>
             <span className="font-lato text-stone-400 text-sm">{review.date}</span>
           </div>
-          
+
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img 
-              src={getImageUrl(review.category)} 
+            <img
+              src={getImageUrl(review.category)}
               alt={review.title}
               className="w-full h-64 object-cover"
             />
           </div>
-          
+
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">
             {review.title}
           </h1>
-          
+
           <p className="font-lato text-xl text-stone-600 mb-8">
             {review.excerpt}
           </p>
-          
+
           <div className="prose prose-stone max-w-none font-lato">
             {review.content.split('\n').map((paragraph, i) => {
               if (paragraph.startsWith('## ')) {
@@ -695,7 +749,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               return null;
             })}
           </div>
-          
+
           {/* Affiliate CTA */}
           <div className="mt-12 bg-stone-100 rounded-xl p-6 border border-stone-200">
             <h3 className="font-semibold text-lg text-stone-800 mb-3">
@@ -705,7 +759,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               We may earn a commission when you buy through our links.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <a 
+              <a
                 href={review.affiliateLink}
                 target="_blank"
                 rel="noopener noreferrer"
