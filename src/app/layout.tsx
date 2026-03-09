@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   description: "Independent, data-driven analysis of professional kitchen tools. We test performance, durability, and ergonomic value for the modern culinary enthusiast.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.png",
+    icon: "/favicon.ico?v=2",
+    apple: "/favicon.png?v=2",
   },
   keywords: ["kitchen intelligence", "culinary instruments", "professional gear reviews", "data-driven cooking", "kitchen gear analysis"],
   authors: [{ name: "CookinKitchen Intelligence Unit" }],
