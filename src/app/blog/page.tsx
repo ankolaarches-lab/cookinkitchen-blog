@@ -4,9 +4,9 @@ import Image from "next/image";
 const kitchenImages = [
   "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=400&fit=crop",
@@ -15,7 +15,7 @@ const kitchenImages = [
   "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1556909113-6f2586d46001?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=800&h=400&fit=crop",
 ];
 
