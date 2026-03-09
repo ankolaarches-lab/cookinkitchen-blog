@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import RelatedContent from "@/components/RelatedContent";
 
 const blogPosts = [
   {
@@ -649,6 +650,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </div>
           </div>
         </article>
+
+        <RelatedContent
+          title="More from the Intelligence Hub"
+          articles={blogPosts
+            .filter(p => p.slug !== post.slug)
+            .slice(0, 3)
+            .map(p => ({
+              title: p.title,
+              href: `/blog/${p.slug}`,
+              image: p.image,
+              category: p.category
+            }))
+          }
+        />
       </div>
     </div>
   );
