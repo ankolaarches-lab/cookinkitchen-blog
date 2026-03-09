@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface RefinedCardProps {
     title: string;
@@ -34,10 +35,12 @@ export default function RefinedCard({
         >
             <article className="glass-premium h-full rounded-2xl overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-emerald-500/10 flex flex-col">
                 <div className="relative aspect-[16/10] overflow-hidden bg-white/50">
-                    <img
+                    <Image
                         src={image}
                         alt={title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     {badge && (
                         <div className="absolute top-4 left-4">

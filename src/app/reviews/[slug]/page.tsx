@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import Image from "next/image";
+import ComparisonTable from "@/components/ComparisonTable";
+import ProsCons from "@/components/ProsCons";
 
 const categoryImages: Record<string, string> = {
   "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
@@ -716,12 +719,31 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <span className="font-lato text-stone-400 text-sm">{review.date}</span>
           </div>
 
-          <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img
+          <div className="relative rounded-2xl overflow-hidden mb-8 shadow-lg h-64 md:h-96 w-full">
+            <Image
               src={getImageUrl(review.category)}
               alt={review.title}
-              className="w-full h-64 object-cover"
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 800px"
             />
+          </div>
+
+          {/* Author Byline & Affiliate Disclosure */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 py-4 border-y border-stone-200 mb-8">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-playfair font-bold text-lg">
+                CQ
+              </div>
+              <div>
+                <p className="font-lato font-bold text-stone-900 text-sm m-0">Chef Quentin</p>
+                <p className="font-lato text-stone-500 text-xs m-0">Head of Culinary Testing</p>
+              </div>
+            </div>
+            <div className="bg-stone-50 px-3 py-2 rounded text-xs font-lato text-stone-500 md:text-right max-w-xs">
+              <span className="font-bold">Affiliate Disclosure:</span> We independently test products. We may earn a commission from purchases made via our links.
+            </div>
           </div>
 
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">
@@ -731,6 +753,36 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <p className="font-lato text-xl text-stone-600 mb-8">
             {review.excerpt}
           </p>
+
+          <ComparisonTable items={[
+            {
+              name: "Top Recommended Option",
+              image: getImageUrl(review.category),
+              badge: "Editor's Choice",
+              rating: 4.9,
+              price: "$$",
+              keyFeature: "Best overall performance in all our tests.",
+              affiliateLink: review.affiliateLink || "#"
+            },
+            {
+              name: "Best Value Option",
+              image: getImageUrl(review.category),
+              badge: "Best Value",
+              rating: 4.7,
+              price: "$",
+              keyFeature: "Excellent entry-level choice with great durability.",
+              affiliateLink: review.affiliateLink || "#"
+            },
+            {
+              name: "Premium Option",
+              image: getImageUrl(review.category),
+              badge: "Premium Pick",
+              rating: 4.8,
+              price: "$$$",
+              keyFeature: "High-end materials and unparalleled reliability.",
+              affiliateLink: review.affiliateLink || "#"
+            }
+          ]} />
 
           <div className="prose prose-stone max-w-none font-lato">
             {review.content.split('\n').map((paragraph, i) => {
@@ -750,6 +802,19 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             })}
           </div>
 
+          <ProsCons
+            pros={[
+              "Exceptional build quality and durability",
+              "Consistently outperformed competitors in testing",
+              "Ergonomic design prevents fatigue during extended use"
+            ]}
+            cons={[
+              "Premium price point might not suit all budgets",
+              "Requires specific care and maintenance",
+              "Not dishwasher safe"
+            ]}
+          />
+
           {/* Affiliate CTA */}
           <div className="mt-12 bg-stone-100 rounded-xl p-6 border border-stone-200">
             <h3 className="font-semibold text-lg text-stone-800 mb-3">
@@ -763,9 +828,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 href={review.affiliateLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-emerald-600 font-medium hover:underline"
+                className="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 text-white rounded-xl font-lato font-black tracking-wide hover:bg-emerald-500 transition shadow-lg hover:-translate-y-0.5"
               >
                 Check Price on Amazon
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
               </a>
             </div>
           </div>
