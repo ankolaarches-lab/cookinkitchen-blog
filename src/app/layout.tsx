@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Lato, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
@@ -124,7 +125,14 @@ export default function RootLayout({
         <header className="glass-premium sticky top-0 z-50 transition-all duration-300">
           <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
             <Link href="/" className="font-serif text-3xl font-black text-gray-900 hover:text-emerald-700 transition-all group flex items-center gap-3">
-              <span className="scale-110 group-hover:rotate-12 transition-transform">🍳</span>
+              <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-stone-200/50 shadow-sm">
+                <Image
+                  src="/favicon.png"
+                  alt="CookinKitchen Intelligence Logo"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
               <span className="bg-gradient-to-r from-teal-700 to-emerald-600 bg-clip-text text-transparent">
                 CookinKitchen
               </span>
