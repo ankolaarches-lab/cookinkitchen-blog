@@ -21,7 +21,7 @@ const featuredProducts = [
     price: "$59.99",
     rating: 4.9,
     image: "/images/dutch-oven.png",
-    slug: "best-dutch-oven",
+    slug: "best-dutch-ovens",
     badge: "Best Value",
   },
   {
@@ -46,7 +46,7 @@ const latestReviews = [
   {
     title: "Dutch Oven Comparison",
     excerpt: "Le Creuset vs Lodge vs AmazonBasics — which is worth your money?",
-    slug: "best-dutch-oven",
+    slug: "best-dutch-ovens",
     category: "Cookware",
     rating: 4.9,
     image: "/images/dutch-oven.png",
