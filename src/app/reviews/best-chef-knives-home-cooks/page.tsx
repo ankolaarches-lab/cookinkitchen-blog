@@ -12,7 +12,7 @@ const products = [
     price: "$39.99",
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Victorinox-Swiss-Classic-8-Inch-Chef/dp/B0019WZDQQ?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef?tag=cookinkitchen-20",
     pros: ["Excellent sharpness", "Comfortable Fibrox handle", "Lightweight", "Dishwasher safe"],
     cons: ["Plain design", "No bolster"],
   },
@@ -21,7 +21,7 @@ const products = [
     price: "$179.95",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Wusthof-Classic-8-Inch-Chefs-Knife/dp/B00069HKES?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Wusthof+Classic+8+Inch+Chefs+Knife?tag=cookinkitchen-20",
     pros: ["German precision", "Full bolster", "Perfect balance", "Lifetime warranty"],
     cons: ["Expensive", "Heavy"],
   },
@@ -30,7 +30,7 @@ const products = [
     price: "$149.95",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Mac-MTH-80-8-Inch-Chef-Knife/dp/B000GRP0G6?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Mac+MTH+80+8+Inch+Chef+Knife?tag=cookinkitchen-20",
     pros: ["Super thin blade", "Very sharp", "Lightweight", "Asian-style handle"],
     cons: ["Not full bolster", "More delicate"],
   },
@@ -39,7 +39,7 @@ const products = [
     price: "$34.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Mercer-Culinary-Genesis-8-Inch-Chef/dp/B001AYNN7E?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Mercer+Culinary+Genesis+8+Inch+Chef?tag=cookinkitchen-20",
     pros: ["Affordable", "Great value", "Ergonomic handle", "Good sharpness"],
     cons: ["Needs more frequent sharpening", "Not as premium"],
   },
@@ -86,7 +86,7 @@ export default function BestChefKnivesHomeCooks() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Victorinox Swiss Classic</strong> delivers exceptional performance at an unbeatable price. It's sharp out of the box, comfortable to use for hours, and won't break the bank.</p>
-          <a href="https://www.amazon.com/Victorinox-Swiss-Classic-8-Inch-Chef/dp/B0019WZDQQ?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         <div className="mt-12 text-center">
           <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>

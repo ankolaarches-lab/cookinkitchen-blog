@@ -12,7 +12,7 @@ const products = [
     price: "$39.99",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife?tag=cookinkitchen-20",
     pros: ["Excellent value", "Fibrox handle provides great grip", "Swiss-made quality", "Dishwasher safe"],
     cons: ["Requires occasional sharpening"],
   },
@@ -21,7 +21,7 @@ const products = [
     price: "$29.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Mercer-Culinary-Genesis-8-Inch-Chefs/dp/B001GCGP1G?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Mercer+Culinary+Genesis+8+Inch+Chefs?tag=cookinkitchen-20",
     pros: ["Very affordable", "High-carbon stainless steel", "Comfortable grip", "Great for beginners"],
     cons: ["Not as durable as premium options"],
   },
@@ -30,7 +30,7 @@ const products = [
     price: "$44.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/W%C3%BCsthof-Classic-IKON-Chefs-7-Inch/dp/B000S2D4S2?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=W%C3%BCsthof+Classic+IKON+Chefs+7+Inch?tag=cookinkitchen-20",
     pros: ["German precision", "Full tang construction", "Beautiful handle", "Holds edge well"],
     cons: ["Slightly shorter blade"],
   },
@@ -39,7 +39,7 @@ const products = [
     price: "$24.99",
     rating: 4.4,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Chicago-Cutlery-8-Inch-Chef-Knife/dp/B00006JSUA?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Chicago+Cutlery+8+Inch+Chef+Knife?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Stainless steel", "Lifetime warranty"],
     cons: ["Heavier feel", "Less ergonomic handle"],
   },
@@ -48,7 +48,7 @@ const products = [
     price: "$49.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Good-Grips-Stainless-8-Inch-Knife/dp/B000W5XHQW?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Good+Grips+Stainless+8+Inch+Knife?tag=cookinkitchen-20",
     pros: ["Soft-grip handle", "Non-slip", "Built-in finger guard"],
     cons: ["Slightly above $50", "Not as sharp out of box"],
   },
@@ -135,7 +135,7 @@ export default function BestKnivesUnder50() {
             incredible deal that will last for years.
           </p>
           <a
-            href="https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20"
+            href="amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife?tag=cookinkitchen-20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

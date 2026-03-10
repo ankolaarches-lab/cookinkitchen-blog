@@ -13,7 +13,7 @@ const products = [
     price: "$19.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/KitchenAid-KJ7220-Classic-Jar-Opener/dp/B0000DIZJ4?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=KitchenAid+KJ7220+Classic+Jar+Opener?tag=cookinkitchen-20",
     pros: ["Electric - no effort needed", "Fits most jar sizes", "Sturdy construction", "One-touch operation"],
     cons: ["Needs outlet", "Takes counter space"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$14.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Jar-Opener-Adjustable-Stainless-Kitchen/dp/B09V3KXJPB?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Jar+Opener+Adjustable+Stainless+Kitchen?tag=cookinkitchen-20",
     pros: ["Portable", "Adjustable grip", "No tools needed", "Budget-friendly"],
     cons: ["Requires hand strength"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$12.99",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/OXO-Good-Grips-Jar-Opener/dp/B000W5IYG0?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=OXO+Good+Grips+Jar+Opener?tag=cookinkitchen-20",
     pros: ["Lever design", "Non-slip grip", "Compact storage", "Lifetime warranty"],
     cons: ["May not work on all lids"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$9.99",
     rating: 4.4,
     image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Sunstive-Opener-Gripper-Kitchen/dp/B09V3KXJPB?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Sunstive+Opener+Gripper+Kitchen?tag=cookinkitchen-20",
     pros: ["Set of 3 sizes", "Silicone non-slip", "Dishwasher safe", "Very affordable"],
     cons: ["Manual effort required"],
   },
@@ -49,7 +49,7 @@ const products = [
     price: "$16.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Smooth-Can-Opener-Automatic-Jar/dp/B09V3KXJPB?tag=cookinkitchen-20",
+    link: "amazon.com/s?k=Smooth+Can+Opener+Automatic+Jar?tag=cookinkitchen-20",
     pros: ["2-in-1 tool", "Automatic operation", "Battery powered", "Safe edge"],
     cons: ["Batteries not included"],
   },
@@ -131,7 +131,7 @@ export default function BestJarOpeners() {
             stays secure on wet or greasy lids. It's compact, affordable, and backed by OXO's lifetime warranty.
           </p>
           <a
-            href="https://www.amazon.com/OXO-Good-Grips-Jar-Opener/dp/B000W5IYG0?tag=cookinkitchen-20"
+            href="amazon.com/s?k=OXO+Good+Grips+Jar+Opener?tag=cookinkitchen-20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

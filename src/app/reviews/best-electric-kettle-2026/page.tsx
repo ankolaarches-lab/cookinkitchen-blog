@@ -57,7 +57,7 @@ export default function Page() {
               <li className="mb-2">Multiple color options</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/Fellow-Stagg-EKG-Electric-Pour-over/dp/B07CM5H7BQ?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href="amazon.com/s?k=Fellow+Stagg+EKG+Electric+Pour+over?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -102,7 +102,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a 
-                href="https://www.amazon.com/Fellow-Stagg-EKG-Electric-Pour-over/dp/B07CM5H7BQ?tag=cookinkitchen-20"
+                href="amazon.com/s?k=Fellow+Stagg+EKG+Electric+Pour+over?tag=cookinkitchen-20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-600 font-medium hover:underline"
