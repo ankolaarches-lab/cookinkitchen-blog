@@ -508,6 +508,24 @@ const blogPosts = [
     readTime: "4 min read",
     image: getImage(5),
   },
+  {
+    slug: "best-dutch-oven-recipes",
+    title: "What to Cook in Your Dutch Oven: 15 Essential Recipes",
+    excerpt: "From hearty stews to artisan bread, maximize your Dutch oven with these must-try recipes that showcase its versatility.",
+    category: "Recipes",
+    date: "Mar 10, 2026",
+    readTime: "8 min read",
+    image: getImage(6),
+  },
+  {
+    slug: "kitchen-organization-hacks-2026",
+    title: "Kitchen Organization Hacks: Maximize Your Space",
+    excerpt: "Smart storage solutions to organize your kitchen. From drawer dividers to cabinet organizers, we share the best tips.",
+    category: "Guide",
+    date: "Mar 10, 2026",
+    readTime: "6 min read",
+    image: getImage(7),
+  },
 ];
 
 export default function Blog() {

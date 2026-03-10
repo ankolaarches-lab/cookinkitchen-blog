@@ -393,7 +393,7 @@ Victorinox delivers again with an affordable option that outperforms knives twic
     category: "Appliances",
     rating: 4.5,
     date: "Jan 10, 2026",
-    image: "🫗",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20",
     content: `
 ## The Blender Showdown
@@ -420,7 +420,7 @@ The Oster Pro's blender bottle system makes on-the-go smoothies a breeze.
     category: "Appliances",
     rating: 4.6,
     date: "Jan 8, 2026",
-    image: "☕",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Technivorm-Moccamaster-10-Cup-Coffee-Brewer/dp/B07CM5H7BQ?tag=cookinkitchen-20",
     content: `
 ## Brewing Excellence
@@ -447,7 +447,7 @@ Great coffee doesn't have to be expensive. This brewer delivers solid results.
     category: "Appliances",
     rating: 4.4,
     date: "Jan 5, 2026",
-    image: "🍟",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20",
     content: `
 ## Crispy Without the Oil
@@ -480,7 +480,7 @@ Affordable and reliable, Cosori offers great results without breaking the bank.
     category: "Gadgets",
     rating: 4.3,
     date: "Jan 3, 2026",
-    image: "⚡",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/ChefsChoice-15-Inch-Conventional-Sharpener/dp/B00004S7I8?tag=cookinkitchen-20",
     content: `
 ## Keep Your Blades Sharp
@@ -534,7 +534,7 @@ Multiple sizes cover all your straining needs.
     category: "Gadgets",
     rating: 4.4,
     date: "Dec 28, 2025",
-    image: "🧪",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/OXO-GOOD-Grips-Measuring-Cups/dp/B00GE6NF6G?tag=cookinkitchen-20",
     content: `
 ## Measure Right
@@ -615,7 +615,7 @@ Great non-stick performance with the durability of hard anodized aluminum.
     category: "Appliances",
     rating: 4.5,
     date: "Dec 20, 2025",
-    image: "🫖",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Bonavita-Electric-Gooseneck-Kettle/dp/B00DGBNOQK?tag=cookinkitchen-20",
     content: `
 ## Hot Water on Demand
