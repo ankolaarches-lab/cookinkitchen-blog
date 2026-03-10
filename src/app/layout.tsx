@@ -8,7 +8,7 @@ import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
-const GA_MEASUREMENT_ID = "G-QD97JPDF91";
+const GA_MEASUREMENT_ID = "G-0KVR8EH0TE";
 
 const lato = Lato({
   weight: ["400", "700"],

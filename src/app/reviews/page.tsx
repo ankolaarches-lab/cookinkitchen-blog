@@ -11,6 +11,8 @@ const categoryImages: Record<string, string> = {
   "Appliances": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400&h=250&fit=crop",
   "Gadgets": "/images/gadgets.png",
   "Cutting Boards": "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=800&q=80",
+  "Baking Sheets": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=250&fit=crop",
+  "Food Storage": "https://images.unsplash.com/photo-1487486081347-1e5c958a922d?w=400&h=250&fit=crop",
 };
 
 const getImageUrl = (category: string): string => {
@@ -116,6 +118,15 @@ const reviews = [
     category: "Cookware",
     rating: 4.5,
     date: "Feb 8, 2026",
+  },
+  {
+    id: 28,
+    slug: "best-silicone-stretch-lids",
+    title: "Best Silicone Stretch Lids 2026",
+    excerpt: "Replace plastic wrap with these reusable silicone bowl covers. We tested the best stretchy lids for airtight food storage.",
+    category: "Gadgets",
+    rating: 4.7,
+    date: "Mar 10, 2026",
   },
   {
     id: 3,
