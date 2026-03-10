@@ -103,7 +103,7 @@ const reviews = [
   },
   {
     id: 19,
-    slug: "best-kitchen-utensils-set",
+    slug: "best-kitchen-utensil-set",
     title: "Best Kitchen Utensil Sets for Every Cook",
     excerpt: "From sautéing to serving, we tested the top utensil sets to find the perfect tools for your kitchen.",
     category: "Kitchen Utensils",
