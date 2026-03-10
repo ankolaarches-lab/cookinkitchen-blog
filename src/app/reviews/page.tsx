@@ -21,6 +21,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 29,
+    slug: "best-non-toxic-baking-sheets",
+    title: "Best Non-Toxic Baking Sheets 2026 - PFAS-Free Guide",
+    excerpt: "Skip the toxic chemicals. We tested the best PFAS-free, ceramic, and silicone baking mats and sheets for safe, easy baking.",
+    category: "Baking Sheets",
+    rating: 4.7,
+    date: "Mar 10, 2026",
+  },
+  {
     id: 23,
     slug: "best-kitchen-gadgets-2026",
     title: "Best Kitchen Gadgets Under $25 - 2026 Buying Guide",
@@ -139,7 +148,7 @@ const reviews = [
   },
 ];
 
-const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils"];
+const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
 
 export default function ReviewsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
