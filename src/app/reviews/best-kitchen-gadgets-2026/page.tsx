@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    name: "OXO Good Grips Kitchen Sprayer",
+    name: "OXO Good Grips Chef's Squeeze Bottle Set",
     price: "$14.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/OXO-Good-Grips-Kitchen-Sprayer/dp/B00QVS2D2W?tag=cookinkitchen-20",
-    pros: ["Ergonomic grip", "Adjustable spray", "Dishwasher safe", "Compact storage"],
-    cons: ["May need replacement over time"],
+    link: "https://www.amazon.com/OXO-Grips-Chefs-Squeeze-Bottle/dp/B076PT3BD9?tag=cookinkitchen-20",
+    pros: ["Two sizes included", "Precision pour", "Dishwasher safe", "Leak-proof design"],
+    cons: ["Plastic construction"],
   },
   {
     name: "Dreamfarm Scizza Kitchen Shears",
