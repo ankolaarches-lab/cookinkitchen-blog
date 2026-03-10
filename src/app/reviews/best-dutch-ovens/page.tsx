@@ -12,7 +12,7 @@ const products = [
     price: "$369.95",
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf4?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Creuset-Enameled-Cast-Iron-Dutch/dp/B00K5X14G6?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Enameled interior", "Lifetime warranty", "Beautiful colors"],
     cons: ["Premium price", "Heavy"],
   },
@@ -21,7 +21,7 @@ const products = [
     price: "$59.99",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf4?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Lodge+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Affordable", "Pre-seasoned", "Made in USA", "Versatile"],
     cons: ["Requires seasoning", "Plain design"],
   },
@@ -30,7 +30,7 @@ const products = [
     price: "$299.95",
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf4?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Staub-Classic-Enameled-Cast-Iron/dp/B007X1NQ5I?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Staub+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Black matte enamel", "Self-basting lid", "Oven safe to 500°F", "Great for bread"],
     cons: ["Expensive"],
   },
@@ -39,7 +39,7 @@ const products = [
     price: "$69.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf4?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/AmazonBasics-Enameled-Cast-Iron-Dutch/dp/B08J4CRY5P?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=AmazonBasics+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Multiple colors", "6 quart size", "Glass lid"],
     cons: ["Not as durable", "Lower heat retention"],
   },
@@ -86,7 +86,7 @@ export default function BestDutchOvens2026() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Le Creuset Enameled Cast Iron Dutch Oven</strong> is the gold standard. Excellent heat retention, beautiful enamel that lasts decades, and comes with a lifetime warranty.</p>
-          <a href="https://www.amazon.com/Creuset-Enameled-Cast-Iron-Dutch/dp/B00K5X14G6?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         <div className="mt-12 text-center">
           <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
