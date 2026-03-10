@@ -6,13 +6,14 @@ export const metadata: Metadata = {
   description: "Smart kitchen tools under $25 that make cooking easier. We tested the best affordable gadgets from Oxo, Dreamfarm, and more.",
 };
 
+// Using search URLs - more reliable than direct product links
 const products = [
   {
     name: "OXO Good Grips Chef's Squeeze Bottle Set",
     price: "$14.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/OXO-Grips-Chefs-Squeeze-Bottle/dp/B076PT3BD9?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=OXO+Good+Grips+Chef+Squeeze+Bottle",
     pros: ["Two sizes included", "Precision pour", "Dishwasher safe", "Leak-proof design"],
     cons: ["Plastic construction"],
   },
@@ -21,7 +22,7 @@ const products = [
     price: "$19.99",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Dreamfarm-Scizza-Kitchen-Shears/dp/B07X5T7Y8V?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Dreamfarm+Kitchen+Shears",
     pros: ["Spring-loaded", "Comfortable grip", "Built-in herb stripper", "Dishwasher safe"],
     cons: ["Not for heavy-duty cutting"],
   },
@@ -30,7 +31,7 @@ const products = [
     price: "$9.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/Angry-Mama-Microwave-Cleaner/dp/B00J1F9RLG?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Angry+Mama+Microwave+Cleaner",
     pros: ["Quick cleaning", "Natural ingredients", "Reusable", "Under $10"],
     cons: ["Specific use case"],
   },
@@ -39,7 +40,7 @@ const products = [
     price: "$12.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/OXO-Good-Grips-Jar-Opener/dp/B0009YT3JQ?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=OXO+Good+Grips+Jar+Opener",
     pros: ["Ergonomic handle", "Works on various sizes", "Durable", "Easy to use"],
     cons: ["Takes getting used to"],
   },
@@ -48,7 +49,7 @@ const products = [
     price: "$24.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/KitchenAid-5-Piece-Kitchen-Tool-Set/dp/B07KPJHZ8F?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=KitchenAid+Kitchen+Tool+Set+5+Piece",
     pros: ["Complete set", "Heat resistant", "Dishwasher safe", "Great value"],
     cons: ["Silicone tips can stain"],
   },
@@ -57,7 +58,7 @@ const products = [
     price: "$11.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/5-Blade-Herb-Scissors-Stainless/dp/B0BQR5KQ7Y?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=5+Blade+Herb+Scissors",
     pros: ["Cuts herbs quickly", "Easy to clean", "Multiple blades", "Affordable"],
     cons: ["Not for cutting meat"],
   },
@@ -139,7 +140,7 @@ export default function BestKitchenGadgets2026() {
             Plus the built-in herb stripper is a game-changer for cooking. At under $20, it's an incredible value.
           </p>
           <a
-            href="https://www.amazon.com/Dreamfarm-Scizza-Kitchen-Shears/dp/B07X5T7Y8V?tag=cookinkitchen-20"
+            href="https://www.amazon.com/s?k=Dreamfarm+Kitchen+Shears"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

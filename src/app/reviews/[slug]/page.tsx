@@ -239,19 +239,19 @@ Dutch ovens are the most versatile pot in any kitchen. We tested the top brands 
 
 The gold standard. Even heat distribution, beautiful enamel that lasts generations, and excellent self-basting lid.
 
-[Check Price on Amazon →](https://www.amazon.com/dp/B000N4WN08?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
 
 ### Best Value: Lodge Enameled Cast Iron
 
 Nearly half the price of Le Creuset with nearly identical performance. The enamel isn't as colorful, but it gets the job done beautifully.
 
-[Check Price on Amazon →](https://www.amazon.com/dp/B00U1OCPWQ?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
 
 ### Best Budget: AmazonBasics Enameled Cast Iron
 
 Surprisingly good for the price. Great for beginners who want to try Dutch oven cooking without a big investment.
 
-[Check Price on Amazon →](https://www.amazon.com/dp/B073Q9K2H3?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
 
 ### Our Recommendation
 If you bake bread, the Le Creuset's weight is essential. For everyday cooking, Lodge offers the best value.
@@ -464,13 +464,13 @@ Large capacity, consistent results, and versatile cooking functions make this ou
 
 The Philips delivers restaurant-quality air frying with its unique basket design.
 
-[Check Price on Amazon →](https://www.amazon.com/dp/B07YDY6WR6?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
 
 ### Best Value: Cosori Air Fryer
 
 Affordable and reliable, Cosori offers great results without breaking the bank.
 
-[Check Price on Amazon →](https://www.amazon.com/dp/B07WVWR56H?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
     `,
   },
   {

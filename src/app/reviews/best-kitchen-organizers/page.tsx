@@ -13,7 +13,7 @@ const products = [
     price: "$29.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B00M1PM396?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Cabinet Organizer",
     pros: ["Expands cabinet space", "Smooth 360° turn", "Fits most cabinets", "Easy installation"],
     cons: ["Limited weight capacity"],
@@ -23,7 +23,7 @@ const products = [
     price: "$24.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B0CS3FBC6W?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Cabinet Organizer",
     pros: ["Doubles vertical space", "Clear design shows contents", "Stackable", "Great for spices"],
     cons: ["Requires 9.25\" cabinet depth"],
@@ -34,7 +34,7 @@ const products = [
     price: "$19.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B07TRW6V4S?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Drawer Organizer",
     pros: ["Natural bamboo material", "Expandable design", "Fits most drawer sizes", "Eco-friendly"],
     cons: ["Fixed slots not adjustable"],
@@ -44,7 +44,7 @@ const products = [
     price: "$24.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B0D3PLRXDN?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Drawer Organizer",
     pros: ["Removable knife blocks", "Expandable 13-22 inches", "7 compartments", "Non-slip base"],
     cons: ["Takes up drawer space"],
@@ -55,7 +55,7 @@ const products = [
     price: "$27.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1487486081347-1e5c958a922d?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B08T9OKFFG?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Pantry Organizer",
     pros: ["Clear see-through design", "Stackable", "Handles for easy pulling", "4 sizes included"],
     cons: ["Not as sturdy as higher-end"],
@@ -65,7 +65,7 @@ const products = [
     price: "$14.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1487486081347-1e5c958a922d?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B01MR7UK3J?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Pantry Organizer",
     pros: ["Removable dividers", "Versatile use", "FDA approved", "Stackable"],
     cons: ["Smaller than expected"],
@@ -76,7 +76,7 @@ const products = [
     price: "$39.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B000W5L1J2?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Countertop Organizer",
     pros: ["Holds 15 knives", "Sturdy construction", "Universal fit", "Classic design"],
     cons: ["Takes counter space"],
@@ -86,7 +86,7 @@ const products = [
     price: "$24.99",
     rating: 4.4,
     image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B01N1JVZOU?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Countertop Organizer",
     pros: ["One-handed dispensing", "Weighted base", "Holds most paper roll sizes", "Sleek design"],
     cons: ["Base can slide on smooth counters"],
@@ -97,7 +97,7 @@ const products = [
     price: "$34.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B0B4KL5Q6M?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Spice Rack",
     pros: ["Wall or door mount", "Holds 12 jars", "Hardware included", "Modern look"],
     cons: ["Jars not included"],
@@ -107,7 +107,7 @@ const products = [
     price: "$59.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
-    link: "https://www.amazon.com/dp/B001F09NGS?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20",
     category: "Spice Rack",
     pros: ["Mounts inside cabinet", "Pull-out drawers", "Holds 20+ jars", "Commercial quality"],
     cons: ["Premium price", "Requires cabinet modification"],
@@ -169,7 +169,7 @@ export default function BestOrganizers2026() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>YouCopia StoraLazzy</strong> remains our top pick for cabinet organization. It doubles your storage space with smooth 360° rotation, making items in the back accessible without digging. The sturdy construction and universal fit make it a winner for any kitchen.</p>
-          <a href="https://www.amazon.com/dp/B00M1PM396?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         <div className="mt-12 text-center">
           <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
