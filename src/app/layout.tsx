@@ -87,6 +87,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lato.variable} ${playfair.variable}`}>
       <head>
+        {/* Google Tag Manager */}
+        <Script strategy="afterInteractive">{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MM268LC3');`}</Script>
+
         {/* Google Analytics 4 */}
         <Script
           strategy="afterInteractive"
@@ -122,6 +129,9 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased pattern-bg selection:bg-emerald-100 selection:text-emerald-900">
+        {/* Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM268LC3" height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe></noscript>
+
         <Analytics />
         <header className="glass-premium sticky top-0 z-50 transition-all duration-300">
           <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
