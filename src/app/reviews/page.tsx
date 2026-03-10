@@ -21,6 +21,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 30,
+    slug: "best-mandoline-slicers-2026",
+    title: "Best Mandoline Slicers 2026 - Ultimate Buying Guide",
+    excerpt: "Slice like a pro. We tested the best mandoline slicers for uniform cuts, from budget-friendly to professional-grade.",
+    category: "Gadgets",
+    rating: 4.6,
+    date: "Mar 10, 2026",
+  },
+  {
     id: 29,
     slug: "best-non-toxic-baking-sheets",
     title: "Best Non-Toxic Baking Sheets 2026 - PFAS-Free Guide",
