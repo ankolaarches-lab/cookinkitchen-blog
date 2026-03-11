@@ -37,7 +37,7 @@ export default function Page() {
               <li className="mb-2">Precision Edge technology</li>
               <li className="mb-2">Lifetime warranty</li>
             </ul>
-            <p className="mb-4"><a href="amazon.com/s?k=Wusthof+Classic+7+Piece+Knife?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon →</a></p>
+            <p className="mb-4"><a href="https://www.amazon.com/s?k=Wusthof+Classic+7+Piece+Knife?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon →</a></p>
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Best Value: Victorinox Swiss Classic 6-Piece</h2>
             <p className="mb-4 text-stone-600">Victorinox delivers Swiss precision at an affordable price. These knives are sharp out of the box and easy to sharpen.</p>
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Best Premium: Miyabi Birchwood 7-Piece</h2>
@@ -48,7 +48,7 @@ export default function Page() {
           <div className="mt-12 bg-stone-100 rounded-xl p-6 border border-stone-200">
             <h3 className="font-semibold text-lg text-stone-800 mb-3">Where to Buy</h3>
             <p className="text-stone-500 text-sm mb-4">We may earn a commission when you buy through our links.</p>
-            <a href="amazon.com/s?k=Wusthof+Classic+7+Piece+Knife?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=Wusthof+Classic+7+Piece+Knife?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon</a>
           </div>
         </article>
       </div>

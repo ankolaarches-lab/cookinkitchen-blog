@@ -12,7 +12,7 @@ const products = [
     price: "$49.95",
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer?tag=cookinkitchen-20",
     pros: ["2-second read", "Waterproof", "Backlight", "Auto-rotating display", "Lifetime warranty"],
     cons: ["No probe storage"],
   },
@@ -21,7 +21,7 @@ const products = [
     price: "$79.95",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=ThermoWorks+ChefAlarm+Cooking+Thermometer?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=ThermoWorks+ChefAlarm+Cooking+Thermometer?tag=cookinkitchen-20",
     pros: ["Count-up timer", "High/low alarm", "Big display", "Kitchen-ready", "Professional grade"],
     cons: ["More expensive"],
   },
@@ -30,7 +30,7 @@ const products = [
     price: "$24.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=Kizen+Instant+Read+Thermometer+Waterproof?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Kizen+Instant+Read+Thermometer+Waterproof?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Fast 2-3 second read", "Auto-off", "Celsius/Fahrenheit"],
     cons: ["Less durable"],
   },
@@ -39,7 +39,7 @@ const products = [
     price: "$19.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=Polder+Digital+Instant+Thermometer?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Polder+Digital+Instant+Thermometer?tag=cookinkitchen-20",
     pros: ["Magnetic back", "Foldable", "Budget option"],
     cons: ["Slower reading"],
   },
@@ -86,7 +86,7 @@ export default function BestInstantReadThermometers() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4">The <strong>ThermoWorks ThermoPop 2</strong> is our top pick. It delivers professional-grade accuracy in just 2 seconds, with a waterproof design and lifetime warranty. Worth the investment for serious home cooks.</p>
-          <a href="amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         <div className="mt-12 text-center">
           <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>

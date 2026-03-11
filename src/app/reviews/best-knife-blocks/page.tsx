@@ -13,7 +13,7 @@ const products = [
     price: "$39.99",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block?tag=cookinkitchen-20",
     pros: ["Solid beech wood", "Fits most knife sizes", "Keeps blades sharp", "Durable"],
     cons: ["Takes counter space"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$79.99",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=KitchenAid+4+Slot+Knife+Block?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=KitchenAid+4+Slot+Knife+Block?tag=cookinkitchen-20",
     pros: ["Includes steak knives", "Rotating base", "Sleek design", "Giftable"],
     cons: ["Smaller slots"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$24.99",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip?tag=cookinkitchen-20",
     pros: ["Saves counter space", "Strong magnet", "Easy installation", "Fits any knife"],
     cons: ["Wall-mounted"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$29.99",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer?tag=cookinkitchen-20",
     pros: ["Fits in drawer", "Expandable", "Non-slip", "Space-saving"],
     cons: ["Limited to drawer space"],
   },
@@ -49,7 +49,7 @@ const products = [
     price: "$59.99",
     rating: 4.4,
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=McCook+Knife+Block+Set?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=McCook+Knife+Block+Set?tag=cookinkitchen-20",
     pros: ["Complete set", "Great value", "Sharpener included", "Modern look"],
     cons: ["Lower quality than premium"],
   },
@@ -132,7 +132,7 @@ export default function BestKnifeBlocks() {
             It's a classic that will last for decades.
           </p>
           <a
-            href="amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block?tag=cookinkitchen-20"
+            href="https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block?tag=cookinkitchen-20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

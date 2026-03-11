@@ -12,7 +12,7 @@ const products = [
     price: "$44.99",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-    link: "amazon.com/s?k=Lodge+Cast+Iron+Waffle+Maker?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Waffle+Maker?tag=cookinkitchen-20",
     pros: ["Excellent heat", "Lightweight", "Natural nonstick", "Affordable"],
     cons: ["Requires seasoning"],
   },

@@ -86,7 +86,7 @@ export default function BestChefKnivesHomeCooks() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Victorinox Swiss Classic</strong> delivers exceptional performance at an unbeatable price. It's sharp out of the box, comfortable to use for hours, and won't break the bank.</p>
-          <a href="amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
 
         {/* Related Content */}
