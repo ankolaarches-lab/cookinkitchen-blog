@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | CookinKitchen Laboratory",
   },
   verification: {
-    google: "google-site-verification-code",
+    google: "GDRSPd9qRITqCI8E_QqhKTQY2-LqiiU_EPnK4cOv8Lc",
   },
   description: "Independent, data-driven analysis of professional kitchen tools. We test performance, durability, and ergonomic value for the modern culinary enthusiast.",
   icons: {
