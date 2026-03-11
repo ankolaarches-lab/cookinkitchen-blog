@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description: "From Le Creuset to Lodge, we tested the best Dutch ovens for braising, baking bread, and slow cooking.",
 };
 
+// JSON-LD Schema for SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Best Dutch Ovens 2026 - Buying Guide",
+  "description": "From Le Creuset to Lodge, we tested the best Dutch ovens for braising, baking bread, and slow cooking.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CookinKitchen"
+  },
+  "datePublished": "2026-03-10",
+  "author": {
+    "@type": "Organization",
+    "name": "CookinKitchen Intelligence Unit"
+  }
+};
+
 const products = [
   {
     name: "Le Creuset Enameled Cast Iron Dutch Oven",
@@ -48,6 +65,10 @@ const products = [
 export default function BestDutchOvens2026() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="bg-gradient-to-r from-amber-600 to-orange-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Best Dutch Ovens 2026</h1>
@@ -88,6 +109,26 @@ export default function BestDutchOvens2026() {
           <p className="text-stone-700 mb-4"><strong>Le Creuset Enameled Cast Iron Dutch Oven</strong> is the gold standard. Excellent heat retention, beautiful enamel that lasts decades, and comes with a lifetime warranty.</p>
           <a href="https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
+
+        {/* Related Reviews */}
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold text-stone-900 mb-6">Related Reviews</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="/reviews/best-cast-iron-skillet" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <h3 className="font-bold text-stone-900 mb-2">Best Cast Iron Skillet</h3>
+              <p className="text-sm text-stone-600">Perfect companion to your Dutch oven</p>
+            </a>
+            <a href="/reviews/best-pressure-cookers" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <h3 className="font-bold text-stone-900 mb-2">Best Pressure Cookers</h3>
+              <p className="text-sm text-stone-600">Another way to slow cook</p>
+            </a>
+            <a href="/reviews/best-slow-cookers" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <h3 className="font-bold text-stone-900 mb-2">Best Slow Cookers</h3>
+              <p className="text-sm text-stone-600">Classic slow cooking options</p>
+            </a>
+          </div>
+        </section>
+
         <div className="mt-12 text-center">
           <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
         </div>
