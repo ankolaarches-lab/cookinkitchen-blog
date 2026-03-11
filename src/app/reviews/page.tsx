@@ -21,6 +21,33 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 34,
+    slug: "best-yeti-rambler-tumblers",
+    title: "Best YETI Rambler Tumblers 2026 - Buying Guide",
+    excerpt: "Keep drinks cold for hours with the best YETI Rambler tumblers and bottles. We tested the top options for insulation and durability.",
+    category: "Appliances",
+    rating: 4.8,
+    date: "Mar 11, 2026",
+  },
+  {
+    id: 33,
+    slug: "best-stanley-tumblers",
+    title: "Best Stanley Tumblers 2026 - Buying Guide",
+    excerpt: "The viral Stanley Quencher and more. We reviewed the best Stanley tumblers for keeping drinks cold and looking great doing it.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 11, 2026",
+  },
+  {
+    id: 32,
+    slug: "best-egg-cookers",
+    title: "Best Egg Cookers 2026 - Perfect Eggs Every Time",
+    excerpt: "Cook perfect boiled, poached, or scrambled eggs with the best egg cookers. We tested top-rated options for every kitchen.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 11, 2026",
+  },
+  {
     id: 31,
     slug: "best-dutch-ovens-under-100",
     title: "Best Dutch Ovens Under $100 - 2026 Buying Guide",
