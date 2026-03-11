@@ -21,6 +21,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 31,
+    slug: "best-dutch-ovens-under-100",
+    title: "Best Dutch Ovens Under $100 - 2026 Buying Guide",
+    excerpt: "Find the best Dutch oven under $100. We tested affordable enameled cast iron pots from Lodge, Amazon Basics, and more for braising, bread, and soups.",
+    category: "Cookware",
+    rating: 4.7,
+    date: "Mar 11, 2026",
+  },
+  {
     id: 30,
     slug: "best-mandoline-slicers-2026",
     title: "Best Mandoline Slicers 2026 - Ultimate Buying Guide",
