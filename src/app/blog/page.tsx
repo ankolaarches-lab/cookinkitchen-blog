@@ -509,6 +509,15 @@ const blogPosts = [
     image: getImage(5),
   },
   {
+    slug: "best-pantry-staples-2026",
+    title: "Best Pantry Staples: Essential Ingredients Every Home Cook Needs",
+    excerpt: "Build a well-stocked pantry with these essential ingredients. From oils to spices, we cover the must-have items that make home cooking effortless.",
+    category: "Guide",
+    date: "Mar 11, 2026",
+    readTime: "7 min read",
+    image: getImage(8),
+  },
+  {
     slug: "best-dutch-oven-recipes",
     title: "What to Cook in Your Dutch Oven: 15 Essential Recipes",
     excerpt: "From hearty stews to artisan bread, maximize your Dutch oven with these must-try recipes that showcase its versatility.",
