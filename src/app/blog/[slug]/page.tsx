@@ -792,6 +792,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </article>
 
+        {/* Related Reviews - Link to relevant product reviews */}
+        <div className="mt-16 pt-8 border-t border-stone-200">
+          <h3 className="font-playfair text-2xl text-stone-800 mb-6">Related Product Reviews</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="/reviews" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+              <span className="text-sm text-emerald-600 font-bold uppercase tracking-wide">Browse All</span>
+              <h4 className="font-bold text-stone-900 mt-2 text-lg">All Kitchen Reviews</h4>
+              <p className="text-stone-600 text-sm mt-2">See our complete collection of in-depth product reviews and comparisons.</p>
+            </a>
+            <a href="/reviews/best-dutch-ovens" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+              <span className="text-sm text-emerald-600 font-bold uppercase tracking-wide">Review</span>
+              <h4 className="font-bold text-stone-900 mt-2 text-lg">Best Dutch Ovens</h4>
+              <p className="text-stone-600 text-sm mt-2">From Le Creuset to Lodge — we tested the top Dutch ovens.</p>
+            </a>
+            <a href="/reviews/best-chef-knives-home-cooks" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+              <span className="text-sm text-emerald-600 font-bold uppercase tracking-wide">Review</span>
+              <h4 className="font-bold text-stone-900 mt-2 text-lg">Best Chef's Knives</h4>
+              <p className="text-stone-600 text-sm mt-2">Find the perfect knife for your kitchen.</p>
+            </a>
+          </div>
+        </div>
+
         <RelatedContent
           title="More from the Intelligence Hub"
           articles={blogPosts

@@ -155,6 +155,28 @@ export default function BestAirFryer2026() {
             Browse All Reviews
           </Link>
         </div>
+
+        {/* Related Reviews */}
+        <div className="mt-12">
+          <h3 className="font-playfair text-xl text-stone-800 mb-4">You Might Also Like</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            <a href="/reviews/best-air-fryer-accessories" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <span className="text-sm text-emerald-600 font-medium">Review</span>
+              <h4 className="font-bold text-stone-900 mt-1">Best Air Fryer Accessories</h4>
+              <p className="text-xs text-stone-500 mt-1">Get more from your air fryer</p>
+            </a>
+            <a href="/reviews/instant-pot-vs-ninja-foodi" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <span className="text-sm text-emerald-600 font-medium">Comparison</span>
+              <h4 className="font-bold text-stone-900 mt-1">Instant Pot vs Ninja Foodi</h4>
+              <p className="text-xs text-stone-500 mt-1">Which is better?</p>
+            </a>
+            <a href="/blog/air-fryer-recipes-tips" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <span className="text-sm text-emerald-600 font-medium">Guide</span>
+              <h4 className="font-bold text-stone-900 mt-1">Air Fryer Recipes & Tips</h4>
+              <p className="text-xs text-stone-500 mt-1">Master your air fryer</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

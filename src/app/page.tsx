@@ -198,6 +198,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Popular Reviews Section */}
+      <section className="py-20 bg-stone-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-black text-stone-800 mb-4">Popular Reviews</h2>
+          <p className="text-stone-600 mb-10">Data-driven analysis of the best kitchen tools.</p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <a href="/reviews/best-dutch-ovens" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl transition">
+              <div className="h-48 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
+                <span className="text-6xl">🍲</span>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-emerald-600 uppercase">Cookware</span>
+                <h3 className="font-bold text-xl text-stone-800 mt-2 group-hover:text-emerald-600 transition">Best Dutch Ovens</h3>
+                <p className="text-stone-500 text-sm mt-2">Le Creuset vs Lodge vs more</p>
+              </div>
+            </a>
+            
+            <a href="/reviews/best-air-fryer-2026" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl transition">
+              <div className="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                <span className="text-6xl">🍟</span>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-emerald-600 uppercase">Appliances</span>
+                <h3 className="font-bold text-xl text-stone-800 mt-2 group-hover:text-emerald-600 transition">Best Air Fryers 2026</h3>
+                <p className="text-stone-500 text-sm mt-2">Ninja vs Instant Pot vs COSORI</p>
+              </div>
+            </a>
+            
+            <a href="/reviews/best-chef-knives-home-cooks" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl transition">
+              <div className="h-48 bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center">
+                <span className="text-6xl">🔪</span>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-emerald-600 uppercase">Knives</span>
+                <h3 className="font-bold text-xl text-stone-800 mt-2 group-hover:text-emerald-600 transition">Best Chef's Knives</h3>
+                <p className="text-stone-500 text-sm mt-2">Victorinox vs Wüsthof vs MAC</p>
+              </div>
+            </a>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <a href="/reviews" className="inline-block bg-stone-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-stone-900 transition">View All Reviews →</a>
+          </div>
+        </div>
+      </section>
+
       {/* Intelligence Protocol (CTA) */}
       <section className="py-32 bg-emerald-600 text-white">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
