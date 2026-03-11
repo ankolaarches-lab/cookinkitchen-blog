@@ -509,6 +509,15 @@ const blogPosts = [
     image: getImage(5),
   },
   {
+    slug: "knife-skills-essential-techniques",
+    title: "Knife Skills: Essential Techniques Every Home Cook Needs to Master",
+    excerpt: "Master fundamental knife skills to speed up meal prep and elevate your cooking. From the classic chef's knife grip to professional cutting techniques, we cover everything you need to know.",
+    category: "Guide",
+    date: "Mar 11, 2026",
+    readTime: "7 min read",
+    image: getImage(5),
+  },
+  {
     slug: "best-pantry-staples-2026",
     title: "Best Pantry Staples: Essential Ingredients Every Home Cook Needs",
     excerpt: "Build a well-stocked pantry with these essential ingredients. From oils to spices, we cover the must-have items that make home cooking effortless.",
