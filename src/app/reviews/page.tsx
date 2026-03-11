@@ -21,6 +21,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 35,
+    slug: "best-kitchen-timers-2026",
+    title: "Best Kitchen Timers 2026 - Never Burn Again",
+    excerpt: "Never burn anything again. We tested the best kitchen timers for every need - from digital to mechanical, magnetic to mounted.",
+    category: "Gadgets",
+    rating: 4.7,
+    date: "Mar 11, 2026",
+  },
+  {
     id: 34,
     slug: "best-yeti-rambler-tumblers",
     title: "Best YETI Rambler Tumblers 2026 - Buying Guide",
