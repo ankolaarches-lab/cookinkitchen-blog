@@ -251,6 +251,35 @@ export default function ReviewsPage() {
           </div>
         )}
 
+        {/* Popular Guides from Blog */}
+        <section className="py-20 bg-stone-100 mt-20 rounded-3xl">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 className="font-serif text-3xl font-black text-stone-800 mb-8">Popular Guides</h2>
+            <div className="grid md:grid-cols-4 gap-6">
+              <a href="/blog/air-fryer-recipes-tips" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+                <span className="text-4xl">🍟</span>
+                <h3 className="font-bold text-stone-800 mt-3">Air Fryer Recipes</h3>
+                <p className="text-sm text-stone-500 mt-2">Master your air fryer</p>
+              </a>
+              <a href="/blog/knife-skills-basics" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+                <span className="text-4xl">🔪</span>
+                <h3 className="font-bold text-stone-800 mt-3">Knife Skills 101</h3>
+                <p className="text-sm text-stone-500 mt-2">Essential cutting techniques</p>
+              </a>
+              <a href="/blog/cast-iron-care-seasoning-guide" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+                <span className="text-4xl">🍳</span>
+                <h3 className="font-bold text-stone-800 mt-3">Cast Iron Care</h3>
+                <p className="text-sm text-stone-500 mt-2">Season and maintain</p>
+              </a>
+              <a href="/blog/instant-pot-beginner-guide" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+                <span className="text-4xl">🥘</span>
+                <h3 className="font-bold text-stone-800 mt-3">Instant Pot Guide</h3>
+                <p className="text-sm text-stone-500 mt-2">Get started with pressure cooking</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Newsletter CTA */}
         <div className="mt-40 glass-premium bg-emerald-600 text-white rounded-[3rem] p-16 text-center shadow-2xl shadow-emerald-600/20 relative overflow-hidden">
           <div className="absolute top-0 right-0 p-12 opacity-10 pointer-events-none">

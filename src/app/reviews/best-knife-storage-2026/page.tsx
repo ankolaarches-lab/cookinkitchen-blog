@@ -153,6 +153,20 @@ export default function BestKnifeStorage2026() {
             ← Back to All Reviews
           </Link>
         </div>
+      
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold text-stone-900 mb-6">Related Reviews</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <a href="/reviews/best-knife-sharpener" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <h3 className="font-bold text-stone-900">Best Knife Sharpeners</h3>
+              <p className="text-sm text-stone-600 mt-1">Keep knives sharp</p>
+            </a>
+            <a href="/reviews/best-knife-storage-2026" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <h3 className="font-bold text-stone-900">Best Knife Storage</h3>
+              <p className="text-sm text-stone-600 mt-1">Protect your knives</p>
+            </a>
+          </div>
+        </section>
       </main>
     </div>
   );
