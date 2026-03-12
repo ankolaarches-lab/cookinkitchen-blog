@@ -716,9 +716,12 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
         <article>
           <div className="flex items-center gap-4 mb-4">
-            <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-lato font-medium">
+            <Link 
+              href={`/reviews?category=${encodeURIComponent(review.category)}`}
+              className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-lato font-medium hover:bg-emerald-200 transition"
+            >
               {review.category}
-            </span>
+            </Link>
             <span className="font-lato text-emerald-500 font-bold">★ {review.rating}</span>
             <span className="font-lato text-stone-400 text-sm">{review.date}</span>
           </div>

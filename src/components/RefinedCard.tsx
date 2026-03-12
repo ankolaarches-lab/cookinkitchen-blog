@@ -50,10 +50,14 @@ export default function RefinedCard({
                         </div>
                     )}
                     {category && (
-                        <div className="absolute top-4 right-4">
-                            <span className="bg-emerald-500/90 backdrop-blur-md text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
+                        <div className="absolute top-4 right-4 z-10">
+                            <Link
+                                href={`/reviews?category=${encodeURIComponent(category)}`}
+                                onClick={(e) => e.stopPropagation()}
+                                className="bg-emerald-500/90 backdrop-blur-md text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-emerald-400 transition"
+                            >
                                 {category}
-                            </span>
+                            </Link>
                         </div>
                     )}
                 </div>

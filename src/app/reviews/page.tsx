@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import RefinedCard from "@/components/RefinedCard";
 
 const categoryImages: Record<string, string> = {
@@ -204,12 +205,32 @@ const reviews = [
 
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
 
-export default function ReviewsPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
+function ReviewsContent() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const categoryParam = searchParams.get("category") || "All";
+  
+  const [activeCategory, setActiveCategory] = useState(categoryParam);
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  // Sync state with URL parameter
+  useEffect(() => {
+    setActiveCategory(categoryParam);
+  }, [categoryParam]);
+
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat);
+    const params = new URLSearchParams(searchParams.toString());
+    if (cat === "All") {
+      params.delete("category");
+    } else {
+      params.set("category", cat);
+    }
+    router.push(`/reviews?${params.toString()}`, { scroll: false });
+  };
 
   const filteredReviews = activeCategory === "All"
     ? reviews
@@ -261,7 +282,7 @@ export default function ReviewsPage() {
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => handleCategoryChange(cat)}
               className={`px-8 py-3 rounded-full text-[11px] font-black uppercase tracking-widest transition-all duration-300 border-2 ${activeCategory === cat
                 ? "bg-gray-900 border-gray-900 text-white shadow-xl shadow-gray-900/10"
                 : "bg-white border-gray-100 text-gray-400 hover:border-emerald-200 hover:text-emerald-600"
@@ -363,7 +384,6 @@ export default function ReviewsPage() {
                   {loading ? 'SYNCING...' : 'INITIATE SYNC'}
                 </button>
               </form>
-              {error && <p className="text-red-200 mt-4 font-bold text-xs uppercase tracking-widest">{error}</p>}
               <p className="text-[10px] text-emerald-200/60 mt-8 font-bold uppercase tracking-widest">
                 Protocol: Privacy Guaranteed // Unsubscribe any time.
               </p>
@@ -372,5 +392,17 @@ export default function ReviewsPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ReviewsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600"></div>
+      </div>
+    }>
+      <ReviewsContent />
+    </Suspense>
   );
 }
