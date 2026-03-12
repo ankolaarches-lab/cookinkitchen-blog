@@ -20,7 +20,7 @@ const products = [
     name: "Le Creuset Casserole",
     price: "$379.95",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1584346133934-a3afd2a3d972?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Creuset+Enameled+Casserole+5+5+Quart?tag=cookinkitchen-20",
     pros: ["Beautiful colors", "Excellent heat retention", "Oven safe", "Lifetime warranty"],
     cons: ["Expensive"],

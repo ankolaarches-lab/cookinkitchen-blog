@@ -11,7 +11,7 @@ const products = [
     name: "OXO Good Grips Salad Spinner",
     price: "$29.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1631522305802-9eb5fcd0ee44?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Salad+Spinner?tag=cookinkitchen-20",
     pros: ["Brake button", "Large capacity", "Bowl doubles as serve", "Dishwasher safe"],
     cons: ["Larger footprint"],

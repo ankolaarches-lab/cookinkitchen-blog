@@ -20,7 +20,7 @@ const products = [
     name: "KitchenAid Pizza Wheel",
     price: "$14.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1591814486058-297247320a23?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=KitchenAid+KF770DCOXAL+Pizza+Cutter?tag=cookinkitchen-20",
     pros: ["Sturdy", "Serrated edge", "Modern design", "Dishwasher safe"],
     cons: ["Only one style"],

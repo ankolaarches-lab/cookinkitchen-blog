@@ -29,7 +29,7 @@ const products = [
     name: "Breville Smart Oven Pizzaiolo",
     price: "$599.95",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Breville+Smart+Oven+Pizzaiolo+BOV860BSS?tag=cookinkitchen-20",
     pros: ["Wood-fired style", "Dual heating elements", "Large capacity", "Precise controls"],
     cons: ["Expensive", "Requires 20 min preheat"],

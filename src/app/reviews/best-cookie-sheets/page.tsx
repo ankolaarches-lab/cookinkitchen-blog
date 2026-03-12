@@ -20,7 +20,7 @@ const products = [
     name: "USA Pan Bakeware",
     price: "$18.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1590113837941-8656336e9ff0?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=USA+Pan+Bakeware+Half+Sheet?tag=cookinkitchen-20",
     pros: ["Nonstick coating", "Professional grade", "Heavy duty", "Made in USA"],
     cons: ["May warp"],

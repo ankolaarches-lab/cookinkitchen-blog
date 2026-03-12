@@ -12,7 +12,7 @@ const products = [
     name: "Stainless Steel Cooking Utensil Set (6-Piece)",
     price: "$29.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590794056226-7bc612bd945b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set?tag=cookinkitchen-20",
     pros: ["Heat resistant", "Dishwasher safe", "Durable stainless steel", "Wooden handle option"],
     cons: ["Can scratch nonstick"],

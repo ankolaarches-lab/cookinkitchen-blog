@@ -11,7 +11,7 @@ const products = [
     name: "Victorinox Swiss Classic 8-Inch Chef's Knife",
     price: "$39.99",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1591604129939-f1efa4d8ffc2?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef?tag=cookinkitchen-20",
     pros: ["Excellent sharpness", "Comfortable Fibrox handle", "Lightweight", "Dishwasher safe"],
     cons: ["Plain design", "No bolster"],

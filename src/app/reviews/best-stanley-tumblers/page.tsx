@@ -52,7 +52,7 @@ const products = [
     price: "$24.00",
     rating: 4.6,
     reviews: "12,876",
-    image: "https://images.unsplash.com/photo-1546171753-e89a3a4b2a9d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/STANLEY-GoSeries-Water-Bottle-18oz/dp/B07XJ8C8F5?tag=cookinkitchen-20",
     pros: ["Compact and portable", "Leakproof", "Carabiner compatible", "Great for travel"],
     cons: ["Smaller than others"],

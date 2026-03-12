@@ -79,7 +79,7 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     affiliateLink: "https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20",
     tableImages: [
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop", // Miyabi
-      "https://images.unsplash.com/photo-1614364694896-dbdeeaadc7fc?w=600&h=400&fit=crop", // Victorinox
+      "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop", // Victorinox
       "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=600&h=400&fit=crop"  // Premium
     ],
     content: `
@@ -236,7 +236,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
     tableImages: [
-      "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop", // Le Creuset
+      "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop", // Le Creuset
       "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop", // Lodge
       "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop"  // Amazon
     ],

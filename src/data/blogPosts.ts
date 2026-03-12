@@ -178,7 +178,7 @@ Don't be discouraged if your cuts aren't perfect at first. Knife skills are a mu
     category: "Guide",
     date: "Mar 11, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&h=400&fit=crop",
     amazonLink: "https://www.amazon.com/s?k=kitchen+organizers&tag=cookinkitchen-20",
     content: `
 ## The Joy of an Organized Kitchen
@@ -284,7 +284,7 @@ A well-organized kitchen isn't about having the most containers or the fanciest 
     category: "Guide",
     date: "Mar 11, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
     amazonLink: "https://www.amazon.com/s?k=pantry+staples&tag=cookinkitchen-20",
     content: `
 ## Building Your Essential Pantry

@@ -47,7 +47,7 @@ const products = [
     name: "Evo Hand Pump Oil Sprayer",
     price: "$24.95",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1583083527882-a312d8a67971?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best oil dispensers sprayers?tag=cookinkitchen-20",
     pros: ["Continuous spray", "Stainless steel", "Chef-approved"],
     cons: ["More expensive"],

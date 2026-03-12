@@ -20,7 +20,7 @@ const products = [
     name: "Instant Pot Duo Crisp",
     price: "$119.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1585238341648-524f72836261?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Crisp?tag=cookinkitchen-20",
     pros: ["Pressure & slow cook", "Air fry lid", "11 functions", "Programmable"],
     cons: ["More expensive", "Learning curve"],

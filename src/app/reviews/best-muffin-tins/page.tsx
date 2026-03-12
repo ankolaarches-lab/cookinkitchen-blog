@@ -11,7 +11,7 @@ const products = [
     name: "USA Pan Muffin Pan",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1582239169601-37d404f69ad5?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=USA+Pan+Bakeware+Muffin+2+Piece?tag=cookinkitchen-20",
     pros: ["Nonstick coating", "12 cup each", "Heavy gauge", "Made in USA"],
     cons: ["Hand wash recommended"],

@@ -11,7 +11,7 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven",
     price: "$69.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1590113837941-8656336e9ff0?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Lodge+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Durable enamel coating", "Oven-safe to 500°F", "Great value"],
     cons: ["Heavy (7 lbs)", "Some reports of uneven enamel"],
@@ -20,7 +20,7 @@ const products = [
     name: "Amazon Basics Enameled Cast Iron Dutch Oven",
     price: "$54.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1585449610374-1691ae3abdb3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "6 quart capacity", "Dishwasher safe", "Nice color options"],
     cons: ["Lighter construction", "May chip over time"],
@@ -69,7 +69,7 @@ export default function BestDutchOvensUnder100() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1612969497501-09ab6b20dbf5?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=400&fit=crop" 
               alt="Best Dutch Ovens Under $100" 
               className="w-full h-64 object-cover"
             />

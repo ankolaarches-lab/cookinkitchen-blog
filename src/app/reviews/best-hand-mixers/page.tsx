@@ -20,7 +20,7 @@ const products = [
     name: "Hamilton Beach Hand Mixer",
     price: "$29.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1590794101235-866468452140?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+62627+Handle+Mixer?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "6 speeds", "Snap-on beaters", "Cord storage"],
     cons: ["Louder"],

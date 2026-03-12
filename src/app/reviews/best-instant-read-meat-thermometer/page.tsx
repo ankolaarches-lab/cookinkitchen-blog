@@ -20,7 +20,7 @@ const products = [
     name: "Lavatools Javelin PRO Duo",
     price: "$49.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1594498308643-982ba70932c1?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best instant read meat thermometer?tag=cookinkitchen-20",
     pros: ["Instant read", "Auto-rotating display", "Holds temp"],
     cons: ["Not waterproof"],
@@ -29,7 +29,7 @@ const products = [
     name: "Kizen Instant Read Thermometer",
     price: "$24.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1594498308643-982ba70932c1?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best instant read meat thermometer?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Fast reading", "Easy to use"],
     cons: ["Not as durable"],
@@ -38,7 +38,7 @@ const products = [
     name: "iDevices iGrill Mini",
     price: "$49.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1594498516021-3965b2102047?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best instant read meat thermometer?tag=cookinkitchen-20",
     pros: ["Bluetooth connectivity", "App integration", "Compact"],
     cons: ["Requires battery"],
@@ -69,7 +69,7 @@ export default function InstantReadThermometer() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1576020508533-d59430c51197?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=400&fit=crop" 
               alt="Best Instant Read Meat Thermometers 2026" 
               className="w-full h-64 object-cover"
             />

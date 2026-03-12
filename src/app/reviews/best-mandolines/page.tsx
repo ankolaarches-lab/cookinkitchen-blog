@@ -11,7 +11,7 @@ const products = [
     name: "OXO Good Grips Mandoline",
     price: "$34.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1590483734730-67d710e40277?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Mandoline+Slicer?tag=cookinkitchen-20",
     pros: ["Adjustable thickness", "Safety holder", "Multiple cuts", "Dishwasher safe"],
     cons: ["Hand wash recommended"],

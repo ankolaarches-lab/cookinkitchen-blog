@@ -20,7 +20,7 @@ const products = [
     name: "Ninja Foodi 9-in-1",
     price: "$149.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1584947847551-758e519217b7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Ninja+Foodi+Pressure+Cooker?tag=cookinkitchen-20",
     pros: ["Pressure cook & air fry", "9 functions", "Large capacity", "Crisp lid"],
     cons: ["Takes counter space", "More complex"],
