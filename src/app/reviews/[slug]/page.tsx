@@ -239,19 +239,19 @@ Dutch ovens are the most versatile pot in any kitchen. We tested the top brands 
 
 The gold standard. Even heat distribution, beautiful enamel that lasts generations, and excellent self-basting lid.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
+[Shop Le Creuset on Amazon →](https://www.amazon.com/s?k=le+creuset+dutch+oven&tag=cookinkitchen-20)
 
 ### Best Value: Lodge Enameled Cast Iron
 
 Nearly half the price of Le Creuset with nearly identical performance. The enamel isn't as colorful, but it gets the job done beautifully.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
+[Shop Lodge on Amazon →](https://www.amazon.com/s?k=lodge+enameled+dutch+oven&tag=cookinkitchen-20)
 
 ### Best Budget: AmazonBasics Enameled Cast Iron
 
 Surprisingly good for the price. Great for beginners who want to try Dutch oven cooking without a big investment.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
+[Shop AmazonBasics on Amazon →](https://www.amazon.com/s?k=amazonbasics+dutch+oven&tag=cookinkitchen-20)
 
 ### Our Recommendation
 If you bake bread, the Le Creuset's weight is essential. For everyday cooking, Lodge offers the best value.
@@ -677,6 +677,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
   if (!review) {
     notFound();
+    return null; // Satisfy TS null check
   }
 
   const jsonLd = {
@@ -799,7 +800,26 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 return <li key={i} className="ml-4 mb-2">{paragraph.replace('- ', '')}</li>;
               }
               if (paragraph.trim()) {
-                return <p key={i} className="mb-4 text-stone-600">{paragraph}</p>;
+                // Check if paragraph is just a markdown link: [text](url)
+                const linkMatch = paragraph.match(/^\[(.*?)\]\((.*?)\)$/);
+                if (linkMatch) {
+                  return (
+                    <div key={i} className="my-8">
+                      <a
+                        href={linkMatch[2]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center px-8 py-4 bg-stone-900 text-white rounded-xl font-lato font-black tracking-wide hover:bg-stone-800 transition shadow-lg hover:-translate-y-0.5"
+                      >
+                        {linkMatch[1]}
+                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  );
+                }
+                return <p key={i} className="mb-4 text-stone-600 leading-relaxed">{paragraph}</p>;
               }
               return null;
             })}
