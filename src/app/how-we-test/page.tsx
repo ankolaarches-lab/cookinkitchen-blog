@@ -10,7 +10,7 @@ export default function HowWeTestPage() {
     return (
         <div className="min-h-screen bg-stone-50">
             <header className="bg-slate-950 text-white py-24 relative overflow-hidden border-b border-stone-800">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&h=900&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('/images/kitchen/9.jpg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 mesh-gradient opacity-30"></div>
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">

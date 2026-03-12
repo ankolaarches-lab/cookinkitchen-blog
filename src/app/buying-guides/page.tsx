@@ -11,7 +11,7 @@ const categories = [
   {
     name: "Chef's Knives",
     description: "The most important tool in any kitchen",
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     products: [
       {
         name: "Miyabi Birchwood Chef's Knife",
@@ -38,7 +38,7 @@ const categories = [
   {
     name: "Cookware Sets",
     description: "Everything you need to start cooking",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     products: [
       {
         name: "Le Creuset Enameled Dutch Oven",
@@ -65,7 +65,7 @@ const categories = [
   {
     name: "Small Appliances",
     description: "Power tools for your kitchen",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     products: [
       {
         name: "KitchenAid Artisan Stand Mixer",
@@ -92,7 +92,7 @@ const categories = [
   {
     name: "Essential Gadgets",
     description: "Must-have tools for every kitchen",
-    image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=800&q=80",
+    image: "/images/kitchen/7.jpg",
     products: [
       {
         name: "OXO Good Grips Pop Scale",
@@ -239,7 +239,7 @@ export default function BuyingGuidesPage() {
 
         {/* Intelligence Protocol CTA */}
         <div className="mt-20 bg-slate-950 rounded-3xl p-10 md:p-16 text-center relative overflow-hidden border border-emerald-900/30 shadow-2xl">
-          <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&h=900&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
+          <div className="absolute inset-0 opacity-10 bg-[url('/images/kitchen/8.jpg')] bg-cover bg-center mix-blend-overlay"></div>
           <div className="relative z-10 w-full max-w-2xl mx-auto">
             <span className="inline-block px-3 py-1 mb-6 rounded-full bg-emerald-500/20 text-[10px] font-black uppercase tracking-[0.2em] text-emerald-400">
               Protocol Invitation

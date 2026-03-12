@@ -13,7 +13,7 @@ export default function AuthorBio({
     name = "Chef Quentin",
     title = "Head of Culinary Testing",
     bio = "With over 15 years in Michelin-starred kitchens and 5 years rigorously testing equipment for Culinary Intelligence, Chef Quentin brings unparalleled expertise to every review.",
-    imageUrl = "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=400&fit=crop"
+    imageUrl = "/images/kitchen/10.jpg"
 }: AuthorBioProps) {
     return (
         <div className="my-16 bg-white border border-stone-200 rounded-3xl p-8 sm:p-10 shadow-sm relative overflow-hidden">
