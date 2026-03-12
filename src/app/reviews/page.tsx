@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 40,
+    slug: "instant-pot-vs-crock-pot",
+    title: "Instant Pot vs Crock-Pot: Which Slow Cooker Wins?",
+    excerpt: "Two giants of slow cooking face off. We compare Instant Pot vs Crock-Pot to find which delivers the best meals.",
+    category: "Appliances",
+    rating: 4.4,
+    date: "Mar 12, 2026",
+  },
+  {
     id: 39,
     slug: "best-rice-cookers-2026",
     title: "Best Rice Cookers 2026 - Ultimate Buying Guide",
