@@ -77,6 +77,11 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     date: "Feb 10, 2026",
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20",
+    tableImages: [
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop", // Miyabi
+      "https://images.unsplash.com/photo-1614364694896-dbdeeaadc7fc?w=600&h=400&fit=crop", // Victorinox
+      "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=600&h=400&fit=crop"  // Premium
+    ],
     content: `
 ## The Search for the Perfect Blade
 
@@ -230,6 +235,11 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     date: "Jan 25, 2026",
     image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
+    tableImages: [
+      "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop", // Le Creuset
+      "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop", // Lodge
+      "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop"  // Amazon
+    ],
     content: `
 ## The Braising Champion
 
@@ -764,7 +774,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <ComparisonTable items={[
             {
               name: "Top Recommended Option",
-              image: review.image || getImageUrl(review.category),
+              image: review.tableImages?.[0] || review.image || getImageUrl(review.category),
               badge: "Editor's Choice",
               rating: 4.9,
               price: "$$",
@@ -773,7 +783,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Best Value Option",
-              image: review.image || getImageUrl(review.category),
+              image: review.tableImages?.[1] || review.image || getImageUrl(review.category),
               badge: "Best Value",
               rating: 4.7,
               price: "$",
@@ -782,7 +792,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Premium Option",
-              image: review.image || getImageUrl(review.category),
+              image: review.tableImages?.[2] || review.image || getImageUrl(review.category),
               badge: "Premium Pick",
               rating: 4.8,
               price: "$$$",
@@ -793,38 +803,45 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
           <div className="prose prose-stone max-w-none font-lato">
             {review.content.split('\n').map((paragraph, i) => {
-              if (paragraph.startsWith('## ')) {
-                return <h2 key={i} className="font-playfair text-2xl text-stone-800 mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
+              const trimmed = paragraph.trim();
+              if (!trimmed) return null;
+
+              if (trimmed.startsWith('## ')) {
+                return <h2 key={i} className="font-playfair text-2xl text-stone-800 mt-8 mb-4">{trimmed.replace('## ', '')}</h2>;
               }
-              if (paragraph.startsWith('### ')) {
-                return <h3 key={i} className="font-playfair text-xl text-stone-700 mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
+              if (trimmed.startsWith('### ')) {
+                return <h3 key={i} className="font-playfair text-xl text-stone-700 mt-6 mb-3">{trimmed.replace('### ', '')}</h3>;
               }
-              if (paragraph.startsWith('- ')) {
-                return <li key={i} className="ml-4 mb-2">{paragraph.replace('- ', '')}</li>;
+              if (trimmed.startsWith('- ')) {
+                return <li key={i} className="ml-4 mb-2">{trimmed.replace('- ', '')}</li>;
               }
-              if (paragraph.trim()) {
-                // Check if paragraph is just a markdown link: [text](url)
-                const linkMatch = paragraph.match(/^\[(.*?)\]\((.*?)\)$/);
-                if (linkMatch) {
+              
+              const linkMatch = trimmed.match(/\[(.*?)\]\((.*?)\)/);
+              if (linkMatch) {
+                const [full, text, url] = linkMatch;
+                const isAmazon = url.includes('amazon.com') || url.includes('amzn.to');
+                const isCTA = text.toLowerCase().includes('shop') || text.toLowerCase().includes('check price') || text.toLowerCase().includes('buy');
+
+                if (isAmazon || isCTA) {
                   return (
-                    <div key={i} className="my-8">
+                    <div key={i} className="my-10 flex justify-center">
                       <a
-                        href={linkMatch[2]}
+                        href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-8 py-4 bg-stone-900 text-white rounded-xl font-lato font-black tracking-wide hover:bg-stone-800 transition shadow-lg hover:-translate-y-0.5"
+                        className="inline-flex items-center justify-center px-10 py-5 bg-stone-900 text-white rounded-2xl font-lato font-bold tracking-widest hover:bg-emerald-600 transition-all shadow-xl hover:-translate-y-1 hover:shadow-emerald-900/20 uppercase text-sm group"
                       >
-                        {linkMatch[1]}
-                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        {text}
+                        <svg className="w-5 h-5 ml-3 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                       </a>
                     </div>
                   );
                 }
-                return <p key={i} className="mb-4 text-stone-600 leading-relaxed">{paragraph}</p>;
               }
-              return null;
+
+              return <p key={i} className="mb-4 text-stone-600 leading-relaxed">{trimmed}</p>;
             })}
           </div>
 
