@@ -12,6 +12,113 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-cook-rice-perfectly",
+    title: "How to Cook Rice Perfectly: A Complete Guide for Every Type",
+    excerpt: "Stop guessing with rice. Learn the exact ratios, techniques, and tips for fluffy white rice, aromatic basmati, nutty brown rice, and more.",
+    category: "Guide",
+    date: "Mar 12, 2026",
+    readTime: "6 min read",
+    image: "/images/kitchen/4.jpg",
+    amazonLink: "https://www.amazon.com/s?k=rice+pot&tag=cookinkitchen-20",
+    content: `
+## Why Perfect Rice Matters
+
+Rice is the foundation of meals across every continent. Yet it's surprisingly easy to get wrong—too mushy, too hard, or stuck together in a gummy mess. The good news: perfect rice is simple once you understand the basics.
+
+A good [Dutch oven](/reviews/best-dutch-ovens) or [Instant Pot](/reviews/best-instant-pot) can help, but you don't need special equipment—you just need the right technique.
+
+## The Golden Rules of Rice Cooking
+
+### 1. Rinse Your Rice
+This step is non-negotiable for most varieties. Rinsing removes excess surface starch that causes gummy rice. Place rice in a bowl, cover with cold water, swirl, drain, and repeat 2-3 times until the water runs mostly clear.
+
+### 2. Use the Right Ratio
+Different rice types need different amounts of water:
+
+- **Long-grain white rice**: 2:1 (water to rice)
+- **Medium-grain**: 1.5:1 to 2:1
+- **Short-grain**: 1.5:1
+- **Basmati/Jasmine**: 1.5:1 to 1.75:1
+- **Brown rice**: 2.5:1 to 3:1
+- **Wild rice**: 3:1
+
+### 3. Let It Rest
+After cooking, let rice sit covered for 5-10 minutes. This allows the moisture to redistribute, giving you perfectly fluffy grains instead of a mushy top layer.
+
+## Cooking Methods
+
+### The Stovetop Method (Most Versatile)
+
+1. Combine rinsed rice and water in a pot with a tight-fitting lid
+2. Bring to a boil over high heat
+3. Reduce to low, cover, and simmer for time specified below
+4. Remove from heat, keep covered, let rest 5-10 minutes
+5. Fluff with a fork
+
+**Timing by Type:**
+- Long-grain white: 18-20 minutes
+- Basmati: 15-18 minutes
+- Jasmine: 12-15 minutes
+- Brown: 40-45 minutes
+- Wild rice: 45-50 minutes
+
+### The Instant Pot Method (Most Convenient)
+
+For consistently perfect hands-off rice:
+
+1. Use the same ratios as stovetop
+2. Pressure cook on HIGH:
+   - White rice: 4 minutes, natural release 10 min
+   - Brown rice: 22 minutes, natural release 10 min
+3. Quick release remaining pressure, fluff immediately
+
+Our [Instant Pot Reviews](/reviews/best-instant-pot) have the best models for this.
+
+### The Risotto Method (Creamy)
+
+Risotto requires a different approach—adding warm broth gradually while stirring:
+
+1. Toast rice in butter/oil with aromatics
+2. Add warm broth one ladle at a time, stirring constantly
+3. Cook until creamy and al dente (about 18-20 minutes)
+4. Finish with butter and parmesan
+
+A [Dutch oven](/reviews/best-dutch-ovens) is perfect for this technique.
+
+## Troubleshooting Common Problems
+
+### Rice is Too Hard
+Not enough water or not cooked long enough. Add a splash more water and cook 5 more minutes.
+
+### Rice is Too Mushy
+Too much water or cooked too long. Next time, reduce water slightly and remove from heat sooner.
+
+### Rice is Gummy
+Not rinsed enough. The surface starch creates that sticky texture. Rinse until water is clear.
+
+### Rice is Burnt on Bottom
+Heat too high or pot too thin. Use lower heat and ensure your pot has a thick bottom.
+
+## Rice Storage and Reheating
+
+**Refrigerator**: Store in airtight container up to 5 days. Reheat with a splash of water, covered, for 1-2 minutes.
+
+**Freezer**: Freeze in portions for up to 6 months. Thaw overnight in refrigerator.
+
+**Best Tools for the Job**: A quality [rice cooker](/reviews/best-rice-cookers) takes all the guesswork out. For stovetop, any heavy-bottomed pot works well.
+
+## Conclusion
+
+Rice is deceptively simple—and that's what makes it challenging. But with these techniques, you'll never dread making rice again. Practice with small batches, adjust to your taste, and soon it'll be second nature.
+
+## Also Worth Reading
+
+- [Best Pantry Staples 2026](/blog/best-pantry-staples-2026) — Stock up on rice varieties.
+- [Instant Pot Recipes for Beginners](/blog/instant-pot-recipes-beginners) — Expand your one-pot meals.
+- [Mastering the Art of Seasoning](/blog/mastering-art-of-seasoning) — Balance your rice dishes with proper seasoning.
+`
+  },
+  {
     slug: "instant-pot-recipes-beginners",
     title: "Instant Pot Recipes Every Beginner Should Try",
     excerpt: "Master your Instant Pot with these game-changing recipes. From hands-off stews to perfect hard-boiled eggs, discover why this appliance belongs in every kitchen.",
