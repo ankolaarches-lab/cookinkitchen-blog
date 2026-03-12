@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Cosori Air Fryer Review 2026 - Premium 5.8 Quart",
@@ -46,9 +47,14 @@ export default function CosoriAirFryerReview() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
-        <div className="mb-8">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Cosori Air Fryer 5.8 Quart', href: '/reviews/cosori-air-fryer' }
+          ]} />
         </div>
+        
 
         {/* Product Hero */}
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-200 mb-8">
@@ -124,9 +130,7 @@ export default function CosoriAirFryerReview() {
           <a href={product.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-orange-50 transition">Buy on Amazon</a>
         </section>
 
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

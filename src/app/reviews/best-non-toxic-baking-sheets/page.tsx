@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Non-Toxic Baking Sheets 2026 - PFAS-Free Guide",
@@ -99,6 +100,13 @@ export default function BestNonToxicBakingSheets() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Non-Toxic Baking Sheets 2026', href: '/reviews/best-non-toxic-baking-sheets' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">Traditional non-stick baking sheets often contain PFAS (per- and polyfluoroalkyl substances) or PTFE (polytetrafluoroethylene), which can release toxic chemicals when heated. If you're looking to reduce exposure to "forever chemicals" in your kitchen, these PFAS-free, ceramic, and silicone options deliver excellent results without the health concerns. We've tested them for heat distribution, release capability, durability, and overall baking performance.</p>
         </section>
@@ -156,9 +164,7 @@ export default function BestNonToxicBakingSheets() {
             <li><strong>Heat Resistance:</strong> Ensure rated for oven temperatures you typically use</li>
           </ul>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

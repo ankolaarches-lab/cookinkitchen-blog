@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Cast Iron vs Carbon Steel - Which is Right for You?",
@@ -47,6 +48,13 @@ export default function CastIronVsCarbonSteel() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Cast Iron vs Carbon Steel', href: '/reviews/cast-iron-vs-carbon-steel' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">Both cast iron and carbon steel are beloved by professional chefs and home cooks alike. They share similar properties but have distinct differences that may make one better suited for your cooking style.</p>
         </section>
@@ -104,9 +112,7 @@ export default function CastIronVsCarbonSteel() {
           <p className="text-stone-700 mb-4"><strong>Choose Cast Iron</strong> if you want maximum heat retention at a budget-friendly price. It's nearly indestructible and perfect for slow-cooking dishes.</p>
           <p className="text-stone-700"><strong>Choose Carbon Steel</strong> if you want a lighter pan that heats faster and offers more precise temperature control. Ideal for sautéing and stir-frying.</p>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

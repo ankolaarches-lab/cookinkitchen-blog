@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cast Iron Care Products - 2026 Buying Guide",

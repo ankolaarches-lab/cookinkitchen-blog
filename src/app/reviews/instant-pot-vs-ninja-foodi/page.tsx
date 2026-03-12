@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Instant Pot Duo vs Ninja Foodi - Which is Better?",
@@ -47,6 +48,13 @@ export default function InstantPotVsNinjaFoodi() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Instant Pot Duo vs Ninja Foodi', href: '/reviews/instant-pot-vs-ninja-foodi' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">Instant Pot and Ninja Foodi are the two biggest names in multicookers. Both can pressure cook, slow cook, sauté, and more — but they have key differences that might sway your decision.</p>
         </section>
@@ -103,9 +111,7 @@ export default function InstantPotVsNinjaFoodi() {
           <p className="text-stone-700 mb-4"><strong>Choose Instant Pot Duo</strong> if you're new to multicookers, want something more affordable, or primarily use pressure cooking and slow cooking functions.</p>
           <p className="text-stone-700"><strong>Choose Ninja Foodi</strong> if you want the convenience of air frying without buying a separate appliance, or need the larger 8-quart capacity for big families.</p>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

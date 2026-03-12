@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Chef's Knives for Home Cooks 2026",
@@ -55,6 +56,13 @@ export default function BestChefKnivesHomeCooks() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Chef\'s Knives for Home Cooks', href: '/reviews/best-chef-knives-home-cooks' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">A great chef's knife is the most important tool in any kitchen. We tested knives from budget to premium, evaluating edge retention, comfort, balance, and overall value.</p>
         </section>
@@ -111,9 +119,7 @@ export default function BestChefKnivesHomeCooks() {
           </div>
         </section>
 
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

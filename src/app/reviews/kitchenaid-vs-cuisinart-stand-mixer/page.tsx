@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "KitchenAid vs Cuisinart Stand Mixer - Which is Better?",
@@ -49,6 +50,13 @@ export default function KitchenAidVsCuisinart() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'KitchenAid vs Cuisinart Stand Mixer', href: '/reviews/kitchenaid-vs-cuisinart-stand-mixer' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">When it comes to stand mixers, KitchenAid is the iconic choice — but Cuisinart offers serious competition at nearly half the price. We tested both extensively to help you decide.</p>
         </section>
@@ -106,9 +114,7 @@ export default function KitchenAidVsCuisinart() {
           <p className="text-stone-700 mb-4"><strong>Choose KitchenAid</strong> if design matters to you, you want the most accessory options, or prefer the convenience of a tilt-head design.</p>
           <p className="text-stone-700"><strong>Choose Cuisinart</strong> if you want the best value, need a slightly larger bowl, or prefer the added peace of mind from a 3-year warranty.</p>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

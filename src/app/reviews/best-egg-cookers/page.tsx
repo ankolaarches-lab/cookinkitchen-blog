@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Egg Cookers 2026 - Buying Guide",
@@ -69,6 +70,13 @@ export default function BestEggCookers() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Egg Cookers 2026', href: '/reviews/best-egg-cookers' }
+          ]} />
+        </div>
         <section className="bg-white rounded-2xl p-8 mb-8 shadow-sm border border-stone-200">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Why Get an Egg Cooker?</h2>
           <p className="text-stone-600 mb-4">Egg cookers take the guesswork out of cooking eggs. Whether you want hard-boiled, soft-boiled, poached, or scrambled eggs, these appliances deliver consistent results with minimal effort. Perfect for meal prep or busy mornings!</p>
@@ -102,9 +110,7 @@ export default function BestEggCookers() {
             </div>
           ))}
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

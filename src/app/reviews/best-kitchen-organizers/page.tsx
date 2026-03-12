@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Organizers 2026 - Buying Guide",
@@ -124,6 +125,13 @@ export default function BestOrganizers2026() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Kitchen Organizers 2026', href: '/reviews/best-kitchen-organizers' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">A well-organized kitchen starts with the right storage solutions. Whether you're dealing with a cramped cabinet, messy drawers, or a cluttered countertop, the right organizer can transform your space. We've tested these products for durability, functionality, and ease of use to bring you the best options for every area of your kitchen.</p>
         </section>
@@ -171,9 +179,7 @@ export default function BestOrganizers2026() {
           <p className="text-stone-700 mb-4"><strong>YouCopia StoraLazzy</strong> remains our top pick for cabinet organization. It doubles your storage space with smooth 360° rotation, making items in the back accessible without digging. The sturdy construction and universal fit make it a winner for any kitchen.</p>
           <a href="https://www.amazon.com/s?k=best kitchen organizers?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

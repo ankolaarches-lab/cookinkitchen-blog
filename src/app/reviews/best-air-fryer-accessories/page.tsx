@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Air Fryer Accessories 2026 - Must-Have Add-Ons",
@@ -55,6 +56,13 @@ export default function BestAirFryerAccessories() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Air Fryer Accessories 2026', href: '/reviews/best-air-fryer-accessories' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">Your air fryer can do so much more than fries. With the right accessories, you can bake, roast whole chickens, and cook more at once. We tested the best add-ons to maximize your air fryer's potential.</p>
         </section>
@@ -88,9 +96,7 @@ export default function BestAirFryerAccessories() {
           <p className="text-stone-700 mb-4"><strong>Silicone Air Fryer Liners</strong> are the must-have accessory. Reusable, non-stick, and easy to clean — they transform your air fryer into a breeze to maintain while cooking everything from veggies to baked goods.</p>
           <a href="https://www.amazon.com/s?k=Silicone+Air+Fryer+Liners+Reusable?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-stone-900 mb-6">Related Reviews</h2>

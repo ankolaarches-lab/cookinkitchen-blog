@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Baking Mats 2026 - Silicone & Non-Stick Mats",
@@ -55,6 +56,13 @@ export default function BestBakingMats() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Baking Mats 2026', href: '/reviews/best-baking-mats' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">A good baking mat is an investment that pays for itself. Whether you're baking cookies, roasting vegetables, or making candy, silicone mats provide even heat distribution and easy release. No more stuck pastries or wasted parchment paper.</p>
         </section>
@@ -88,9 +96,7 @@ export default function BestBakingMats() {
           <p className="text-stone-700 mb-4"><strong>Silpat Premium</strong> is worth the investment. Made in France with a lifetime guarantee, it delivers flawless results batch after batch. Yes, it's pricey — but it'll last forever.</p>
           <a href="https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

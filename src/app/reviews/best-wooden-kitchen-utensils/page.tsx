@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: 'Best Wooden Kitchen Utensils 2026 - Natural & Durable Cookware Tools',

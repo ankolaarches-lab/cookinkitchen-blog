@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Silicone Stretch Lids 2026 - Reusable Food Covers",
@@ -70,6 +71,13 @@ export default function BestSiliconeStretchLids() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Review', href: '/reviews/best-silicone-stretch-lids' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">
             Silicone stretch lids are the eco-friendly solution to keeping food fresh without single-use plastic. 

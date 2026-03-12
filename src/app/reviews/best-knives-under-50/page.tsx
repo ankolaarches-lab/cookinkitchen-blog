@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Chef's Knives Under $50 - 2026 Buying Guide",
@@ -69,6 +70,13 @@ export default function BestKnivesUnder50() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Review', href: '/reviews/best-knives-under-50' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">
             After testing over 15 chef's knives in this price range, we've found that quality 

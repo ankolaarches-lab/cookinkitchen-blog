@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Ninja Air Fryer Pro XL 6-in-1 Review 2026",
@@ -44,9 +45,14 @@ export default function NinjaAirFryerProReview() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
-        <div className="mb-8">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Ninja Air Fryer Pro XL 6-in-1', href: '/reviews/ninja-air-fryer-pro-6-in-1' }
+          ]} />
         </div>
+        
 
         {/* Product Hero */}
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-200 mb-8">
@@ -122,9 +128,7 @@ export default function NinjaAirFryerProReview() {
           <a href={product.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-emerald-700 px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 transition">Buy on Amazon</a>
         </section>
 
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

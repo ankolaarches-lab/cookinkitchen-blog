@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best YETI Rambler Tumblers 2026 - Buying Guide",
@@ -69,6 +70,13 @@ export default function BestYETIRamblerTumblers() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best YETI Rambler Tumblers 2026', href: '/reviews/best-yeti-rambler-tumblers' }
+          ]} />
+        </div>
         <section className="bg-white rounded-2xl p-8 mb-8 shadow-sm border border-stone-200">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Why Choose a YETI Rambler?</h2>
           <p className="text-stone-600 mb-4">YETI Rambler tumblers are built with double-wall vacuum insulation, keeping your drinks cold for hours or hot for as long as you need. They're designed to withstand whatever you can throw at them, from morning coffee to outdoor adventures.</p>
@@ -102,9 +110,7 @@ export default function BestYETIRamblerTumblers() {
             </div>
           ))}
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

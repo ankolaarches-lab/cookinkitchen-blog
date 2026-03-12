@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Sheet Pans 2026 - Buying Guide",
@@ -19,6 +20,13 @@ export default function BestSheetPans2026() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Sheet Pans 2026', href: '/reviews/best-sheet-pans' }
+          ]} />
+        </div>
         <section className="space-y-8">
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">

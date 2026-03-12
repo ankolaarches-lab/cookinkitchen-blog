@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Gadgets Under $25 - 2026 Buying Guide",
@@ -79,6 +80,13 @@ export default function BestKitchenGadgets2026() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Review', href: '/reviews/best-kitchen-gadgets-2026' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">
             You don't need expensive gadgets to make cooking easier. 

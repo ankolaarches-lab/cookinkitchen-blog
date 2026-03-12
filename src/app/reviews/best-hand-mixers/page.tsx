@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Hand Mixers 2026 - Buying Guide",
@@ -37,6 +38,13 @@ export default function BestHandMixers2026() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Hand Mixers 2026', href: '/reviews/best-hand-mixers' }
+          ]} />
+        </div>
         <section className="space-y-8">
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
@@ -62,9 +70,7 @@ export default function BestHandMixers2026() {
             </div>
           ))}
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

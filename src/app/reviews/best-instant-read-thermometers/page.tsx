@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Instant Read Thermometers 2026 - Perfect Results Every Time",
@@ -55,6 +56,13 @@ export default function BestInstantReadThermometers() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Instant Read Thermometers 2026', href: '/reviews/best-instant-read-thermometers' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">An instant read thermometer is the one tool that will transform your cooking. Whether you're grilling steaks, roasting chicken, or making candy, precise temperature readings ensure perfect results every time.</p>
         </section>
@@ -88,9 +96,7 @@ export default function BestInstantReadThermometers() {
           <p className="text-stone-700 mb-4">The <strong>ThermoWorks ThermoPop 2</strong> is our top pick. It delivers professional-grade accuracy in just 2 seconds, with a waterproof design and lifetime warranty. Worth the investment for serious home cooks.</p>
           <a href="https://www.amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Dutch Ovens 2026 - Buying Guide",
@@ -76,6 +77,13 @@ export default function BestDutchOvens2026() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Dutch Ovens 2026', href: '/reviews/best-dutch-ovens' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">A good Dutch oven is a kitchen workhorse. Perfect for braising meats, baking artisan bread, or slow cooking stews. We tested enameled and raw cast iron options to find the best.</p>
         </section>
@@ -129,9 +137,7 @@ export default function BestDutchOvens2026() {
           </div>
         </section>
 
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

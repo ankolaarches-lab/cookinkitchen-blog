@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Shears 2026 - Multi-Purpose Scissors",
@@ -55,6 +56,13 @@ export default function BestKitchenShears() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Kitchen Shears 2026', href: '/reviews/best-kitchen-shears' }
+          ]} />
+        </div>
         <section className="mb-12">
           <p className="text-lg text-stone-700 leading-relaxed">Every kitchen needs a good pair of shears. From snipping fresh herbs to cutting through chicken bones, quality kitchen shears are an essential tool that outperforms regular scissors.</p>
         </section>
@@ -88,9 +96,7 @@ export default function BestKitchenShears() {
           <p className="text-stone-700 mb-4"><strong>Dreamfarm Scizza Kitchen Shears</strong> win for 2026. The spring-loaded design reduces hand fatigue, the built-in herb stripper is genius, and they're comfortable enough for extended use. Best feature-to-price ratio.</p>
           <a href="https://www.amazon.com/s?k=Dreamfarm+Scizza+Kitchen+Shears?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );

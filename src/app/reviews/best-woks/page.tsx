@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Woks 2026 - Buying Guide",
@@ -28,6 +29,13 @@ export default function BestWoks2026() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Best Woks 2026', href: '/reviews/best-woks' }
+          ]} />
+        </div>
         <section className="space-y-8">
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
@@ -53,9 +61,7 @@ export default function BestWoks2026() {
             </div>
           ))}
         </section>
-        <div className="mt-12 text-center">
-          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">← Back to All Reviews</Link>
-        </div>
+        
       </main>
     </div>
   );
