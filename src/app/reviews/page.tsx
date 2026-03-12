@@ -22,6 +22,33 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 38,
+    slug: "best-waffle-makers-2026",
+    title: "Best Waffle Makers 2026 - Ultimate Buying Guide",
+    excerpt: "Golden, crispy waffles at home. We tested the top waffle makers from Breville, Cuisinart, and more for perfect breakfast every time.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 12, 2026",
+  },
+  {
+    id: 37,
+    slug: "best-food-dehydrators-2026",
+    title: "Best Food Dehydrators 2026 - Make Jerky & Dried Fruits",
+    excerpt: "Preserve fruits, make jerky, and create healthy snacks at home. We tested the best food dehydrators for every budget.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 12, 2026",
+  },
+  {
+    id: 36,
+    slug: "best-toasters-2026",
+    title: "Best Toasters 2026 - Perfect Toast Every Time",
+    excerpt: "From budget to premium, we tested the best toasters for consistent browning. Find your perfect morning appliance.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 12, 2026",
+  },
+  {
     id: 35,
     slug: "best-kitchen-timers-2026",
     title: "Best Kitchen Timers 2026 - Never Burn Again",
