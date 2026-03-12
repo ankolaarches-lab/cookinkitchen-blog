@@ -11,7 +11,7 @@ const products = [
     name: "Ninja Foodi XL Pro Air Fry Oven",
     price: "$229.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Ninja+Foodi+Proof+15+Quart+Professional?tag=cookinkitchen-20",
     pros: ["Large capacity", "Multiple functions", "Great for families"],
     cons: ["Takes up counter space"],
@@ -20,7 +20,7 @@ const products = [
     name: "Ninja Crispi",
     price: "$99.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Ninja+Crispi+Portable+Countertop+Crisper?tag=cookinkitchen-20",
     pros: ["Glass container", "Easy cleanup", "Compact size"],
     cons: ["Smaller capacity"],
@@ -29,7 +29,7 @@ const products = [
     name: "Instant Pot Vortex Plus",
     price: "$99.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Instant+Vortex+Plus+7+1+Quart?tag=cookinkitchen-20",
     pros: ["7-in-1 functionality", "Easy to use", "Good size"],
     cons: ["Learning curve"],
@@ -69,7 +69,7 @@ export default function BestAirFryer2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=400&fit=crop" 
               alt="Best Air Fryers 2026" 
               className="w-full h-64 object-cover"
             />

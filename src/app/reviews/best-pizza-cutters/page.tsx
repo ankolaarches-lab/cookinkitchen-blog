@@ -11,7 +11,7 @@ const products = [
     name: "DXISheng Pizza Cutter",
     price: "$15.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=DXISheng+Stainless+Pizza+Cutter?tag=cookinkitchen-20",
     pros: ["Sharp blade", "Comfortable handle", "Easy to clean", "Affordable"],
     cons: ["Hand wash recommended"],

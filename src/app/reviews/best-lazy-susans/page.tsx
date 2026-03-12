@@ -20,7 +20,7 @@ const products = [
     name: "Simplehuman Turntable",
     price: "$34.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Simplehuman+Stainless+Steel+Turntable?tag=cookinkitchen-20",
     pros: ["Brushed steel", "Raised edge", "Smooth turn", "Durable"],
     cons: ["Counter space"],

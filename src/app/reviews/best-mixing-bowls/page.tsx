@@ -20,7 +20,7 @@ const products = [
     name: "Pyrex Glass Mixing Bowl Set",
     price: "$34.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Pyrex+Storage+Mixing+3+Piece+Bowl?tag=cookinkitchen-20",
     pros: ["Microwave safe", "Dishwasher safe", "No staining", "Glass is non-reactive"],
     cons: ["Heavy", "Can break"],

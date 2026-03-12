@@ -11,7 +11,7 @@ const products = [
     name: "KitchenAid Artisan Stand Mixer",
     price: "$449.99",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart?tag=cookinkitchen-20",
     pros: ["10 speeds", "5 quart bowl", "Multiple colors", "Huge accessory line"],
     cons: ["Pricey", "Can be loud"],

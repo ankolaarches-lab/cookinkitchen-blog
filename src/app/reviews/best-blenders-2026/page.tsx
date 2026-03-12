@@ -11,7 +11,7 @@ const products = [
     name: "Vitamix 5200",
     price: "$549.95",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Vitamix+5200+Standard+Blender+Professional?tag=cookinkitchen-20",
     pros: ["Commercial-grade motor", "Variable speed control", "Perfect for hot soups", "10-year warranty"],
     cons: ["Premium price", "Loud operation", "Heavy"],
@@ -47,7 +47,7 @@ const products = [
     name: "Oster Pro 1200",
     price: "$129.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1534120247760-c44c3e4a62f1?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Oster+Blender+Stainless+Brushed+Nickel?tag=cookinkitchen-20",
     pros: ["Good value", "Dual-direction blade", "Food processor jar included", "Smoothie cups"],
     cons: ["Less powerful", "Warranty shorter"],
@@ -56,7 +56,7 @@ const products = [
     name: "Blendtec Designer 725",
     price: "$699.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Blendtec+Designer+725+Blender+Black?tag=cookinkitchen-20",
     pros: ["Wildside+ jar", "Touchscreen interface", "Pre-programmed recipes", "10-year warranty"],
     cons: ["Very expensive", "Large footprint"],
@@ -78,7 +78,7 @@ export default function BestBlenders2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=400&fit=crop" 
               alt="Best Blenders 2026" 
               className="w-full h-64 object-cover"
             />

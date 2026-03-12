@@ -11,7 +11,7 @@ const products = [
     name: "Zojirushi Neuro Fuzzy NS-LAC05",
     price: "$109.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Zojirushi+NS+LAC05+Uncooked+Premium+1+5+Liter?tag=cookinkitchen-20",
     pros: ["Fuzzy logic technology", "Keep warm function", "Multiple settings", "Durable"],
     cons: ["Expensive", "Small capacity"],
@@ -60,7 +60,7 @@ export default function BestRiceCooker() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop" 
               alt="Best Rice Cookers" 
               className="w-full h-64 object-cover"
             />

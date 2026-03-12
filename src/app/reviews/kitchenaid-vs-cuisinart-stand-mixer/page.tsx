@@ -11,7 +11,7 @@ const products = [
     name: "KitchenAid Artisan Tilt-Head Stand Mixer",
     price: "$449.99",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=kitchenaid+vs+cuisinart+stand+mixer?tag=cookinkitchen-20",
     brand: "KitchenAid",
     pros: ["Iconic design", "Huge accessory line", "Multiple colors", "Tilt-head convenient"],

@@ -11,7 +11,7 @@ const products = [
     name: "KitchenAid Hand Mixer",
     price: "$49.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=KitchenAid+KHM512ER+5+Speed+Hand?tag=cookinkitchen-20",
     pros: ["9 speeds", "Quiet", "Comfortable grip", "Eject button"],
     cons: ["Corded only"],

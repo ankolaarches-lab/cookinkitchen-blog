@@ -11,7 +11,7 @@ const products = [
     name: "Anova Culinary Sous Vide",
     price: "$199.00",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Anova+Culinary+Precision+Bluetooth+Immersion?tag=cookinkitchen-20",
     pros: ["Precise temperature", "Bluetooth connectivity", "Compact design", "Easy to use"],
     cons: ["Requires pot/container"],
@@ -38,7 +38,7 @@ const products = [
     name: "ChefSteps Joule Turbo",
     price: "$249.00",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=ChefSteps+Joule+Turbo+Sous+Vide?tag=cookinkitchen-20",
     pros: ["Fastest heating", "Advanced presets", "Premium build", "GuideMode"],
     cons: ["Most expensive", "App required"],
@@ -60,7 +60,7 @@ export default function BestSousVide() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop" 
               alt="Best Sous Vide" 
               className="w-full h-64 object-cover"
             />

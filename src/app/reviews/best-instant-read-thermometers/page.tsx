@@ -11,7 +11,7 @@ const products = [
     name: "ThermoWorks ThermoPop 2",
     price: "$49.95",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1585238341267-1cfec2046a55?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer?tag=cookinkitchen-20",
     pros: ["2-second read", "Waterproof", "Backlight", "Auto-rotating display", "Lifetime warranty"],
     cons: ["No probe storage"],

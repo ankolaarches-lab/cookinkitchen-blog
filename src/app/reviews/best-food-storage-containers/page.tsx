@@ -11,7 +11,7 @@ const products = [
     name: "Pyrex Glass Food Storage Set (18-Piece)",
     price: "$44.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1547517023-7ca0c162f816?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Pyrex+18+Piece+Smart+Seal?tag=cookinkitchen-20",
     pros: ["Glass is microwave-safe", "BPA-free", "Stackable", "Oven safe"],
     cons: ["Glass can break if dropped"],

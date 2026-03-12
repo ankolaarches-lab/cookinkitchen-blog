@@ -11,7 +11,7 @@ const products = [
     name: "Cuisinart 14-Cup Food Processor",
     price: "$199.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Cuisinart+DFP+14BCNY+14+Cup+Food+Processor?tag=cookinkitchen-20",
     pros: ["Large capacity", "Powerful motor", "Multiple blades", "Easy to clean"],
     cons: ["Large footprint", "Expensive"],
@@ -29,7 +29,7 @@ const products = [
     name: "Hamilton Beach 10-Cup Food Processor",
     price: "$49.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+70725+10+Cup+Processor?tag=cookinkitchen-20",
     pros: ["Affordable", "Compact", "Easy to use", "Dishwasher safe parts"],
     cons: ["Smaller capacity", "Less powerful"],
@@ -60,7 +60,7 @@ export default function BestFoodProcessor() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=400&fit=crop" 
               alt="Best Food Processors" 
               className="w-full h-64 object-cover"
             />

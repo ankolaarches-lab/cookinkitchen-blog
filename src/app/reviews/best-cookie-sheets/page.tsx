@@ -11,7 +11,7 @@ const products = [
     name: "Nordic Ware Natural Aluminum",
     price: "$14.95",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Baker?tag=cookinkitchen-20",
     pros: ["Excellent heat distribution", "USA made", "Durable", "Affordable"],
     cons: ["Not nonstick"],

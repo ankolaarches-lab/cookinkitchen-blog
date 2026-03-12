@@ -29,7 +29,7 @@ const products = [
     name: "Instant Pot Duo Crisp 11-in-1",
     price: "$149.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Crisp+11+in+1?tag=cookinkitchen-20",
     pros: ["Air fryer lid included", "11 functions", "Crispy results", "Two lids"],
     cons: ["Expensive", "Takes more storage space"],
@@ -38,7 +38,7 @@ const products = [
     name: "Instant Pot Duo Mini 7-in-1",
     price: "$69.95",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Mini+3+Quart?tag=cookinkitchen-20",
     pros: ["Compact size", "Great for couples", "Affordable", "Perfect for small kitchens"],
     cons: ["Smaller capacity", "Limited batch cooking"],
@@ -60,7 +60,7 @@ export default function BestInstantPot() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop" 
               alt="Best Instant Pot" 
               className="w-full h-64 object-cover"
             />

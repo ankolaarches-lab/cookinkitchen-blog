@@ -20,7 +20,7 @@ const products = [
     name: "Benriner Japanese Mandoline",
     price: "$27.95",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Benriner+High+Performance+Slicer+BR+8?tag=cookinkitchen-20",
     pros: ["Super sharp", "Japanese quality", "Lightweight", "Affordable"],
     cons: ["No safety holder"],

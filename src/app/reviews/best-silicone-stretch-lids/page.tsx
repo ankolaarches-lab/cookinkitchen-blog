@@ -11,7 +11,7 @@ const products = [
     name: "Stasher Silicone Stretch Lids Set",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Stasher+Silicone+Stretch+Lids+Set?tag=cookinkitchen-20",
     pros: ["Award-winning design", "Fits various bowl sizes", "Airtight seal", "BPA-free silicone"],
     cons: ["Premium price"],

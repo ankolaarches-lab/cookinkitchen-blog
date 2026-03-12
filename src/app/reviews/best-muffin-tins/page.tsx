@@ -20,7 +20,7 @@ const products = [
     name: "Nordic Ware Muffin Pan",
     price: "$29.95",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Original+Baked+Aluminum?tag=cookinkitchen-20",
     pros: ["Natural aluminum", "No nonstick", "Great browning", "USA made"],
     cons: ["Needs greasing"],

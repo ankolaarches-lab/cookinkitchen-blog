@@ -20,7 +20,7 @@ const products = [
     name: "Nordic Ware Natural Aluminum Commercial Baker's Half Sheet",
     price: "$14.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1590671886400-8f8088b97cb0?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Baker?tag=cookinkitchen-20",
     pros: ["Heavy-duty aluminum", "Even baking", "Commercial quality", " Affordable"],
     cons: ["Not non-stick"],

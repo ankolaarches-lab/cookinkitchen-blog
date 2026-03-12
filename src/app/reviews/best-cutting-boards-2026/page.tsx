@@ -11,7 +11,7 @@ const products = [
     name: "Joseph Joseph Tri-Prep Cutting Board",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Joseph+Joseph+Tri+Prep+Cutting+Board?tag=cookinkitchen-20",
     pros: ["3 different sizes", "Non-slip edges", "Juice grooves", "Dishwasher safe"],
     cons: ["Plastic material"],

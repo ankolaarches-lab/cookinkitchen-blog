@@ -189,7 +189,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             {/* Premium CTA Box */}
             <div className="mt-16 p-10 bg-slate-950 rounded-[2rem] border border-emerald-900/30 text-center relative overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=400&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
+              <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
               <div className="relative z-10">
                 <h3 className="font-serif text-2xl font-bold text-white mb-3">Upgrade Your Arsenal</h3>
                 <p className="text-emerald-50/70 mb-8 font-medium">Equip your kitchen with the exact gear our analysts recommend.</p>

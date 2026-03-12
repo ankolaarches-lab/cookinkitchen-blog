@@ -11,7 +11,7 @@ const products = [
     name: "OXO Good Grips V-Blade Mandoline Slicer",
     price: "$34.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Mandoline+Slicer?tag=cookinkitchen-20",
     pros: ["V-shaped blade", "Non-slip base", "Easy to clean", "Multiple slice thicknesses"],
     cons: ["Hand wash recommended"],
@@ -38,7 +38,7 @@ const products = [
     name: "Mueller Austria Mandoline Pro",
     price: "$39.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Mueller+Mandoline+Pro+Slicer?tag=cookinkitchen-20",
     pros: ["4 blade types", "Julienne and wavy cuts", "Includes food holder", "Value pack"],
     cons: ["Plastic feel"],
@@ -47,7 +47,7 @@ const products = [
     name: "Chef'n Veggie Chop Hand-Powered Slicer",
     price: "$29.99",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Chef+n+Veggie+Chop?tag=cookinkitchen-20",
     pros: ["Compact design", "Easy to store", "No electricity needed", "Fun to use"],
     cons: ["Not for precision slicing"],
@@ -69,7 +69,7 @@ export default function BestMandolineSlicers2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop" 
               alt="Best Mandoline Slicers 2026" 
               className="w-full h-64 object-cover"
             />

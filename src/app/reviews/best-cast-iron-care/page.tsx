@@ -20,7 +20,7 @@ const products = [
     name: "CLARK'S Cast Iron Cleaning Kit",
     price: "$32.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Cast+Iron+Care+Kit+Coconut?tag=cookinkitchen-20",
     pros: ["Coconut oil based", "Made in USA", "Soap + seasoning oil", "Applicator pad included"],
     cons: ["Higher price point"],
@@ -47,7 +47,7 @@ const products = [
     name: "Field Company Cast Iron Care Kit",
     price: "$45.00",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     link: "https://fieldcompany.com/products/cast-iron-care-kit?tag=cookinkitchen-20",
     pros: ["Premium quality", "Natural fiber brush", "Chain mail scrubber", "Field seasoning oil"],
     cons: ["Premium price", "Not on Amazon"],
@@ -69,7 +69,7 @@ export default function BestCastIronCare() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=400&fit=crop" 
               alt="Best Cast Iron Care Products" 
               className="w-full h-64 object-cover"
             />

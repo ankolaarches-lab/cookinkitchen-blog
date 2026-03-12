@@ -13,8 +13,8 @@ const categoryImages: Record<string, string> = {
   "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
   "Knives": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
   "Cookware": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
-  "Appliances": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&h=400&fit=crop",
-  "Gadgets": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=800&h=400&fit=crop",
+  "Appliances": "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=400&fit=crop",
+  "Gadgets": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=400&fit=crop",
 };
 
 const getImageUrl = (category: string): string => {
@@ -29,7 +29,7 @@ const reviews = [
     category: "Kitchen Utensils",
     rating: 4.6,
     date: "Feb 16, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20",
     content: `
 ## The Essential Toolkit
@@ -80,7 +80,7 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     tableImages: [
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop", // Miyabi
       "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop", // Victorinox
-      "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=600&h=400&fit=crop"  // Premium
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop"  // Premium
     ],
     content: `
 ## The Search for the Perfect Blade
@@ -110,7 +110,7 @@ For those on a budget, the Victorinox Swiss Classic offers incredible value. It'
     category: "Cookware",
     rating: 4.5,
     date: "Feb 8, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Skillet-12-inch/dp/B00006JSUA?tag=cookinkitchen-20",
     content: `
 ## The Showdown
@@ -170,7 +170,7 @@ For traditional pressure cooking, the Instant Pot wins. For versatility and air-
     category: "Appliances",
     rating: 4.7,
     date: "Feb 2, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20",
     content: `
 ## Mixing It Up
@@ -233,7 +233,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     category: "Cookware",
     rating: 4.9,
     date: "Jan 25, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
     tableImages: [
       "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop", // Le Creuset
@@ -314,7 +314,7 @@ Maximum space-saving with an expandable design that fits in any drawer.
     category: "Gadgets",
     rating: 4.4,
     date: "Jan 20, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/OXO-Stainless-Compact-Grip-11-Pound/dp/B079D9F86W?tag=cookinkitchen-20",
     content: `
 ## Why You Need a Scale
@@ -403,7 +403,7 @@ Victorinox delivers again with an affordable option that outperforms knives twic
     category: "Appliances",
     rating: 4.5,
     date: "Jan 10, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20",
     content: `
 ## The Blender Showdown
@@ -430,7 +430,7 @@ The Oster Pro's blender bottle system makes on-the-go smoothies a breeze.
     category: "Appliances",
     rating: 4.6,
     date: "Jan 8, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Technivorm-Moccamaster-10-Cup-Coffee-Brewer/dp/B07CM5H7BQ?tag=cookinkitchen-20",
     content: `
 ## Brewing Excellence
@@ -457,7 +457,7 @@ Great coffee doesn't have to be expensive. This brewer delivers solid results.
     category: "Appliances",
     rating: 4.4,
     date: "Jan 5, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20",
     content: `
 ## Crispy Without the Oil
@@ -490,7 +490,7 @@ Affordable and reliable, Cosori offers great results without breaking the bank.
     category: "Gadgets",
     rating: 4.3,
     date: "Jan 3, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/ChefsChoice-15-Inch-Conventional-Sharpener/dp/B00004S7I8?tag=cookinkitchen-20",
     content: `
 ## Keep Your Blades Sharp
@@ -517,7 +517,7 @@ Affordable and effective for quick touch-ups between full sharpenings.
     category: "Gadgets",
     rating: 4.2,
     date: "Jan 1, 2026",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Cuisinox-Stainless-Steel-Strainer/dp/B0002H7F9E?tag=cookinkitchen-20",
     content: `
 ## Essential Kitchen Tools
@@ -544,7 +544,7 @@ Multiple sizes cover all your straining needs.
     category: "Gadgets",
     rating: 4.4,
     date: "Dec 28, 2025",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/OXO-GOOD-Grips-Measuring-Cups/dp/B00GE6NF6G?tag=cookinkitchen-20",
     content: `
 ## Measure Right
@@ -571,7 +571,7 @@ Everything you need in one comprehensive set.
     category: "Gadgets",
     rating: 4.5,
     date: "Dec 25, 2025",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Stainless-Steel-Spatula-Set-Utensil/dp/B07XJ8C8F5?tag=cookinkitchen-20",
     content: `
 ## Essential Tools
@@ -598,7 +598,7 @@ This set includes everything you need and lasts forever.
     category: "Cookware",
     rating: 4.7,
     date: "Dec 22, 2025",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/All-Clad-Stainless-Tri-Ply-Cookware/dp/B000X5OC1K?tag=cookinkitchen-20",
     content: `
 ## The All-Clad Showdown
@@ -625,7 +625,7 @@ Great non-stick performance with the durability of hard anodized aluminum.
     category: "Appliances",
     rating: 4.5,
     date: "Dec 20, 2025",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
     affiliateLink: "https://www.amazon.com/Bonavita-Electric-Gooseneck-Kettle/dp/B00DGBNOQK?tag=cookinkitchen-20",
     content: `
 ## Hot Water on Demand

@@ -38,7 +38,7 @@ const products = [
     name: "KitchenAid 5-Piece Nylon Utensil Set",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=KitchenAid+5+Piece+Nylon+Utensil?tag=cookinkitchen-20",
     pros: ["Heat resistant to 400°F", "Trusted brand", "Dishwasher safe", "Comfortable grip"],
     cons: ["Only 5 pieces"],
@@ -60,7 +60,7 @@ export default function BestKitchenUtensilSet() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&h=400&fit=crop" 
               alt="Best Kitchen Utensil Sets" 
               className="w-full h-64 object-cover"
             />

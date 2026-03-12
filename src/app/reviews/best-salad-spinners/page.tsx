@@ -20,7 +20,7 @@ const products = [
     name: "Chef'n Veggie Chop Salad Spinner",
     price: "$24.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Chefn+Lettuce+Keep+It?tag=cookinkitchen-20",
     pros: ["Built-in chopper", "Compact", "Unique design", "Fun to use"],
     cons: ["Smaller spinner"],

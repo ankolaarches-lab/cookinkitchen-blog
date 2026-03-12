@@ -11,7 +11,7 @@ const products = [
     name: "Braun MQ5000 MultiQuick 5 Hand Blender",
     price: "$49.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best immersion blenders?tag=cookinkitchen-20",
     pros: ["Powerful motor", "Easy to clean", "Multiple attachments"],
     cons: ["Can be loud"],
@@ -69,7 +69,7 @@ export default function ImmersionBlender() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=800&h=400&fit=crop" 
               alt="Best Immersion Blenders 2026" 
               className="w-full h-64 object-cover"
             />

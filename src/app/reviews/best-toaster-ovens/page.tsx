@@ -11,7 +11,7 @@ const products = [
     name: "Breville Smart Oven",
     price: "$199.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Breville+Smart+Oven+BOV850BSS?tag=cookinkitchen-20",
     presets: ["Element IQ", "9 functions", "Large capacity", "Convection"],
     cons: ["Expensive", "Large counter footprint"],

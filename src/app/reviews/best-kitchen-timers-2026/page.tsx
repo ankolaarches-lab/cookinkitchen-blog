@@ -38,7 +38,7 @@ const products = [
     name: "TIMEGO Digital Kitchen Timer",
     price: "$12.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1583083527882-4bee9aba2eea?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=TIMEGO+Digital+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Compact", "Memory function"],
     cons: ["Smaller display"],

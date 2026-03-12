@@ -29,7 +29,7 @@ const products = [
     name: "Calphalon Nonstick Bakeware Set",
     price: "$79.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Calphalon+Nonstick+Bakeware+3+Piece?tag=cookinkitchen-20",
     pros: ["Easy release", "Oven safe to 500°F", "Dishwasher safe"],
     cons: ["Higher price point"],

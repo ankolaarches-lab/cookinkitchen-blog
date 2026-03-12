@@ -11,7 +11,7 @@ const products = [
     name: "Pyrex Deep Casserole Dish",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Pyrex+15+Inch+Casserole+with+Lid?tag=cookinkitchen-20",
     pros: ["Glass is non-reactive", "With lid", "Microwave safe", "Dishwasher safe"],
     cons: ["Can break"],
