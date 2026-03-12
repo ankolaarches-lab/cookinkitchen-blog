@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 39,
+    slug: "best-rice-cookers-2026",
+    title: "Best Rice Cookers 2026 - Ultimate Buying Guide",
+    excerpt: "Perfect rice every time. We tested the best rice cookers from Zojirushi, Instant Pot, Tiger, and more for fluffy grains.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 12, 2026",
+  },
+  {
     id: 38,
     slug: "best-waffle-makers-2026",
     title: "Best Waffle Makers 2026 - Ultimate Buying Guide",
