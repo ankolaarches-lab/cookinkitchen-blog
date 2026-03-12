@@ -11,7 +11,7 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven",
     price: "$69.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1612969497501-09ab6b20dbf5?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590113837941-8656336e9ff0?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Lodge+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Durable enamel coating", "Oven-safe to 500°F", "Great value"],
     cons: ["Heavy (7 lbs)", "Some reports of uneven enamel"],

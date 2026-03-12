@@ -11,7 +11,7 @@ const products = [
     name: "T-fal E93808 Professional Nonstick Fry Pan",
     price: "$24.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909112-be2061b3dfbf?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+8+Inch?tag=cookinkitchen-20",
     pros: ["Affordable", "Heat indicator", "Dishwasher safe", "Lightweight"],
     cons: ["Not metal utensil safe"],
@@ -20,7 +20,7 @@ const products = [
     name: "Calphalon Classic Nonstick 10-Inch",
     price: "$49.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1584346133934-a3afd2a3d972?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Calphalon+CC+0011+10+Inch+Nonstick+Skilelt?tag=cookinkitchen-20",
     pros: ["Hard-anodized aluminum", "PFOA-free", "Even heating", "Durable"],
     cons: ["Hand wash recommended"],
@@ -29,7 +29,7 @@ const products = [
     name: "GreenLife Soft Grip 9-Inch",
     price: "$27.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=GreenLife+CC+0012+Soft+9+Inch?tag=cookinkitchen-20",
     pros: ["Ceramic coating", "Soft grip handle", "Eco-friendly", "Budget-friendly"],
     cons: ["Less durable than PTFE"],
@@ -38,7 +38,7 @@ const products = [
     name: "All-Clad Hard Anodized 10-Inch",
     price: "$89.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1584281723320-9944f7760971?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=All+Clad+HA1+10010+Hard+Anodized+10+Inch?tag=cookinkitchen-20",
     pros: ["Premium quality", "Metal utensil safe", "Lifetime warranty", "Perfect heat distribution"],
     cons: ["Expensive", "Heavy"],
@@ -53,14 +53,14 @@ export default function BestNonStickPan() {
         
         <article>
           <div className="flex items-center gap-4 mb-4">
-            <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-fullato font-medium"> text-sm font-lCookware</span>
+            <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-lato font-medium">Cookware</span>
             <span className="font-lato text-emerald-500 font-bold">★ 4.7</span>
             <span className="font-lato text-stone-400 text-sm">Feb 17, 2026</span>
           </div>
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&h=400&fit=crop" 
               alt="Best Non-Stick Frying Pans" 
               className="w-full h-64 object-cover"
             />

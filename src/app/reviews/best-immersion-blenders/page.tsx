@@ -11,7 +11,7 @@ const products = [
     name: "Braun MQ5000 MultiQuick 5 Hand Blender",
     price: "$49.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best immersion blenders?tag=cookinkitchen-20",
     pros: ["Powerful motor", "Easy to clean", "Multiple attachments"],
     cons: ["Can be loud"],
@@ -20,7 +20,7 @@ const products = [
     name: "KitchenAid Variable Speed Hand Blender",
     price: "$79.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594910358428-130d85a1a364?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best immersion blenders?tag=cookinkitchen-20",
     pros: ["Sleek design", "Variable speed", "Durable"],
     cons: ["Premium price"],
@@ -29,7 +29,7 @@ const products = [
     name: "Immersion Hand Blender with Whisk",
     price: "$29.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594498308643-982ba70932c1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best immersion blenders?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Includes whisk", "Easy storage"],
     cons: ["Less powerful"],
@@ -38,7 +38,7 @@ const products = [
     name: "Cuisinart SmartStick Hand Blender",
     price: "$39.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594910358428-130d85a1a364?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best immersion blenders?tag=cookinkitchen-20",
     pros: ["Comfortable grip", "BPA-free", "Stainless steel"],
     cons: ["Short cord"],
@@ -47,7 +47,7 @@ const products = [
     name: "Oster 2-Speed Hand Blender",
     price: "$24.99",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594056221469-8fd1a153f93a?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best immersion blenders?tag=cookinkitchen-20",
     pros: ["Very affordable", "Simple to use", "2 speeds"],
     cons: ["Basic features"],
@@ -69,7 +69,7 @@ export default function ImmersionBlender() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=800&h=400&fit=crop" 
               alt="Best Immersion Blenders 2026" 
               className="w-full h-64 object-cover"
             />

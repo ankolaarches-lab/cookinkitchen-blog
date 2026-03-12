@@ -724,7 +724,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
           <div className="relative rounded-2xl overflow-hidden mb-8 shadow-lg h-64 md:h-96 w-full">
             <Image
-              src={getImageUrl(review.category)}
+              src={review.image || getImageUrl(review.category)}
               alt={review.title}
               fill
               priority
@@ -760,7 +760,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <ComparisonTable items={[
             {
               name: "Top Recommended Option",
-              image: getImageUrl(review.category),
+              image: review.image || getImageUrl(review.category),
               badge: "Editor's Choice",
               rating: 4.9,
               price: "$$",
@@ -769,7 +769,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Best Value Option",
-              image: getImageUrl(review.category),
+              image: review.image || getImageUrl(review.category),
               badge: "Best Value",
               rating: 4.7,
               price: "$",
@@ -778,7 +778,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Premium Option",
-              image: getImageUrl(review.category),
+              image: review.image || getImageUrl(review.category),
               badge: "Premium Pick",
               rating: 4.8,
               price: "$$$",

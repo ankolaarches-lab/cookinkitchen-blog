@@ -11,7 +11,7 @@ const products = [
     name: "Wüsthof 7-Slot Knife Block",
     price: "$39.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block?tag=cookinkitchen-20",
     pros: ["Solid beech wood construction", "Fits most knife sizes", "Keeps blades sharp", "Lifetime warranty"],
     cons: ["Takes counter space"],
@@ -20,7 +20,7 @@ const products = [
     name: "Chef'sPath Magnetic Knife Strip (20 inch)",
     price: "$24.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1550989460-0adf968b5774?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip?tag=cookinkitchen-20",
     pros: ["Saves valuable counter space", "Strong magnet", "Easy wall installation", "Fits any knife size"],
     cons: ["Requires wall mounting"],
@@ -29,7 +29,7 @@ const products = [
     name: "Joseph Joseph Expandable Knife Drawer Organizer",
     price: "$29.99",
     rating: 4.6,
-    image: "🗄️",
+    image: "https://images.unsplash.com/photo-1584346133934-a3afd2a3d972?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer?tag=cookinkitchen-20",
     pros: ["Fits inside drawer", "Expandable design", "Non-slip base", "Maximum space-saving"],
     cons: ["Requires drawer space"],
@@ -38,7 +38,7 @@ const products = [
     name: "Knife Safe Magnetic Knife Block",
     price: "$34.99",
     rating: 4.5,
-    image: "🛡️",
+    image: "https://images.unsplash.com/photo-1594709811166-4325a3d01f84?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Magnetic+Knife+Block+Organizer+Set?tag=cookinkitchen-20",
     pros: ["Compact design", "Dual magnetic sides", "Includes sharpening rod", "Modern look"],
     cons: ["Limited knife capacity"],
@@ -47,7 +47,7 @@ const products = [
     name: "Prociension Knife Bar Magnetic Strip (24 inch)",
     price: "$39.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Prociension+Knife+Bar+Magnetic+Strip?tag=cookinkitchen-20",
     pros: ["Extra long 24 inch", "Heavy-duty magnet", "Screw or adhesive mount", "Professional grade"],
     cons: ["Premium price"],
@@ -88,7 +88,13 @@ export default function BestKnifeStorage2026() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="text-6xl flex items-center">{product.image}</div>
+                <div className="w-full md:w-48 h-48 flex-shrink-0">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>

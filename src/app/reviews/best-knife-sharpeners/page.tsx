@@ -11,7 +11,7 @@ const products = [
     name: "WorkSharp Kitchen Knife Sharpener",
     price: "$79.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1595133642340-a3528b174004?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best knife sharpeners?tag=cookinkitchen-20",
     pros: ["Precision guidance", "Angle guides included", "Works on all knives"],
     cons: ["Takes practice"],
@@ -20,7 +20,7 @@ const products = [
     name: "Chef'sChoice 15 Inch Knife Sharpener",
     price: "$99.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1612997951711-20909e13e053?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best knife sharpeners?tag=cookinkitchen-20",
     pros: ["3-stage system", "Electric", "Professional results"],
     cons: ["Only for straight-edged knives"],
@@ -29,7 +29,7 @@ const products = [
     name: "Lansky NMK-003 Dual Grit Sharpener",
     price: "$24.95",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1622542794287-ea91d1b7de20?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best knife sharpeners?tag=cookinkitchen-20",
     pros: ["Portable", "Coarse and fine sides", "Affordable"],
     cons: ["Manual effort needed"],
@@ -38,7 +38,7 @@ const products = [
     name: "Smith's 50402 Adjustable Knife Sharpener",
     price: "$19.97",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1589139263435-021966a0149e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best knife sharpeners?tag=cookinkitchen-20",
     pros: ["Adjustable angle", "2-stage", "Budget-friendly"],
     cons: ["Not for serrated knives"],
@@ -47,7 +47,7 @@ const products = [
     name: "Accusharp 001 Knife Sharpener",
     price: "$12.99",
     rating: 4.3,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1591122676839-444405362e0a?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=best knife sharpeners?tag=cookinkitchen-20",
     pros: ["Simple to use", "Very affordable", "Compact"],
     cons: ["Limited control"],
@@ -69,7 +69,7 @@ export default function KnifeSharpeners() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1595423812165-42f1cf548902?w=800&h=400&fit=crop" 
               alt="Best Knife Sharpeners 2026" 
               className="w-full h-64 object-cover"
             />

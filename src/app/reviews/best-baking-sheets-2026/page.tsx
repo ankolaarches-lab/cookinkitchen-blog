@@ -11,7 +11,7 @@ const products = [
     name: "Nordic Ware Natural Aluminum Commercial Baker's Half Sheet",
     price: "$24.95",
     rating: 4.9,
-    image: "🍽️",
+    image: "https://images.unsplash.com/photo-1594910413521-39f243075252?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Bakers?tag=cookinkitchen-20",
     pros: ["Excellent heat distribution", "Durable natural aluminum", "Made in USA"],
     cons: ["Hand wash recommended"],
@@ -20,7 +20,7 @@ const products = [
     name: "USA Pan Bakeware Half Sheet Pan",
     price: "$18.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1595133642340-a3528b174004?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=USA+Pan+Bakeware+Half+Cookie?tag=cookinkitchen-20",
     pros: ["Professional grade", "Non-stick coating", "Heavy duty"],
     cons: ["Can warp with extreme temperature changes"],
@@ -29,7 +29,7 @@ const products = [
     name: "Calphalon Nonstick Bakeware Set",
     price: "$79.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Calphalon+Nonstick+Bakeware+3+Piece?tag=cookinkitchen-20",
     pros: ["Easy release", "Oven safe to 500°F", "Dishwasher safe"],
     cons: ["Higher price point"],
@@ -38,7 +38,7 @@ const products = [
     name: "Wilton Performance Baking Sheet Set",
     price: "$29.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-7bc612bd945b?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Wilton+Performance+Non+Stick+Baking+3+Piece?tag=cookinkitchen-20",
     pros: ["Great value", "Non-stick", "Set of 3"],
     cons: ["Not as durable as premium options"],
@@ -47,7 +47,7 @@ const products = [
     name: "AmazonBasics Non-Stick Baking Sheet Set",
     price: "$24.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1616645258469-ce5e76246e5e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=AmazonBasics+Non+Stick+Baking+Sheet?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Easy cleanup", "Set of 2"],
     cons: ["May need replacing after heavy use"],
@@ -88,7 +88,9 @@ export default function BestBakingSheets2026() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="text-6xl">{product.image}</div>
+                <div className="w-full md:w-48 h-48 flex-shrink-0">
+92:                   <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
+93:                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>

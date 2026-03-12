@@ -49,6 +49,13 @@ export default function Page() {
             <p className="mb-4 text-stone-600">
               The Fellow Stagg EKG combines stunning design with precise temperature control. The LCD display shows your exact temperature, the pour is incredibly controlled, and it holds your temp for up to 60 minutes.
             </p>
+            <div className="my-8 rounded-xl overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1544145945-f904253db0ad?w=800&h=400&fit=crop" 
+                alt="Fellow Stagg EKG" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
             <ul className="ml-4 mb-4">
               <li className="mb-2">Variable temperature control (135-212°F)</li>
               <li className="mb-2">Hold mode for up to 60 minutes</li>

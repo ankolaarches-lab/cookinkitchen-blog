@@ -11,7 +11,7 @@ const products = [
     name: "Stasher Silicone Stretch Lids Set",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Stasher+Silicone+Stretch+Lids+Set?tag=cookinkitchen-20",
     pros: ["Award-winning design", "Fits various bowl sizes", "Airtight seal", "BPA-free silicone"],
     cons: ["Premium price"],
@@ -20,7 +20,7 @@ const products = [
     name: "Basic House Reusable Silicone Lids (7-Pack)",
     price: "$14.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1591122676839-444405362e0a?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Basic+House+Reusable+Silicone+Covers?tag=cookinkitchen-20",
     pros: ["7 sizes included", "Budget-friendly", "Microwave safe", "Dishwasher safe"],
     cons: ["May stretch over time"],
@@ -29,7 +29,7 @@ const products = [
     name: "Lucky Stretch 8-Pack Silicone Bowl Covers",
     price: "$19.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594132171549-b5f7786dfd35?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Lucky+Stretch+Silicone+Covers+8+Pack?tag=cookinkitchen-20",
     pros: ["8 sizes for versatility", "Leak-proof", "Heat resistant", "Great for meal prep"],
     cons: ["Can be slippery when wet"],
@@ -38,7 +38,7 @@ const products = [
     name: "CHOME Silicone Stretch Lids (6-Pack)",
     price: "$16.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1582294125860-9dcda7a70058?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=CHOME+Silicone+Stretch+Lids+6+Pack?tag=cookinkitchen-20",
     pros: ["Premium food-grade silicone", "Stackable", "Eco-friendly alternative"],
     cons: ["Limited color options"],
@@ -47,7 +47,7 @@ const products = [
     name: "OXO Good Grips Silicone Stretch Lid Set",
     price: "$14.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1628173847851-41d17f6a421c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=OXO+Grips+Silicone+Stretch+Lid?tag=cookinkitchen-20",
     pros: ["Trusted brand", "Versatile fit", "Clear to see contents"],
     cons: ["Smaller size range"],
@@ -85,7 +85,9 @@ export default function BestSiliconeStretchLids() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="text-6xl">{product.image}</div>
+                <div className="w-full md:w-48 h-48 flex-shrink-0">
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
+                </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>

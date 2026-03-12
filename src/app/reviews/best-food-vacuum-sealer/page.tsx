@@ -46,6 +46,13 @@ export default function Page() {
             </p>
 
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Our Top Pick: FoodSaver V4840 2-in-1</h2>
+            <div className="my-8 rounded-xl overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1556760541-7442436f564f?w=800&h=400&fit=crop" 
+                alt="FoodSaver V4840" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
             <p className="mb-4 text-stone-600">
               The FoodSaver V4840 is the complete package. It handles both bags and containers, has built-in storage for rolls, and the automatic sealing is foolproof.
             </p>

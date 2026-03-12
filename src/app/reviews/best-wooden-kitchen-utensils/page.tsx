@@ -24,7 +24,7 @@ const products = [
     price: '$29.99',
     rating: 4.8,
     reviews: '8,000+',
-    image: "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1594709811166-4325a3d01f84?w=600&h=400&fit=crop",
     amazonLink: 'https://www.amazon.com/s?k=Zulay+Kitchen+6+Piece+Wooden+Spoons?tag=cookinkitchen-20',
     pros: ['Teak wood premium', 'Comfort grip', 'Excellent quality'],
     cons: ['Higher price point'],
@@ -35,7 +35,7 @@ const products = [
     price: '$14.99',
     rating: 4.5,
     reviews: '12,000+',
-    image: '🍳',
+    image: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=600&h=400&fit=crop",
     amazonLink: 'https://www.amazon.com/s?k=Chef+Craft+Wooden+Cooking+Utensil?tag=cookinkitchen-20',
     pros: ['Budget-friendly', 'Bamboo eco-friendly', '4 essential pieces'],
     cons: ['Bamboo less durable than hardwood'],
@@ -46,7 +46,7 @@ const products = [
     price: '$12.99',
     rating: 4.6,
     reviews: '5,000+',
-    image: '🔄',
+    image: "https://images.unsplash.com/photo-1594132473619-38c207908c69?w=600&h=400&fit=crop",
     amazonLink: 'https://www.amazon.com/s?k=OXO+Good+Grips+Wooden+Turner?tag=cookinkitchen-20',
     pros: ['Ergonomic handle', 'Sturdy construction', 'OXO quality'],
     cons: ['Single piece only'],
@@ -57,7 +57,7 @@ const products = [
     price: '$39.99',
     rating: 4.8,
     reviews: '3,500+',
-    image: "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590794056226-7bc612bd945b?w=600&h=400&fit=crop",
     amazonLink: 'https://www.amazon.com/s?k=Woodenhouse+Teak+Wood+Utensil?tag=cookinkitchen-20',
     pros: ['Premium teak', 'Restaurant quality', 'Beautiful design'],
     cons: ['Premium price'],
@@ -87,8 +87,12 @@ export default function BestWoodenKitchenUtensils() {
               <div className="p-6 md:p-8">
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Image placeholder */}
-                  <div className="w-full md:w-48 h-48 bg-amber-100 rounded-xl flex items-center justify-center text-6xl">
-                    {product.image}
+                  <div className="w-full md:w-48 h-48 bg-stone-100 rounded-xl overflow-hidden">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   {/* Info */}

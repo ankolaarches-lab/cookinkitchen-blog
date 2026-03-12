@@ -21,7 +21,7 @@ const products = [
     name: "Cuisinart Stand Mixer 5.5-Quart",
     price: "$249.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1591122676839-444405362e0a?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=kitchenaid+vs+cuisinart+stand+mixer?tag=cookinkitchen-20",
     brand: "Cuisinart",
     pros: ["Better price", "Larger bowl", "12 speeds", "Includes accessories"],

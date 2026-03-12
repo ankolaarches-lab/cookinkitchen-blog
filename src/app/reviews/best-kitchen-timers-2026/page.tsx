@@ -11,7 +11,7 @@ const products = [
     name: "Taylor Precision Products Digital Timer",
     price: "$14.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590534247858-e4c194684fca?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Taylor+Precision+Products+Digital+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["Large display", "Loud alarm", "Magnet on back"],
     cons: ["Requires batteries"],
@@ -20,7 +20,7 @@ const products = [
     name: "Sage Kitchen Timer",
     price: "$24.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1583083527882-129448821991?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Sage+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["Unique design", "Easy to read", "Silent operation option"],
     cons: ["Higher price point"],
@@ -29,7 +29,7 @@ const products = [
     name: "OXO Good Grips 3-IN-1 Timer",
     price: "$19.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1584281723320-9944f7760971?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+in+1+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["Three timers in one", "Stands or mounts", "Clear display"],
     cons: ["Takes getting used to"],
@@ -38,7 +38,7 @@ const products = [
     name: "TIMEGO Digital Kitchen Timer",
     price: "$12.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1583083527882-4bee9aba2eea?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=TIMEGO+Digital+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Compact", "Memory function"],
     cons: ["Smaller display"],
@@ -47,7 +47,7 @@ const products = [
     name: "KitchenAid 3-Minute Timer",
     price: "$16.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1584281723320-9944f7760971?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=KitchenAid+Mechanical+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["No batteries needed", "Classic design", "KitchenAid quality"],
     cons: ["Only 3 minutes max"],
@@ -56,7 +56,7 @@ const products = [
     name: "JinYou Magnetic Kitchen Timer",
     price: "$15.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1590534247447-0b1a0e104ae1?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=JinYou+Magnetic+Kitchen+Timer?tag=cookinkitchen-20",
     pros: ["Strong magnet", "Fun colors", "Easy twist dial"],
     cons: ["Mechanical only - less precise"],
@@ -78,7 +78,7 @@ export default function BestKitchenTimers2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1563865436914-44ee14a27ae3?w=800&h=400&fit=crop" 
+              src="https://images.unsplash.com/photo-1590534247858-e4c194684fca?w=800&h=400&fit=crop" 
               alt="Best Kitchen Timers 2026" 
               className="w-full h-64 object-cover"
             />

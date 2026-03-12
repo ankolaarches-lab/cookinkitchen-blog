@@ -28,6 +28,13 @@ export default function Page() {
             <p className="mb-4 text-stone-600">Always choose a burr grinder. Blade grinders produce inconsistent particle sizes, while burr grinders crush beans uniformly for better extraction.</p>
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Best Overall: Baratza Encore ESP</h2>
             <p className="mb-4 text-stone-600">The Baratza Encore ESP is the gold standard for home grinding. 40 grind settings, consistent burrs, and legendary reliability.</p>
+            <div className="my-8 rounded-xl overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1544650039-33b0703f8a61?w=800&h=400&fit=crop" 
+                alt="Baratza Encore ESP" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
             <ul className="ml-4 mb-4">
               <li className="mb-2">40 grind settings</li>
               <li className="mb-2">Simple one-button operation</li>

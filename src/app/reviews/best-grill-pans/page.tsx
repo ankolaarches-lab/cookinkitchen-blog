@@ -11,7 +11,7 @@ const products = [
     name: "Lodge Cast Iron Grill Pan",
     price: "$44.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1527010159945-c4250922054e?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Lodge+Pre+Seasoned+Cast+Iron+Grill?tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Pre-seasoned", "Made in USA", "Affordable"],
     cons: ["Heavy", "Requires seasoning"],

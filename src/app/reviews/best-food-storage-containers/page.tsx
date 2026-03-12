@@ -11,7 +11,7 @@ const products = [
     name: "Pyrex Glass Food Storage Set (18-Piece)",
     price: "$44.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1547517023-7ca0c162f816?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Pyrex+18+Piece+Smart+Seal?tag=cookinkitchen-20",
     pros: ["Glass is microwave-safe", "BPA-free", "Stackable", "Oven safe"],
     cons: ["Glass can break if dropped"],
@@ -20,7 +20,7 @@ const products = [
     name: "Rubbermaid Brilliance Clear Food Storage (14-Piece)",
     price: "$29.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1610992015732-2449b0c26670?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Rubbermaid+Brilliance+Storage+14+Piece?tag=cookinkitchen-20",
     pros: ["Crystal clear", "Leak-proof", "BPA-free", "Stain-resistant"],
     cons: ["Not oven-safe"],
@@ -29,7 +29,7 @@ const products = [
     name: "Stainless Steel Lunch Box by Lunchbots",
     price: "$32.00",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544333346-646700037f07?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Lunchbots+Stainless+Steel+Food?tag=cookinkitchen-20",
     pros: ["Eco-friendly", "No plastic", "Durable", "Non-toxic"],
     cons: ["Not microwave-safe", "No lids"],
@@ -38,7 +38,7 @@ const products = [
     name: "Glasslock Glass Food Container Set (18-Piece)",
     price: "$39.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1628173847851-41d17f6a421c?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=Glasslock+18+Piece+Container+Modular?tag=cookinkitchen-20",
     pros: ["Tempered glass", "Snap lock lids", "Microwave safe", "Freezer safe"],
     cons: ["Lids can stain"],
@@ -47,7 +47,7 @@ const products = [
     name: "OXO Good Grips POP Container Set (10-Piece)",
     price: "$69.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1599332219760-70532296d44a?w=600&h=400&fit=crop",
     link: "https://www.amazon.com/s?k=OXO+Grips+POP+Container+Set?tag=cookinkitchen-20",
     pros: ["Airtight seal", "Stackable", "BPA-free", "Modern design"],
     cons: ["Premium price", "Lids sold separately"],
@@ -84,7 +84,9 @@ export default function BestFoodStorageContainers() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="text-6xl">{product.image}</div>
+                <div className="w-full md:w-48 h-48 flex-shrink-0">
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
+                </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
