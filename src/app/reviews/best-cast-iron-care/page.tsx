@@ -11,7 +11,7 @@ const products = [
     name: "Lodge Cast Iron Care Kit",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Seasoned+Cast+Iron+Care?tag=cookinkitchen-20",
     pros: ["5 pieces included", "Seasoning spray", "Pan scraper", "Scrub brush", "Pre-seasoned ready"],
     cons: ["Brush not for delicate surfaces"],
@@ -20,7 +20,7 @@ const products = [
     name: "CLARK'S Cast Iron Cleaning Kit",
     price: "$32.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Cast+Iron+Care+Kit+Coconut?tag=cookinkitchen-20",
     pros: ["Coconut oil based", "Made in USA", "Soap + seasoning oil", "Applicator pad included"],
     cons: ["Higher price point"],
@@ -29,7 +29,7 @@ const products = [
     name: "Cast Iron Cleaner & Care Kit",
     price: "$19.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Cast+Iron+Cleaner+Care+Kit?tag=cookinkitchen-20",
     pros: ["Chain mail scrubber", "Seasoning oil", "Pan scrapers", "Hot handle cover", "Great value"],
     cons: ["Oil may need reapplying"],
@@ -38,7 +38,7 @@ const products = [
     name: "Crisbee Stik Cast Iron Seasoning",
     price: "$14.95",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
+    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Crisbee+Original+Cast+Iron+Seasoning?tag=cookinkitchen-20",
     pros: ["Rave reviews", "Easy application", "Perfect seasoning", "Long lasting"],
     cons: ["Only seasoning, no tools"],
@@ -47,7 +47,7 @@ const products = [
     name: "Field Company Cast Iron Care Kit",
     price: "$45.00",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
+    image: "/images/kitchen/1.jpg",
     link: "https://fieldcompany.com/products/cast-iron-care-kit?tag=cookinkitchen-20",
     pros: ["Premium quality", "Natural fiber brush", "Chain mail scrubber", "Field seasoning oil"],
     cons: ["Premium price", "Not on Amazon"],
@@ -69,7 +69,7 @@ export default function BestCastIronCare() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=400&fit=crop" 
+              src="/images/kitchen/2.jpg" 
               alt="Best Cast Iron Care Products" 
               className="w-full h-64 object-cover"
             />

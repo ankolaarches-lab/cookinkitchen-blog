@@ -30,7 +30,7 @@ export default function Page() {
             <p className="mb-4 text-stone-600">The Baratza Encore ESP is the gold standard for home grinding. 40 grind settings, consistent burrs, and legendary reliability.</p>
             <div className="my-8 rounded-xl overflow-hidden shadow-sm">
               <img 
-                src="https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop" 
+                src="/images/kitchen/3.jpg" 
                 alt="Baratza Encore ESP" 
                 className="w-full h-64 object-cover"
               />

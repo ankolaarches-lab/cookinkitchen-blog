@@ -11,7 +11,7 @@ const products = [
     name: "Fullstar Kitchen Utensil Set",
     price: "$29.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
+    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Fullstar+Kitchen+Utensil+Set?tag=cookinkitchen-20",
     pros: ["20 pieces included", "Rotating holder", "Heat resistant", "Great value"],
     cons: ["Some plastic parts"],
@@ -20,7 +20,7 @@ const products = [
     name: "Home Hero Kitchen Utensil 18-Piece",
     price: "$24.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Home+Hero+Kitchen+Utensil+18+Piece?tag=cookinkitchen-20",
     pros: ["Complete set", "Wooden handles", "Utensil holder", "Budget-friendly"],
     cons: ["Not dishwasher safe"],
@@ -29,7 +29,7 @@ const products = [
     name: "StarPack Home Kitchen Utensil Set",
     price: "$34.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=600&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=StarPack+Home+Kitchen+Utensil+Set?tag=cookinkitchen-20",
     pros: ["Stainless steel", "Modern design", "Durable", "5-year warranty"],
     cons: ["No rotating holder"],
@@ -38,7 +38,7 @@ const products = [
     name: "KitchenAid 5-Piece Nylon Utensil Set",
     price: "$24.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+5+Piece+Nylon+Utensil?tag=cookinkitchen-20",
     pros: ["Heat resistant to 400°F", "Trusted brand", "Dishwasher safe", "Comfortable grip"],
     cons: ["Only 5 pieces"],
@@ -60,7 +60,7 @@ export default function BestKitchenUtensilSet() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&h=400&fit=crop" 
+              src="/images/kitchen/7.jpg" 
               alt="Best Kitchen Utensil Sets" 
               className="w-full h-64 object-cover"
             />

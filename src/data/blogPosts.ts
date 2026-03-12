@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     category: "Guide",
     date: "Mar 2, 2026",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     amazonLink: "https://www.amazon.com/s?k=instant+read+thermometer&tag=cookinkitchen-20",
     content: `
 ## Why Use an Instant Read Thermometer
@@ -56,7 +56,7 @@ The professional choice.
     category: "Guide",
     date: "Mar 2, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     amazonLink: "https://www.amazon.com/s?k=air+fryer+accessories&tag=cookinkitchen-20",
     content: `
 ## Maximize Your Air Fryer
@@ -87,7 +87,7 @@ Easier cleanup, versatile cooking surface.
     category: "Guide",
     date: "Mar 2, 2026",
     readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=400&fit=crop",
+    image: "/images/kitchen/7.jpg",
     amazonLink: "https://www.amazon.com/s?k=kitchen+shears&tag=cookinkitchen-20",
     content: `
 ## Why Kitchen Shears Matter
@@ -129,7 +129,7 @@ Every kitchen needs a good pair of shears. They're indispensable for herbs, pack
     category: "Tutorial",
     date: "Mar 11, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop",
+    image: "/images/kitchen/8.jpg",
     amazonLink: "https://www.amazon.com/s?k=chef+knife&tag=cookinkitchen-20",
     content: `
 ## Why Knife Skills Matter
@@ -178,7 +178,7 @@ Don't be discouraged if your cuts aren't perfect at first. Knife skills are a mu
     category: "Guide",
     date: "Mar 11, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     amazonLink: "https://www.amazon.com/s?k=kitchen+organizers&tag=cookinkitchen-20",
     content: `
 ## The Joy of an Organized Kitchen
@@ -247,7 +247,7 @@ You don't need a massive kitchen to have an organized one. By implementing a few
     category: "Guide",
     date: "Mar 10, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     amazonLink: "https://www.amazon.com/s?k=kitchen+organization+set&tag=cookinkitchen-20",
     content: `
 ## Why Spring Kitchen Organization Matters
@@ -284,7 +284,7 @@ A well-organized kitchen isn't about having the most containers or the fanciest 
     category: "Guide",
     date: "Mar 11, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
+    image: "/images/kitchen/11.jpg",
     amazonLink: "https://www.amazon.com/s?k=pantry+staples&tag=cookinkitchen-20",
     content: `
 ## Building Your Essential Pantry
@@ -322,7 +322,7 @@ Start with these basics and build your pantry over time based on what you cook m
     category: "Recipes",
     date: "Mar 10, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=400&fit=crop",
+    image: "/images/kitchen/1.jpg",
     amazonLink: "https://www.amazon.com/s?k=dutch+oven&tag=cookinkitchen-20",
     content: `
 ## Mastering the Dutch Oven
@@ -360,7 +360,7 @@ If you only own one pot, make it a Dutch oven. The possibilities are truly endle
     category: "Technology",
     date: "Mar 8, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=400&fit=crop",
+    image: "/images/kitchen/2.jpg",
     amazonLink: "https://www.amazon.com/s?k=smart+kitchen+appliances&tag=cookinkitchen-20",
     content: `
 ## The Future is Now
@@ -388,7 +388,7 @@ Induction cooktops with AI sensors automatically adjust heat.
     category: "Guide",
     date: "Feb 19, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=400&fit=crop",
+    image: "/images/kitchen/3.jpg",
     amazonLink: "https://www.amazon.com/s?k=chef+knife&tag=cookinkitchen-20",
     content: `
 ## Your Most Important Kitchen Tool
@@ -420,7 +420,7 @@ Spend time at a local store holding different knives. Your hand will tell you wh
     category: "Tutorial",
     date: "Feb 19, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=800&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     amazonLink: "https://www.amazon.com/s?k=cast+iron+care+kit&tag=cookinkitchen-20",
     content: `
 ## The Mythology of Cast Iron
@@ -450,7 +450,7 @@ A well-seasoned pan is a family heirloom. Keep it dry, keep it oiled, and it wil
     category: "Recipes",
     date: "Feb 19, 2026",
     readTime: "9 min read",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     amazonLink: "https://www.amazon.com/s?k=air+fryer&tag=cookinkitchen-20",
     content: `
 ## Beyond the French Fry
@@ -479,7 +479,7 @@ Experiment with everything from roasted chickpeas to salmon. You'll be surprised
     category: "Tutorial",
     date: "Mar 12, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=800&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     amazonLink: "https://www.amazon.com/s?k=spice+organization+set&tag=cookinkitchen-20",
     content: `
 ## The Five Pillars of Flavor

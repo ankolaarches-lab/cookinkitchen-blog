@@ -11,7 +11,7 @@ const products = [
     name: "Lodge Cast Iron Skillet 12-Inch",
     price: "$34.99",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Pre+Seasoned+Skillet+12+Inch?tag=cookinkitchen-20",
     pros: ["Pre-seasoned", "Affordable", "Made in USA", "Versatile"],
     cons: ["Heavy", "Requires maintenance"],
@@ -20,7 +20,7 @@ const products = [
     name: "Le Creuset Enameled Cast Iron 11-Inch",
     price: "$369.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=600&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Le+Creuset+Enameled+Cast+Iron+Signature?tag=cookinkitchen-20",
     pros: ["No seasoning needed", "Enamel coating", "Lifetime warranty", "Beautiful colors"],
     cons: ["Very expensive", "Heavy"],
@@ -29,7 +29,7 @@ const products = [
     name: "Field Company Cast Iron 10.5-Inch",
     price: "$85.00",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Field+Company+Cast+Iron+10+5+Inch?tag=cookinkitchen-20",
     pros: ["Smooth surface", "Lightweight for cast iron", "Pre-seasoned", "Modern design"],
     cons: ["Limited sizes available"],
@@ -38,7 +38,7 @@ const products = [
     name: "Staub Cast Iron 11-Inch",
     price: "$219.95",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Staub+Cast+Iron+11+Inch+Fry+Pan?tag=cookinkitchen-20",
     pros: ["Black matte enamel", "Excellent heat retention", "Staub signature", "Drip collector"],
     cons: ["Premium price", "Heavy"],
@@ -60,7 +60,7 @@ export default function BestCastIronSkillet() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop" 
+              src="/images/kitchen/7.jpg" 
               alt="Best Cast Iron Skillets" 
               className="w-full h-64 object-cover"
             />

@@ -11,7 +11,7 @@ const products = [
     name: "Misto Brushed Aluminum Oil Sprayer",
     price: "$14.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=best oil dispensers sprayers?tag=cookinkitchen-20",
     pros: ["No propellants", "Adjustable spray", "Economical"],
     cons: ["Manual pumping required"],
@@ -20,7 +20,7 @@ const products = [
     name: "Oil Sprayer Bottle for Cooking",
     price: "$12.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=best oil dispensers sprayers?tag=cookinkitchen-20",
     pros: ["Fine mist", "Multiple sizes", "Leak-proof"],
     cons: ["Plastic construction"],
@@ -29,7 +29,7 @@ const products = [
     name: "Pourable Glass Oil Dispenser",
     price: "$19.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=600&h=400&fit=crop",
+    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=best oil dispensers sprayers?tag=cookinkitchen-20",
     pros: ["Beautiful design", "Drip-free spout", "Glass is safe"],
     cons: ["Not a sprayer"],
@@ -38,7 +38,7 @@ const products = [
     name: "Prepara EVO Oil Cruet",
     price: "$29.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
+    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=best oil dispensers sprayers?tag=cookinkitchen-20",
     pros: ["Self-venting", "Ergonomic grip", "Precision pour"],
     cons: ["Hand wash only"],
@@ -47,7 +47,7 @@ const products = [
     name: "Evo Hand Pump Oil Sprayer",
     price: "$24.95",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
+    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=best oil dispensers sprayers?tag=cookinkitchen-20",
     pros: ["Continuous spray", "Stainless steel", "Chef-approved"],
     cons: ["More expensive"],
@@ -69,7 +69,7 @@ export default function OilDispensers() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=400&fit=crop" 
+              src="/images/kitchen/3.jpg" 
               alt="Best Oil Dispensers & Sprayers 2026" 
               className="w-full h-64 object-cover"
             />

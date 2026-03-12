@@ -11,7 +11,7 @@ const products = [
     name: "Vitamix 5200",
     price: "$549.95",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Vitamix+5200+Standard+Blender+Professional?tag=cookinkitchen-20",
     pros: ["Commercial-grade motor", "Variable speed control", "Perfect for hot soups", "10-year warranty"],
     cons: ["Premium price", "Loud operation", "Heavy"],
@@ -20,7 +20,7 @@ const products = [
     name: "Vitamix Ascent X4",
     price: "$649.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Vitamix+Ascent+Blender+Set+Black?tag=cookinkitchen-20",
     pros: ["Smart auto-detection", "Multiple container sizes", "Touchscreen controls", "Self-cleaning"],
     cons: ["Very expensive", "Complex features"],
@@ -29,7 +29,7 @@ const products = [
     name: "Ninja Professional BL610",
     price: "$99.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Professional+Blender+Quiet?tag=cookinkitchen-20",
     pros: ["Affordable", "Large 72oz capacity", "Powerful 1000W motor", "Easy to clean"],
     cons: ["Not as durable", "No variable speed"],
@@ -38,7 +38,7 @@ const products = [
     name: "Ninja Foodi Power Pitcher",
     price: "$149.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
+    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Foodi+Power+Pitcher+System?tag=cookinkitchen-20",
     pros: ["Built-in sensor", "Auto-iQ programs", "Smoothie cups included", "Nutrient extraction"],
     cons: ["Learning curve", "More parts to clean"],
@@ -47,7 +47,7 @@ const products = [
     name: "Oster Pro 1200",
     price: "$129.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
+    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Oster+Blender+Stainless+Brushed+Nickel?tag=cookinkitchen-20",
     pros: ["Good value", "Dual-direction blade", "Food processor jar included", "Smoothie cups"],
     cons: ["Less powerful", "Warranty shorter"],
@@ -56,7 +56,7 @@ const products = [
     name: "Blendtec Designer 725",
     price: "$699.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
+    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Blendtec+Designer+725+Blender+Black?tag=cookinkitchen-20",
     pros: ["Wildside+ jar", "Touchscreen interface", "Pre-programmed recipes", "10-year warranty"],
     cons: ["Very expensive", "Large footprint"],
@@ -78,7 +78,7 @@ export default function BestBlenders2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=400&fit=crop" 
+              src="/images/kitchen/3.jpg" 
               alt="Best Blenders 2026" 
               className="w-full h-64 object-cover"
             />

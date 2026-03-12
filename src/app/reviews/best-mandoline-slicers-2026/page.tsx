@@ -11,7 +11,7 @@ const products = [
     name: "OXO Good Grips V-Blade Mandoline Slicer",
     price: "$34.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Mandoline+Slicer?tag=cookinkitchen-20",
     pros: ["V-shaped blade", "Non-slip base", "Easy to clean", "Multiple slice thicknesses"],
     cons: ["Hand wash recommended"],
@@ -20,7 +20,7 @@ const products = [
     name: "Borner V-Power Mandoline",
     price: "$49.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Borner+V-Power+Mandoline?tag=cookinkitchen-20",
     pros: ["German engineering", "Very sharp blades", "Durable construction", "Made in Germany"],
     cons: ["No food holder included"],
@@ -29,7 +29,7 @@ const products = [
     name: "KitchenAid Mandoline Slicer",
     price: "$44.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Mandoline+Slicer?tag=cookinkitchen-20",
     pros: ["Stainless steel blades", "Adjustable thickness", "Built-in food holder", "Dishwasher safe"],
     cons: ["Takes more storage space"],
@@ -38,7 +38,7 @@ const products = [
     name: "Mueller Austria Mandoline Pro",
     price: "$39.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Mueller+Mandoline+Pro+Slicer?tag=cookinkitchen-20",
     pros: ["4 blade types", "Julienne and wavy cuts", "Includes food holder", "Value pack"],
     cons: ["Plastic feel"],
@@ -47,7 +47,7 @@ const products = [
     name: "Chef'n Veggie Chop Hand-Powered Slicer",
     price: "$29.99",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
+    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Chef+n+Veggie+Chop?tag=cookinkitchen-20",
     pros: ["Compact design", "Easy to store", "No electricity needed", "Fun to use"],
     cons: ["Not for precision slicing"],
@@ -69,7 +69,7 @@ export default function BestMandolineSlicers2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop" 
+              src="/images/kitchen/8.jpg" 
               alt="Best Mandoline Slicers 2026" 
               className="w-full h-64 object-cover"
             />

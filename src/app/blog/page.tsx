@@ -78,7 +78,7 @@ export default function BlogPage() {
 
         {/* Newsletter / CTA Section */}
         <div className="mt-24 bg-stone-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=400&fit=crop')] bg-cover bg-center"></div>
+          <div className="absolute inset-0 opacity-10 bg-[url('/images/kitchen/7.jpg')] bg-cover bg-center"></div>
           <div className="relative z-10">
             <h2 className="font-playfair text-3xl md:text-5xl text-white mb-6">
               Join the Culinary Vanguard

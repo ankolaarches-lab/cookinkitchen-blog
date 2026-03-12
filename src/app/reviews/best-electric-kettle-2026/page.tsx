@@ -51,7 +51,7 @@ export default function Page() {
             </p>
             <div className="my-8 rounded-xl overflow-hidden shadow-sm">
               <img 
-                src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&h=400&fit=crop" 
+                src="/images/kitchen/6.jpg" 
                 alt="Fellow Stagg EKG" 
                 className="w-full h-64 object-cover"
               />

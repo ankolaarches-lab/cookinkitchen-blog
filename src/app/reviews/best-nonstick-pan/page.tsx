@@ -11,7 +11,7 @@ const products = [
     name: "T-fal E93808 Professional Nonstick Fry Pan",
     price: "$24.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+8+Inch?tag=cookinkitchen-20",
     pros: ["Affordable", "Heat indicator", "Dishwasher safe", "Lightweight"],
     cons: ["Not metal utensil safe"],
@@ -20,7 +20,7 @@ const products = [
     name: "Calphalon Classic Nonstick 10-Inch",
     price: "$49.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
+    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Calphalon+CC+0011+10+Inch+Nonstick+Skilelt?tag=cookinkitchen-20",
     pros: ["Hard-anodized aluminum", "PFOA-free", "Even heating", "Durable"],
     cons: ["Hand wash recommended"],
@@ -29,7 +29,7 @@ const products = [
     name: "GreenLife Soft Grip 9-Inch",
     price: "$27.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=GreenLife+CC+0012+Soft+9+Inch?tag=cookinkitchen-20",
     pros: ["Ceramic coating", "Soft grip handle", "Eco-friendly", "Budget-friendly"],
     cons: ["Less durable than PTFE"],
@@ -38,7 +38,7 @@ const products = [
     name: "All-Clad Hard Anodized 10-Inch",
     price: "$89.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=All+Clad+HA1+10010+Hard+Anodized+10+Inch?tag=cookinkitchen-20",
     pros: ["Premium quality", "Metal utensil safe", "Lifetime warranty", "Perfect heat distribution"],
     cons: ["Expensive", "Heavy"],
@@ -60,7 +60,7 @@ export default function BestNonStickPan() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=800&h=400&fit=crop" 
+              src="/images/kitchen/8.jpg" 
               alt="Best Non-Stick Frying Pans" 
               className="w-full h-64 object-cover"
             />

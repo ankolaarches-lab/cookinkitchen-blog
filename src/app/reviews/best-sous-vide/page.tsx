@@ -11,7 +11,7 @@ const products = [
     name: "Anova Culinary Sous Vide",
     price: "$199.00",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Anova+Culinary+Precision+Bluetooth+Immersion?tag=cookinkitchen-20",
     pros: ["Precise temperature", "Bluetooth connectivity", "Compact design", "Easy to use"],
     cons: ["Requires pot/container"],
@@ -20,7 +20,7 @@ const products = [
     name: "Instant Pot Accu Slim Sous Vide",
     price: "$59.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Accu+Slim+Sous+Vide?tag=cookinkitchen-20",
     pros: ["Affordable", "Slim design", "Reliable", "Easy storage"],
     cons: ["No app connectivity", "Less power"],
@@ -29,7 +29,7 @@ const products = [
     name: "Breville Joule Sous Vide",
     price: "$199.00",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=400&fit=crop",
+    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Breville+Joule+Sous+Vide+Immersion?tag=cookinkitchen-20",
     pros: ["Compact", "App control", "Powerful", "Visual doneness guide"],
     cons: ["No display screen", "Premium price"],
@@ -38,7 +38,7 @@ const products = [
     name: "ChefSteps Joule Turbo",
     price: "$249.00",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=ChefSteps+Joule+Turbo+Sous+Vide?tag=cookinkitchen-20",
     pros: ["Fastest heating", "Advanced presets", "Premium build", "GuideMode"],
     cons: ["Most expensive", "App required"],
@@ -60,7 +60,7 @@ export default function BestSousVide() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop" 
+              src="/images/kitchen/3.jpg" 
               alt="Best Sous Vide" 
               className="w-full h-64 object-cover"
             />

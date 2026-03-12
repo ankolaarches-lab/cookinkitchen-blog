@@ -5,19 +5,19 @@ import { useSearchParams, useRouter } from "next/navigation";
 import RefinedCard from "@/components/RefinedCard";
 
 const categoryImages: Record<string, string> = {
-  "Kitchen Utensils": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop",
-  "Wooden Utensils": "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=400&h=250&fit=crop",
-  "Knives": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=250&fit=crop",
-  "Cookware": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=250&fit=crop",
-  "Appliances": "https://images.unsplash.com/photo-1514986888952-c8f3ef7e8f64?w=400&h=250&fit=crop",
+  "Kitchen Utensils": "/images/kitchen/7.jpg",
+  "Wooden Utensils": "/images/kitchen/8.jpg",
+  "Knives": "/images/kitchen/9.jpg",
+  "Cookware": "/images/kitchen/10.jpg",
+  "Appliances": "/images/kitchen/11.jpg",
   "Gadgets": "/images/gadgets.png",
-  "Cutting Boards": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80",
-  "Baking Sheets": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=250&fit=crop",
-  "Food Storage": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=250&fit=crop",
+  "Cutting Boards": "/images/kitchen/1.jpg",
+  "Baking Sheets": "/images/kitchen/2.jpg",
+  "Food Storage": "/images/kitchen/3.jpg",
 };
 
 const getImageUrl = (category: string): string => {
-  return categoryImages[category] || "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop";
+  return categoryImages[category] || "/images/kitchen/4.jpg";
 };
 
 const reviews = [

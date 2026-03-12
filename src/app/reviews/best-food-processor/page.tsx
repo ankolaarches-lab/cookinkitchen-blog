@@ -11,7 +11,7 @@ const products = [
     name: "Cuisinart 14-Cup Food Processor",
     price: "$199.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+DFP+14BCNY+14+Cup+Food+Processor?tag=cookinkitchen-20",
     pros: ["Large capacity", "Powerful motor", "Multiple blades", "Easy to clean"],
     cons: ["Large footprint", "Expensive"],
@@ -20,7 +20,7 @@ const products = [
     name: "KitchenAid 13-Cup Food Processor",
     price: "$169.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1544457070-4cd96417751e?w=600&h=400&fit=crop",
+    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+KFP1311+13+Cup+Food+Processor?tag=cookinkitchen-20",
     pros: ["Exact Slice system", "Sleek design", "Multiple speeds", "Work bowl stabilizer"],
     cons: ["Heavy", "Complex assembly"],
@@ -29,7 +29,7 @@ const products = [
     name: "Hamilton Beach 10-Cup Food Processor",
     price: "$49.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+70725+10+Cup+Processor?tag=cookinkitchen-20",
     pros: ["Affordable", "Compact", "Easy to use", "Dishwasher safe parts"],
     cons: ["Smaller capacity", "Less powerful"],
@@ -38,7 +38,7 @@ const products = [
     name: "Breville Sous Chef 16-Cup",
     price: "$299.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Breville+BFP800XL+Sous+Chef+Processor?tag=cookinkitchen-20",
     pros: ["Commercial-grade", "Multiple feed tubes", "Quiet motor", "Premium construction"],
     cons: ["Very expensive", "Large"],
@@ -60,7 +60,7 @@ export default function BestFoodProcessor() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=400&fit=crop" 
+              src="/images/kitchen/11.jpg" 
               alt="Best Food Processors" 
               className="w-full h-64 object-cover"
             />

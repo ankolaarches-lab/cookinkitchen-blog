@@ -11,7 +11,7 @@ const products = [
     name: "Instant Pot Duo 7-in-1",
     price: "$89.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Multi+Use+Pressure+Cooker?tag=cookinkitchen-20",
     pros: ["7-in-1 functionality", "Easy to use", "Great recipes", "Durable"],
     cons: ["6-quart may be small for families"],
@@ -20,7 +20,7 @@ const products = [
     name: "Instant Pot Ultra 10-in-1",
     price: "$129.95",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Ultra+Multi+Use+Programmable?tag=cookinkitchen-20",
     pros: ["10-in-1 functions", "Altitude adjustment", "More program options", "Sleek design"],
     cons: ["More expensive", "Learning curve"],
@@ -29,7 +29,7 @@ const products = [
     name: "Instant Pot Duo Crisp 11-in-1",
     price: "$149.95",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Crisp+11+in+1?tag=cookinkitchen-20",
     pros: ["Air fryer lid included", "11 functions", "Crispy results", "Two lids"],
     cons: ["Expensive", "Takes more storage space"],
@@ -38,7 +38,7 @@ const products = [
     name: "Instant Pot Duo Mini 7-in-1",
     price: "$69.95",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Mini+3+Quart?tag=cookinkitchen-20",
     pros: ["Compact size", "Great for couples", "Affordable", "Perfect for small kitchens"],
     cons: ["Smaller capacity", "Limited batch cooking"],
@@ -60,7 +60,7 @@ export default function BestInstantPot() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=800&h=400&fit=crop" 
+              src="/images/kitchen/1.jpg" 
               alt="Best Instant Pot" 
               className="w-full h-64 object-cover"
             />

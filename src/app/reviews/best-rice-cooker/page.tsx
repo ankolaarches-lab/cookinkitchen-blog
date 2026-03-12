@@ -11,7 +11,7 @@ const products = [
     name: "Zojirushi Neuro Fuzzy NS-LAC05",
     price: "$109.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop",
+    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Zojirushi+NS+LAC05+Uncooked+Premium+1+5+Liter?tag=cookinkitchen-20",
     pros: ["Fuzzy logic technology", "Keep warm function", "Multiple settings", "Durable"],
     cons: ["Expensive", "Small capacity"],
@@ -20,7 +20,7 @@ const products = [
     name: "Instant Pot Duo 7-in-1 Rice Cooker",
     price: "$59.95",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=400&fit=crop",
+    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Rice+Cooker?tag=cookinkitchen-20",
     pros: ["Multi-use", "Affordable", "Programmable", "Easy cleanup"],
     cons: ["Less specialized rice cooking"],
@@ -29,7 +29,7 @@ const products = [
     name: "Tiger JKT-D10U 5.5-Cup",
     price: "$249.95",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=400&fit=crop",
+    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Tiger+JKT+D10U+5+5+Cup+Keyboard+Cooker?tag=cookinkitchen-20",
     pros: ["Induction heating", "Tigers fuzzy logic", "Multi-grain settings", "Premium quality"],
     cons: ["Very expensive"],
@@ -38,7 +38,7 @@ const products = [
     name: "Aroma Housewares 8-Cup Rice Cooker",
     price: "$34.99",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&h=400&fit=crop",
+    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Aroma+Housewares+ARC+914SBD+8+Cup+Cooker?tag=cookinkitchen-20",
     pros: ["Affordable", "Large capacity", "Simple to use", "Keep warm"],
     cons: ["Basic features", "No fuzzy logic"],
@@ -60,7 +60,7 @@ export default function BestRiceCooker() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&h=400&fit=crop" 
+              src="/images/kitchen/5.jpg" 
               alt="Best Rice Cookers" 
               className="w-full h-64 object-cover"
             />

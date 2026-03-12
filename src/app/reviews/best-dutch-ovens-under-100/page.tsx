@@ -11,7 +11,7 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven",
     price: "$69.99",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Durable enamel coating", "Oven-safe to 500°F", "Great value"],
     cons: ["Heavy (7 lbs)", "Some reports of uneven enamel"],
@@ -20,7 +20,7 @@ const products = [
     name: "Amazon Basics Enameled Cast Iron Dutch Oven",
     price: "$54.99",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "6 quart capacity", "Dishwasher safe", "Nice color options"],
     cons: ["Lighter construction", "May chip over time"],
@@ -29,7 +29,7 @@ const products = [
     name: "Cuisinart Enameled Cast Iron Dutch Oven",
     price: "$79.99",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&h=400&fit=crop",
+    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Self-basting lid", "Smooth interior", "Great for bread baking", "Sturdy handles"],
     cons: ["Limited color selection"],
@@ -38,7 +38,7 @@ const products = [
     name: "Caraway Dutch Oven",
     price: "$89.00",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&h=400&fit=crop",
+    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Caraway+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Beautiful design", "Non-toxic enamel", "Excellent heat distribution", "Stackable"],
     cons: ["Not induction compatible", "Hand wash recommended"],
@@ -47,7 +47,7 @@ const products = [
     name: "Tramontina Enameled Cast Iron Dutch Oven",
     price: "$59.99",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1556910110-a5a66af3b497?w=600&h=400&fit=crop",
+    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Tramontina+Enameled+Cast+Iron+Dutch+Oven?tag=cookinkitchen-20",
     pros: ["Very affordable", "6.5 quart capacity", "Traditional design", "Made in Brazil"],
     cons: ["Heavier than competitors", "Interior shows staining"],
@@ -69,7 +69,7 @@ export default function BestDutchOvensUnder100() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=400&fit=crop" 
+              src="/images/kitchen/11.jpg" 
               alt="Best Dutch Ovens Under $100" 
               className="w-full h-64 object-cover"
             />
