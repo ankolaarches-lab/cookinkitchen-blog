@@ -1515,6 +1515,8 @@ Quality over quantity. Twelve well-chosen tools serve you better than a drawer f
 - [Best Chef's Knives](/reviews/best-chef-knives-home-cooks) — Start with the most important tool
 `
   },
+  {
+    slug: "kitchen-lighting-guide",
     title: "Kitchen Lighting Guide: Layer Your Light Like a Pro",
     excerpt: "Master the three layers of kitchen lighting—ambient, task, and accent—to create a functional and beautiful space.",
     category: "Guide",
