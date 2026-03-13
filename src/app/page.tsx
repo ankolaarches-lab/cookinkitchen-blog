@@ -12,7 +12,7 @@ const featuredProducts = [
     name: "Victorinox Chef's Knife",
     price: "$39.99",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
+    image: "/images/chefs-knife.jpg",
     slug: "best-chef-knives-home-cooks",
     badge: "Best Seller",
   },
@@ -41,7 +41,7 @@ const latestReviews = [
     slug: "best-chef-knives-home-cooks",
     category: "Knives",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
+    image: "/images/chefs-knife.jpg",
   },
   {
     title: "Dutch Oven Comparison",
@@ -157,7 +157,7 @@ export default function Home() {
 
       {/* Philosophy Section */}
       <section className="py-40 bg-gray-950 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/kitchen/3.jpg')] bg-cover bg-fixed grayscale"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('/images/kitchen-prep.jpg')] bg-cover bg-fixed grayscale"></div>
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-serif text-4xl md:text-6xl font-black mb-10 leading-tight">
             Independent. Honest. <br />
