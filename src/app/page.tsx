@@ -206,8 +206,8 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <a href="/reviews/best-dutch-ovens" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl transition">
-              <div className="h-48 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
-                <span className="text-6xl">🍲</span>
+              <div className="h-48 overflow-hidden">
+                <img src="/images/dutch-oven.png" alt="Best Dutch Ovens" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6">
                 <span className="text-xs font-bold text-emerald-600 uppercase">Cookware</span>
@@ -217,8 +217,8 @@ export default function Home() {
             </a>
             
             <a href="/reviews/best-air-fryer-2026" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl transition">
-              <div className="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
-                <span className="text-6xl">🍟</span>
+              <div className="h-48 overflow-hidden">
+                <img src="/images/air-fryer.jpg" alt="Best Air Fryers 2026" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6">
                 <span className="text-xs font-bold text-emerald-600 uppercase">Appliances</span>
@@ -228,8 +228,8 @@ export default function Home() {
             </a>
             
             <a href="/reviews/best-chef-knives-home-cooks" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl transition">
-              <div className="h-48 bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center">
-                <span className="text-6xl">🔪</span>
+              <div className="h-48 overflow-hidden">
+                <img src="/images/chefs-knife.jpg" alt="Best Chef's Knives" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6">
                 <span className="text-xs font-bold text-emerald-600 uppercase">Knives</span>
