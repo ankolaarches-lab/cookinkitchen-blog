@@ -22,6 +22,24 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 41,
+    slug: "best-drip-coffee-makers-2026",
+    title: "Best Drip Coffee Makers 2026 - Expert Tested",
+    excerpt: "From budget-friendly to premium, we tested the best drip coffee makers for perfectly brewed coffee every morning.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 13, 2026",
+  },
+  {
+    id: 42,
+    slug: "best-kitchen-scales-2026",
+    title: "Best Kitchen Scales 2026 - Digital & Analog Options",
+    excerpt: "We tested the best kitchen scales for baking and cooking. Find the perfect scale for precise measurements in 2026.",
+    category: "Gadgets",
+    rating: 4.7,
+    date: "Mar 13, 2026",
+  },
+  {
     id: 40,
     slug: "instant-pot-vs-crock-pot",
     title: "Instant Pot vs Crock-Pot: Which Slow Cooker Wins?",
@@ -372,7 +390,7 @@ function ReviewsContent() {
                 <h3 className="font-bold text-stone-800 mt-3">Air Fryer Recipes</h3>
                 <p className="text-sm text-stone-500 mt-2">Master your air fryer</p>
               </a>
-              <a href="/blog/knife-skills-basics" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+              <a href="/blog/essential-knife-skills-guide" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
                 <span className="text-4xl">🔪</span>
                 <h3 className="font-bold text-stone-800 mt-3">Knife Skills 101</h3>
                 <p className="text-sm text-stone-500 mt-2">Essential cutting techniques</p>
@@ -382,7 +400,7 @@ function ReviewsContent() {
                 <h3 className="font-bold text-stone-800 mt-3">Cast Iron Care</h3>
                 <p className="text-sm text-stone-500 mt-2">Season and maintain</p>
               </a>
-              <a href="/blog/instant-pot-beginner-guide" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
+              <a href="/blog/instant-pot-recipes-beginners" className="block bg-white rounded-xl p-6 border border-stone-200 hover:shadow-lg transition hover:-translate-y-1">
                 <span className="text-4xl">🥘</span>
                 <h3 className="font-bold text-stone-800 mt-3">Instant Pot Guide</h3>
                 <p className="text-sm text-stone-500 mt-2">Get started with pressure cooking</p>

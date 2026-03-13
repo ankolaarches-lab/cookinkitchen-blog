@@ -84,8 +84,8 @@ export default function BestPressureCookers2026() {
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-stone-900 mb-6">Related Guides & Reviews</h2>
           <div className="grid md:grid-cols-1 gap-6">
-            <a href="/blog/instant-pot-beginner-guide" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
-              <h3 className="font-bold text-stone-900">Instant Pot Beginner Guide</h3>
+            <a href="/blog/instant-pot-recipes-beginners" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <h3 className="font-bold text-stone-900">Instant Pot Recipes for Beginners</h3>
               <p className="text-sm text-stone-600 mt-1">Start pressure cooking</p>
             </a>
           </div>

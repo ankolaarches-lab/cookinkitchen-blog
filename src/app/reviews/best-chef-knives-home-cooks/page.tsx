@@ -101,7 +101,7 @@ export default function BestChefKnivesHomeCooks() {
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-stone-900 mb-6">Related Guides & Reviews</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <a href="/reviews/best-knife-sharpener" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+            <a href="/reviews/best-knife-sharpeners" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
               <span className="text-sm text-emerald-600 font-medium">Review</span>
               <h3 className="font-bold text-stone-900 mt-1">Best Knife Sharpeners</h3>
               <p className="text-sm text-stone-600 mt-1">Keep your knives razor sharp</p>
@@ -111,7 +111,7 @@ export default function BestChefKnivesHomeCooks() {
               <h3 className="font-bold text-stone-900 mt-1">Best Knife Storage</h3>
               <p className="text-sm text-stone-600 mt-1">Protect your investment</p>
             </a>
-            <a href="/blog/knife-skills-basics" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+            <a href="/blog/essential-knife-skills-guide" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
               <span className="text-sm text-emerald-600 font-medium">Guide</span>
               <h3 className="font-bold text-stone-900 mt-1">Knife Skills 101</h3>
               <p className="text-sm text-stone-600 mt-1">Master essential cuts</p>
