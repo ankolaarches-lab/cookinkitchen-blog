@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 43,
+    slug: "best-coffee-grinders-2026",
+    title: "Best Coffee Grinders 2026 - Expert Buying Guide",
+    excerpt: "Freshly ground coffee is the secret to amazing coffee. We tested the best coffee grinders for every budget - from blade to burr grinders.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 13, 2026",
+  },
+  {
     id: 41,
     slug: "best-drip-coffee-makers-2026",
     title: "Best Drip Coffee Makers 2026 - Expert Tested",
