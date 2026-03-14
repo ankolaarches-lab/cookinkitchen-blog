@@ -2070,6 +2070,8 @@ Cast iron maintenance is simple once you understand the basics: dry immediately,
 - [Best Dutch Oven Recipes](/blog/best-dutch-oven-recipes) — Put your cast iron to work.
 `
   },
+  {
+    slug: "cooking-habits-2026",
     title: "6 Life-Changing Cooking Habits for 2026",
     excerpt: "Small changes, massive impact. These six simple cooking habits will transform how you cook, eat, and feel in the kitchen—without following a strict diet.",
     category: "Guide",
