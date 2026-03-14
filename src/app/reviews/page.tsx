@@ -22,6 +22,24 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 45,
+    slug: "best-dutch-ovens-for-bread-baking",
+    title: "Best Dutch Ovens for Bread Baking 2026",
+    excerpt: "Bake bakery-quality bread at home. We tested the best Dutch ovens for sourdough, no-knead, and artisan bread recipes.",
+    category: "Cookware",
+    rating: 4.7,
+    date: "Mar 14, 2026",
+  },
+  {
+    id: 44,
+    slug: "best-spice-racks-2026",
+    title: "Best Spice Racks 2026 - Complete Buying Guide",
+    excerpt: "Organize your kitchen with the best spice racks of 2026. We tested wall-mounted, drawer, and countertop organizers to find the perfect solution.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 14, 2026",
+  },
+  {
     id: 43,
     slug: "best-coffee-grinders-2026",
     title: "Best Coffee Grinders 2026 - Expert Buying Guide",
