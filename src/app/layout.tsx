@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description: "Independent, data-driven analysis of professional kitchen tools. Professional gear for professional cooks.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "CookinKitchen Intelligence Protocol",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CookinKitchen - Expert Kitchen Tool Reviews",
     description: "Honest, expert reviews of kitchen tools. Find the best chef's knives, cookware, and appliances.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
