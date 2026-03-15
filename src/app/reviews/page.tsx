@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 46,
+    slug: "best-espresso-machines-under-500",
+    title: "Best Espresso Machines Under $500 - 2026 Buying Guide",
+    excerpt: "Barista-quality espresso at home without breaking the bank. We tested the best espresso machines under $500 for beginners and enthusiasts.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 15, 2026",
+  },
+  {
     id: 45,
     slug: "best-dutch-ovens-for-bread-baking",
     title: "Best Dutch Ovens for Bread Baking 2026",
