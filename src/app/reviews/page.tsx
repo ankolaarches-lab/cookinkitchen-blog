@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 47,
+    slug: "best-pasta-makers-2026",
+    title: "Best Pasta Makers 2026 - Ultimate Buying Guide",
+    excerpt: "Fresh homemade pasta in minutes. We tested the best pasta makers from KitchenAid, Atlas, and more. Find the perfect machine for your kitchen.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 15, 2026",
+  },
+  {
     id: 46,
     slug: "best-espresso-machines-under-500",
     title: "Best Espresso Machines Under $500 - 2026 Buying Guide",
