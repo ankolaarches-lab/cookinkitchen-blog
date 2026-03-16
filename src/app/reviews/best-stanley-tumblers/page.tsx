@@ -34,7 +34,7 @@ const products = [
     rating: 4.8,
     reviews: "34,567",
     image: "/images/kitchen/11.jpg",
-    link: "https://www.amazon.com/STANLEY-Classic-Insulated-Bottle-Wide/dp/B008FYCNNC?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/Stanley-Classic-Vacuum-Bottle-Hammertone/dp/B000FZX93K?tag=cookinkitchen-20",
     pros: ["40 oz capacity", "Wide mouth", "Great for hiking", "Lifetime warranty"],
     cons: ["No handle"],
   },

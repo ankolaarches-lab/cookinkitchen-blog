@@ -15,7 +15,7 @@ Featured Products:
    Link: https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20
 
 2. Lodge Dutch Oven - $59.99, Rating: 4.9/5 - Best Value
-   Link: https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20
+   Link: https://www.amazon.com/Lodge-5-Quart-Cast-Iron-Dutch/dp/B00004S9HE?tag=cookinkitchen-20
 
 3. KitchenAid Stand Mixer - $449.99, Rating: 4.8/5
    Link: https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20

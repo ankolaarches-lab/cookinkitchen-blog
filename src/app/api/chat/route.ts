@@ -7,7 +7,7 @@ const MODEL = "meta-llama/llama-3.2-1b-instruct";
 const productsContext = `
 PRODUCT CATALOG (use this info to answer questions):
 - Victorinox Chef's Knife: $39.99, 4.8★ - https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20
-- Lodge Dutch Oven: $59.99, 4.9★ - https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20
+- Lodge Dutch Oven: $59.99, 4.9★ - https://www.amazon.com/Lodge-5-Quart-Cast-Iron-Dutch/dp/B00004S9HE?tag=cookinkitchen-20
 - KitchenAid Stand Mixer: $449.99, 4.8★ - https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20
 - Shun Santoku Knife: $169.95, 4.7★ - https://www.amazon.com/Shun-DM0706-Classic-7-Inch-Santoku/dp/B0000Y7LYM?tag=cookinkitchen-20
 - Ninja Blender: $99.99, 4.6★ - https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20

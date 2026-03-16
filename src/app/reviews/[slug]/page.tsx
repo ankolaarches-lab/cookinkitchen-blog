@@ -308,7 +308,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     rating: 4.9,
     date: "Jan 25, 2026",
     image: "/images/kitchen/5.jpg",
-    affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Dutch-Oven-5-Quart/dp/B000N6ZTBW?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/Lodge-5-Quart-Cast-Iron-Dutch/dp/B00004S9HE?tag=cookinkitchen-20",
     tableImages: [
       "/images/kitchen/6.jpg", // Le Creuset
       "/images/kitchen/7.jpg", // Lodge

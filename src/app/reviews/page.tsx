@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 48,
+    slug: "best-electric-skillets-2026",
+    title: "Best Electric Skillets 2026 - Complete Buying Guide",
+    excerpt: "Versatile cooking solutions for every kitchen. We tested the best electric skillets from Zojirushi, Cuisinart, and more. Find your perfect skillet.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 16, 2026",
+  },
+  {
     id: 47,
     slug: "best-pasta-makers-2026",
     title: "Best Pasta Makers 2026 - Ultimate Buying Guide",

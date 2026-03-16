@@ -24,7 +24,7 @@ const products = [
     rating: 4.4,
     reviews: "45,678",
     image: "/images/kitchen/2.jpg",
-    link: "https://www.amazon.com/Chefman-Electric-Cooker-Steamer-Poacher/dp/B07VS5WLV4?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/Chefman-Electric-Egg-Countertop-Removable/dp/B01N7Z9U12?tag=cookinkitchen-20",
     pros: ["Includes poaching tray", "Timer included", "Clear lid", "Dishwasher safe"],
     cons: ["Plastic smell at first"],
   },
