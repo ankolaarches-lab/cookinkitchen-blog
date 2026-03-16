@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 50,
+    slug: "best-kitchen-faucets-2026",
+    title: "Best Kitchen Faucets 2026 - Complete Buying Guide",
+    excerpt: "Upgrade your kitchen with the best faucets of 2026. We tested pull-down, pull-out, and touchless faucets from Moen, Delta, Kohler, and more.",
+    category: "Kitchen",
+    rating: 4.7,
+    date: "Mar 16, 2026",
+  },
+  {
     id: 49,
     slug: "best-meat-slicers-2026",
     title: "Best Meat Slicers 2026 - Complete Buying Guide",

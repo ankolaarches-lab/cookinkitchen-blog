@@ -3091,9 +3091,9 @@ Now get cooking!
 - [Air Fryer Accessories Guide](/blog/air-fryer-accessories-guide) — Expand what your air fryer can do.
 - [Air Fryer vs Convection Oven](/blog/air-fryer-vs-convection-oven) — Know when to use which.
 `
-  }
+  },
 
-{
+  {
     slug: "knife-skills-complete-guide-2026",
     title: "Knife Skills: The Complete Guide for Home Cooks in 2026",
     excerpt: "Master the foundation of great cooking with our comprehensive knife skills guide. Learn proper grip, essential cuts, knife maintenance, and the techniques that will transform your home cooking.",
