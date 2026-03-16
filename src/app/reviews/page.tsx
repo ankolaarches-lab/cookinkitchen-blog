@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 49,
+    slug: "best-meat-slicers-2026",
+    title: "Best Meat Slicers 2026 - Complete Buying Guide",
+    excerpt: "Slice like a pro at home. We tested the best meat slicers from Chef'sChoice, Cuisinart, and more. Find the perfect slicer for your kitchen.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 16, 2026",
+  },
+  {
     id: 48,
     slug: "best-electric-skillets-2026",
     title: "Best Electric Skillets 2026 - Complete Buying Guide",
