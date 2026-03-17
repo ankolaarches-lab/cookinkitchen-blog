@@ -22,6 +22,24 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 52,
+    slug: "best-stockpots-2026",
+    title: "Best Stockpots 2026 - Complete Buying Guide",
+    excerpt: "From soups to pasta, find the best stockpots of 2026. We tested stainless steel, aluminum, and enameled options from top brands.",
+    category: "Cookware",
+    rating: 4.6,
+    date: "Mar 17, 2026",
+  },
+  {
+    id: 51,
+    slug: "best-electric-can-openers-2026",
+    title: "Best Electric Can Openers 2026 - Complete Buying Guide",
+    excerpt: "Make opening cans effortless with the best electric can openers of 2026. We tested top-rated models from Hamilton Beach, KitchenAid, and more.",
+    category: "Kitchen Utensils",
+    rating: 4.5,
+    date: "Mar 17, 2026",
+  },
+  {
     id: 50,
     slug: "best-kitchen-faucets-2026",
     title: "Best Kitchen Faucets 2026 - Complete Buying Guide",
