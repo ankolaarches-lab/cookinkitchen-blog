@@ -12,6 +12,165 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "cast-iron-skills-2026",
+    title: "Cast Iron Skills: From Rusty Skillet to Kitchen Centerpiece",
+    excerpt: "Master the art of cast iron cooking with essential skills that transform a basic pan into your most versatile kitchen tool. Learn seasoning secrets, proper cleaning techniques, and pro tips that will last a lifetime.",
+    category: "Guide",
+    date: "Mar 17, 2026",
+    readTime: "7 min read",
+    image: "/images/kitchen/3.jpg",
+    amazonLink: "https://www.amazon.com/s?k=cast+iron+skillet&tag=cookinkitchen-20",
+    content: `
+## Why Cast Iron Skills Matter in 2026
+
+Cast iron cooking is experiencing a renaissance. From the minimalist Field Company pans to the classic Lodge skillets, more home cooks are discovering what generations before them knew: cast iron is the ultimate kitchen workhorse. But owning a cast iron pan and knowing how to use it are two different things.
+
+This guide takes you beyond basic maintenance into the skills that make cast iron shine. These are the techniques that transform a rusty hand-me-down into the pan you'll reach for every single day.
+
+## The Foundation: Understanding Seasoning
+
+Seasoning isn't magic—it's science. When you apply oil to cast iron and heat it, the oil undergoes polymerization: the molecules bond together to create a hard, smooth, nonstick surface. Every time you cook with oil, you're adding another layer.
+
+### The Quick Seasoning Method
+
+For maintaining existing seasoning or quick touch-ups:
+
+1. Clean your pan thoroughly with hot water and soap
+2. Dry completely (place on burner for 1 minute on low)
+3. Apply a thin layer of high smoke-point oil (flaxseed, canola, or vegetable)
+4. Wipe until almost dry with a paper towel
+5. Heat on medium-high until the oil begins to smoke
+6. Let cool, wipe again, and store
+
+### The Full Restoration Season
+
+For new pans or heavily used cast iron:
+
+1. Strip old seasoning with steel wool if needed
+2. Wash with dish soap and dry completely
+3. Apply thin layer of flaxseed oil
+4. Place upside down in oven at 450°F for 1 hour
+5. Repeat 3-4 times for best results
+
+## Essential Cast Iron Skills
+
+### 1. The Preheating Mastery
+
+Cast iron takes time to heat properly. Unlike stainless steel, which heats relatively quickly, cast iron needs patience.
+
+**The Right Method:**
+- Place pan on medium-low heat for 5-10 minutes
+- Test with a drop of water—the droplet should sizzle and dance
+- Increase heat gradually for searing
+- Let the pan do the work
+
+**Why It Matters:** Properly preheated cast iron creates the perfect sear and prevents sticking. Rushing this step is the #1 cause of failed cast iron cooking.
+
+### 2. The Oil Slick Technique
+
+The secret to nonstick cast iron? Enough oil.
+
+**How to Do It:**
+1. Add 1-2 tablespoons of oil to your preheated pan
+2. Swirl to coat the entire surface
+3. Let the oil heat until it shimmers
+4. Add your food
+
+This "oil slick" creates a temporary nonstick layer that works better than any chemical coating. Reapply oil between batches.
+
+### 3. The Art of Searing
+
+Cast iron excels at high-heat searing. Here's how to get restaurant-quality crust:
+
+**The Process:**
+1. Preheat for 10+ minutes on medium-high
+2. Add high smoke-point oil (avocado, grapeseed)
+3. Season protein generously with salt
+4. Don't touch for 2-3 minutes
+5. Flip once—when it releases naturally from the pan
+6. Finish in oven for thick cuts (if needed)
+
+**The Test:** Your protein is ready to flip when it releases easily. If it sticks, it's not ready.
+
+### 4. Proper Cleaning (The Controversy Solved)
+
+Here's the truth: you CAN use soap on cast iron. Modern dish soap won't hurt your seasoning.
+
+**The Best Method:**
+1. While still warm, scrub with hot water and a stiff brush or chain mail
+2. Use a small amount of dish soap if needed
+3. Dry immediately with a towel
+4. Place on burner for 30 seconds to evaporate moisture
+5. Apply thin oil layer while warm
+
+**What NOT to Do:**
+- Never soak in water
+- Never put in dishwasher
+- Avoid harsh scouring pads on seasoning
+- Don't forget to oil after cleaning
+
+### 5. Handling Rust (It's Not the End)
+
+Rust happens. It doesn't mean your pan is ruined.
+
+**The Fix:**
+1. Scrub rust with steel wool until removed
+2. Wash, dry, and oil thoroughly
+3. Season as normal (multiple cycles)
+4. Your pan is good as new
+
+## Cooking Applications
+
+### What Cast Iron Does Best
+
+**Perfect for:**
+- Steaks and chops (best sear possible)
+- Fried chicken (crisp, golden crust)
+- Cornbread (beautiful crust)
+- Pizza (stone-like heat retention)
+- Frittatas and baked eggs
+- Roasting vegetables (except delicate ones)
+
+### What to Avoid
+
+- Delicate fish (unless well-seasoned)
+- Acidic dishes in new pans (tomatoes, wine)
+- High-sugar foods that can stick
+
+## Pro Tips for Cast Iron Success
+
+### Temperature Control
+Cast iron holds heat exceptionally well. Use lower temperatures than you think—medium is often enough for most cooking.
+
+### The Breading Secret
+For perfect fried chicken or chicken fried steak, let your breaded items rest for 15-20 minutes before cooking. This helps the coating adhere.
+
+### Dutch Oven Synergy
+Your cast iron skillet and Dutch oven work together beautifully. Use the skillet for searing, then finish in the Dutch oven for braised perfection.
+
+## The 2026 Cast Iron Collection
+
+Looking to expand? Here's what to consider:
+
+- **10-12 inch skillet**: The everyday workhorse
+- **Dutch oven**: For braises, soups, bread
+- **Grill pan**: Indoor grilling capability
+- **Griddle**: Pancakes, bacon, sandwiches
+
+## Conclusion
+
+Cast iron skills are worth developing. Once you master preheating, seasoning, and proper care, you'll have cookware that improves with age and performs like nothing else in your kitchen.
+
+The pan your grandmother used can become your favorite cooking tool—if you learn the skills that make it sing.
+
+## Also Worth Reading
+
+- [Cast Iron Maintenance 2026](/blog/cast-iron-maintenance-2026) — Deep dive on care
+- [Ultimate Guide to Enameled Cast Iron](/blog/ultimate-guide-enameled-cast-iron) — For Dutch oven owners
+- [Best Dutch Oven Recipes](/blog/best-dutch-oven-recipes) — Put your cast iron to work
+`
+  },
+  {
     slug: "fresh-herbs-guide-2026",
     title: "Fresh Herbs Guide: How to Buy, Store, and Cook with Herbs",
     excerpt: "Transform ordinary meals into extraordinary dishes with our complete guide to fresh herbs. Learn which herbs to buy, how to store them for maximum freshness, and the cooking techniques that unlock their full flavor potential.",
