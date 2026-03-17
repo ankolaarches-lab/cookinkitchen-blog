@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 53,
+    slug: "best-grill-presses-2026",
+    title: "Best Grill Presses 2026 - Complete Buying Guide",
+    excerpt: "Achieve perfect sear marks and even cooking with the best grill presses of 2026. We tested top-rated cast iron, stainless steel, and aluminum presses.",
+    category: "Cookware",
+    rating: 4.5,
+    date: "Mar 17, 2026",
+  },
+  {
     id: 52,
     slug: "best-stockpots-2026",
     title: "Best Stockpots 2026 - Complete Buying Guide",
