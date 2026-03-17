@@ -12,6 +12,186 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fresh-herbs-guide-2026",
+    title: "Fresh Herbs Guide: How to Buy, Store, and Cook with Herbs",
+    excerpt: "Transform ordinary meals into extraordinary dishes with our complete guide to fresh herbs. Learn which herbs to buy, how to store them for maximum freshness, and the cooking techniques that unlock their full flavor potential.",
+    category: "Guide",
+    date: "Mar 17, 2026",
+    readTime: "6 min read",
+    image: "/images/kitchen/4.jpg",
+    amazonLink: "https://www.amazon.com/s?k=fresh+herbs&tag=cookinkitchen-20",
+    content: `
+## Why Fresh Herbs Matter
+
+There's a reason professional chefs reach for herbs before reaching for salt. Fresh herbs add brightness, complexity, and depth that dried herbs simply cannot match. A handful of chopped basil transforms a basic tomato sauce into something transcendent. Mint elevates a simple lamb dish from ordinary to extraordinary.
+
+Yet many home cooks shy away from fresh herbs, finding them intimidating or wasteful when they wilt before use. This guide changes that. We'll cover everything you need to know to buy, store, and cook with herbs like a pro.
+
+## The Essential Fresh Herbs Every Kitchen Needs
+
+### Basil
+The crown jewel of summer cooking. Basil is essential for Italian dishes, Thai curries, and anything involving tomatoes.
+
+**Best with:** Pasta, pizza, caprese salads, chicken, fish
+**Flavor profile:** Sweet, peppery, slightly minty
+**Cooking tip:** Add at the end of cooking—high heat destroys its delicate flavor
+
+### Cilantro
+Love it or hate it, cilantro is indispensable for Mexican, Southeast Asian, and Indian cuisines.
+
+**Best with:** Tacos, curries, salsas, pho, chimichurri
+**Flavor profile:** Bright, citrusy, slightly soapiness for some
+**Cooking tip:** Use stems as well as leaves—they contain intense flavor
+
+### Parsley
+More than just a garnish, parsley adds freshness and brightness to virtually any dish.
+
+**Best with:** Lamb, chicken, fish, salads, sauces, grain bowls
+**Flavor profile:** Clean, herbaceous, slightly peppery
+**Cooking tip:** Flat-leaf (Italian) parsley has more flavor than curly
+
+### Mint
+Refreshing and versatile, mint works in both savory and sweet applications.
+
+**Best with:** Lamb, peas, yogurt, cocktails, desserts
+**Flavor profile:** Cool, refreshing, slightly sweet
+**Cooking tip:** Add early in cooking for subtle flavor, late for bright notes
+
+### Rosemary
+A robust herb that stands up to bold flavors and high heat.
+
+**Best with:** Roasted meats, potatoes, bread, grilled vegetables
+**Flavor profile:** Piney, earthy, slightly citrus
+**Cooking tip:** Chop finely to avoid tough texture, or use as a garnish
+
+### Thyme
+The workhorse herb that pairs with nearly everything.
+
+**Best with:** Chicken, soups, stews, roasted vegetables
+**Flavor profile:** Earthy, slightly minty, subtle
+**Cooking tip:** Add early in cooking to allow flavors to develop
+
+### Chives
+Mild onion flavor without the bite.
+
+**Best with:** Eggs, potatoes, cream cheese, salads
+**Flavor profile:** Mild onion, fresh, delicate
+**Cooking tip:** Add raw at the end—cooking diminishes their flavor
+
+### Dill
+The defining herb for seafood and Eastern European cuisine.
+
+**Best with:** Salmon, shrimp, gravlax, pickles, tzatziki
+**Flavor profile:** Bright, anise-like, fresh
+**Cooking tip:** Add just before serving for best flavor
+
+## How to Buy Fresh Herbs
+
+### What to Look For
+- **Bright color**: Leaves should be vibrant, not wilted or yellowed
+- **No brown spots**: Discoloration indicates age
+- **Strong aroma**: Pick up the bunch and smell—aroma indicates freshness
+- **Firm stems**: Stems should be rigid, not slimy or soft
+
+### What to Avoid
+- Wilted or drooping leaves
+- Yellowing or brown edges
+- Slimy stems
+- Lack of scent
+
+## Storing Fresh Herbs: The Complete Guide
+
+### The Water Method (Best for Most Herbs)
+This simple technique keeps herbs fresh for up to two weeks:
+
+1. **Trim the stems** at an angle
+2. **Place in a jar** with 1-2 inches of water (like a bouquet)
+3. **Cover loosely** with a plastic bag
+4. **Refrigerate** (except basil—keep at room temperature)
+
+Herbs that work best: parsley, cilantro, dill, mint
+
+### The Damp Paper Towel Method
+Ideal for delicate herbs:
+
+1. Dampen a paper towel
+2. Wrap herbs loosely
+3. Place in a plastic bag
+4. Store in crisper drawer
+
+Herbs that work best: basil, chives, tender herbs
+
+### Freezing Herbs
+For long-term storage, freezing is your best option:
+
+**Freezer bags:** Chop herbs, place in ice cube trays, cover with water or oil, freeze, then transfer to bags
+
+**Flat freeze:** Spread chopped herbs on a baking sheet, freeze, then store in bags
+
+## Cooking with Fresh Herbs
+
+### When to Add Herbs
+
+**Early in cooking** (long-simmering dishes):
+- Rosemary, thyme, sage
+- Allows flavors to meld and deepen
+
+**Mid-cooking** (sauces, stews):
+- Parsley, dill stems
+- Builds layered flavor
+
+**At the end** (finishing):
+- Basil, cilantro, mint, chives
+- Preserves bright, fresh flavor
+
+### The chiffonade technique
+For tender leaves like basil and mint:
+1. Stack several leaves
+2. Roll tightly into a cigar shape
+3. Slice crosswise into thin ribbons
+
+### The rough chop
+For sturdy herbs:
+1. Gather leaves into a pile
+2. Chop roughly with a sharp knife
+3. No need to be precise—texture is good
+
+## Dried Herbs vs Fresh: When to Use What
+
+### The General Rule
+Use about 1 teaspoon dried herbs for every 1 tablespoon fresh. Dried herbs are more concentrated.
+
+### When to Use Dried
+- Long-cooking dishes (soups, stews, braises)
+- When fresh isn't available
+- When you want subtle, background flavor
+
+### When to Use Fresh
+- Finishing dishes
+- Raw applications (salads, salsas)
+- Any dish where brightness matters
+
+## Simple Herb Combinations
+
+**Italian:** Basil + oregano + rosemary + thyme
+**Mexican:** Cilantro + lime + jalapeño
+**French:** Parsley + thyme + bay leaf
+**Thai:** Cilantro + basil + mint + lemongrass
+**Mediterranean:** Oregano + parsley + mint + dill
+
+## Conclusion
+
+Fresh herbs are one of the simplest ways to elevate your home cooking. With proper storage and basic technique, you can enjoy bright, flavorful dishes all year round. Start with one or two herbs you love, and expand from there.
+
+## Also Worth Reading
+
+- [Best Pantry Staples 2026](/blog/best-pantry-staples-2026) — Stock your pantry alongside fresh herbs
+- [Mastering the Art of Seasoning](/blog/mastering-art-of-seasoning) — Balance herbs with other flavors
+- [Essential Knife Skills Guide](/blog/essential-knife-skills-guide) — Learn to chop herbs like a pro
+- [Instant Pot Recipes for Beginners](/blog/instant-pot-recipes-beginners) — Add herbs to your pressure cooker meals
+`
+  },
+  {
     slug: "kitchen-trends-to-ditch-2026",
     title: "5 Kitchen Trends to Ditch in 2026 (And What to Replace Them With)",
     excerpt: "From overcomplicated gadgets to outdated techniques, discover which kitchen trends are worth leaving behind this year—and what to embrace instead.",
