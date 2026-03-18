@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 54,
+    slug: "best-dutch-ovens-2026",
+    title: "Best Dutch Ovens 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect Dutch oven for your kitchen in 2026. We tested top-rated enameled cast iron, raw cast iron, and stainless steel options from Lodge, Le Creuset, and more.",
+    category: "Cookware",
+    rating: 4.7,
+    date: "Mar 18, 2026",
+  },
+  {
     id: 53,
     slug: "best-grill-presses-2026",
     title: "Best Grill Presses 2026 - Complete Buying Guide",

@@ -233,6 +233,7 @@ Start with the essentials, build from there, and remember: a well-stocked spice 
 `
   },
   {
+    slug: "cast-iron-skills-2026",
     title: "Cast Iron Skills: From Rusty Skillet to Kitchen Centerpiece",
     excerpt: "Master the art of cast iron cooking with essential skills that transform a basic pan into your most versatile kitchen tool. Learn seasoning secrets, proper cleaning techniques, and pro tips that will last a lifetime.",
     category: "Guide",
