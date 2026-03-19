@@ -22,6 +22,33 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 57,
+    slug: "best-pizza-stones-2026",
+    title: "Best Pizza Stones 2026 - Perfect Pizza at Home",
+    excerpt: "Achieve crispy, restaurant-quality pizza at home with the best pizza stones. We tested cordierite, ceramic, and steel stones.",
+    category: "Cookware",
+    rating: 4.6,
+    date: "Mar 19, 2026",
+  },
+  {
+    id: 56,
+    slug: "best-oven-mitts-2026",
+    title: "Best Oven Mitts 2026 - Heat Resistant Buying Guide",
+    excerpt: "Protect your hands from high heat with the best oven mitts. We tested silicone, fabric, and hybrid mitts for maximum protection.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 18, 2026",
+  },
+  {
+    id: 55,
+    slug: "best-air-fryers-under-100",
+    title: "Best Air Fryers Under $100 - 2026 Buying Guide",
+    excerpt: "Get crispy results without breaking the bank. We tested the best budget air fryers under $100 for every kitchen.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Mar 17, 2026",
+  },
+  {
     id: 54,
     slug: "best-dutch-ovens-2026",
     title: "Best Dutch Ovens 2026 - Complete Buying Guide",
