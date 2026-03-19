@@ -56,7 +56,7 @@ const products = [
     name: "Cuisinart Enameled Cast Iron Dutch Oven, 5.5 Qt",
     price: "$89.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
+    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/Cuisinart-Enameled-Cast-5-5-Quart/dp/B07G5K2VCL?tag=cookinkitchen-20",
     pros: ["Affordable", "Good heat distribution", "Oven-safe", "Comfortable handles"],
     cons: ["Smaller handles", "Less-known brand reputation", "Mixed reviews on durability"],
