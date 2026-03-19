@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 59,
+    slug: "best-immersion-blenders-2026",
+    title: "Best Immersion Blenders 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect immersion blender for smoothies, soups, and sauces. We tested the best hand blenders for every kitchen in 2026.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 19, 2026",
+  },
+  {
     id: 58,
     slug: "best-casserole-dishes-2026",
     title: "Best Casserole Dishes 2026 - Complete Buying Guide",
