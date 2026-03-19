@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 58,
+    slug: "best-casserole-dishes-2026",
+    title: "Best Casserole Dishes 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect casserole dish for your kitchen. We tested ceramic, glass, cast iron, and enamel options for baking, serving, and meal prep.",
+    category: "Cookware",
+    rating: 4.7,
+    date: "Mar 19, 2026",
+  },
+  {
     id: 57,
     slug: "best-pizza-stones-2026",
     title: "Best Pizza Stones 2026 - Perfect Pizza at Home",
