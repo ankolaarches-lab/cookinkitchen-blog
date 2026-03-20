@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Immersion Blenders 2026 - Complete Buying Guide",
   description: "Find the perfect immersion blender for smoothies, soups, and sauces. We tested the best hand blenders for every kitchen in 2026.",
+  openGraph: {
+    title: "Best Immersion Blenders 2026 - Complete Buying Guide",
+    description: "Find the perfect immersion blender for smoothies, soups, and sauces. We tested the best hand blenders for every kitchen.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/immersion-blenders-2026.jpg"],
+  },
 };
 
 const products = [

@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Oven Mitts 2026 - Heat Resistant Buying Guide",
   description: "Protect your hands from high heat with the best oven mitts. We tested silicone, fabric, and hybrid mitts for maximum protection.",
+  openGraph: {
+    title: "Best Oven Mitts 2026 - Heat Resistant Buying Guide",
+    description: "Protect your hands from high heat. We tested silicone, fabric, and hybrid oven mitts for maximum protection.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/oven-mitts-2026.jpg"],
+  },
 };
 
 const products = [

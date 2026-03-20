@@ -22,6 +22,24 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 63,
+    slug: "best-electric-griddles-2026",
+    title: "Best Electric Griddles 2026 - Complete Buying Guide",
+    excerpt: "Discover the best electric griddles for perfect pancakes, burgers, and more. We tested top-rated options for home kitchens.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Mar 20, 2026",
+  },
+  {
+    id: 62,
+    slug: "best-cookware-sets-2026",
+    title: "Best Cookware Sets 2026 - Complete Buying Guide",
+    excerpt: "We tested the best cookware sets for every budget. From ceramic to stainless steel, find your perfect cookware set.",
+    category: "Cookware",
+    rating: 4.7,
+    date: "Mar 20, 2026",
+  },
+  {
     id: 59,
     slug: "best-immersion-blenders-2026",
     title: "Best Immersion Blenders 2026 - Complete Buying Guide",

@@ -4,6 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Electric Can Openers 2026 - Complete Buying Guide",
   description: "Make opening cans effortless with the best electric can openers of 2026. We tested top-rated models from Hamilton Beach, KitchenAid, and more.",
+  openGraph: {
+    title: "Best Electric Can Openers 2026 - Complete Buying Guide",
+    description: "Make opening cans effortless. We tested top-rated electric can openers from Hamilton Beach, KitchenAid, and more.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/electric-can-openers-2026.jpg"],
+  },
 };
 
 const products = [

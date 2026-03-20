@@ -4,6 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Grill Presses 2026 - Complete Buying Guide",
   description: "Achieve perfect sear marks and even cooking with the best grill presses of 2026. We tested top-rated cast iron, stainless steel, and aluminum presses.",
+  openGraph: {
+    title: "Best Grill Presses 2026 - Complete Buying Guide",
+    description: "Achieve perfect sear marks. We tested top-rated cast iron, stainless steel, and aluminum grill presses.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/grill-presses-2026.jpg"],
+  },
 };
 
 const products = [

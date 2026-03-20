@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Pizza Stones 2026 - Perfect Pizza at Home",
   description: "Achieve crispy, restaurant-quality pizza at home with the best pizza stones. We tested cordierite, ceramic, and steel stones.",
+  openGraph: {
+    title: "Best Pizza Stones 2026 - Perfect Pizza at Home",
+    description: "Achieve crispy, restaurant-quality pizza at home. We tested cordierite, ceramic, and steel pizza stones.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/pizza-stones-2026.jpg"],
+  },
 };
 
 const products = [

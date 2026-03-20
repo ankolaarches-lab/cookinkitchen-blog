@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Kitchen Faucets 2026 - Complete Buying Guide",
   description: "Upgrade your kitchen with the best faucets of 2026. We tested pull-down, pull-out, and touchless faucets from Moen, Delta, Kohler, and more.",
+  openGraph: {
+    title: "Best Kitchen Faucets 2026 - Complete Buying Guide",
+    description: "Upgrade your kitchen with the best faucets. We tested pull-down, pull-out, and touchless faucets from Moen, Delta, Kohler.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/kitchen-faucets-2026.jpg"],
+  },
 };
 
 const products = [

@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Air Fryers Under $100 - 2026 Buying Guide",
   description: "Get crispy results without breaking the bank. We tested the best budget air fryers under $100 for every kitchen.",
+  openGraph: {
+    title: "Best Air Fryers Under $100 - 2026 Buying Guide",
+    description: "Get crispy results without breaking the bank. We tested the best budget air fryers under $100.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/air-fryers-under-100.jpg"],
+  },
 };
 
 const products = [

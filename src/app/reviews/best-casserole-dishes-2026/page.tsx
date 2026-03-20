@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Casserole Dishes 2026 - Complete Buying Guide",
   description: "Find the perfect casserole dish for your kitchen. We tested ceramic, glass, cast iron, and enamel options for baking, serving, and meal prep.",
+  openGraph: {
+    title: "Best Casserole Dishes 2026 - Complete Buying Guide",
+    description: "Find the perfect casserole dish. We tested ceramic, glass, cast iron, and enamel options for baking and serving.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/casserole-dishes-2026.jpg"],
+  },
 };
 
 const products = [

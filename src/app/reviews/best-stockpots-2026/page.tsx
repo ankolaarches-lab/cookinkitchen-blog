@@ -4,6 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Stockpots 2026 - Complete Buying Guide",
   description: "From soups to pasta, find the best stockpots of 2026. We tested stainless steel, aluminum, and enameled options from top brands.",
+  openGraph: {
+    title: "Best Stockpots 2026 - Complete Buying Guide",
+    description: "From soups to pasta, find the best stockpots. We tested stainless steel, aluminum, and enameled options from top brands.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/stockpots-2026.jpg"],
+  },
 };
 
 const products = [

@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Meat Slicers 2026 - Complete Buying Guide",
   description: "Slice like a pro at home. We tested the best meat slicers from Chef'sChoice, Cuisinart, and more. Find the perfect slicer for your kitchen.",
+  openGraph: {
+    title: "Best Meat Slicers 2026 - Complete Buying Guide",
+    description: "Slice like a pro at home. We tested the best meat slicers from Chef'sChoice, Cuisinart, and more.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/meat-slicers-2026.jpg"],
+  },
 };
 
 const products = [

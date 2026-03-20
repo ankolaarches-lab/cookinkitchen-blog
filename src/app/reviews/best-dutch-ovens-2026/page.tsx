@@ -4,6 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Dutch Ovens 2026 - Complete Buying Guide",
   description: "Find the perfect Dutch oven for your kitchen in 2026. We tested top-rated enameled cast iron, raw cast iron, and stainless steel options from Lodge, Le Creuset, and more.",
+  openGraph: {
+    title: "Best Dutch Ovens 2026 - Complete Buying Guide",
+    description: "Find the perfect Dutch oven. We tested enameled cast iron, raw cast iron, and stainless steel from Lodge, Le Creuset.",
+    type: "article",
+    publishedTime: "2026-03-19",
+    authors: ["CookinKitchen"],
+    images: ["/images/reviews/dutch-ovens-2026.jpg"],
+  },
 };
 
 const products = [
