@@ -5,6 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Cookware Sets 2026 - Complete Buying Guide",
   description: "We tested the best cookware sets for every budget. From ceramic to stainless steel, find your perfect cookware set.",
+  openGraph: {
+    title: "Best Cookware Sets 2026 - Complete Buying Guide",
+    description: "We tested the best cookware sets for every budget. From ceramic nonstick to stainless steel and cast iron.",
+    type: "article",
+    publishedTime: "2026-03-18",
+    authors: ["CookinKitchen"],
+    images: ["/images/kitchen/3.jpg"],
+  },
 };
 
 const products = [
@@ -213,6 +221,28 @@ export default function BestCookwareSets2026() {
               <h3 className="font-lato font-bold text-stone-700 mb-2">Most Durable</h3>
               <p className="text-stone-600">Lodge Cast Iron — Virtually indestructible, lasts generations</p>
             </div>
+          </div>
+        </div>
+
+        {/* Related Reviews */}
+        <div className="mt-12">
+          <h3 className="font-playfair text-xl text-stone-800 mb-4">You Might Also Like</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            <a href="/reviews/best-dutch-ovens-2026" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <span className="text-sm text-emerald-600 font-medium">Review</span>
+              <h4 className="font-bold text-stone-900 mt-1">Best Dutch Ovens 2026</h4>
+              <p className="text-xs text-stone-500 mt-1">For braising & baking</p>
+            </a>
+            <a href="/reviews/best-nonstick-pan" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <span className="text-sm text-emerald-600 font-medium">Review</span>
+              <h4 className="font-bold text-stone-900 mt-1">Best Non-Stick Pans</h4>
+              <p className="text-xs text-stone-500 mt-1">Easy-release cooking</p>
+            </a>
+            <a href="/reviews/best-cast-iron-skillet-2026" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+              <span className="text-sm text-emerald-600 font-medium">Review</span>
+              <h4 className="font-bold text-stone-900 mt-1">Best Cast Iron Skillets</h4>
+              <p className="text-xs text-stone-500 mt-1">Built to last forever</p>
+            </a>
           </div>
         </div>
 
