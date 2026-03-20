@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 65,
+    slug: "best-whisks-2026",
+    title: "Best Whisks 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect whisk for your kitchen. We tested the best whisks for baking, cooking, and mixing - from balloon whisks to silicone whisks.",
+    category: "Kitchen Utensils",
+    rating: 4.7,
+    date: "Mar 20, 2026",
+  },
+  {
     id: 64,
     slug: "best-breakfast-sandwich-makers-2026",
     title: "Best Breakfast Sandwich Makers 2026 - Complete Buying Guide",
