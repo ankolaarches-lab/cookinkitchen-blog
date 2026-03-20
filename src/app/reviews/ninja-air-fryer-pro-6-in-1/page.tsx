@@ -12,7 +12,7 @@ const product = {
   price: "$169.99",
   rating: 4.8,
   image: "/images/kitchen/6.jpg",
-  link: "https://www.amazon.com/Ninja-Air-Fryer-Pro-XL-6-in-1/dp/B0B7T1VJGP?tag=cookinkitchen-20",
+  link: "https://www.amazon.com/s?k=Ninja+Air+Fryer+Pro+XL+6+in+1&tag=cookinkitchen-20",
   features: [
     "6.5-quart capacity",
     "MaxCrisp technology for extra crispy results",

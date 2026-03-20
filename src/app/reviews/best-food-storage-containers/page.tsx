@@ -13,7 +13,7 @@ const products = [
     price: "$44.99",
     rating: 4.8,
     image: "/images/kitchen/1.jpg",
-    link: "https://www.amazon.com/s?k=Pyrex+18+Piece+Smart+Seal?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Pyrex+18+Piece+Smart+Seal&tag=cookinkitchen-20",
     pros: ["Glass is microwave-safe", "BPA-free", "Stackable", "Oven safe"],
     cons: ["Glass can break if dropped"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$29.99",
     rating: 4.7,
     image: "/images/kitchen/2.jpg",
-    link: "https://www.amazon.com/s?k=Rubbermaid+Brilliance+Storage+14+Piece?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Rubbermaid+Brilliance+Storage+14+Piece&tag=cookinkitchen-20",
     pros: ["Crystal clear", "Leak-proof", "BPA-free", "Stain-resistant"],
     cons: ["Not oven-safe"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$32.00",
     rating: 4.6,
     image: "/images/kitchen/3.jpg",
-    link: "https://www.amazon.com/s?k=Lunchbots+Stainless+Steel+Food?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Lunchbots+Stainless+Steel+Food&tag=cookinkitchen-20",
     pros: ["Eco-friendly", "No plastic", "Durable", "Non-toxic"],
     cons: ["Not microwave-safe", "No lids"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$39.99",
     rating: 4.5,
     image: "/images/kitchen/4.jpg",
-    link: "https://www.amazon.com/s?k=Glasslock+18+Piece+Container+Modular?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Glasslock+18+Piece+Container+Modular&tag=cookinkitchen-20",
     pros: ["Tempered glass", "Snap lock lids", "Microwave safe", "Freezer safe"],
     cons: ["Lids can stain"],
   },
@@ -49,7 +49,7 @@ const products = [
     price: "$69.99",
     rating: 4.8,
     image: "/images/kitchen/5.jpg",
-    link: "https://www.amazon.com/s?k=OXO+Grips+POP+Container+Set?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=OXO+Grips+POP+Container+Set&tag=cookinkitchen-20",
     pros: ["Airtight seal", "Stackable", "BPA-free", "Modern design"],
     cons: ["Premium price", "Lids sold separately"],
   },
@@ -138,7 +138,7 @@ export default function BestFoodStorageContainers() {
             The airtight seal keeps food fresh for weeks, and the modular design looks great on any countertop.
           </p>
           <a
-            href="https://www.amazon.com/s?k=OXO+Grips+POP+Container+Set?tag=cookinkitchen-20"
+            href="https://www.amazon.com/s?k=OXO+Grips+POP+Container+Set&tag=cookinkitchen-20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

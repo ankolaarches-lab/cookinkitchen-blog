@@ -12,7 +12,7 @@ const product = {
   price: "$89.99",
   rating: 4.7,
   image: "/images/kitchen/1.jpg",
-  link: "https://www.amazon.com/COSORI-5-8-Quart-Air-Fryer/dp/B07GWLBJP7?tag=cookinkitchen-20",
+  link: "https://www.amazon.com/s?k=COSORI+5+8+Quart+Air+Fryer&tag=cookinkitchen-20",
   features: [
     "5.8-quart capacity",
     "12 cooking presets",

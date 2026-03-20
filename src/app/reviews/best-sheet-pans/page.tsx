@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const products = [
-  { name: "Nordic Ware Half Sheet", price: "$14.95", rating: 4.9, image: "/images/kitchen/1.jpg", link: "https://www.amazon.com/s?k=best sheet pans?tag=cookinkitchen-20", pros: ["Natural aluminum", "USA made", "Durable"] },
+  { name: "Nordic Ware Half Sheet", price: "$14.95", rating: 4.9, image: "/images/kitchen/1.jpg", link: "https://www.amazon.com/s?k=best+sheet+pans&tag=cookinkitchen-20", pros: ["Natural aluminum", "USA made", "Durable"] },
 ];
 
 export default function BestSheetPans2026() {

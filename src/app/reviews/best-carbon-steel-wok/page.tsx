@@ -60,7 +60,7 @@ export default function Page() {
               <li className="mb-2">Comfortable wooden handle</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Yosukata+Carbon+Steel+Wok+14+Inch?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href="https://www.amazon.com/s?k=Yosukata+Carbon+Steel+Wok+14+Inch&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -100,7 +100,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a 
-                href="https://www.amazon.com/s?k=Yosukata+Carbon+Steel+Wok+14+Inch?tag=cookinkitchen-20"
+                href="https://www.amazon.com/s?k=Yosukata+Carbon+Steel+Wok+14+Inch&tag=cookinkitchen-20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-600 font-medium hover:underline"

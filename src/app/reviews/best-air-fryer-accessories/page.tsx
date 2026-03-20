@@ -13,7 +13,7 @@ const products = [
     price: "$16.99",
     rating: 4.7,
     image: "/images/kitchen/6.jpg",
-    link: "https://www.amazon.com/s?k=Multi+Layer+Air+Fryer+Rack+Expandable?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Multi+Layer+Air+Fryer+Rack+Expandable&tag=cookinkitchen-20",
     pros: ["3-tier cooking", "Expandable", "Dishwasher safe", "More capacity"],
     cons: ["May not fit all models"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$12.99",
     rating: 4.8,
     image: "/images/kitchen/7.jpg",
-    link: "https://www.amazon.com/s?k=Silicone+Air+Fryer+Liners+Reusable?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Silicone+Air+Fryer+Liners+Reusable&tag=cookinkitchen-20",
     pros: ["Reusable", "Non-stick", "Easy cleanup", "Food safe silicone"],
     cons: ["Need to size correctly"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$19.99",
     rating: 4.6,
     image: "/images/kitchen/8.jpg",
-    link: "https://www.amazon.com/s?k=Air+Fryer+Accessories+Baking+Cake?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Air+Fryer+Accessories+Baking+Cake&tag=cookinkitchen-20",
     pros: ["Multiple pieces", "Bake cakes", "Make muffins", "Parchment included"],
     cons: ["Small portions only"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$24.99",
     rating: 4.5,
     image: "/images/kitchen/9.jpg",
-    link: "https://www.amazon.com/s?k=Air+Fryer+Rotisserie+Kit+Universal?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Air+Fryer+Rotisserie+Kit+Universal&tag=cookinkitchen-20",
     pros: ["Whole roasted chicken", "Rotisserie effect", "Juicy results"],
     cons: ["Model specific"],
   },
@@ -94,7 +94,7 @@ export default function BestAirFryerAccessories() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Silicone Air Fryer Liners</strong> are the must-have accessory. Reusable, non-stick, and easy to clean — they transform your air fryer into a breeze to maintain while cooking everything from veggies to baked goods.</p>
-          <a href="https://www.amazon.com/s?k=Silicone+Air+Fryer+Liners+Reusable?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=Silicone+Air+Fryer+Liners+Reusable&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         
       

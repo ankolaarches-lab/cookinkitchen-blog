@@ -13,7 +13,7 @@ const products = [
     price: "$99.99",
     rating: 4.8,
     image: "/images/kitchen/7.jpg",
-    link: "https://www.amazon.com/s?k=Braun+MultiQuick+9+Immersion+Blender?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Braun+MultiQuick+9+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Powerful 400W motor", "Variable speed control", "Includes chopper and whisk attachments", "Comfortable grip"],
     cons: ["Higher price point", "Somewhat heavy"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$49.99",
     rating: 4.7,
     image: "/images/kitchen/8.jpg",
-    link: "https://www.amazon.com/s?k=KitchenAid+Variable+Speed+Immersion+Blender?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=KitchenAid+Variable+Speed+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Affordable", "Durable construction", "Easy to clean", "Variable speed trigger"],
     cons: ["No additional attachments", "Can be loud"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$39.99",
     rating: 4.6,
     image: "/images/kitchen/9.jpg",
-    link: "https://www.amazon.com/s?k=Cuisinart+SmartPower+7+Speed+Immersion+Blender?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Cuisinart+SmartPower+7+Speed+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["7 speed settings", "Budget-friendly", "Includes detachable shaft", "BPA-free jar included"],
     cons: ["Less powerful motor", "Plastic shaft can stain"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$149.95",
     rating: 4.9,
     image: "/images/kitchen/10.jpg",
-    link: "https://www.amazon.com/s?k=Vitamix+15810+Immersion+Blender?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Vitamix+15810+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Commercial-grade power", "Stainless steel shaft", "Excellent durability", "Great for heavy-duty tasks"],
     cons: ["Expensive", "Heavy", "No speed control on handle"],
   },
@@ -49,7 +49,7 @@ const products = [
     price: "$129.95",
     rating: 4.7,
     image: "/images/kitchen/11.jpg",
-    link: "https://www.amazon.com/s?k=Bamix+Mono+Immersion+Blender?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Bamix+Mono+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Swiss-made quality", "Powerful 200W motor", "Two speeds", "Dishwasher safe"],
     cons: ["Pricey", "Limited attachments"],
   },
@@ -58,7 +58,7 @@ const products = [
     price: "$29.99",
     rating: 4.5,
     image: "/images/kitchen/1.jpg",
-    link: "https://www.amazon.com/s?k=Mueller+Austria+Premium+Immersion+Blender?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Mueller+Austria+Premium+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Very affordable", "Lightweight", "4 attachments included", "Easy to store"],
     cons: ["Not as powerful", "Durability concerns over time"],
   },
@@ -225,7 +225,7 @@ export default function BestImmersionBlenders2026() {
           <h3 className="font-playfair text-2xl mb-4">Ready to Blend?</h3>
           <p className="font-lato mb-6 text-emerald-100">Whether you're a home cook or a kitchen enthusiast, the right immersion blender makes meal prep easier. Our top pick, the Braun MultiQuick 9, offers the best balance of power, versatility, and value.</p>
           <a 
-            href="https://www.amazon.com/s?k=Braun+MultiQuick+9+Immersion+Blender?tag=cookinkitchen-20"
+            href="https://www.amazon.com/s?k=Braun+MultiQuick+9+Immersion+Blender&tag=cookinkitchen-20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-emerald-700 px-6 py-3 rounded-lg font-lato font-medium hover:bg-emerald-50 transition"

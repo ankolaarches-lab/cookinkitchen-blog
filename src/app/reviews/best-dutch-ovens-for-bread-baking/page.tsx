@@ -13,7 +13,7 @@ const products = [
     price: "$369.95",
     rating: 4.9,
     image: "/images/kitchen/10.jpg",
-    link: "https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven+5.5+Qt?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven+5.5+Qt&tag=cookinkitchen-20",
     pros: ["Exceptional heat retention", "Enamel coating prevents rust", "Lifetime warranty", "Beautiful colors available", "Even browning for perfect crust"],
     cons: ["Premium price", "Heavy (12+ lbs)", "Requires careful temperature management"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$69.99",
     rating: 4.7,
     image: "/images/kitchen/4.jpg",
-    link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Dutch+Oven+6+Qt?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Dutch+Oven+6+Qt&tag=cookinkitchen-20",
     pros: ["Affordable", "Pre-seasoned ready to use", "Incredibly durable", "Great heat retention", "Can go from stovetop to oven"],
     cons: ["Requires seasoning maintenance", "No enamel coating", "Rough interior needs care"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$319.95",
     rating: 4.8,
     image: "/images/kitchen/11.jpg",
-    link: "https://www.amazon.com/s?k=Staub+Dutch+Oven+5.5+Qt?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Staub+Dutch+Oven+5.5+Qt&tag=cookinkitchen-20",
     pros: ["Black matte enamel doesn't stick", "Excellent moisture retention", "Self-basting lid", "Oven-safe to 500°F", "Beautiful craftsmanship"],
     cons: ["Expensive", "Heavy", "Dishwasher not recommended"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$79.99",
     rating: 4.5,
     image: "/images/kitchen/2.jpg",
-    link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Dutch+Oven?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Good capacity", "Enamel coating", "Easy to clean", "Great for beginners"],
     cons: ["Less even heat distribution", "Not as durable long-term", "May chip over time"],
   },
@@ -49,7 +49,7 @@ const products = [
     price: "$99.99",
     rating: 4.6,
     image: "/images/kitchen/6.jpg",
-    link: "https://www.amazon.com/s?k=Lodge+Enameled+Dutch+Oven+6+Qt?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Lodge+Enameled+Dutch+Oven+6+Qt&tag=cookinkitchen-20",
     pros: ["Great value", "Color options", "Enamel coating", "Oven safe", "6-quart capacity"],
     cons: ["Not as pretty as premium brands", "Slightly heavier", "Heat distribution could be better"],
   },
@@ -58,7 +58,7 @@ const products = [
     price: "$34.99",
     rating: 4.4,
     image: "/images/kitchen/8.jpg",
-    link: "https://www.amazon.com/s?k=Romertopf+Clay+Baker?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Romertopf+Clay+Baker&tag=cookinkitchen-20",
     pros: ["Very affordable", "Creates incredible steam", "Lightweight", "Natural non-stick when seasoned", "No enamel to chip"],
     cons: ["Requires soaking before use", "Fragile - can crack", "Not stovetop safe", "Needs careful handling"],
   },
@@ -193,7 +193,7 @@ export default function BestDutchOvensForBreadBaking() {
           <p className="text-stone-700 mb-4">
             For those on a budget, the <strong>Lodge Cast Iron Dutch Oven</strong> delivers excellent results at a fraction of the price. It requires more maintenance but produces equally delicious bread.
           </p>
-          <a href="https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven+5.5+Qt?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven+5.5+Qt&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
 
         {/* Related Content */}

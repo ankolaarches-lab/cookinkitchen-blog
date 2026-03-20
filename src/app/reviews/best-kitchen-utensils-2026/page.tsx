@@ -14,7 +14,7 @@ const products = [
     price: "$29.99",
     rating: 4.7,
     image: "/images/kitchen/8.jpg",
-    link: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20",
     pros: ["Heat resistant", "Dishwasher safe", "Durable stainless steel", "Wooden handle option"],
     cons: ["Can scratch nonstick"],
   },
@@ -23,7 +23,7 @@ const products = [
     price: "$34.99",
     rating: 4.8,
     image: "/images/kitchen/9.jpg",
-    link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Stainless?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Stainless&tag=cookinkitchen-20",
     pros: ["Comfortable grip", "Stainless steel", "Dishwasher safe", "Spatula, whisk, tongs"],
     cons: ["Limited pieces"],
   },
@@ -32,7 +32,7 @@ const products = [
     price: "$24.99",
     rating: 4.6,
     image: "/images/kitchen/10.jpg",
-    link: "https://www.amazon.com/s?k=Silicone+Kitchen+Utensil+Set+10+Piece?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Silicone+Kitchen+Utensil+Set+10+Piece&tag=cookinkitchen-20",
     pros: ["Complete set", "Heat resistant to 600°F", "Non-slip handles", "Great value"],
     cons: ["Silicone can stain"],
   },
@@ -41,7 +41,7 @@ const products = [
     price: "$19.99",
     rating: 4.9,
     image: "/images/kitchen/11.jpg",
-    link: "https://www.amazon.com/s?k=Di+Oro+Stainless+Ladle+12+Inch?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Di+Oro+Stainless+Ladle+12+Inch&tag=cookinkitchen-20",
     pros: ["Professional quality", "Deep bowl", "Ergonomic handle", "Lifetime warranty"],
     cons: ["Single utensil"],
   },
@@ -50,7 +50,7 @@ const products = [
     price: "$39.99",
     rating: 4.5,
     image: "/images/kitchen/1.jpg",
-    link: "https://www.amazon.com/s?k=StarPack+Home+Stainless+Kitchen+Utensil?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=StarPack+Home+Stainless+Kitchen+Utensil&tag=cookinkitchen-20",
     pros: ["5-piece set", "Modern design", "Hanging holes", "Food safe"],
     cons: ["No storage container"],
   },
@@ -140,7 +140,7 @@ export default function BestKitchenUtensils2026() {
             construction ensures these tools will last for years. Perfect balance of quality and value.
           </p>
           <a
-            href="https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Stainless?tag=cookinkitchen-20"
+            href="https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Stainless&tag=cookinkitchen-20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

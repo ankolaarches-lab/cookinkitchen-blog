@@ -30,7 +30,7 @@ const reviews = [
     rating: 4.4,
     date: "Mar 12, 2026",
     image: "/images/kitchen/4.jpg",
-    affiliateLink: "https://www.amazon.com/Instant-Pot-Duo-Electric-Pressure/dp/B00FLBUERN?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20",
     content: `
 ## The Slow Cooker Showdown
 
@@ -50,7 +50,7 @@ The Instant Pot is far more than a slow cooker. It's a pressure cooker, rice coo
 **Cooking Results:**
 We made pulled pork, chili, and braised chicken. The pressure cooking function produced incredibly tender meat in a fraction of the time. The slow cooker function works well but isn't the Instant Pot's standout feature.
 
-[Check Instant Pot Price on Amazon →](https://www.amazon.com/Instant-Pot-Duo-Electric-Pressure/dp/B00FLBUERN?tag=cookinkitchen-20)
+[Check Instant Pot Price on Amazon →](https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20)
 
 ### Crock-Pot: The Original Slow Cooker
 
@@ -67,7 +67,7 @@ The Crock-Pot has been perfecting slow cooking since the 1970s. It's a dedicated
 **Cooking Results:**
 The Crock-Pot excelled at classic slow cooker recipes. We made beef stew, pulled pork, and apple crumble. The consistent low heat produced perfectly cooked, fall-apart tender meals. There's something special about the "set it and forget it" simplicity.
 
-[Check Crock-Pot Price on Amazon →](https://www.amazon.com/Crock-Pot-7-Quart-Manual-Slow-Cooker/dp/B0015LVR2Q?tag=cookinkitchen-20)
+[Check Crock-Pot Price on Amazon →](https://www.amazon.com/s?k=Crock+Pot+7+Quart+Manual+Slow+Cooker&tag=cookinkitchen-20)
 
 ## Side-by-Side Comparison
 
@@ -104,7 +104,7 @@ Get the Instant Pot if you want one appliance. Get both if you take slow cooking
     rating: 4.6,
     date: "Feb 16, 2026",
     image: "/images/kitchen/7.jpg",
-    affiliateLink: "https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20",
     content: `
 ## The Essential Toolkit
 
@@ -114,25 +114,25 @@ Every home cook needs reliable kitchen utensils. We tested 12 top-rated utensil 
 
 This 5-piece set includes everything you need: slotted spoon, solid spoon, spatula, fork, and ladle. The stainless steel is durable, heat-resistant, and dishwasher safe.
 
-[Check Price on Amazon →](https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20)
 
 ### Best Silicone: OXO Good Grips 3-Piece Set
 
 For non-stick cookware protection, OXO's silicone utensils are excellent. Heat-resistant to 600°F and gentle on your pans.
 
-[Check Price on Amazon →](https://www.amazon.com/Good-Grips-Silicone-Kitchen-Utensil/dp/B00X8D5I4G?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Good+Grips+Silicone+Kitchen+Utensil&tag=cookinkitchen-20)
 
 ### Best Wood: walnut Walnut Wood Set
 
 If you prefer the classic look and feel of wood, this set delivers beauty and functionality. The craftsmanship is exceptional.
 
-[Check Price on Amazon →](https://www.amazon.com/Walnut-Wood-Kitchen-Utensil-Set/dp/B07Y2T2Q4R?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Walnut+Wood+Kitchen+Utensil+Set&tag=cookinkitchen-20)
 
 ### Best Value: AmazonBasics Kitchen Utensil Set
 
 Under $25 for 5 essential tools. Not as premium as other options, but solid performance for everyday cooking.
 
-[Check Price on Amazon →](https://www.amazon.com/AmazonBasics-Kitchen-Utensil-5-Piece/dp/B07X8XJY8H?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=AmazonBasics+Kitchen+Utensil+5+Piece&tag=cookinkitchen-20)
 
 ### How We Tested
 - Heat resistance at high temperatures
@@ -150,7 +150,7 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     rating: 4.8,
     date: "Feb 10, 2026",
     image: "/images/kitchen/8.jpg",
-    affiliateLink: "https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=cookinkitchen-20",
     tableImages: [
       "/images/kitchen/9.jpg", // Miyabi
       "/images/kitchen/10.jpg", // Victorinox
@@ -185,7 +185,7 @@ For those on a budget, the Victorinox Swiss Classic offers incredible value. It'
     rating: 4.5,
     date: "Feb 8, 2026",
     image: "/images/kitchen/1.jpg",
-    affiliateLink: "https://www.amazon.com/Lodge-Cast-Iron-Skillet-12-inch/dp/B00006JSUA?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Skillet+12+inch&tag=cookinkitchen-20",
     content: `
 ## The Showdown
 
@@ -215,7 +215,7 @@ For most home cooks, carbon steel offers the best balance of performance and usa
     rating: 4.3,
     date: "Feb 5, 2026",
     image: "/images/kitchen/2.jpg",
-    affiliateLink: "https://www.amazon.com/Instant-Pot-Duo-Electric-Pressure/dp/B00FLBUERN?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20",
     content: `
 ## Multicooker Madness
 
@@ -245,7 +245,7 @@ For traditional pressure cooking, the Instant Pot wins. For versatility and air-
     rating: 4.7,
     date: "Feb 2, 2026",
     image: "/images/kitchen/3.jpg",
-    affiliateLink: "https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=cookinkitchen-20",
     content: `
 ## Mixing It Up
 
@@ -275,7 +275,7 @@ The KitchenAid Artisan remains the gold standard, but the Cuisinart offers excel
     rating: 4.6,
     date: "Jan 28, 2026",
     image: "/images/kitchen/4.jpg",
-    affiliateLink: "https://www.amazon.com/T-fal-E93808-Professional-Nonstick-Dishwasher/dp/B000W5XHQW?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+Dishwasher&tag=cookinkitchen-20",
     content: `
 ## The Great Egg Test
 
@@ -308,7 +308,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     rating: 4.9,
     date: "Jan 25, 2026",
     image: "/images/kitchen/5.jpg",
-    affiliateLink: "https://www.amazon.com/Lodge-5-Quart-Cast-Iron-Dutch/dp/B00004S9HE?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Lodge+5+Quart+Cast+Iron+Dutch&tag=cookinkitchen-20",
     tableImages: [
       "/images/kitchen/6.jpg", // Le Creuset
       "/images/kitchen/7.jpg", // Lodge
@@ -349,7 +349,7 @@ If you bake bread, the Le Creuset's weight is essential. For everyday cooking, L
     rating: 4.7,
     date: "Mar 3, 2026",
     image: "/images/kitchen/9.jpg",
-    affiliateLink: "https://www.amazon.com/W%C3%BCsthof-7-Slot-Knife-Block/dp/B000K9I6Q4?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20",
     content: `
 ## Protect Your Investment
 
@@ -359,19 +359,19 @@ Proper knife storage is essential for maintaining sharp edges and extending the 
 
 The quality beech wood construction protects blades, the slots fit most knife sizes, and it's backed by Wüsthof's lifetime warranty.
 
-[Check Price on Amazon →](https://www.amazon.com/W%C3%BCsthof-7-Slot-Knife-Block/dp/B000K9I6Q4?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20)
 
 ### Best Space-Saving: Chef'sPath Magnetic Knife Strip
 
 For those short on counter space, this magnetic strip offers excellent value at under $25 while keeping knives easily accessible.
 
-[Check Price on Amazon →](https://www.amazon.com/Ch%C2%B4fsPath-Magnetic-Knife-Strip/dp/B01N4MASW8?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip&tag=cookinkitchen-20)
 
 ### Best Drawer Option: Joseph Joseph Expandable Organizer
 
 Maximum space-saving with an expandable design that fits in any drawer.
 
-[Check Price on Amazon →](https://www.amazon.com/Joseph-Jos-Select-Drawer-Organizer/dp/B07R1XRQTL?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer&tag=cookinkitchen-20)
 
 ### How We Tested
 - Knife edge protection
@@ -389,7 +389,7 @@ Maximum space-saving with an expandable design that fits in any drawer.
     rating: 4.4,
     date: "Jan 20, 2026",
     image: "/images/kitchen/10.jpg",
-    affiliateLink: "https://www.amazon.com/OXO-Stainless-Compact-Grip-11-Pound/dp/B079D9F86W?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=OXO+Stainless+Compact+Grip+11+Pound&tag=cookinkitchen-20",
     content: `
 ## Why You Need a Scale
 
@@ -419,7 +419,7 @@ The OXO Pop Scale balances precision, design, and price perfectly for home baker
     rating: 4.5,
     date: "Jan 15, 2026",
     image: "/images/kitchen/11.jpg",
-    affiliateLink: "https://www.amazon.com/OXO-GOOD-Grips-Cutting-17-Inch/dp/B00E6GUF5W?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Cutting+17+Inch&tag=cookinkitchen-20",
     content: `
 ## The Board Basics
 
@@ -449,7 +449,7 @@ We recommend having both: a large wood board for vegetables and a dedicated plas
     rating: 4.7,
     date: "Jan 12, 2026",
     image: "/images/kitchen/1.jpg",
-    affiliateLink: "https://www.amazon.com/Shun-DM0706-Classic-7-Inch-Santoku/dp/B0000Y7LYM?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Shun+DM0706+Classic+7+Inch+Santoku&tag=cookinkitchen-20",
     content: `
 ## Japanese Precision
 
@@ -478,7 +478,7 @@ Victorinox delivers again with an affordable option that outperforms knives twic
     rating: 4.5,
     date: "Jan 10, 2026",
     image: "/images/kitchen/2.jpg",
-    affiliateLink: "https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Ninja+BL610+Professional+72+Watt+Blender&tag=cookinkitchen-20",
     content: `
 ## The Blender Showdown
 
@@ -505,7 +505,7 @@ The Oster Pro's blender bottle system makes on-the-go smoothies a breeze.
     rating: 4.6,
     date: "Jan 8, 2026",
     image: "/images/kitchen/3.jpg",
-    affiliateLink: "https://www.amazon.com/Technivorm-Moccamaster-10-Cup-Coffee-Brewer/dp/B07CM5H7BQ?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Technivorm+Moccamaster+10+Cup+Coffee+Brewer&tag=cookinkitchen-20",
     content: `
 ## Brewing Excellence
 
@@ -532,7 +532,7 @@ Great coffee doesn't have to be expensive. This brewer delivers solid results.
     rating: 4.4,
     date: "Jan 5, 2026",
     image: "/images/kitchen/4.jpg",
-    affiliateLink: "https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=cookinkitchen-20",
     content: `
 ## Crispy Without the Oil
 
@@ -542,19 +542,19 @@ Air fryers have revolutionized home cooking. We tested the top models to find wh
 
 Large capacity, consistent results, and versatile cooking functions make this our top pick.
 
-[Check Price on Amazon →](https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=cookinkitchen-20)
 
 ### Best Premium: Philips Premium Airfryer XXL
 
 The Philips delivers restaurant-quality air frying with its unique basket design.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products&tag=cookinkitchen-20)
 
 ### Best Value: Cosori Air Fryer
 
 Affordable and reliable, Cosori offers great results without breaking the bank.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products?tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products&tag=cookinkitchen-20)
     `,
   },
   {
@@ -565,7 +565,7 @@ Affordable and reliable, Cosori offers great results without breaking the bank.
     rating: 4.3,
     date: "Jan 3, 2026",
     image: "/images/kitchen/5.jpg",
-    affiliateLink: "https://www.amazon.com/ChefsChoice-15-Inch-Conventional-Sharpener/dp/B00004S7I8?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=ChefsChoice+15+Inch+Conventional+Sharpener&tag=cookinkitchen-20",
     content: `
 ## Keep Your Blades Sharp
 
@@ -592,7 +592,7 @@ Affordable and effective for quick touch-ups between full sharpenings.
     rating: 4.2,
     date: "Jan 1, 2026",
     image: "/images/kitchen/6.jpg",
-    affiliateLink: "https://www.amazon.com/Cuisinox-Stainless-Steel-Strainer/dp/B0002H7F9E?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Cuisinox+Stainless+Steel+Strainer&tag=cookinkitchen-20",
     content: `
 ## Essential Kitchen Tools
 
@@ -619,7 +619,7 @@ Multiple sizes cover all your straining needs.
     rating: 4.4,
     date: "Dec 28, 2025",
     image: "/images/kitchen/7.jpg",
-    affiliateLink: "https://www.amazon.com/OXO-GOOD-Grips-Measuring-Cups/dp/B00GE6NF6G?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Measuring+Cups&tag=cookinkitchen-20",
     content: `
 ## Measure Right
 
@@ -646,7 +646,7 @@ Everything you need in one comprehensive set.
     rating: 4.5,
     date: "Dec 25, 2025",
     image: "/images/kitchen/8.jpg",
-    affiliateLink: "https://www.amazon.com/Stainless-Steel-Spatula-Set-Utensil/dp/B07XJ8C8F5?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Spatula+Set+Utensil&tag=cookinkitchen-20",
     content: `
 ## Essential Tools
 
@@ -673,7 +673,7 @@ This set includes everything you need and lasts forever.
     rating: 4.7,
     date: "Dec 22, 2025",
     image: "/images/kitchen/9.jpg",
-    affiliateLink: "https://www.amazon.com/All-Clad-Stainless-Tri-Ply-Cookware/dp/B000X5OC1K?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=All+Clad+Stainless+Tri+Ply+Cookware&tag=cookinkitchen-20",
     content: `
 ## The All-Clad Showdown
 
@@ -700,7 +700,7 @@ Great non-stick performance with the durability of hard anodized aluminum.
     rating: 4.5,
     date: "Dec 20, 2025",
     image: "/images/kitchen/10.jpg",
-    affiliateLink: "https://www.amazon.com/Bonavita-Electric-Gooseneck-Kettle/dp/B00DGBNOQK?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Bonavita+Electric+Gooseneck+Kettle&tag=cookinkitchen-20",
     content: `
 ## Hot Water on Demand
 

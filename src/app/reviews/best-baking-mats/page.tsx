@@ -13,7 +13,7 @@ const products = [
     price: "$34.95",
     rating: 4.9,
     image: "/images/kitchen/10.jpg",
-    link: "https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=cookinkitchen-20",
     pros: ["Premium quality", "Lifetime guarantee", "Even heat distribution", "French-made"],
     cons: ["Premium price"],
   },
@@ -22,7 +22,7 @@ const products = [
     price: "$14.99",
     rating: 4.8,
     image: "/images/kitchen/11.jpg",
-    link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Baker?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Baker&tag=cookinkitchen-20",
     pros: ["Heavy-duty aluminum", "Even baking", "Commercial quality", " Affordable"],
     cons: ["Not non-stick"],
   },
@@ -31,7 +31,7 @@ const products = [
     price: "$19.99",
     rating: 4.7,
     image: "/images/kitchen/1.jpg",
-    link: "https://www.amazon.com/s?k=KitchenAid+Premium+Silicone+Baking+Mat?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=KitchenAid+Premium+Silicone+Baking+Mat&tag=cookinkitchen-20",
     pros: ["Flexible", "Dishwasher safe", "Reusable", "Great value"],
     cons: ["Can curl at edges"],
   },
@@ -40,7 +40,7 @@ const products = [
     price: "$12.99",
     rating: 4.5,
     image: "/images/kitchen/2.jpg",
-    link: "https://www.amazon.com/s?k=AmazonBasics+Silicone+Baking+Mat?tag=cookinkitchen-20",
+    link: "https://www.amazon.com/s?k=AmazonBasics+Silicone+Baking+Mat&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "2-pack", "Easy cleanup", "FDA approved"],
     cons: ["Less durable"],
   },
@@ -94,7 +94,7 @@ export default function BestBakingMats() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Silpat Premium</strong> is worth the investment. Made in France with a lifetime guarantee, it delivers flawless results batch after batch. Yes, it's pricey — but it'll last forever.</p>
-          <a href="https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href="https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         
       </main>
