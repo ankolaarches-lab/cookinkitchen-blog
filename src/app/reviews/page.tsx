@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 64,
+    slug: "best-breakfast-sandwich-makers-2026",
+    title: "Best Breakfast Sandwich Makers 2026 - Complete Buying Guide",
+    excerpt: "Make restaurant-quality breakfast sandwiches at home. We tested the best breakfast sandwich makers for perfect eggs, bacon, and more.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Mar 20, 2026",
+  },
+  {
     id: 63,
     slug: "best-electric-griddles-2026",
     title: "Best Electric Griddles 2026 - Complete Buying Guide",
