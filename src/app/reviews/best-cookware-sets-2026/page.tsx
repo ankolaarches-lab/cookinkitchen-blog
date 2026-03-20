@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Best Cookware Sets - 2026 Buying Guide",
+  title: "Best Cookware Sets 2026 - Complete Buying Guide",
   description: "We tested the best cookware sets for every budget. From ceramic to stainless steel, find your perfect cookware set.",
 };
 
@@ -12,46 +12,46 @@ const products = [
     name: "GreenPan Valencia Pro Ceramic Nonstick 11-Piece Set",
     price: "$199.99",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
-    link: "https://www.amazon.com/GreenPan-Valencia-Pro-Ceramic-Nonstick/dp/B08XWQWJ3R?tag=cookinkitchen-20",
-    pros: ["健康陶瓷涂层", "耐用的硬阳极氧化铝", "安全适用于金属器具", "出色的不粘性能"],
-    cons: ["价格较高", "陶瓷涂层需要小心保养"],
+    image: "/images/kitchen/3.jpg",
+    link: "https://www.amazon.com/s?k=GreenPan+Valencia+Pro+Ceramic+Nonstick+11+Piece+Set&tag=cookinkitchen-20",
+    pros: ["Healthy ceramic coating", "Durable hard-anodized aluminum", "Safe for metal utensils", "Excellent nonstick performance"],
+    cons: ["Ceramic coating wears over time", "Hand wash recommended"],
   },
   {
     name: "All-Clad HA1 Hard-Anodized Nonstick 10-Piece Set",
     price: "$349.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
-    link: "https://www.amazon.com/All-Clad-HA1-Hard-Anodized-10-Piece/dp/B08J5J3TRL?tag=cookinkitchen-20",
-    pros: ["高级硬阳极氧化铝", "金属器具安全", "终身保修", "完美热分布"],
-    cons: ["非常昂贵", "重量较重"],
+    image: "/images/kitchen/1.jpg",
+    link: "https://www.amazon.com/s?k=All-Clad+HA1+Hard-Anodized+Nonstick+10+Piece+Set&tag=cookinkitchen-20",
+    pros: ["Premium hard-anodized aluminum", "Safe for metal utensils", "Lifetime warranty", "Even heat distribution"],
+    cons: ["Premium price", "Heavier than average"],
   },
   {
     name: "Calphalon Premier Hard-Anodized 10-Piece Set",
     price: "$279.99",
     rating: 4.6,
-    image: "/images/kitchen/6.jpg",
-    link: "https://www.amazon.com/Calphalon-Premier-Hard-Anodized-10-Piece/dp/B07GVRFR4B?tag=cookinkitchen-20",
-    pros: ["三层不粘涂层", "耐用硬质铝结构", "现代设计", "出色的烹饪性能"],
-    cons: ["手洗更佳", "价格偏高"],
+    image: "/images/kitchen/2.jpg",
+    link: "https://www.amazon.com/s?k=Calphalon+Premier+Hard-Anodized+10+Piece+Set&tag=cookinkitchen-20",
+    pros: ["Triple-layer nonstick coating", "Durable hard-anodized construction", "Modern design", "Excellent cooking performance"],
+    cons: ["Mid-range price", "Nonstick can wear with heavy use"],
   },
   {
     name: "Tramontina Tri-Ply Clad 10-Piece Stainless Steel Set",
-    price: "$179.99",
+    price: "$199.99",
     rating: 4.5,
-    image: "/images/kitchen/8.jpg",
-    link: "https://www.amazon.com/Tramontina-Tri-Ply-Clad-10-Piece-Stainless/dp/B00QKWMCG2?tag=cookinkitchen-20",
-    pros: ["优质三层结构", "兼容所有炉灶类型", "可放入洗碗机", "优秀价值"],
-    cons: ["不粘性能不如涂层锅具", "需要调味"],
+    image: "/images/kitchen/4.jpg",
+    link: "https://www.amazon.com/s?k=Tramontina+Tri-Ply+Clad+10+Piece+Stainless+Steel&tag=cookinkitchen-20",
+    pros: ["Premium tri-ply construction", "Compatible with all stovetop types", "Dishwasher safe", "Excellent value"],
+    cons: ["Requires learning curve for stainless steel", "Can be heavy"],
   },
   {
     name: "Lodge Pre-Seasoned Cast Iron 3-Piece Skillet Set",
-    price: "$54.99",
-    rating: 4.8,
-    image: "/images/kitchen/4.jpg",
-    link: "https://www.amazon.com/Lodge-Pre-Seasoned-Cast-Iron-3-Piece/dp/B0015HRT5O?tag=cookinkitchen-20",
-    pros: ["超耐用铸铁", "自然不粘表面", "兼容所有炉灶和烤箱", "绝佳价值"],
-    cons: ["需要保养", "重量很重"],
+    price: "$59.99",
+    rating: 4.7,
+    image: "/images/kitchen/5.jpg",
+    link: "https://www.amazon.com/s?k=Lodge+Pre-Seasoned+Cast+Iron+3+Piece+Skillet+Set&tag=cookinkitchen-20",
+    pros: ["Ultra-durable cast iron", "Naturally nonstick surface", "Compatible with all stovetops and ovens", "Exceptional value"],
+    cons: ["Heavy", "Requires seasoning maintenance", "Not dishwasher safe"],
   },
 ];
 
@@ -62,15 +62,23 @@ export default function BestCookwareSets2026() {
         <Link href="/reviews" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-8 font-lato font-medium transition">← Back to Reviews</Link>
         
         <article>
+          <div className="mb-6">
+            <Breadcrumbs items={[
+              { label: 'Intelligence Hub', href: '/' },
+              { label: 'Reviews', href: '/reviews' },
+              { label: 'Best Cookware Sets 2026', href: '/reviews/best-cookware-sets-2026' }
+            ]} />
+          </div>
+
           <div className="flex items-center gap-4 mb-4">
             <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-lato font-medium">Cookware</span>
             <span className="font-lato text-emerald-500 font-bold">★ 4.7</span>
-            <span className="font-lato text-stone-400 text-sm">Mar 20, 2026</span>
+            <span className="font-lato text-stone-400 text-sm">Mar 18, 2026</span>
           </div>
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/8.jpg" 
+              src="/images/kitchen/3.jpg" 
               alt="Best Cookware Sets 2026" 
               className="w-full h-64 object-cover"
             />
@@ -83,52 +91,136 @@ export default function BestCookwareSets2026() {
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">What to Look For</h2>
             <p className="mb-4 text-stone-600">A great cookware set should include: even heat distribution, comfortable handles, compatibility with your stovetop, and durability that lasts for years.</p>
             
+            <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Key Considerations</h2>
+            <ul className="mb-4 text-stone-600 space-y-2">
+              <li>• <strong>Material</strong> — Stainless steel for versatility, cast iron for heat retention, ceramic for healthy nonstick cooking</li>
+              <li>• <strong>Stovetop Compatibility</strong> — Make sure the set works with your cooktop (gas, electric, induction)</li>
+              <li>• <strong>Piece Count</strong> — 10-12 pieces covers most cooking needs; avoid sets padded with lids and accessories</li>
+              <li>• <strong>Oven Safety</strong> — Look for sets rated to at least 400°F for oven-to-table versatility</li>
+              <li>• <strong>Warranty</strong> — A lifetime warranty signals manufacturer confidence in durability</li>
+            </ul>
+            
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Our Top Pick: GreenPan Valencia Pro</h2>
             <p className="mb-4 text-stone-600">The GreenPan Valencia Pro offers the best overall value with its healthy ceramic coating, excellent nonstick performance, and durable hard-anodized construction at a reasonable price point.</p>
           </div>
         </article>
 
-        <section className="space-y-8 mt-12">
-          {products.map((product, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
+        <div className="mt-12">
+          <h2 className="font-playfair text-2xl text-stone-800 mb-6">Our Top Picks</h2>
+          
+          <div className="space-y-6">
+            {products.map((product, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                <div className="flex gap-4">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-24 h-24 object-cover rounded-lg"
                   />
-                </div>
-                <div className="flex-1">
-                  <div className="flex justify-between items-start mb-2">
-                    <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
-                    <span className="text-2xl font-bold text-emerald-600">{product.price}</span>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-2">
+                      <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
+                      <span className="font-lato text-emerald-600 font-bold">{product.price}</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-emerald-500 font-bold">★ {product.rating}/5</span>
+                    </div>
+                    <div className="text-sm mb-3">
+                      <ul className="text-stone-600">
+                        {product.pros.map((pro, i) => (
+                          <li key={i}>✓ {pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <a 
+                      href={product.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-lg font-lato font-medium hover:bg-emerald-700 transition"
+                    >
+                      Check Price on Amazon
+                    </a>
                   </div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="text-amber-500">
-                      {"★".repeat(Math.floor(product.rating))}
-                      {"☆".repeat(5 - Math.floor(product.rating))}
-                    </span>
-                    <span className="text-stone-600">{product.rating}/5</span>
-                  </div>
-                  <ul className="mb-4 space-y-1">
-                    {product.pros.map((pro, i) => (
-                      <li key={i} className="text-stone-600 text-sm font-lato">✓ {pro}</li>
-                    ))}
-                  </ul>
-                  <a 
-                    href={product.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block bg-emerald-600 text-white px-6 py-2 rounded-lg font-lato font-medium hover:bg-emerald-700 transition"
-                  >
-                    Check Price on Amazon
-                  </a>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Comparison Table */}
+        <div className="mt-12 overflow-x-auto">
+          <h2 className="font-playfair text-2xl text-stone-800 mb-6">Comparison Table</h2>
+          <table className="w-full bg-white rounded-xl shadow-md overflow-hidden">
+            <thead className="bg-stone-100">
+              <tr>
+                <th className="text-left p-4 font-lato text-stone-700">Product</th>
+                <th className="text-left p-4 font-lato text-stone-700">Price</th>
+                <th className="text-left p-4 font-lato text-stone-700">Rating</th>
+                <th className="text-left p-4 font-lato text-stone-700">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-stone-100">
+                <td className="p-4 font-lato text-stone-800">GreenPan Valencia Pro 11-Pc</td>
+                <td className="p-4 font-lato text-emerald-600 font-bold">$199.99</td>
+                <td className="p-4 font-lato text-emerald-500">★ 4.7</td>
+                <td className="p-4 font-lato text-stone-600">Best overall value</td>
+              </tr>
+              <tr className="border-b border-stone-100">
+                <td className="p-4 font-lato text-stone-800">All-Clad HA1 10-Pc</td>
+                <td className="p-4 font-lato text-emerald-600 font-bold">$349.99</td>
+                <td className="p-4 font-lato text-emerald-500">★ 4.8</td>
+                <td className="p-4 font-lato text-stone-600">Premium quality</td>
+              </tr>
+              <tr className="border-b border-stone-100">
+                <td className="p-4 font-lato text-stone-800">Calphalon Premier 10-Pc</td>
+                <td className="p-4 font-lato text-emerald-600 font-bold">$279.99</td>
+                <td className="p-4 font-lato text-emerald-500">★ 4.6</td>
+                <td className="p-4 font-lato text-stone-600">Modern nonstick</td>
+              </tr>
+              <tr className="border-b border-stone-100">
+                <td className="p-4 font-lato text-stone-800">Tramontina Tri-Ply 10-Pc</td>
+                <td className="p-4 font-lato text-emerald-600 font-bold">$199.99</td>
+                <td className="p-4 font-lato text-emerald-500">★ 4.5</td>
+                <td className="p-4 font-lato text-stone-600">Best stainless steel value</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-lato text-stone-800">Lodge Cast Iron 3-Pc</td>
+                <td className="p-4 font-lato text-emerald-600 font-bold">$59.99</td>
+                <td className="p-4 font-lato text-emerald-500">★ 4.7</td>
+                <td className="p-4 font-lato text-stone-600">Budget durability</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-12 bg-emerald-50 rounded-xl p-8">
+          <h2 className="font-playfair text-2xl text-stone-800 mb-4">Best for Different Needs</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-lato font-bold text-stone-700 mb-2">Best Overall</h3>
+              <p className="text-stone-600">GreenPan Valencia Pro — Healthy ceramic nonstick at great value</p>
             </div>
-          ))}
-        </section>
+            <div>
+              <h3 className="font-lato font-bold text-stone-700 mb-2">Best Premium</h3>
+              <p className="text-stone-600">All-Clad HA1 — Professional-grade with lifetime warranty</p>
+            </div>
+            <div>
+              <h3 className="font-lato font-bold text-stone-700 mb-2">Best Value</h3>
+              <p className="text-stone-600">Tramontina Tri-Ply — Restaurant quality at home-cook prices</p>
+            </div>
+            <div>
+              <h3 className="font-lato font-bold text-stone-700 mb-2">Most Durable</h3>
+              <p className="text-stone-600">Lodge Cast Iron — Virtually indestructible, lasts generations</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <Link href="/reviews" className="text-emerald-600 hover:text-emerald-700 font-lato font-medium">
+            ← Browse All Kitchen Reviews
+          </Link>
+        </div>
       </div>
     </div>
   );
