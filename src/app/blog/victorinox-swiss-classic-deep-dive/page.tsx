@@ -310,7 +310,7 @@ But it will make you a more confident, more efficient cook. And at $40, it's arg
               <h4 className="font-bold text-stone-900 text-lg">Best Chef's Knives</h4>
               <p className="text-stone-500 text-sm mt-3 leading-relaxed">See how the Victorinox compares to the competition.</p>
             </Link>
-            <Link href="/blog/essential-knife-skills" className="block bg-white rounded-2xl p-6 border border-stone-100 hover:shadow-xl hover:shadow-stone-200/50 transition-all hover:-translate-y-1">
+            <Link href="/blog/essential-knife-skills-guide" className="block bg-white rounded-2xl p-6 border border-stone-100 hover:shadow-xl hover:shadow-stone-200/50 transition-all hover:-translate-y-1">
               <span className="text-[10px] text-emerald-600 font-black uppercase tracking-[0.2em] mb-2 block">Guide</span>
               <h4 className="font-bold text-stone-900 text-lg">Knife Skills 101</h4>
               <p className="text-stone-500 text-sm mt-3 leading-relaxed">Master the fundamental cuts every cook needs.</p>

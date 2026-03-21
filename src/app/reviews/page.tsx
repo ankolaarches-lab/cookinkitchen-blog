@@ -22,6 +22,33 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 68,
+    slug: "best-citrus-juicers-2026",
+    title: "Best Citrus Juicers 2026 - Lemon & Lime Squeezers",
+    excerpt: "Get fresh citrus juice with the best lemon squeezers and citrus juicers. We tested top-rated manual and electric models for maximum extraction.",
+    category: "Kitchen Utensils",
+    rating: 4.7,
+    date: "Mar 21, 2026",
+  },
+  {
+    id: 67,
+    slug: "best-avocado-slicers-2026",
+    title: "Best Avocado Slicers 2026 - Complete Buying Guide",
+    excerpt: "Slice, pit, and scoop avocados safely with the best avocado tools. We tested top-rated slicers for perfect avocado preparation every time.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 21, 2026",
+  },
+  {
+    id: 66,
+    slug: "best-measuring-spoons-2026",
+    title: "Best Measuring Spoons 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect measuring spoons for accurate baking and cooking. We tested stainless steel, magnetic, and adjustable measuring spoons.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 21, 2026",
+  },
+  {
     id: 65,
     slug: "best-whisks-2026",
     title: "Best Whisks 2026 - Complete Buying Guide",

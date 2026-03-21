@@ -141,7 +141,7 @@ export default function BlogPost() {
               <p className="mb-6">Miso paste, fish sauce, soy sauce, Parmesan cheese, mushrooms, tomato paste—these ingredients add depth and savoriness that makes everything taste better.</p>
 
               <h3 className="text-xl font-bold mt-8 mb-4 border-b border-emerald-100 pb-2 inline-block text-slate-800">25. Have the Right Oils</h3>
-              <p className="mb-6">You need at least two: a high-heat oil (avocado, grapeseed) for searing, and a flavorful finishing oil (extra virgin olive oil). See our <Link href="/blog/best-cooking-oils-fats-2026" className="text-emerald-600 font-bold hover:text-emerald-700 hover:underline">Cooking Oils Guide</Link> for more.</p>
+              <p className="mb-6">You need at least two: a high-heat oil (avocado, grapeseed) for searing, and a flavorful finishing oil (extra virgin olive oil). See our <Link href="/blog/best-pantry-staples-2026" className="text-emerald-600 font-bold hover:text-emerald-700 hover:underline">Pantry Staples Guide</Link> for more.</p>
 
               <h3 className="text-xl font-bold mt-8 mb-4 border-b border-emerald-100 pb-2 inline-block text-slate-800">26. Let It Go</h3>
               <p className="mb-6">Some meals will fail. That's okay. Even professional chefs have off nights. The goal isn't perfection—it's nourishment, enjoyment, and getting better one tiny step at a time.</p>
