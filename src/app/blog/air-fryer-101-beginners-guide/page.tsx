@@ -172,17 +172,11 @@ Start with the basics, practice with simple recipes, and soon you'll wonder how 
                 if (trimmed.startsWith('### ')) {
                   return <h3 key={i} className="text-xl font-bold mt-8 mb-4 border-b border-emerald-100 pb-2 inline-block text-slate-800">{trimmed.replace('### ', '')}</h3>;
                 }
-                if (trimmed.startsWith('- ')) {
-                  return <li key={i} className="ml-4 mb-2 list-none flex items-start gap-2">
-                    <span className="text-emerald-500 mt-1.5">•</span>
-                    <span>{trimmed.replace('- ', '')}</span>
-                  </li>;
-                }
                 if (trimmed.match(/^\d+\./)) {
                   return <p key={i} className="font-bold text-slate-800 mt-6 mb-2">{trimmed}</p>;
                 }
                 
-                // Enhanced Link Rendering
+                // Enhanced Link Rendering (check BEFORE bullet points)
                 const linkMatch = trimmed.match(/\[([^\]]+)\]\(([^)]+)\)/);
                 if (linkMatch) {
                   const [full, text, url] = linkMatch;
@@ -217,6 +211,27 @@ Start with the basics, practice with simple recipes, and soon you'll wonder how 
                       </p>
                     );
                   }
+                }
+
+                // Handle bullet points with links
+                if (trimmed.startsWith('- ')) {
+                  const content = trimmed.replace('- ', '');
+                  const bulletLinkMatch = content.match(/\[([^\]]+)\]\(([^)]+)\)/);
+                  if (bulletLinkMatch) {
+                    const [full, text, url] = bulletLinkMatch;
+                    if (url.startsWith('/')) {
+                      return (
+                        <p key={i} className="ml-4 mb-2 flex items-center gap-2">
+                          <span className="text-emerald-500">•</span>
+                          <Link href={url} className="text-emerald-600 font-bold hover:text-emerald-700 hover:underline transition-colors decoration-2 underline-offset-4">
+                            {text}
+                          </Link>
+                          <span className="text-slate-500"> — {content.replace(/\[([^\]]+)\]\(([^)]+)\)/, '').replace(/^[\s‑]+/, '').trim()}</span>
+                        </p>
+                      );
+                    }
+                  }
+                  return <li key={i} className="ml-4 mb-2 list-none flex items-start gap-2"><span className="text-emerald-500 mt-1.5">•</span><span>{content}</span></li>;
                 }
 
                 return <p key={i} className="mb-6 leading-relaxed text-slate-600">{trimmed}</p>;
