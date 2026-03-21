@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "victorinox-swiss-classic-deep-dive",
+    title: "Victorinox Swiss Classic Review: The Only Knife Most Home Cooks Need",
+    excerpt: "We spent 100+ hours testing the Victorinox Swiss Classic 8-inch chef's knife. Here's the definitive deep dive on why it's the best value in kitchen knives.",
+    category: "Deep Dive",
+    date: "Mar 21, 2026",
+    readTime: "12 min read",
+    image: "/images/kitchen/4.jpg",
+    amazonLink: "https://www.amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef&tag=cookinkitchen-20",
+    content: "A deep dive into the Victorinox Swiss Classic chef's knife."
+  },
+  {
     slug: "air-fryer-tips-recipes-2026",
     title: "Air Fryer Mastery: Pro Tips and Recipes for Perfect Results",
     excerpt: "Transform your air fryer from a simple snack machine into a versatile cooking powerhouse. Learn the secrets professional chefs use to get crispy, golden results every time—with 80% less oil than traditional frying.",
