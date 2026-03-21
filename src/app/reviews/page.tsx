@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 70,
+    slug: "best-popcorn-poppers-2026",
+    title: "Best Popcorn Poppers 2026 - Complete Buying Guide",
+    excerpt: "Make theater-quality popcorn at home with the best popcorn poppers. We tested stovetop, electric, and microwave poppers for perfect kernels.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 21, 2026",
+  },
+  {
     id: 69,
     slug: "best-pizza-ovens-2026",
     title: "Best Pizza Ovens 2026 - Complete Buying Guide",
