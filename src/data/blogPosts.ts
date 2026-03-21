@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "air-fryer-101-beginners-guide",
+    title: "Air Fryer 101: The Complete Beginner's Guide to Perfect Results",
+    excerpt: "Master your air fryer with our comprehensive beginner's guide. Learn essential techniques, common mistakes to avoid, and get perfect crispy results every time.",
+    category: "Guide",
+    date: "Mar 21, 2026",
+    readTime: "8 min read",
+    image: "/images/kitchen/6.jpg",
+    amazonLink: "https://www.amazon.com/s?k=air+fryer&tag=cookinkitchen-20",
+    content: "A comprehensive guide to mastering your air fryer."
+  },
+  {
     slug: "victorinox-swiss-classic-deep-dive",
     title: "Victorinox Swiss Classic Review: The Only Knife Most Home Cooks Need",
     excerpt: "We spent 100+ hours testing the Victorinox Swiss Classic 8-inch chef's knife. Here's the definitive deep dive on why it's the best value in kitchen knives.",
