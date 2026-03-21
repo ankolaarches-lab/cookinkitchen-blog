@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 69,
+    slug: "best-pizza-ovens-2026",
+    title: "Best Pizza Ovens 2026 - Complete Buying Guide",
+    excerpt: "Make restaurant-quality pizza at home with the best pizza ovens. We tested gas, electric, and wood-fired pizza ovens for every budget.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 21, 2026",
+  },
+  {
     id: 68,
     slug: "best-citrus-juicers-2026",
     title: "Best Citrus Juicers 2026 - Lemon & Lime Squeezers",
