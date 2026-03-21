@@ -3,6 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Air Fryer 101: The Complete Beginner's Guide to Perfect Results",
   description: "Master your air fryer with our comprehensive beginner's guide. Learn essential techniques, common mistakes to avoid, and get perfect crispy results every time.",
+  keywords: ["air fryer", "air fryer guide", "how to use air fryer", "air fryer tips", "air fryer recipes"],
 };
 
 export default function BlogPostPage() {

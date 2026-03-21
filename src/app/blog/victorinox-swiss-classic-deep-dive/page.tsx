@@ -1,8 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: any = {
   title: "Victorinox Swiss Classic Review: The Only Knife Most Home Cooks Need",
   description: "We spent 100+ hours testing the Victorinox Swiss Classic 8-inch chef's knife. Here's the definitive deep dive on why it's the best value in kitchen knives.",
+  keywords: ["Victorinox Swiss Classic", "best chef knife", "kitchen knives", "knife review", "home cook knives"],
 };
 
 export default function BlogPostPage() {
