@@ -14,6 +14,7 @@ const categoryImages: Record<string, string> = {
   "Cutting Boards": "/images/kitchen/1.jpg",
   "Baking Sheets": "/images/kitchen/2.jpg",
   "Food Storage": "/images/kitchen/3.jpg",
+  "Baking Supplies": "/images/kitchen/6.jpg",
 };
 
 const getImageUrl = (category: string): string => {
@@ -21,6 +22,15 @@ const getImageUrl = (category: string): string => {
 };
 
 const reviews = [
+  {
+    id: 75,
+    slug: "best-cooling-racks-2026",
+    title: "Best Cooling Racks 2026 - Complete Buying Guide",
+    excerpt: "Find the best cooling racks for your baked goods. We tested wire racks, chrome, and non-stick options for cookies, cakes, and breads.",
+    category: "Baking Supplies",
+    rating: 4.7,
+    date: "Mar 22, 2026",
+  },
   {
     id: 74,
     slug: "best-convection-ovens-2026",
