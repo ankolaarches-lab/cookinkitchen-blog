@@ -22,6 +22,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 74,
+    slug: "best-convection-ovens-2026",
+    title: "Best Countertop Convection Ovens 2026 - Complete Guide",
+    excerpt: "Upgrade your kitchen with the best countertop convection ovens. We tested the top models for baking, roasting, and crisping perfection.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 22, 2026",
+  },
+  {
     id: 73,
     slug: "best-ice-cream-makers-2026",
     title: "Best Ice Cream Makers 2026 - Complete Buying Guide",
