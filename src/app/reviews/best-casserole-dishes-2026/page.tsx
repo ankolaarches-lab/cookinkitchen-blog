@@ -242,9 +242,9 @@ export default function BestCasseroleDishes2026() {
               <h4 className="font-bold text-stone-900 mt-1">Best Casserole Dishes</h4>
               <p className="text-xs text-stone-500 mt-1">More options</p>
             </a>
-            <a href="/blog/one-pot-meals-casserole-recipes" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+            <a href="/blog/best-dutch-oven-recipes" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
               <span className="text-sm text-emerald-600 font-medium">Guide</span>
-              <h4 className="font-bold text-stone-900 mt-1">One-Pot Meal Recipes</h4>
+              <h4 className="font-bold text-stone-900 mt-1">Dutch Oven Recipes</h4>
               <p className="text-xs text-stone-500 mt-1">Perfect for your new dish</p>
             </a>
           </div>

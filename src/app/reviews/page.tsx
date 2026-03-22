@@ -22,6 +22,33 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 73,
+    slug: "best-ice-cream-makers-2026",
+    title: "Best Ice Cream Makers 2026 - Complete Buying Guide",
+    excerpt: "Make delicious homemade ice cream, gelato, and sorbet with the best ice cream makers. We tested top-rated countertop and portable models.",
+    category: "Appliances",
+    rating: 4.7,
+    date: "Mar 22, 2026",
+  },
+  {
+    id: 72,
+    slug: "best-wine-fridges-2026",
+    title: "Best Wine Fridges 2026 - Wine Cooler Buying Guide",
+    excerpt: "Store your wine collection at the perfect temperature with the best wine fridges and coolers. We tested countertop and built-in models.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Mar 22, 2026",
+  },
+  {
+    id: 71,
+    slug: "best-food-steamers-2026",
+    title: "Best Food Steamers 2026 - Electric & Basket Steamers",
+    excerpt: "Cook healthy meals with the best food steamers. We tested electric steamers, bamboo steamers, and steamer baskets for vegetables, rice, and dumplings.",
+    category: "Appliances",
+    rating: 4.5,
+    date: "Mar 22, 2026",
+  },
+  {
     id: 70,
     slug: "best-popcorn-poppers-2026",
     title: "Best Popcorn Poppers 2026 - Complete Buying Guide",

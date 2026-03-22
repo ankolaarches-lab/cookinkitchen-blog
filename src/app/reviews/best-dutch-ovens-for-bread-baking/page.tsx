@@ -210,10 +210,10 @@ export default function BestDutchOvensForBreadBaking() {
               <h3 className="font-bold text-stone-900 mt-1">Best Bread Makers</h3>
               <p className="text-sm text-stone-600 mt-1">Automated bread baking</p>
             </a>
-            <a href="/blog/sourdough-starter-guide" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
+            <a href="/blog/how-to-cook-rice-perfectly" className="block bg-white rounded-xl p-4 border border-stone-200 hover:shadow-md transition">
               <span className="text-sm text-emerald-600 font-medium">Guide</span>
-              <h3 className="font-bold text-stone-900 mt-1">Sourdough Starter Guide</h3>
-              <p className="text-sm text-stone-600 mt-1">Make your own from scratch</p>
+              <h3 className="font-bold text-stone-900 mt-1">How to Cook Rice Perfectly</h3>
+              <p className="text-sm text-stone-600 mt-1">Master the basics</p>
             </a>
           </div>
         </section>
