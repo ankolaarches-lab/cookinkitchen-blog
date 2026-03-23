@@ -70,7 +70,7 @@ export default function BestCoolingRacks2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/6.jpg" 
+              src="/images/cooling-rack-hero.jpg" 
               alt="Best Cooling Racks 2026" 
               className="w-full h-64 object-cover"
             />
