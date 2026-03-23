@@ -87,7 +87,7 @@ export default function BestImmersionBlenders2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/2.jpg" 
+              src="/images/reviews/immersion-blender.jpg" 
               alt="Best Immersion Blenders 2026" 
               className="w-full h-64 object-cover"
             />

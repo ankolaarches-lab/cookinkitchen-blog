@@ -61,7 +61,7 @@ export default function BestSousVide() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/3.jpg" 
+              src="/images/reviews/sous-vide.jpg" 
               alt="Best Sous Vide" 
               className="w-full h-64 object-cover"
             />

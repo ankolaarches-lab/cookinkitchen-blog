@@ -49,7 +49,7 @@ export default function Page() {
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Our Top Pick: FoodSaver V4840 2-in-1</h2>
             <div className="my-8 rounded-xl overflow-hidden shadow-sm">
               <img 
-                src="/images/kitchen/6.jpg" 
+                src="/images/reviews/food-vacuum-sealer.jpg" 
                 alt="FoodSaver V4840" 
                 className="w-full h-64 object-cover"
               />

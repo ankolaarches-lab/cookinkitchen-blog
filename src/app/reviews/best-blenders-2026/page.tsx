@@ -79,7 +79,7 @@ export default function BestBlenders2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/3.jpg" 
+              src="/images/reviews/blender.jpg" 
               alt="Best Blenders 2026" 
               className="w-full h-64 object-cover"
             />

@@ -61,7 +61,7 @@ export default function BestFoodProcessor() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/11.jpg" 
+              src="/images/reviews/food-processor.jpg" 
               alt="Best Food Processors" 
               className="w-full h-64 object-cover"
             />

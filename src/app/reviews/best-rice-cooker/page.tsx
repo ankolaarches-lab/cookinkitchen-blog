@@ -61,7 +61,7 @@ export default function BestRiceCooker() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/5.jpg" 
+              src="/images/reviews/rice-cooker.jpg" 
               alt="Best Rice Cookers" 
               className="w-full h-64 object-cover"
             />

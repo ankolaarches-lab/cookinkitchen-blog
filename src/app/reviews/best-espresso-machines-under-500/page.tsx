@@ -79,7 +79,7 @@ export default function BestEspressoMachinesUnder500() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/7.jpg" 
+              src="/images/reviews/espresso-machine.jpg" 
               alt="Best Espresso Machines Under $500" 
               className="w-full h-64 object-cover"
             />

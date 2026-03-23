@@ -61,7 +61,7 @@ export default function BestInstantPot() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/1.jpg" 
+              src="/images/reviews/pressure-cooker.jpg" 
               alt="Best Instant Pot" 
               className="w-full h-64 object-cover"
             />

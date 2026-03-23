@@ -79,7 +79,7 @@ export default function BestPastaMakers2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/7.jpg" 
+              src="/images/reviews/pasta-maker.jpg" 
               alt="Best Pasta Makers 2026" 
               className="w-full h-64 object-cover"
             />

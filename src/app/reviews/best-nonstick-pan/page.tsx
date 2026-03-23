@@ -61,7 +61,7 @@ export default function BestNonStickPan() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/8.jpg" 
+              src="/images/reviews/nonstick-pan.jpg" 
               alt="Best Non-Stick Frying Pans" 
               className="w-full h-64 object-cover"
             />

@@ -70,7 +70,7 @@ export default function BestAirFryer2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/5.jpg" 
+              src="/images/reviews/air-fryer.jpg" 
               alt="Best Air Fryers 2026" 
               className="w-full h-64 object-cover"
             />

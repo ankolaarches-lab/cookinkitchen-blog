@@ -87,7 +87,7 @@ export default function BestKitchenFaucets2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/8.jpg" 
+              src="/images/reviews/kitchen-faucets-2026.jpg" 
               alt="Best Kitchen Faucets 2026" 
               className="w-full h-64 object-cover"
             />

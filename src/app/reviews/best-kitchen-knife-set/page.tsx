@@ -20,7 +20,7 @@ export default function Page() {
           </div>
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/1.jpg" 
+              src="/images/reviews/knife-set.jpg" 
               alt="Best Kitchen Knife Sets" 
               className="w-full h-64 object-cover"
             />

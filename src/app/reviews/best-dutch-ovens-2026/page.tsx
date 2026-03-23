@@ -86,7 +86,7 @@ export default function BestDutchOvens2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/3.jpg" 
+              src="/images/reviews/dutch-oven.jpg" 
               alt="Best Dutch Ovens 2026" 
               className="w-full h-64 object-cover"
             />

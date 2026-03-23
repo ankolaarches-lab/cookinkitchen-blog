@@ -70,7 +70,7 @@ export default function InstantReadThermometer() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/7.jpg" 
+              src="/images/reviews/meat-thermometer.jpg" 
               alt="Best Instant Read Meat Thermometers 2026" 
               className="w-full h-64 object-cover"
             />

@@ -87,7 +87,7 @@ export default function BestCasseroleDishes2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/7.jpg" 
+              src="/images/reviews/casserole-dish.jpg" 
               alt="Best Casserole Dishes 2026" 
               className="w-full h-64 object-cover"
             />

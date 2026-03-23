@@ -70,7 +70,7 @@ export default function BestElectricSkillets2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/kitchen/5.jpg" 
+              src="/images/reviews/electric-skillet.jpg" 
               alt="Best Electric Skillets 2026" 
               className="w-full h-64 object-cover"
             />
