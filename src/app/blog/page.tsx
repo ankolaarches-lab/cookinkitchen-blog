@@ -1,12 +1,31 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/data/blogPosts";
+
+export const metadata: Metadata = {
+  title: "The Intelligence Hub - CookinKitchen Blog",
+  description: "Deep-dive guides, expert techniques, and the latest trends shaping the modern kitchen in 2026.",
+  openGraph: {
+    title: "The Intelligence Hub - CookinKitchen Blog",
+    description: "Deep-dive guides, expert techniques, and the latest trends shaping the modern kitchen in 2026.",
+    type: "website",
+  },
+};
 
 export default function BlogPage() {
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-6xl mx-auto px-6">
+        {/* Skip Link for Accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg"
+        >
+          Skip to main content
+        </a>
+
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <h1 className="font-playfair text-5xl md:text-6xl text-stone-800 mb-6 font-bold">
             The Intelligence Hub
           </h1>
@@ -14,10 +33,10 @@ export default function BlogPage() {
             Deep-dive guides, expert techniques, and the latest trends 
             shaping the modern kitchen in 2026.
           </p>
-        </div>
+        </header>
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <main id="main-content" className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {blogPosts.map((post) => (
             <Link 
               key={post.slug} 
@@ -47,9 +66,9 @@ export default function BlogPage() {
                   <span>{post.readTime}</span>
                 </div>
                 
-                <h3 className="font-playfair text-2xl text-stone-800 mb-4 group-hover:text-emerald-600 transition-colors duration-300 line-clamp-2">
+                <h2 className="font-playfair text-2xl text-stone-800 mb-4 group-hover:text-emerald-600 transition-colors duration-300 line-clamp-2">
                   {post.title}
-                </h3>
+                </h2>
                 
                 <p className="font-lato text-stone-600 leading-relaxed mb-6 line-clamp-3">
                   {post.excerpt}
@@ -62,6 +81,7 @@ export default function BlogPage() {
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path 
                       strokeLinecap="round" 
@@ -74,11 +94,11 @@ export default function BlogPage() {
               </div>
             </Link>
           ))}
-        </div>
+        </main>
 
         {/* Newsletter / CTA Section */}
-        <div className="mt-24 bg-stone-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-[url('/images/kitchen/7.jpg')] bg-cover bg-center"></div>
+        <footer className="mt-24 bg-stone-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10 bg-[url('/images/kitchen/7.jpg')] bg-cover bg-center" role="img" aria-label="Decorative kitchen background"></div>
           <div className="relative z-10">
             <h2 className="font-playfair text-3xl md:text-5xl text-white mb-6">
               Join the Culinary Vanguard
@@ -87,18 +107,20 @@ export default function BlogPage() {
               Get our biannual intelligence report on kitchen technology 
               and essential culinary techniques.
             </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center max-w-md mx-auto">
+              <div className="flex flex-col md:flex-row gap-4 justify-center max-w-md mx-auto">
               <input 
+                id="email-input"
                 type="email" 
                 placeholder="Enter your email"
                 className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder:text-stone-500 focus:outline-none focus:border-emerald-500 transition-colors flex-grow"
+                aria-label="Enter your email"
               />
-              <button className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-8 rounded-2xl transition-all shadow-xl shadow-emerald-900/20 active:scale-95">
+              <button type="button" className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-8 rounded-2xl transition-all shadow-xl shadow-emerald-900/20 active:scale-95">
                 Subscribe
               </button>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   );

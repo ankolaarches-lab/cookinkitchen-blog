@@ -23,6 +23,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 80,
+    slug: "best-garlic-presses-2026",
+    title: "Best Garlic Presses 2026 - Complete Buying Guide",
+    excerpt: "Effortlessly crush garlic cloves with the best garlic presses of 2026. We tested top-rated pressers for home cooks.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 23, 2026",
+  },
+  {
     id: 79,
     slug: "best-oven-thermometers-2026",
     title: "Best Oven Thermometers 2026 - Accurate Temperature Guide",
