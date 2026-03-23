@@ -23,6 +23,42 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 79,
+    slug: "best-oven-thermometers-2026",
+    title: "Best Oven Thermometers 2026 - Accurate Temperature Guide",
+    excerpt: "Stop guessing if your oven is at the right temperature. We tested the best oven thermometers to ensure precise baking and roasting results.",
+    category: "Gadgets",
+    rating: 4.7,
+    date: "Mar 23, 2026",
+  },
+  {
+    id: 78,
+    slug: "best-slotted-spoons-2026",
+    title: "Best Slotted Spoons 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect slotted spoon for draining and serving. We tested top-rated cooking spoons in stainless steel, silicone, and wood for every kitchen need.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 23, 2026",
+  },
+  {
+    id: 77,
+    slug: "best-fish-turners-2026",
+    title: "Best Fish Turners 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect fish turner for delicate flipping. We tested top-rated fish spatulas in stainless steel and silicone for perfect pancakes, fish, and more.",
+    category: "Kitchen Utensils",
+    rating: 4.7,
+    date: "Mar 23, 2026",
+  },
+  {
+    id: 76,
+    slug: "best-ladles-2026",
+    title: "Best Ladles 2026 - Complete Buying Guide",
+    excerpt: "Find the perfect ladle for serving soups, stews, and sauces. We tested top-rated ladles in stainless steel, silicone, and wood for every kitchen need.",
+    category: "Kitchen Utensils",
+    rating: 4.6,
+    date: "Mar 23, 2026",
+  },
+  {
     id: 75,
     slug: "best-cooling-racks-2026",
     title: "Best Cooling Racks 2026 - Complete Buying Guide",
