@@ -66,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'kitchen-conversion-chart', 'temperature-guide-meat', 'kitchen-safety-tips',
     'spring-kitchen-organization', 'vegetable-cutting-techniques', 'pizza-stone-vs-steel',
     'cast-iron-troubleshooting', 'knife-skills-basics', 'herb-storage-guide',
-    'air-fryer-maintenance-tips', 'stand-mixer-attachments', 'nonstick- cookware-care',
+    'air-fryer-maintenance-tips', 'stand-mixer-attachments', 'nonstick-cookware-care',
     'kitchen-measurement-basics', 'bread-maker-home', 'sous-vide-precision',
     'thermometer-cooking', 'kitchen-timer-digital', 'trivet-hot-pads',
     'best-dutch-oven-recipes', 'kitchen-organization-hacks-2026',

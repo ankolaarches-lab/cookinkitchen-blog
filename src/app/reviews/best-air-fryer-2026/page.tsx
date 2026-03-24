@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ReviewSchema from "@/components/ReviewSchema";
 
 export const metadata: Metadata = {
   title: "Best Air Fryers 2026 - Ultimate Buying Guide",
@@ -53,6 +54,14 @@ const products = [
 export default function BestAirFryer2026() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <ReviewSchema
+        title="Best Air Fryers 2026: Complete Guide"
+        description="Crispy results with less oil. We tested the best air fryers from Ninja, Instant Pot, and more."
+        slug="best-air-fryer-2026"
+        datePublished="2026-02-18"
+        image="/images/reviews/air-fryer.jpg"
+        products={products}
+      />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <Link href="/reviews" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-8 font-lato font-medium transition">← Back to Reviews</Link>
         

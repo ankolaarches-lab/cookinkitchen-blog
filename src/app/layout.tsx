@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico?v=2",
     apple: "/favicon.png?v=2",
   },
-  keywords: ["kitchen intelligence", "culinary instruments", "professional gear reviews", "data-driven cooking", "kitchen gear analysis"],
+
   authors: [{ name: "CookinKitchen Intelligence Unit" }],
   creator: "CookinKitchen",
   publisher: "CookinKitchen",
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
     description: "Independent, data-driven analysis of professional kitchen tools. Professional gear for professional cooks.",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CookinKitchen Intelligence Protocol",
+        alt: "CookinKitchen – Expert Kitchen Intelligence",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CookinKitchen - Expert Kitchen Tool Reviews",
     description: "Honest, expert reviews of kitchen tools. Find the best chef's knives, cookware, and appliances.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -197,8 +197,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-6 mt-20 pt-8 border-t border-gray-900/50 flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-xs uppercase tracking-[0.2em]">© 2026 CookinKitchen Intelligence Ops</p>
             <div className="flex gap-8 text-xs font-bold uppercase tracking-widest">
-              <a href="#" className="hover:text-emerald-400 transition">Twitter</a>
-              <a href="#" className="hover:text-emerald-400 transition">Instagram</a>
+              {/* TODO: Add real social profile URLs */}
             </div>
           </div>
         </footer>
