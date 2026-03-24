@@ -23,6 +23,15 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 81,
+    slug: "best-vegetable-choppers-2026",
+    title: "Best Vegetable Choppers 2026 - Complete Buying Guide",
+    excerpt: "Save time in the kitchen with the best vegetable choppers of 2026. We tested top-rated choppers for meal prep.",
+    category: "Gadgets",
+    rating: 4.6,
+    date: "Mar 24, 2026",
+  },
+  {
     id: 80,
     slug: "best-garlic-presses-2026",
     title: "Best Garlic Presses 2026 - Complete Buying Guide",
