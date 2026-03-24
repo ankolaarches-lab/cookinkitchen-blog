@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const products = [
-  { name: "Zojirushi Bread Maker", price: "$199.95", rating: 4.8, image: "/images/kitchen/4.jpg", link: "https://www.amazon.com/s?k=best+bread+makers&tag=cookinkitchen-20", pros: ["Quiet", "Multiple settings", "Great bread"] },
+  { name: "Zojirushi Bread Maker", price: "$199.95", rating: 4.8, link: "https://www.amazon.com/s?k=best+bread+makers&tag=cookinkitchen-20", pros: ["Quiet", "Multiple settings", "Great bread"] },
 ];
 
 export default function BestBreadMakers2026() {
@@ -30,8 +30,7 @@ export default function BestBreadMakers2026() {
         <section className="space-y-8">
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
-              <div className="flex gap-6">
-                <img src={product.image} alt={product.name} className="w-48 h-48 object-cover rounded-lg" />
+              <div>
                 <div>
                   <h2 className="text-xl font-bold">{product.name}</h2>
                   <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

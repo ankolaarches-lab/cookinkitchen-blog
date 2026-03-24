@@ -12,7 +12,6 @@ const products = [
     name: "KitchenAid Artisan Tilt-Head Stand Mixer",
     price: "$449.99",
     rating: 4.9,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=kitchenaid+vs+cuisinart+stand+mixer&tag=cookinkitchen-20",
     brand: "KitchenAid",
     pros: ["Iconic design", "Huge accessory line", "Multiple colors", "Tilt-head convenient"],
@@ -22,7 +21,6 @@ const products = [
     name: "Cuisinart Stand Mixer 5.5-Quart",
     price: "$249.99",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=kitchenaid+vs+cuisinart+stand+mixer&tag=cookinkitchen-20",
     brand: "Cuisinart",
     pros: ["Better price", "Larger bowl", "12 speeds", "Includes accessories"],
@@ -64,10 +62,7 @@ export default function KitchenAidVsCuisinart() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="text-sm text-amber-600 font-bold uppercase tracking-wide mb-1">{product.brand}</div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>

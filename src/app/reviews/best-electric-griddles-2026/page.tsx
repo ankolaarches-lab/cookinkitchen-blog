@@ -12,7 +12,6 @@ const products = [
     name: "Presto 07061 22-Inch Electric Griddle",
     price: "$49.99",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/Presto-07061-22-Inch-Electric-Griddle/dp/B0000E2BU4?tag=cookinkitchen-20",
     pros: ["大烹饪面积", "可调温度控制", "不粘表面", "易于清洁"],
     cons: ["没有温度显示", "电源线略短"],
@@ -21,7 +20,6 @@ const products = [
     name: "Hamilton Beach 38518 Electric Griddle",
     price: "$44.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/Hamilton-Beach-38518-Electric-Griddle/dp/B07YJBVMCG?tag=cookinkitchen-20",
     pros: ["防泼溅护罩", "可拆卸温度控制", "不粘涂层", "现代设计"],
     cons: ["烹饪面积较小", "温度控制不够精确"],
@@ -30,7 +28,6 @@ const products = [
     name: "Cuisinart GR-4N 5-In-1 Griddler",
     price: "$99.99",
     rating: 4.6,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/Cuisinart-GR-4N-5-In-1-Griddler/dp/B008G54MGC?tag=cookinkitchen-20",
     pros: ["多功能（烤、压、烤三明治）", "可拆卸烤盘", "数字定时器", "垂直存放"],
     cons: ["价格较高", "烹饪面积有限"],
@@ -39,7 +36,6 @@ const products = [
     name: "Zojirushi NeRice-Hard Anodized Electric Griddle",
     price: "$89.99",
     rating: 4.4,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/Zojirushi-NeRice-Hard-Anodized-Electric-Griddle/dp/B00DXP1W5M?tag=cookinkitchen-20",
     pros: ["优质硬阳极氧化表面", "精确温度控制", "美观设计", "耐用"],
     cons: ["烹饪面积较小", "价格偏高"],
@@ -48,7 +44,6 @@ const products = [
     name: "Techef Smokeless Indoor Grill/Griddle",
     price: "$69.99",
     rating: 4.5,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Techef-Smokeless-Indoor-Grill-Griddle/dp/B0BXY2Q7V3?tag=cookinkitchen-20",
     pros: ["无烟设计", "可调温度", "可拆卸烤盘", "适合室内使用"],
     cons: ["需要定期清洁油盘", "配件需要单独购买"],
@@ -92,14 +87,7 @@ export default function BestElectricGriddles2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

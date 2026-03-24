@@ -20,7 +20,6 @@ const products = [
     name: "Braun MultiQuick 9 Immersion Blender",
     price: "$99.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Braun+MultiQuick+9+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Powerful 400W motor", "Variable speed control", "Includes chopper and whisk attachments", "Comfortable grip"],
     cons: ["Higher price point", "Somewhat heavy"],
@@ -29,7 +28,6 @@ const products = [
     name: "KitchenAid Variable Speed Immersion Blender",
     price: "$49.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Variable+Speed+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Affordable", "Durable construction", "Easy to clean", "Variable speed trigger"],
     cons: ["No additional attachments", "Can be loud"],
@@ -38,7 +36,6 @@ const products = [
     name: "Cuisinart SmartPower 7-Speed Immersion Blender",
     price: "$39.99",
     rating: 4.6,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+SmartPower+7+Speed+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["7 speed settings", "Budget-friendly", "Includes detachable shaft", "BPA-free jar included"],
     cons: ["Less powerful motor", "Plastic shaft can stain"],
@@ -47,7 +44,6 @@ const products = [
     name: "Vitamix 15810 Immersion Blender",
     price: "$149.95",
     rating: 4.9,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Vitamix+15810+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Commercial-grade power", "Stainless steel shaft", "Excellent durability", "Great for heavy-duty tasks"],
     cons: ["Expensive", "Heavy", "No speed control on handle"],
@@ -56,7 +52,6 @@ const products = [
     name: "Bamix Mono Immersion Blender",
     price: "$129.95",
     rating: 4.7,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Bamix+Mono+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Swiss-made quality", "Powerful 200W motor", "Two speeds", "Dishwasher safe"],
     cons: ["Pricey", "Limited attachments"],
@@ -65,7 +60,6 @@ const products = [
     name: "Mueller Austria Premium Immersion Blender",
     price: "$29.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Mueller+Austria+Premium+Immersion+Blender&tag=cookinkitchen-20",
     pros: ["Very affordable", "Lightweight", "4 attachments included", "Easy to store"],
     cons: ["Not as powerful", "Durability concerns over time"],
@@ -128,11 +122,8 @@ export default function BestImmersionBlenders2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

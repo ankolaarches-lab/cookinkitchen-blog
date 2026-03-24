@@ -12,7 +12,6 @@ const products = [
     name: "Cuisinart 14-Cup Food Processor",
     price: "$199.99",
     rating: 4.7,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+DFP+14BCNY+14+Cup+Food+Processor&tag=cookinkitchen-20",
     pros: ["Large capacity", "Powerful motor", "Multiple blades", "Easy to clean"],
     cons: ["Large footprint", "Expensive"],
@@ -21,7 +20,6 @@ const products = [
     name: "KitchenAid 13-Cup Food Processor",
     price: "$169.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+KFP1311+13+Cup+Food+Processor&tag=cookinkitchen-20",
     pros: ["Exact Slice system", "Sleek design", "Multiple speeds", "Work bowl stabilizer"],
     cons: ["Heavy", "Complex assembly"],
@@ -30,7 +28,6 @@ const products = [
     name: "Hamilton Beach 10-Cup Food Processor",
     price: "$49.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+70725+10+Cup+Processor&tag=cookinkitchen-20",
     pros: ["Affordable", "Compact", "Easy to use", "Dishwasher safe parts"],
     cons: ["Smaller capacity", "Less powerful"],
@@ -39,7 +36,6 @@ const products = [
     name: "Breville Sous Chef 16-Cup",
     price: "$299.95",
     rating: 4.8,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Breville+BFP800XL+Sous+Chef+Processor&tag=cookinkitchen-20",
     pros: ["Commercial-grade", "Multiple feed tubes", "Quiet motor", "Premium construction"],
     cons: ["Very expensive", "Large"],
@@ -83,14 +79,7 @@ export default function BestFoodProcessor() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

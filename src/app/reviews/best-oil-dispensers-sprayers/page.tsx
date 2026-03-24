@@ -12,7 +12,6 @@ const products = [
     name: "Misto Brushed Aluminum Oil Sprayer",
     price: "$14.99",
     rating: 4.7,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=best+oil+dispensers+sprayers&tag=cookinkitchen-20",
     pros: ["No propellants", "Adjustable spray", "Economical"],
     cons: ["Manual pumping required"],
@@ -21,7 +20,6 @@ const products = [
     name: "Oil Sprayer Bottle for Cooking",
     price: "$12.99",
     rating: 4.6,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=best+oil+dispensers+sprayers&tag=cookinkitchen-20",
     pros: ["Fine mist", "Multiple sizes", "Leak-proof"],
     cons: ["Plastic construction"],
@@ -30,7 +28,6 @@ const products = [
     name: "Pourable Glass Oil Dispenser",
     price: "$19.99",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=best+oil+dispensers+sprayers&tag=cookinkitchen-20",
     pros: ["Beautiful design", "Drip-free spout", "Glass is safe"],
     cons: ["Not a sprayer"],
@@ -39,7 +36,6 @@ const products = [
     name: "Prepara EVO Oil Cruet",
     price: "$29.95",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=best+oil+dispensers+sprayers&tag=cookinkitchen-20",
     pros: ["Self-venting", "Ergonomic grip", "Precision pour"],
     cons: ["Hand wash only"],
@@ -48,7 +44,6 @@ const products = [
     name: "Evo Hand Pump Oil Sprayer",
     price: "$24.95",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=best+oil+dispensers+sprayers&tag=cookinkitchen-20",
     pros: ["Continuous spray", "Stainless steel", "Chef-approved"],
     cons: ["More expensive"],
@@ -100,11 +95,8 @@ export default function OilDispensers() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

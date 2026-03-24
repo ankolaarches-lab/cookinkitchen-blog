@@ -12,7 +12,6 @@ const products = [
     name: "Breville Barista Express",
     price: "$479.95",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Breville+Barista+Express+BES870XL&tag=cookinkitchen-20",
     pros: ["Built-in grinder", "Digital temperature control", "Steam wand for milk", "Quick heat-up"],
     cons: ["Requires regular maintenance", "Learning curve"],
@@ -21,7 +20,6 @@ const products = [
     name: "De'Longhi Dinamica Plus",
     price: "$449.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=DeLonghi+Dinamica+Plus+Automatic&tag=cookinkitchen-20",
     pros: ["One-touch drinks", "Customizable beverages", "Automatic milk frother", "Silent grinder"],
     cons: ["Limited espresso customization", "Bulkier design"],
@@ -30,7 +28,6 @@ const products = [
     name: "Nespresso VertuoPlus",
     price: "$229.00",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Nespresso+VertuoPlus++Deluxe&tag=cookinkitchen-20",
     pros: ["Easy to use", "Quick heat-up", "Compact", "Great espresso variety"],
     cons: ["Pods required", "Not true espresso"],
@@ -39,7 +36,6 @@ const products = [
     name: "Breville Barista Impress",
     price: "$449.95",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Breville+Barista+Impress+BES885BSS&tag=cookinkitchen-20",
     pros: ["Assisted tamping", "PID temperature", "Auto-milk frothing", "Barista guidance"],
     cons: ["Complex for beginners", "Higher price point"],
@@ -48,7 +44,6 @@ const products = [
     name: "Philips 5400 LatteGo",
     price: "$499.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Philips+5400+LatteGo+EP5447&tag=cookinkitchen-20",
     pros: ["Automatic LatteGo system", "12 coffee options", "Silent operation", "Easy cleaning"],
     cons: ["No built-in grinder", "Plastic components"],
@@ -57,7 +52,6 @@ const products = [
     name: "Casabrews Espresso Machine",
     price: "$159.99",
     rating: 4.4,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Casabrews+Espresso+Machine+20+Bar&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Compact size", "Steam wand included", "Quick start"],
     cons: ["No built-in grinder", "Inconsistent temperature", "Limited durability"],
@@ -164,11 +158,8 @@ export default function BestEspressoMachinesUnder500() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

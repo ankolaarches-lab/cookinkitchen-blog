@@ -29,7 +29,6 @@ const products = [
     name: "Le Creuset Enameled Cast Iron Dutch Oven",
     price: "$369.95",
     rating: 4.9,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Enameled interior", "Lifetime warranty", "Beautiful colors"],
     cons: ["Premium price", "Heavy"],
@@ -38,7 +37,6 @@ const products = [
     name: "Lodge Cast Iron Dutch Oven",
     price: "$59.99",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Affordable", "Pre-seasoned", "Made in USA", "Versatile"],
     cons: ["Requires seasoning", "Plain design"],
@@ -47,7 +45,6 @@ const products = [
     name: "Staub Enameled Cast Iron Dutch Oven",
     price: "$299.95",
     rating: 4.9,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Staub+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Black matte enamel", "Self-basting lid", "Oven safe to 500°F", "Great for bread"],
     cons: ["Expensive"],
@@ -56,7 +53,6 @@ const products = [
     name: "AmazonBasics Enameled Cast Iron Dutch Oven",
     price: "$69.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=AmazonBasics+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Multiple colors", "6 quart size", "Glass lid"],
     cons: ["Not as durable", "Lower heat retention"],
@@ -91,10 +87,7 @@ export default function BestDutchOvens2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Taylor Precision Products Digital Timer",
     price: "$14.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Taylor+Precision+Products+Digital+Kitchen+Timer&tag=cookinkitchen-20",
     pros: ["Large display", "Loud alarm", "Magnet on back"],
     cons: ["Requires batteries"],
@@ -21,7 +20,6 @@ const products = [
     name: "Sage Kitchen Timer",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Sage+Kitchen+Timer&tag=cookinkitchen-20",
     pros: ["Unique design", "Easy to read", "Silent operation option"],
     cons: ["Higher price point"],
@@ -30,7 +28,6 @@ const products = [
     name: "OXO Good Grips 3-IN-1 Timer",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+in+1+Kitchen+Timer&tag=cookinkitchen-20",
     pros: ["Three timers in one", "Stands or mounts", "Clear display"],
     cons: ["Takes getting used to"],
@@ -39,7 +36,6 @@ const products = [
     name: "TIMEGO Digital Kitchen Timer",
     price: "$12.99",
     rating: 4.5,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=TIMEGO+Digital+Kitchen+Timer&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Compact", "Memory function"],
     cons: ["Smaller display"],
@@ -48,7 +44,6 @@ const products = [
     name: "KitchenAid 3-Minute Timer",
     price: "$16.99",
     rating: 4.7,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Mechanical+Kitchen+Timer&tag=cookinkitchen-20",
     pros: ["No batteries needed", "Classic design", "KitchenAid quality"],
     cons: ["Only 3 minutes max"],
@@ -57,7 +52,6 @@ const products = [
     name: "JinYou Magnetic Kitchen Timer",
     price: "$15.99",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=JinYou+Magnetic+Kitchen+Timer&tag=cookinkitchen-20",
     pros: ["Strong magnet", "Fun colors", "Easy twist dial"],
     cons: ["Mechanical only - less precise"],
@@ -114,11 +108,8 @@ export default function BestKitchenTimers2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

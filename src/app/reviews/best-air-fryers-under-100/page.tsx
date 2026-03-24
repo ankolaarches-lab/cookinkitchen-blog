@@ -20,7 +20,6 @@ const products = [
     name: "COSORI Air Fryer 5.8 Quart",
     price: "$89.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=COSORI+Air+Fryer+5.8+Quart&tag=cookinkitchen-20",
     pros: ["Great capacity", "Easy touch controls", "Dishwasher safe basket"],
     cons: ["No preheat notification"],
@@ -29,7 +28,6 @@ const products = [
     name: "Instant Pot Vortex Plus 7-in-1",
     price: "$99.95",
     rating: 4.6,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Vortex+Plus+7-in-1&tag=cookinkitchen-20",
     pros: ["7 functions in one", "Perfect size", "Easy to use"],
     cons: ["Slightly louder than competitors"],
@@ -38,7 +36,6 @@ const products = [
     name: "Ninja Air Fryer 4-Quart",
     price: "$89.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Air+Fryer+4-Quart&tag=cookinkitchen-20",
     pros: ["Compact for small kitchens", "Non-slip feet", "Great for singles"],
     cons: ["Smaller capacity"],
@@ -47,7 +44,6 @@ const products = [
     name: "GoWISE USA 5.8-Quart Air Fryer",
     price: "$79.99",
     rating: 4.4,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=GoWISE+USA+5.8-Quart+Air+Fryer&tag=cookinkitchen-20",
     pros: ["Affordable", "Large digital display", "Recipe book included"],
     cons: ["Basic design"],
@@ -56,7 +52,6 @@ const products = [
     name: "Dash Tasti-Crisp 4-Quart",
     price: "$59.99",
     rating: 4.3,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Dash+Tasti-Crisp+4-Quart&tag=cookinkitchen-20",
     pros: ["Very affordable", "Compact", "Simple dial controls"],
     cons: ["Limited features"],
@@ -110,11 +105,11 @@ export default function BestAirFryersUnder100() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition border border-stone-100">
-                <div className="flex gap-4">
+                <div>
                   <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center">
                     <span className="text-3xl">🍳</span>
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800 font-medium">{product.name}</h3>
                       <span className="text-emerald-600 font-lato font-bold">{product.rating} ★</span>

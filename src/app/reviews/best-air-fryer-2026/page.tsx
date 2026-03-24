@@ -12,7 +12,6 @@ const products = [
     name: "Ninja Foodi XL Pro Air Fry Oven",
     price: "$229.99",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Foodi+Proof+15+Quart+Professional&tag=cookinkitchen-20",
     pros: ["Large capacity", "Multiple functions", "Great for families"],
     cons: ["Takes up counter space"],
@@ -21,7 +20,6 @@ const products = [
     name: "Ninja Crispi",
     price: "$99.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Crispi+Portable+Countertop+Crisper&tag=cookinkitchen-20",
     pros: ["Glass container", "Easy cleanup", "Compact size"],
     cons: ["Smaller capacity"],
@@ -30,7 +28,6 @@ const products = [
     name: "Instant Pot Vortex Plus",
     price: "$99.95",
     rating: 4.6,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Instant+Vortex+Plus+7+1+Quart&tag=cookinkitchen-20",
     pros: ["7-in-1 functionality", "Easy to use", "Good size"],
     cons: ["Learning curve"],
@@ -39,7 +36,6 @@ const products = [
     name: "COSORI Air Fryer",
     price: "$89.99",
     rating: 4.5,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=COSORI+5+8+Quart+Air+Fryer&tag=cookinkitchen-20",
     pros: ["Sleek design", "Dishwasher safe", "Affordable"],
     cons: ["Smaller basket"],
@@ -48,7 +44,6 @@ const products = [
     name: "Philips Premium Airfryer XXL",
     price: "$349.95",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Philips+Premium+XXL+Fryer&tag=cookinkitchen-20",
     pros: ["Premium build", "Twin TurboStar", "Large family size"],
     cons: ["Expensive"],
@@ -101,11 +96,8 @@ export default function BestAirFryer2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

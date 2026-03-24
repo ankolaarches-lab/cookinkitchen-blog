@@ -13,7 +13,6 @@ const products = [
     name: "KitchenAid Jar Opener",
     price: "$19.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+KJ7220+Classic+Jar+Opener&tag=cookinkitchen-20",
     pros: ["Electric - no effort needed", "Fits most jar sizes", "Sturdy construction", "One-touch operation"],
     cons: ["Needs outlet", "Takes counter space"],
@@ -22,7 +21,6 @@ const products = [
     name: "M搏 Jar Opener (Adjustable)",
     price: "$14.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Jar+Opener+Adjustable+Stainless+Kitchen&tag=cookinkitchen-20",
     pros: ["Portable", "Adjustable grip", "No tools needed", "Budget-friendly"],
     cons: ["Requires hand strength"],
@@ -31,7 +29,6 @@ const products = [
     name: "OXO Good Grips Jar Opener",
     price: "$12.99",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Jar+Opener&tag=cookinkitchen-20",
     pros: ["Lever design", "Non-slip grip", "Compact storage", "Lifetime warranty"],
     cons: ["May not work on all lids"],
@@ -40,7 +37,6 @@ const products = [
     name: "Sunstive Jar Lid Gripper Set",
     price: "$9.99",
     rating: 4.4,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Sunstive+Opener+Gripper+Kitchen&tag=cookinkitchen-20",
     pros: ["Set of 3 sizes", "Silicone non-slip", "Dishwasher safe", "Very affordable"],
     cons: ["Manual effort required"],
@@ -49,7 +45,6 @@ const products = [
     name: "Smooth Edge Can Opener & Jar Opener",
     price: "$16.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Smooth+Can+Opener+Automatic+Jar&tag=cookinkitchen-20",
     pros: ["2-in-1 tool", "Automatic operation", "Battery powered", "Safe edge"],
     cons: ["Batteries not included"],
@@ -92,15 +87,7 @@ export default function BestJarOpeners() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative w-full md:w-48 h-48 flex-shrink-0">
-                  <Image 
-                    src={product.image} 
-                    alt={product.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

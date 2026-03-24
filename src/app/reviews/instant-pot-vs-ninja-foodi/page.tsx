@@ -12,7 +12,6 @@ const products = [
     name: "Instant Pot Duo 7-in-1",
     price: "$89.95",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=instant+pot+vs+ninja+foodi&tag=cookinkitchen-20",
     pros: ["More affordable", "Larger community", "Proven reliability", "7 functions"],
     cons: ["No air fryer", "Manual pressure release"],
@@ -21,7 +20,6 @@ const products = [
     name: "Ninja Foodi 8-Quart 9-in-1",
     price: "$179.95",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=instant+pot+vs+ninja+foodi&tag=cookinkitchen-20",
     pros: ["Built-in air fryer", "TenderCrisp technology", "Deluxe size", "Better accessories"],
     cons: ["More expensive", "Larger footprint"],
@@ -62,10 +60,7 @@ export default function InstantPotVsNinjaFoodi() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

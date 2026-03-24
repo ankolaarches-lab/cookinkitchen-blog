@@ -13,7 +13,6 @@ const products = [
     name: "YouCopia StoraLazzy Cabinet Organizer",
     price: "$29.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Cabinet Organizer",
     pros: ["Expands cabinet space", "Smooth 360° turn", "Fits most cabinets", "Easy installation"],
@@ -23,7 +22,6 @@ const products = [
     name: "LAMU 2-Tier Lazy Susan Turntable",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Cabinet Organizer",
     pros: ["Doubles vertical space", "Clear design shows contents", "Stackable", "Great for spices"],
@@ -34,7 +32,6 @@ const products = [
     name: "Pipishell Bamboo Expandable Silverware Tray",
     price: "$19.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Drawer Organizer",
     pros: ["Natural bamboo material", "Expandable design", "Fits most drawer sizes", "Eco-friendly"],
@@ -44,7 +41,6 @@ const products = [
     name: "Homecor Expandable Cutlery Drawer Organizer",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Drawer Organizer",
     pros: ["Removable knife blocks", "Expandable 13-22 inches", "7 compartments", "Non-slip base"],
@@ -55,7 +51,6 @@ const products = [
     name: "Vtopmart Clear Food Storage Bins (4-Pack)",
     price: "$27.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Pantry Organizer",
     pros: ["Clear see-through design", "Stackable", "Handles for easy pulling", "4 sizes included"],
@@ -65,7 +60,6 @@ const products = [
     name: "madesmart Classic Organizer",
     price: "$14.99",
     rating: 4.5,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Pantry Organizer",
     pros: ["Removable dividers", "Versatile use", "FDA approved", "Stackable"],
@@ -76,7 +70,6 @@ const products = [
     name: "KitchenAid 15-Slot Knife Block",
     price: "$39.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Countertop Organizer",
     pros: ["Holds 15 knives", "Sturdy construction", "Universal fit", "Classic design"],
@@ -86,7 +79,6 @@ const products = [
     name: "Joseph Joseph Easy-Press Paper Towel Holder",
     price: "$24.99",
     rating: 4.4,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Countertop Organizer",
     pros: ["One-handed dispensing", "Weighted base", "Holds most paper roll sizes", "Sleek design"],
@@ -97,7 +89,6 @@ const products = [
     name: "SpaceAid Wall-Mounted Spice Rack",
     price: "$34.99",
     rating: 4.5,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Spice Rack",
     pros: ["Wall or door mount", "Holds 12 jars", "Hardware included", "Modern look"],
@@ -107,7 +98,6 @@ const products = [
     name: "Lynk Professional Pull-Out Spice Rack",
     price: "$59.99",
     rating: 4.7,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
     category: "Spice Rack",
     pros: ["Mounts inside cabinet", "Pull-out drawers", "Holds 20+ jars", "Commercial quality"],
@@ -139,10 +129,7 @@ export default function BestOrganizers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 bg-stone-100 rounded-lg flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-1 rounded">{product.category}</span>
                   </div>

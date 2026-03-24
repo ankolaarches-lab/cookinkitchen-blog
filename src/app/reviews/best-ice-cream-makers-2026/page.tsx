@@ -23,7 +23,6 @@ const products = [
     name: "Ninja Creami Deluxe Ice Cream Maker",
     price: "$199.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/Ninja-Creami-Deluxe-Ice-Cream/dp/B0BSHFPRHW?tag=cookinkitchen-20",
     pros: ["7-in-1 functionality", "Multiple texture options", "Large capacity", "Easy to use", "Makes protein ice cream"],
     cons: ["Premium price"],
@@ -32,7 +31,6 @@ const products = [
     name: "Cuisinart ICE-30BCP1 Pure Indulgence",
     price: "$114.99",
     rating: 4.6,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/Cuisinart-ICE-30BCP1-Indulgence-1-Quart/dp/B003KYSLMW?tag=cookinkitchen-20",
     pros: ["1.5 quart capacity", "Double-insulated freezer bowl", "Easy cleanup", "Great price", "Makes ice cream, sorbet, frozen yogurt"],
     cons: ["Requires pre-freezing bowl"],
@@ -41,7 +39,6 @@ const products = [
     name: "Cuisinart ICE-21 1.5 Quart Ice Cream Maker",
     price: "$79.99",
     rating: 4.5,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/Cuisinart-ICE-21-1-Quart-Ice-Cream/dp/B003KYSLMW?tag=cookinkitchen-20",
     pros: ["Affordable", "Simple operation", "1.5 quart capacity", "Compact design", "Good for beginners"],
     cons: ["Noisy motor"],
@@ -50,7 +47,6 @@ const products = [
     name: "Ninja SLUSHi Max Frozen Drink Maker",
     price: "$149.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/Ninja-SLUSHi-Max-Frozen-Drink/dp/B0CVJLBQ1Y?tag=cookinkitchen-20",
     pros: ["Makes slushies and frozen drinks", "Dual pods", "Countertop design", "Fast freezing", "Fun for parties"],
     cons: ["Limited to frozen beverages only"],
@@ -59,7 +55,6 @@ const products = [
     name: "Lello 4080 Musso Lussino Ice Cream Maker",
     price: "$799.99",
     rating: 4.8,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/Lello-4080-Musso-Lussino-Ice-Cream/dp/B00NMF3B5W?tag=cookinkitchen-20",
     pros: ["Professional quality", "Built-in compressor", "Makes gelato and ice cream", "Stainless steel design", "No pre-freezing needed"],
     cons: ["Very expensive", "Large footprint"],
@@ -102,10 +97,7 @@ export default function BestIceCreamMakers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

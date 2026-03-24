@@ -12,7 +12,6 @@ const products = [
     name: "Zojirushi Neuro Fuzzy NS-LAC05",
     price: "$109.95",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Zojirushi+NS+LAC05+Uncooked+Premium+1+5+Liter&tag=cookinkitchen-20",
     pros: ["Fuzzy logic technology", "Keep warm function", "Multiple settings", "Durable"],
     cons: ["Expensive", "Small capacity"],
@@ -21,7 +20,6 @@ const products = [
     name: "Instant Pot Duo 7-in-1 Rice Cooker",
     price: "$59.95",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Rice+Cooker&tag=cookinkitchen-20",
     pros: ["Multi-use", "Affordable", "Programmable", "Easy cleanup"],
     cons: ["Less specialized rice cooking"],
@@ -30,7 +28,6 @@ const products = [
     name: "Tiger JKT-D10U 5.5-Cup",
     price: "$249.95",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Tiger+JKT+D10U+5+5+Cup+Keyboard+Cooker&tag=cookinkitchen-20",
     pros: ["Induction heating", "Tigers fuzzy logic", "Multi-grain settings", "Premium quality"],
     cons: ["Very expensive"],
@@ -39,7 +36,6 @@ const products = [
     name: "Aroma Housewares 8-Cup Rice Cooker",
     price: "$34.99",
     rating: 4.4,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Aroma+Housewares+ARC+914SBD+8+Cup+Cooker&tag=cookinkitchen-20",
     pros: ["Affordable", "Large capacity", "Simple to use", "Keep warm"],
     cons: ["Basic features", "No fuzzy logic"],
@@ -83,14 +79,7 @@ export default function BestRiceCooker() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

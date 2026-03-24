@@ -20,7 +20,6 @@ const products = [
     name: "Le Creuset Signature Enameled Cast Iron Round Casserole",
     price: "$419.95",
     rating: 4.9,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Le+Creuset+Signature+Round+Casserole&tag=cookinkitchen-20",
     pros: ["Exceptional heat retention", "Beautiful design", "Lifetime warranty", "Stovetop to oven"],
     cons: ["Premium price", "Heavy weight"],
@@ -29,7 +28,6 @@ const products = [
     name: "Cuisinart 7-Piece Chef's Casserole Set",
     price: "$89.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Chef+Casserole+Set&tag=cookinkitchen-20",
     pros: ["Great value set", "Multiple sizes", "Ceramic non-stick", "Dishwasher safe"],
     cons: ["Not as durable as premium"],
@@ -38,7 +36,6 @@ const products = [
     name: "Staub Enameled Cast Iron Cocotte",
     price: "$349.95",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Staub+Cocotte&tag=cookinkitchen-20",
     pros: ["Excellent browning", "Self-basting lid", "Durable enamel", "Beautiful colors"],
     cons: ["No helper handles", "Pricey"],
@@ -47,7 +44,6 @@ const products = [
     name: "Pyrex Glass 3-Quart Casserole with Lid",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Pyrex+3+Quart+Casserole&tag=cookinkitchen-20",
     pros: ["Affordable", "Oversized handles", "See-through lid", "Microwave safe"],
     cons: ["Not for stovetop", "Can stain"],
@@ -56,7 +52,6 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven",
     price: "$149.99",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Enamel+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Great value", "Versatile", "Durable", "Made in USA"],
     cons: ["Less refined finish", "Heavier than competitors"],
@@ -65,7 +60,6 @@ const products = [
     name: "Caraway Ceramic Casserole Dish Set",
     price: "$279.00",
     rating: 4.8,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Caraway+Casserole+Set&tag=cookinkitchen-20",
     pros: ["Stunning design", "Non-toxic ceramic", "Stackable storage", "Oven safe to 550°F"],
     cons: ["Newer brand", "Limited track record"],
@@ -172,11 +166,8 @@ export default function BestCasseroleDishes2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

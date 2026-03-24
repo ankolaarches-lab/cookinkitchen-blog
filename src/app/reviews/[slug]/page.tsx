@@ -1,25 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import Image from "next/image";
 import ComparisonTable from "@/components/ComparisonTable";
 import ProsCons from "@/components/ProsCons";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import RelatedContent from "@/components/RelatedContent";
 import AuthorBio from "@/components/AuthorBio";
 import Breadcrumbs from "@/components/Breadcrumbs";
-
-const categoryImages: Record<string, string> = {
-  "Kitchen Utensils": "/images/kitchen/1.jpg",
-  "Knives": "/images/kitchen/2.jpg",
-  "Cookware": "/images/kitchen/3.jpg",
-  "Appliances": "/images/kitchen/4.jpg",
-  "Gadgets": "/images/kitchen/5.jpg",
-};
-
-const getImageUrl = (category: string): string => {
-  return categoryImages[category] || "/images/kitchen/6.jpg";
-};
 
 const reviews = [
   {
@@ -29,7 +16,6 @@ const reviews = [
     category: "Appliances",
     rating: 4.5,
     date: "Mar 20, 2026",
-    image: "/images/kitchen/8.jpg",
     affiliateLink: "https://www.amazon.com/Hamilton-Beach-Breakfast-Sandwich-Maker/dp/B07YJ4YB1G?tag=cookinkitchen-20",
     content: `
 ## The Best Breakfast Sandwich Makers for 2026
@@ -107,7 +93,6 @@ If you're willing to spend more for versatility and don't mind a larger applianc
     category: "Appliances",
     rating: 4.4,
     date: "Mar 12, 2026",
-    image: "/images/kitchen/4.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20",
     content: `
 ## The Slow Cooker Showdown
@@ -181,7 +166,6 @@ Get the Instant Pot if you want one appliance. Get both if you take slow cooking
     category: "Kitchen Utensils",
     rating: 4.6,
     date: "Feb 16, 2026",
-    image: "/images/kitchen/7.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20",
     content: `
 ## The Essential Toolkit
@@ -227,13 +211,7 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     category: "Knives",
     rating: 4.8,
     date: "Feb 10, 2026",
-    image: "/images/kitchen/8.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=cookinkitchen-20",
-    tableImages: [
-      "/images/kitchen/9.jpg", // Miyabi
-      "/images/kitchen/10.jpg", // Victorinox
-      "/images/kitchen/11.jpg"  // Premium
-    ],
     content: `
 ## The Search for the Perfect Blade
 
@@ -262,7 +240,6 @@ For those on a budget, the Victorinox Swiss Classic offers incredible value. It'
     category: "Cookware",
     rating: 4.5,
     date: "Feb 8, 2026",
-    image: "/images/kitchen/1.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Skillet+12+inch&tag=cookinkitchen-20",
     content: `
 ## The Showdown
@@ -292,7 +269,6 @@ For most home cooks, carbon steel offers the best balance of performance and usa
     category: "Appliances",
     rating: 4.3,
     date: "Feb 5, 2026",
-    image: "/images/kitchen/2.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20",
     content: `
 ## Multicooker Madness
@@ -322,7 +298,6 @@ For traditional pressure cooking, the Instant Pot wins. For versatility and air-
     category: "Appliances",
     rating: 4.7,
     date: "Feb 2, 2026",
-    image: "/images/kitchen/3.jpg",
     affiliateLink: "https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=cookinkitchen-20",
     content: `
 ## Mixing It Up
@@ -352,7 +327,6 @@ The KitchenAid Artisan remains the gold standard, but the Cuisinart offers excel
     category: "Cookware",
     rating: 4.6,
     date: "Jan 28, 2026",
-    image: "/images/kitchen/4.jpg",
     affiliateLink: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+Dishwasher&tag=cookinkitchen-20",
     content: `
 ## The Great Egg Test
@@ -385,13 +359,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     category: "Cookware",
     rating: 4.9,
     date: "Jan 25, 2026",
-    image: "/images/kitchen/5.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Lodge+5+Quart+Cast+Iron+Dutch&tag=cookinkitchen-20",
-    tableImages: [
-      "/images/kitchen/6.jpg", // Le Creuset
-      "/images/kitchen/7.jpg", // Lodge
-      "/images/kitchen/8.jpg"  // Amazon
-    ],
     content: `
 ## The Braising Champion
 
@@ -426,7 +394,6 @@ If you bake bread, the Le Creuset's weight is essential. For everyday cooking, L
     category: "Knives",
     rating: 4.7,
     date: "Mar 3, 2026",
-    image: "/images/kitchen/9.jpg",
     affiliateLink: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20",
     content: `
 ## Protect Your Investment
@@ -466,7 +433,6 @@ Maximum space-saving with an expandable design that fits in any drawer.
     category: "Gadgets",
     rating: 4.4,
     date: "Jan 20, 2026",
-    image: "/images/kitchen/10.jpg",
     affiliateLink: "https://www.amazon.com/s?k=OXO+Stainless+Compact+Grip+11+Pound&tag=cookinkitchen-20",
     content: `
 ## Why You Need a Scale
@@ -496,7 +462,6 @@ The OXO Pop Scale balances precision, design, and price perfectly for home baker
     category: "Gadgets",
     rating: 4.5,
     date: "Jan 15, 2026",
-    image: "/images/kitchen/11.jpg",
     affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Cutting+17+Inch&tag=cookinkitchen-20",
     content: `
 ## The Board Basics
@@ -526,7 +491,6 @@ We recommend having both: a large wood board for vegetables and a dedicated plas
     category: "Knives",
     rating: 4.7,
     date: "Jan 12, 2026",
-    image: "/images/kitchen/1.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Shun+DM0706+Classic+7+Inch+Santoku&tag=cookinkitchen-20",
     content: `
 ## Japanese Precision
@@ -555,7 +519,6 @@ Victorinox delivers again with an affordable option that outperforms knives twic
     category: "Appliances",
     rating: 4.5,
     date: "Jan 10, 2026",
-    image: "/images/kitchen/2.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Ninja+BL610+Professional+72+Watt+Blender&tag=cookinkitchen-20",
     content: `
 ## The Blender Showdown
@@ -582,7 +545,6 @@ The Oster Pro's blender bottle system makes on-the-go smoothies a breeze.
     category: "Appliances",
     rating: 4.6,
     date: "Jan 8, 2026",
-    image: "/images/kitchen/3.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Technivorm+Moccamaster+10+Cup+Coffee+Brewer&tag=cookinkitchen-20",
     content: `
 ## Brewing Excellence
@@ -609,7 +571,6 @@ Great coffee doesn't have to be expensive. This brewer delivers solid results.
     category: "Appliances",
     rating: 4.4,
     date: "Jan 5, 2026",
-    image: "/images/kitchen/4.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=cookinkitchen-20",
     content: `
 ## Crispy Without the Oil
@@ -642,7 +603,6 @@ Affordable and reliable, Cosori offers great results without breaking the bank.
     category: "Gadgets",
     rating: 4.3,
     date: "Jan 3, 2026",
-    image: "/images/kitchen/5.jpg",
     affiliateLink: "https://www.amazon.com/s?k=ChefsChoice+15+Inch+Conventional+Sharpener&tag=cookinkitchen-20",
     content: `
 ## Keep Your Blades Sharp
@@ -669,7 +629,6 @@ Affordable and effective for quick touch-ups between full sharpenings.
     category: "Gadgets",
     rating: 4.2,
     date: "Jan 1, 2026",
-    image: "/images/kitchen/6.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Cuisinox+Stainless+Steel+Strainer&tag=cookinkitchen-20",
     content: `
 ## Essential Kitchen Tools
@@ -696,7 +655,6 @@ Multiple sizes cover all your straining needs.
     category: "Gadgets",
     rating: 4.4,
     date: "Dec 28, 2025",
-    image: "/images/kitchen/7.jpg",
     affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Measuring+Cups&tag=cookinkitchen-20",
     content: `
 ## Measure Right
@@ -723,7 +681,6 @@ Everything you need in one comprehensive set.
     category: "Gadgets",
     rating: 4.5,
     date: "Dec 25, 2025",
-    image: "/images/kitchen/8.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Spatula+Set+Utensil&tag=cookinkitchen-20",
     content: `
 ## Essential Tools
@@ -750,7 +707,6 @@ This set includes everything you need and lasts forever.
     category: "Cookware",
     rating: 4.7,
     date: "Dec 22, 2025",
-    image: "/images/kitchen/9.jpg",
     affiliateLink: "https://www.amazon.com/s?k=All+Clad+Stainless+Tri+Ply+Cookware&tag=cookinkitchen-20",
     content: `
 ## The All-Clad Showdown
@@ -777,7 +733,6 @@ Great non-stick performance with the durability of hard anodized aluminum.
     category: "Appliances",
     rating: 4.5,
     date: "Dec 20, 2025",
-    image: "/images/kitchen/10.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Bonavita+Electric+Gooseneck+Kettle&tag=cookinkitchen-20",
     content: `
 ## Hot Water on Demand
@@ -819,7 +774,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: review.date,
       images: [
         {
-          url: review.image || "https://cookinkitchen.online/images/og-image.jpg",
+          url: "https://cookinkitchen.online/images/og-image.jpg",
           alt: review.title,
         },
       ],
@@ -847,7 +802,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     "@type": "Product",
     "name": review.title.split(":")[0].trim(),
     "description": review.excerpt,
-    "image": review.image,
+    "image": "https://cookinkitchen.online/images/og-image.jpg",
     "review": {
       "@type": "Review",
       "reviewRating": {
@@ -887,18 +842,6 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <span className="font-lato text-emerald-500 font-bold">★ {review.rating}</span>
             <span className="font-lato text-stone-400 text-sm">{review.date}</span>
           </div>
-
-          <div className="relative rounded-2xl overflow-hidden mb-8 shadow-lg h-64 md:h-96 w-full">
-            <Image
-              src={review.image || getImageUrl(review.category)}
-              alt={review.title}
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 800px"
-            />
-          </div>
-
           {/* Author Byline & Affiliate Disclosure */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 py-4 border-y border-stone-200 mb-8">
             <div className="flex items-center gap-3">
@@ -926,7 +869,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <ComparisonTable items={[
             {
               name: "Top Recommended Option",
-              image: review.tableImages?.[0] || review.image || getImageUrl(review.category),
+              image: "/images/reviews/hero-kitchen.jpg",
               badge: "Editor's Choice",
               rating: 4.9,
               price: "$$",
@@ -935,7 +878,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Best Value Option",
-              image: review.tableImages?.[1] || review.image || getImageUrl(review.category),
+              image: "/images/reviews/hero-kitchen.jpg",
               badge: "Best Value",
               rating: 4.7,
               price: "$",
@@ -944,7 +887,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Premium Option",
-              image: review.tableImages?.[2] || review.image || getImageUrl(review.category),
+              image: "/images/reviews/hero-kitchen.jpg",
               badge: "Premium Pick",
               rating: 4.8,
               price: "$$$",
@@ -1044,7 +987,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             .map(r => ({
               title: r.title,
               href: `/reviews/${r.slug}`,
-              image: getImageUrl(r.category),
+              image: "/images/reviews/hero-kitchen.jpg",
               category: r.category
             }))
           }

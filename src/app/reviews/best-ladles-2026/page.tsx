@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips Stainless Steel Ladle",
     price: "$16.95",
     rating: 4.8,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/OXO-Good-Grips-Stainless-Ladle/dp/B000YLDPQ4?tag=cookinkitchen-20",
     pros: ["Comfortable non-slip handle", "Dishwasher safe", "Mirror finish stainless steel", "Perfect capacity for soups"],
     cons: ["Handle can get hot near stovetop"],
@@ -21,7 +20,6 @@ const products = [
     name: "Tovolo Flex Core Silicone Ladle",
     price: "$14.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/Tovolo-Flex-Core-Silicone-Ladle/dp/B01N2PMGYS?tag=cookinkitchen-20",
     pros: ["Heat resistant up to 500°F", "Non-scratch for nonstick", "Precision pour lip", "BPA free"],
     cons: ["Not for heavy-duty use"],
@@ -30,7 +28,6 @@ const products = [
     name: "Fissler Essential Soup Ladle",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/Fissler-Essential-Stainless-Ladle/dp/B07YDXW1G3?tag=cookinkitchen-20",
     pros: ["18/10 stainless steel", "Ergonomic handle", "Professional quality", "Dishwasher safe"],
     cons: ["Premium price"],
@@ -39,7 +36,6 @@ const products = [
     name: "Stainless Steel Ladle with Wooden Handle",
     price: "$12.99",
     rating: 4.5,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Stainless-Steel-Ladle-Wooden-Handle/dp/B08J5K3ZKL?tag=cookinkitchen-20",
     pros: ["Heat-resistant wooden handle", "Durable stainless bowl", "Great for wok cooking"],
     cons: ["Hand wash recommended"],
@@ -48,7 +44,6 @@ const products = [
     name: "KitchenAid Classic Basting Spoon",
     price: "$8.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/KitchenAid-Classic-Basting-Spoon/dp/B000KPDQ3E?tag=cookinkitchen-20",
     pros: ["Affordable", "Deep bowl for sauces", "Stainless steel", "Dishwasher safe"],
     cons: ["Not a traditional ladle shape"],
@@ -69,12 +64,7 @@ export default function BestLadles2026() {
           </div>
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img 
-              src="/images/kitchen/3.jpg" 
-              alt="Best Ladles 2026" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
+</div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">Best Ladles 2026: Complete Guide</h1>
           <p className="font-lato text-xl text-stone-600 mb-8">A good ladle is essential for serving soups, stews, sauces, and gravies with precision. We tested the top ladles for every kitchen.</p>
@@ -104,11 +94,11 @@ export default function BestLadles2026() {
             <h2 className="font-playfair text-2xl text-stone-800 mb-6">Top Rated Ladles</h2>
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
+                <div>
                   <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center">
                     <span className="text-3xl">🥄</span>
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

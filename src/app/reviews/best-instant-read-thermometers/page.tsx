@@ -12,7 +12,6 @@ const products = [
     name: "ThermoWorks ThermoPop 2",
     price: "$49.95",
     rating: 4.9,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=ThermoWorks+ThermoPop+2+Thermometer&tag=cookinkitchen-20",
     pros: ["2-second read", "Waterproof", "Backlight", "Auto-rotating display", "Lifetime warranty"],
     cons: ["No probe storage"],
@@ -21,7 +20,6 @@ const products = [
     name: "ThermoWorks ChefAlarm",
     price: "$79.95",
     rating: 4.8,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=ThermoWorks+ChefAlarm+Cooking+Thermometer&tag=cookinkitchen-20",
     pros: ["Count-up timer", "High/low alarm", "Big display", "Kitchen-ready", "Professional grade"],
     cons: ["More expensive"],
@@ -30,7 +28,6 @@ const products = [
     name: "Kizen Instant Read Thermometer",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Kizen+Instant+Read+Thermometer+Waterproof&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Fast 2-3 second read", "Auto-off", "Celsius/Fahrenheit"],
     cons: ["Less durable"],
@@ -39,7 +36,6 @@ const products = [
     name: "Polder Digital Instant Read",
     price: "$19.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Polder+Digital+Instant+Thermometer&tag=cookinkitchen-20",
     pros: ["Magnetic back", "Foldable", "Budget option"],
     cons: ["Slower reading"],
@@ -70,10 +66,7 @@ export default function BestInstantReadThermometers() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 rounded-lg flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

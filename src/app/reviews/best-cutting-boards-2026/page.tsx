@@ -12,7 +12,6 @@ const products = [
     name: "Joseph Joseph Tri-Prep Cutting Board",
     price: "$24.99",
     rating: 4.8,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Joseph+Joseph+Tri+Prep+Cutting+Board&tag=cookinkitchen-20",
     pros: ["3 different sizes", "Non-slip edges", "Juice grooves", "Dishwasher safe"],
     cons: ["Plastic material"],
@@ -21,7 +20,6 @@ const products = [
     name: "OXO Good Grips 3-Piece Cutting Board Set",
     price: "$29.99",
     rating: 4.7,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Cutting&tag=cookinkitchen-20",
     pros: ["Color coded", "Non-slip grips", "BPA-free plastic", "Dishwasher safe"],
     cons: ["Can warp over time"],
@@ -30,7 +28,6 @@ const products = [
     name: "Teakhaus by Proteak End-Grain Cutting Board",
     price: "$89.99",
     rating: 4.9,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Teakhaus+Proteak+End+Grain+Cutting&tag=cookinkitchen-20",
     pros: ["End-grain construction", "Self-healing", "FDA approved", "Beautiful wood grain"],
     cons: ["Premium price", "Requires oiling"],
@@ -39,7 +36,6 @@ const products = [
     name: "John Boos Maple Wood Cutting Board",
     price: "$79.99",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=John+Boos+Blended+Maple+18+Inch&tag=cookinkitchen-20",
     pros: ["Professional grade", "Reversible", "Rubber feet", "Made in USA"],
     cons: ["Heavy", "Needs regular oiling"],
@@ -48,7 +44,6 @@ const products = [
     name: "Totally Bamboo Kitchen Board Set",
     price: "$34.99",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Totally+Bamboo+Kitchen+3+Piece+Set&tag=cookinkitchen-20",
     pros: ["Eco-friendly bamboo", "3 sizes", "Stain resistant", "Affordable"],
     cons: ["Not for heavy duty"],
@@ -96,14 +91,7 @@ export default function BestCuttingBoards2026() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

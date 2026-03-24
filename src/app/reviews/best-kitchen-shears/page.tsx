@@ -12,7 +12,6 @@ const products = [
     name: "Dreamfarm Scizza Kitchen Shears",
     price: "$19.99",
     rating: 4.9,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Dreamfarm+Scizza+Kitchen+Shears&tag=cookinkitchen-20",
     pros: ["Spring-loaded", "Herb stripper", "Comfortable grip", "Dishwasher safe"],
     cons: ["Not for heavy-duty"],
@@ -21,7 +20,6 @@ const products = [
     name: "OXO Good Grips Kitchen Shears",
     price: "$14.99",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Kitchen+Shears&tag=cookinkitchen-20",
     pros: ["Stainless steel", "Soft grips", "Parmesan blade", "Dishwasher safe"],
     cons: ["Not as sharp"],
@@ -30,7 +28,6 @@ const products = [
     name: "KitchenAid Multi-Purpose Shears",
     price: "$12.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Stainless+Multi+Purpose+Shears&tag=cookinkitchen-20",
     pros: ["Built-in bottle opener", "Micro-serrated", "Budget-friendly"],
     cons: ["Hand wash recommended"],
@@ -39,7 +36,6 @@ const products = [
     name: "Wüsthof Kitchen Shears",
     price: "$34.95",
     rating: 4.8,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Wusthof+Kitchen+Shears+9+Inch&tag=cookinkitchen-20",
     pros: ["Professional quality", "Surgical sharpness", "Durable", "Lifetime warranty"],
     cons: ["Premium price"],
@@ -70,10 +66,7 @@ export default function BestKitchenShears() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 bg-stone-100 rounded-lg flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

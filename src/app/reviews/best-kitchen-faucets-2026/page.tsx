@@ -20,7 +20,6 @@ const products = [
     name: "Moen Arbor Pull-Down Kitchen Faucet",
     price: "$249.00",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Moen+Arbor+Pull+Down+Kitchen+Faucet&tag=cookinkitchen-20",
     pros: ["Power Clean spray technology", "Reflex dock system", "Spot Resist finish resists fingerprints", "Lifetime warranty"],
     cons: ["Higher price point", "Requires professional installation for some"],
@@ -29,7 +28,6 @@ const products = [
     name: "Delta Faucet Leland Pull-Down Kitchen Faucet",
     price: "$229.00",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Delta+Faucet+Leland+Pull+Down+Kitchen&tag=cookinkitchen-20",
     pros: ["Touch technology activation", "MagnaTite docking keeps spray head in place", "Shield Water technology", "Available in multiple finishes"],
     cons: ["Touch can be sensitive to water splashes"],
@@ -38,7 +36,6 @@ const products = [
     name: "Kohler Simplice Pull-Down Kitchen Faucet",
     price: "$279.00",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Kohler+Simplice+Pull+Down+Kitchen+Faucet&tag=cookinkitchen-20",
     pros: ["ProMotion technology for quiet operation", "MasterClean spray face", "Premium ceramic disc valves", "Sleek modern design"],
     cons: ["Premium pricing", "Limited color options"],
@@ -47,7 +44,6 @@ const products = [
     name: "American Standard Pull-Down Kitchen Faucet",
     price: "$159.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=American+Standard+Pull+Down+Kitchen+Faucet&tag=cookinkitchen-20",
     pros: ["Affordable premium option", "Two-function spray head", "Lead-free construction", "Easy deck mounting"],
     cons: ["Fewer features than competitors"],
@@ -56,7 +52,6 @@ const products = [
     name: "WEWE Single Handle Pull-Down Kitchen Faucet",
     price: "$79.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=WEWE+Single+Handle+Pull+Down+Kitchen&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Three spray modes", "Easy DIY installation", "Brushed nickel finish"],
     cons: ["Shorter warranty", "Less durable materials"],
@@ -65,7 +60,6 @@ const products = [
     name: "Kohler Karbon Pull-Down Kitchen Faucet",
     price: "$549.00",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Kohler+Karbon+Pull+Down+Kitchen+Faucet&tag=cookinkitchen-20",
     pros: ["Articulating arm for ultimate reach", "Unique contemporary design", "Variable positioning", "Premium materials"],
     cons: ["Very high price", "Complex installation"],
@@ -121,13 +115,8 @@ export default function BestKitchenFaucets2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Stainless Steel Mixing Bowl Set",
     price: "$29.99",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Seasoning&tag=cookinkitchen-20",
     pros: ["Push button", "One-handed use", "Stainless steel", "Affordable"],
     cons: ["Acrylic not glass", "Can dent"],
@@ -21,7 +20,6 @@ const products = [
     name: "Pyrex Glass Mixing Bowl Set",
     price: "$34.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Pyrex+Storage+Mixing+3+Piece+Bowl&tag=cookinkitchen-20",
     pros: ["Microwave safe", "Dishwasher safe", "No staining", "Glass is non-reactive"],
     cons: ["Heavy", "Can break"],
@@ -30,7 +28,6 @@ const products = [
     name: "Chef'n Veggie Chop Bowl",
     price: "$24.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Chef+n+Veggie+Chop+Bowl&tag=cookinkitchen-20",
     pros: ["Built-in chopper", "Space saving", "Fun colors", "2-in-1 function"],
     cons: ["Not for large batches", "Plastic"],
@@ -58,10 +55,7 @@ export default function BestMixingBowls2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

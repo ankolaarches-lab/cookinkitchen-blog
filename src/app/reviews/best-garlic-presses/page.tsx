@@ -12,7 +12,6 @@ const products = [
     name: "Kuhn Rikon Garlic Press",
     price: "$29.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Kuhn+Rikon+2951+Garlic+Press&tag=cookinkitchen-20",
     pros: ["Self-cleaning", "Heavy duty", "Squeezes whole cloves", "Stainless steel"],
     cons: ["Premium price"],
@@ -21,7 +20,6 @@ const products = [
     name: "OXO Good Grips Garlic Press",
     price: "$19.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Garlic+Press&tag=cookinkitchen-20",
     pros: ["Built-in cleaner", "Comfortable", "Peels and presses", "Dishwasher safe"],
     cons: ["May need to peel"],
@@ -49,10 +47,7 @@ export default function BestGarlicPresses2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

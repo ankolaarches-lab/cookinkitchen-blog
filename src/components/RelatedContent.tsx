@@ -5,7 +5,7 @@ import Link from 'next/link';
 export interface RelatedArticle {
     title: string;
     href: string;
-    image: string;
+    image?: string;
     category: string;
 }
 
@@ -29,6 +29,7 @@ export default function RelatedContent({ articles, title = "You Might Also Like"
                         href={article.href}
                         className="group glass-premium bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
                     >
+                        {article.image && (
                         <div className="relative h-40 bg-slate-100 overflow-hidden">
                             <Image
                                 src={article.image}
@@ -41,6 +42,14 @@ export default function RelatedContent({ articles, title = "You Might Also Like"
                                 {article.category}
                             </span>
                         </div>
+                        )}
+                        {!article.image && (
+                        <div className="relative h-40 bg-slate-100 overflow-hidden flex items-center justify-center">
+                            <span className="bg-emerald-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-sm uppercase tracking-wider shadow-md">
+                                {article.category}
+                            </span>
+                        </div>
+                        )}
                         <div className="p-5 flex flex-col flex-grow">
                             <h4 className="font-serif text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-2 leading-snug">
                                 {article.title}

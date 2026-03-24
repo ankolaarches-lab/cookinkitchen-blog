@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips Measuring Cups",
     price: "$19.99",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Measuring+Cups&tag=cookinkitchen-20",
     pros: ["Stainless steel", "Nested set", "Magnetic", "Dishwasher safe"],
     cons: ["No half cup in set"],
@@ -21,7 +20,6 @@ const products = [
     name: "Pyrex Glass Measuring Cup Set",
     price: "$19.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Pyrex+Glass+Measuring+Cups+3+Piece&tag=cookinkitchen-20",
     pros: ["Microwave safe", "Dishwasher safe", "No staining", "Multiple sizes"],
     cons: ["Can break"],
@@ -49,10 +47,7 @@ export default function BestMeasuringCups2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips Balloon Whisk",
     price: "$12.99",
     rating: 4.8,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Balloon+Whisk&tag=cookinkitchen-20",
     pros: ["Comfortable grip", "Stainless steel wires", "Dishwasher safe"],
     cons: ["Some users report wire bending"],
@@ -21,7 +20,6 @@ const products = [
     name: "KitchenAid Classic Whisk",
     price: "$9.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Classic+Whisk&tag=cookinkitchen-20",
     pros: ["Affordable", "Durable", "Classic design"],
     cons: ["No ergonomic grip"],
@@ -30,7 +28,6 @@ const products = [
     name: "Stainless Steel French Whisk",
     price: "$14.99",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=French+Whisk+Stainless+Steel&tag=cookinkitchen-20",
     pros: ["Perfect for sauces", "Slim profile", "Professional grade"],
     cons: ["Not for large batches"],
@@ -39,7 +36,6 @@ const products = [
     name: "Spring Chef Balloon Whisk",
     price: "$11.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Spring+Chef+Balloon+Whisk&tag=cookinkitchen-20",
     pros: ["Great value", "Loops don't come loose", "Comfortable handle"],
     cons: ["May stain with strong foods"],
@@ -48,7 +44,6 @@ const products = [
     name: "Balineseo Silicone Whisk Set",
     price: "$15.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Silicone+Whisk+Set&tag=cookinkitchen-20",
     pros: ["Heat resistant", "Non-scratch", "Set of 3 sizes"],
     cons: ["Not as airy as balloon"],
@@ -57,7 +52,6 @@ const products = [
     name: "Rachael Ray Nonstick Whisk Set",
     price: "$12.99",
     rating: 4.5,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Rachael+Ray+Whisk+Set&tag=cookinkitchen-20",
     pros: ["Nylon heads safe for nonstick", "Colorful handles", "Set of 2"],
     cons: ["Not stainless steel"],
@@ -118,11 +112,8 @@ export default function BestWhisks2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Nordic Ware Natural Aluminum Commercial Baker's Half Sheet",
     price: "$24.99",
     rating: 4.9,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Aluminum+Commercial+Bakers+Half+Sheet&tag=cookinkitchen-20",
     pros: ["Excellent heat distribution", "Heavy-duty construction", "Fits standard half sheet pans"],
     cons: ["No crossbar support"],
@@ -21,7 +20,6 @@ const products = [
     name: "Wilton Premium Cool Set",
     price: "$18.97",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Wilton+Premium+Cool+Set+3+Piece&tag=cookinkitchen-20",
     pros: ["3 sizes included", "Non-stick coating", "Great value"],
     cons: ["Smaller sizing"],
@@ -30,7 +28,6 @@ const products = [
     name: "USA Pan Bakeware Half Sheet Non-Stick Cooling Rack",
     price: "$29.99",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=USA+Pan+Bakeware+Half+Sheet+Non+Stick+Cooling+Rack&tag=cookinkitchen-20",
     pros: ["Non-stick coating", "FDA approved", "Industrial strength"],
     cons: ["Pricey"],
@@ -39,7 +36,6 @@ const products = [
     name: "Cooling Rack by Great Premium - Heavy Duty Square Wire Rack",
     price: "$15.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Cooling+Rack+Great+Premium+Heavy+Duty+Square+Wire+Rack&tag=cookinkitchen-20",
     pros: ["12x12 inch size", "Chrome plated", "Affordable"],
     cons: ["May discolor over time"],
@@ -48,7 +44,6 @@ const products = [
     name: "Amazon Basics Non-Stick Wire Cooling Rack",
     price: "$12.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Non+Stick+Wire+Cooling+Rack&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Non-stick coating", "Dishwasher safe"],
     cons: ["Smaller than standard"],
@@ -101,11 +96,8 @@ export default function BestCoolingRacks2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

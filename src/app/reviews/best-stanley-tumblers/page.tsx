@@ -13,7 +13,6 @@ const products = [
     price: "$35.00",
     rating: 4.7,
     reviews: "87,956",
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=STANLEY+Flowstate+3+Position+Compatible+Insulated&tag=cookinkitchen-20",
     pros: ["30 oz capacity", "Handle for easy carrying", "Flowstate lid", "Fits most cup holders"],
     cons: ["Hand wash recommended"],
@@ -23,7 +22,6 @@ const products = [
     price: "$33.75",
     rating: 4.7,
     reviews: "14,494",
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=STANLEY+Quencher+ProTour+Tumbler+Sunrise&tag=cookinkitchen-20",
     pros: ["Flip straw design", "Built-in straw", "Leakproof", "Great colors"],
     cons: ["Straw can be hard to clean"],
@@ -33,7 +31,6 @@ const products = [
     price: "$38.00",
     rating: 4.8,
     reviews: "34,567",
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Stanley+Classic+Vacuum+Bottle+Hammertone&tag=cookinkitchen-20",
     pros: ["40 oz capacity", "Wide mouth", "Great for hiking", "Lifetime warranty"],
     cons: ["No handle"],
@@ -43,7 +40,6 @@ const products = [
     price: "$18.00",
     rating: 4.5,
     reviews: "8,234",
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=STANLEY+Adventure+Quencher+Tumbler+14oz&tag=cookinkitchen-20",
     pros: ["Compact size", "Perfect for coffee", "Durable", "Affordable"],
     cons: ["Smaller capacity"],
@@ -53,7 +49,6 @@ const products = [
     price: "$24.00",
     rating: 4.6,
     reviews: "12,876",
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=STANLEY+GoSeries+Water+Bottle+18oz&tag=cookinkitchen-20",
     pros: ["Compact and portable", "Leakproof", "Carabiner compatible", "Great for travel"],
     cons: ["Smaller than others"],
@@ -85,10 +80,7 @@ export default function BestStanleyTumblers() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips Mandoline",
     price: "$34.99",
     rating: 4.8,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Mandoline+Slicer&tag=cookinkitchen-20",
     pros: ["Adjustable thickness", "Safety holder", "Multiple cuts", "Dishwasher safe"],
     cons: ["Hand wash recommended"],
@@ -21,7 +20,6 @@ const products = [
     name: "Benriner Japanese Mandoline",
     price: "$27.95",
     rating: 4.7,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Benriner+High+Performance+Slicer+BR+8&tag=cookinkitchen-20",
     pros: ["Super sharp", "Japanese quality", "Lightweight", "Affordable"],
     cons: ["No safety holder"],
@@ -49,10 +47,7 @@ export default function BestMandolines2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

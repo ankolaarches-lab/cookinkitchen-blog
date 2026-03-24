@@ -12,7 +12,6 @@ const products = [
     name: "Crock-Pot 7-Quart Slow Cooker",
     price: "$44.99",
     rating: 4.7,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Crock+Pot+SSC7+6+Quart+Manual&tag=cookinkitchen-20",
     pros: ["Simple controls", "Large capacity", "Affordable", "Keep warm function"],
     cons: ["Manual only", "No programmable options"],
@@ -21,7 +20,6 @@ const products = [
     name: "Instant Pot Duo Crisp",
     price: "$119.95",
     rating: 4.8,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Crisp&tag=cookinkitchen-20",
     pros: ["Pressure & slow cook", "Air fry lid", "11 functions", "Programmable"],
     cons: ["More expensive", "Learning curve"],
@@ -30,7 +28,6 @@ const products = [
     name: "Hamilton Beach Slow Cooker",
     price: "$34.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+33865+Slow+Cooker&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Clip-tight lid", "3 settings", "Compact"],
     cons: ["Smaller capacity", "Basic features"],
@@ -58,10 +55,7 @@ export default function BestSlowCookers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

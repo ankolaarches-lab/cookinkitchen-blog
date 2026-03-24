@@ -13,7 +13,6 @@ const products = [
     price: "$16.99",
     rating: 4.6,
     reviews: "134,452",
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=DASH+Rapid+Egg+Cooker+Scrambled&tag=cookinkitchen-20",
     pros: ["Holds up to 7 eggs", "Multiple cooking modes", "Auto shutoff", "Easy to clean"],
     cons: ["Steamer basket not included"],
@@ -23,7 +22,6 @@ const products = [
     price: "$24.99",
     rating: 4.4,
     reviews: "45,678",
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Chefman+Electric+Egg+Countertop+Removable&tag=cookinkitchen-20",
     pros: ["Includes poaching tray", "Timer included", "Clear lid", "Dishwasher safe"],
     cons: ["Plastic smell at first"],
@@ -33,7 +31,6 @@ const products = [
     price: "$29.95",
     rating: 4.5,
     reviews: "28,934",
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+CEC+7+Egg+Cooker&tag=cookinkitchen-20",
     pros: ["7-egg capacity", "Auto shutoff", "Measuring cup included", "Long cord"],
     cons: ["No timer sound"],
@@ -43,7 +40,6 @@ const products = [
     price: "$24.95",
     rating: 4.3,
     reviews: "8,456",
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Nordic+Ware+7+Egg+Breaky+Cooker&tag=cookinkitchen-20",
     pros: ["Stovetop compatible", "Makes 7 eggs at once", "Durable aluminum", "Affordable"],
     cons: ["Requires stovetop"],
@@ -53,7 +49,6 @@ const products = [
     price: "$19.99",
     rating: 4.4,
     reviews: "32,156",
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Mueller+Egg+Cooker+Steamer+Poacher&tag=cookinkitchen-20",
     pros: ["6-egg capacity", "Poaching tray", "Steamer basket", "Easy cleanup"],
     cons: ["Small measuring cup"],
@@ -85,10 +80,7 @@ export default function BestEggCookers() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

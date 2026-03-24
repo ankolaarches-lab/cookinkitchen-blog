@@ -19,7 +19,6 @@ const products = [
     name: "Le Creuset Enameled Cast Iron Dutch Oven, 5.5 Qt",
     price: "$379.95",
     rating: 4.9,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Le+Creuset+Enameled+5+5+Quart+Signature&tag=cookinkitchen-20",
     pros: ["Exceptional heat retention", "Beautiful colors available", "Enameled interior resists staining", "Lifetime warranty", "Oven-safe to 500°F"],
     cons: ["Premium price", "Heavy (10+ lbs)", "Requires careful handling to avoid chipping"],
@@ -28,7 +27,6 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven, 6 Qt",
     price: "$99.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Enameled+Cast+6+Quart+EC6D33&tag=cookinkitchen-20",
     pros: ["Excellent value", "Great heat distribution", "Dishwasher safe", "Wide color selection", "Made in USA"],
     cons: ["Not as refined as premium brands", "Can stain with certain foods"],
@@ -37,7 +35,6 @@ const products = [
     name: "Staub Enameled Cast Iron Dutch Oven, 5.5 Qt",
     price: "$329.00",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Staub+Enameled+5+5+Quart+Cocotte&tag=cookinkitchen-20",
     pros: ["Self-basting lid", "Black matte enamel interior", "Excellent browning", "Beautiful craftsmanship", "Great for braising"],
     cons: ["Expensive", "Heavy", "Matte interior requires seasoning"],
@@ -46,7 +43,6 @@ const products = [
     name: "Amazon Basics Enameled Cast Iron Dutch Oven, 5.5 Qt",
     price: "$54.99",
     rating: 4.4,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Cast+Dutch&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Good basic performance", "Lightweight for size", "Easy to clean"],
     cons: ["Lower heat retention", "Limited color options", "Not as durable long-term"],
@@ -55,7 +51,6 @@ const products = [
     name: "Lodge Pre-Seasoned Cast Iron Dutch Oven, 6 Qt",
     price: "$69.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Pre+Seasoned+Cast+Iron+Dutch&tag=cookinkitchen-20",
     pros: ["Natural nonstick seasoning", "Most affordable option", "Incredibly durable", "Versatile for baking bread", "No enamel to chip"],
     cons: ["Requires seasoning maintenance", "Can rust if not properly cared for", "Not dishwasher safe"],
@@ -64,7 +59,6 @@ const products = [
     name: "Cuisinart Enameled Cast Iron Dutch Oven, 5.5 Qt",
     price: "$89.99",
     rating: 4.5,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Enameled+Cast+5+5+Quart&tag=cookinkitchen-20",
     pros: ["Affordable", "Good heat distribution", "Oven-safe", "Comfortable handles"],
     cons: ["Smaller handles", "Less-known brand reputation", "Mixed reviews on durability"],
@@ -119,13 +113,8 @@ export default function BestDutchOvens2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Nordic Ware Natural Aluminum",
     price: "$14.95",
     rating: 4.9,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Baker&tag=cookinkitchen-20",
     pros: ["Excellent heat distribution", "USA made", "Durable", "Affordable"],
     cons: ["Not nonstick"],
@@ -21,7 +20,6 @@ const products = [
     name: "USA Pan Bakeware",
     price: "$18.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=USA+Pan+Bakeware+Half+Sheet&tag=cookinkitchen-20",
     pros: ["Nonstick coating", "Professional grade", "Heavy duty", "Made in USA"],
     cons: ["May warp"],
@@ -49,10 +47,7 @@ export default function BestCookieSheets2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

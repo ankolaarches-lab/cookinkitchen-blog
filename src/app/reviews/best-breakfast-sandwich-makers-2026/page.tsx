@@ -12,7 +12,6 @@ const products = [
     name: "Hamilton Beach Breakfast Sandwich Maker",
     price: "$39.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/Hamilton-Beach-Breakfast-Sandwich-Maker/dp/B07YJ4YB1G?tag=cookinkitchen-20",
     pros: ["Quick 4-minute cooking time", "Compact storage", "Easy to clean", "Makes 1 sandwich at a time"],
     cons: ["Single sandwich capacity", "No timer or auto shutoff"],
@@ -21,7 +20,6 @@ const products = [
     name: "Eureka Mignon Coffee and Espresso Grinder - Not exactly a breakfast sandwich maker, but great for coffee", 
     price: "$269.00",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/Eureka-Mignon-Coffee-Espresso-Grinder/dp/B0CZJY1Q8G?tag=cookinkitchen-20",
     pros: ["Excellent grind consistency", "Quiet operation", "Digital display", "Multiple grind settings"],
     cons: ["Expensive", "Not a breakfast sandwich maker"],
@@ -30,7 +28,6 @@ const products = [
     name: "Breville Toast & Bagel Maker",
     price: "$149.95",
     rating: 4.5,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/Breville-BOV650XL-Toast-Bagel-Maker/dp/B003N2K1IC?tag=cookinkitchen-20",
     pros: ["Excellent toasting performance", "Multiple settings", "Long slot design", "Aesthetically pleasing"],
     cons: ["Higher price point", "Not specifically for sandwiches"],
@@ -39,7 +36,6 @@ const products = [
     name: "Cuisinart 4-Slice Toaster Oven",
     price: "$89.99",
     rating: 4.4,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/Cuisinart-TOB-135P1-4-Slice-Toaster/dp/B08J6F3V6M?tag=cookinkitchen-20",
     pros: ["Versatile cooking options", "Large capacity", "Multiple functions", "Affordable"],
     cons: ["Takes up counter space", "Longer preheat time"],
@@ -48,7 +44,6 @@ const products = [
     name: "Black+Decker 3-in-1 Breakfast Station",
     price: "$59.99",
     rating: 4.3,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Black-Decker-3-in-1-Breakfast-Station/dp/B07YJFVX5Q?tag=cookinkitchen-20",
     pros: ["Multi-function (grill, griddle, coffee)", "Compact design", "Good value", "Includes coffee maker"],
     cons: ["Limited cooking space", "Assembly required"],
@@ -101,14 +96,7 @@ export default function BestBreakfastSandwichMakers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

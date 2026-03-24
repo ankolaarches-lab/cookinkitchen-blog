@@ -19,7 +19,6 @@ const products = [
     name: "Lodge Cast Iron Grill Press",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Press+LGPP3&tag=cookinkitchen-20",
     pros: ["Pre-seasoned cast iron", "Excellent heat retention", "Built-in handle", "Durable construction"],
     cons: ["Heavy (3.5 lbs)", "Requires seasoning maintenance"],
@@ -28,7 +27,6 @@ const products = [
     name: "Cuisinart Grill Press, 11-Inch",
     price: "$34.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+11+Inch+Grill+Press+CP+8&tag=cookinkitchen-20",
     pros: ["Aluminum construction", "Nonstick coating", "Easy to clean", "Lightweight"],
     cons: ["Less heat retention than cast iron", "Can warp over time"],
@@ -37,7 +35,6 @@ const products = [
     name: "StarPack Home Stainless Steel Grill Press",
     price: "$29.99",
     rating: 4.4,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=StarPack+Home+Stainless+Grill+Press&tag=cookinkitchen-20",
     pros: ["Rust-resistant stainless steel", "Ergonomic handle", "Modern design", "Dishwasher safe"],
     cons: ["Slides on smooth surfaces", "May not get as hot as cast iron"],
@@ -46,7 +43,6 @@ const products = [
     name: "Lodge Pro-Grid Cast Iron Grill Press",
     price: "$39.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Pro+Grid+Grill+Press+LGP3&tag=cookinkitchen-20",
     pros: ["Grid pattern for marks", "Large surface area", "Excellent weight", "Professional grade"],
     cons: ["Premium price", "Heavy"],
@@ -55,7 +51,6 @@ const products = [
     name: "Leonyx Cast Iron Bacon Press/Grill Press",
     price: "$19.99",
     rating: 4.3,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Leonyx+Cast+Iron+Press+Handle&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Pre-seasoned", "Versatile for bacon", "Good size"],
     cons: ["Smaller surface area", "Mixed reviews on handle"],
@@ -110,13 +105,8 @@ export default function BestGrillPresses2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

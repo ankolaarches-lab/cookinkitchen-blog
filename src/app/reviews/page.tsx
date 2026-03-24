@@ -5,20 +5,20 @@ import { useSearchParams, useRouter } from "next/navigation";
 import RefinedCard from "@/components/RefinedCard";
 
 const categoryImages: Record<string, string> = {
-  "Kitchen Utensils": "/images/kitchen/7.jpg",
-  "Wooden Utensils": "/images/kitchen/8.jpg",
-  "Knives": "/images/kitchen/9.jpg",
-  "Cookware": "/images/kitchen/10.jpg",
-  "Appliances": "/images/kitchen/11.jpg",
+  "Kitchen Utensils": "/images/reviews/hero-kitchen-utensils.png",
+  "Wooden Utensils": "/images/reviews/hero-kitchen-utensils.png",
+  "Knives": "/images/reviews/hero-knives.png",
+  "Cookware": "/images/reviews/hero-cookware.png",
+  "Appliances": "/images/reviews/hero-appliances.png",
   "Gadgets": "/images/gadgets.png",
-  "Cutting Boards": "/images/kitchen/1.jpg",
-  "Baking Sheets": "/images/kitchen/2.jpg",
-  "Food Storage": "/images/kitchen/3.jpg",
-  "Baking Supplies": "/images/kitchen/6.jpg",
+  "Cutting Boards": "/images/reviews/hero-cutting-boards.png",
+  "Baking Sheets": "/images/reviews/hero-baking.png",
+  "Food Storage": "/images/reviews/hero-food-storage.png",
+  "Baking Supplies": "/images/reviews/hero-baking.png",
 };
 
 const getImageUrl = (category: string): string => {
-  return categoryImages[category] || "/images/kitchen/4.jpg";
+  return categoryImages[category] || "/images/reviews/hero-kitchen-utensils.png";
 };
 
 const reviews = [

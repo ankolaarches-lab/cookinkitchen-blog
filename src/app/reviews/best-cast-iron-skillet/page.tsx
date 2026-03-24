@@ -12,7 +12,6 @@ const products = [
     name: "Lodge Cast Iron Skillet 12-Inch",
     price: "$34.99",
     rating: 4.9,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Pre+Seasoned+Skillet+12+Inch&tag=cookinkitchen-20",
     pros: ["Pre-seasoned", "Affordable", "Made in USA", "Versatile"],
     cons: ["Heavy", "Requires maintenance"],
@@ -21,7 +20,6 @@ const products = [
     name: "Le Creuset Enameled Cast Iron 11-Inch",
     price: "$369.95",
     rating: 4.8,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Le+Creuset+Enameled+Cast+Iron+Signature&tag=cookinkitchen-20",
     pros: ["No seasoning needed", "Enamel coating", "Lifetime warranty", "Beautiful colors"],
     cons: ["Very expensive", "Heavy"],
@@ -30,7 +28,6 @@ const products = [
     name: "Field Company Cast Iron 10.5-Inch",
     price: "$85.00",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Field+Company+Cast+Iron+10+5+Inch&tag=cookinkitchen-20",
     pros: ["Smooth surface", "Lightweight for cast iron", "Pre-seasoned", "Modern design"],
     cons: ["Limited sizes available"],
@@ -39,7 +36,6 @@ const products = [
     name: "Staub Cast Iron 11-Inch",
     price: "$219.95",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Staub+Cast+Iron+11+Inch+Fry+Pan&tag=cookinkitchen-20",
     pros: ["Black matte enamel", "Excellent heat retention", "Staub signature", "Drip collector"],
     cons: ["Premium price", "Heavy"],
@@ -83,14 +79,7 @@ export default function BestCastIronSkillet() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

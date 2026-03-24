@@ -12,7 +12,6 @@ const products = [
     name: "KitchenAid Hand Mixer",
     price: "$49.99",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+KHM512ER+5+Speed+Hand&tag=cookinkitchen-20",
     pros: ["9 speeds", "Quiet", "Comfortable grip", "Eject button"],
     cons: ["Corded only"],
@@ -21,7 +20,6 @@ const products = [
     name: "Hamilton Beach Hand Mixer",
     price: "$29.99",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+62627+Handle+Mixer&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "6 speeds", "Snap-on beaters", "Cord storage"],
     cons: ["Louder"],
@@ -49,10 +47,7 @@ export default function BestHandMixers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

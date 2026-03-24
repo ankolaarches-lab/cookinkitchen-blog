@@ -13,7 +13,6 @@ const products = [
     price: "$28.00",
     rating: 4.8,
     reviews: "144,772",
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=YETI+Rambler+Stainless+Insulated+MagSlider&tag=cookinkitchen-20",
     pros: ["Excellent insulation", "MagSlider lid prevents spills", "Dishwasher safe", "Durable stainless steel"],
     cons: [" Lid not fully leakproof"],
@@ -23,7 +22,6 @@ const products = [
     price: "$35.00",
     rating: 4.7,
     reviews: "87,956",
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=STANLEY+Flowstate+3+Position+Compatible+Insulated&tag=cookinkitchen-20",
     pros: ["Great capacity", "Handle for easy carrying", "Keeps ice for hours", "Fits most cup holders"],
     cons: ["Heavy when full"],
@@ -33,7 +31,6 @@ const products = [
     price: "$22.00",
     rating: 4.6,
     reviews: "12,448",
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=YETI+Rambler+Stainless+Insulated+MagSlider&tag=cookinkitchen-20",
     pros: ["Perfect for coffee", "Durable handle", "No-sweat design", "Great for desk"],
     cons: ["Smaller capacity"],
@@ -43,7 +40,6 @@ const products = [
     price: "$45.00",
     rating: 4.8,
     reviews: "45,321",
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=YETI+Rambler+Insulated+Leakproof+Stainless&tag=cookinkitchen-20",
     pros: ["All-day hydration", "Ultimate insulation", "Great for hiking", "Wide mouth"],
     cons: ["Doesn't fit all cup holders"],
@@ -53,7 +49,6 @@ const products = [
     price: "$38.00",
     rating: 4.7,
     reviews: "28,954",
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=YETI+Rambler+Insulated+Leakproof+Stainless&tag=cookinkitchen-20",
     pros: ["Hot for 7 hours", "Cold for 11 hours", "Built-in cup", "Excellent build quality"],
     cons: ["No handle"],
@@ -85,10 +80,7 @@ export default function BestYETIRamblerTumblers() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

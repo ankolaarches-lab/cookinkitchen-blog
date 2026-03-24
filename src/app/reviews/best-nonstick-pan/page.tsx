@@ -12,7 +12,6 @@ const products = [
     name: "T-fal E93808 Professional Nonstick Fry Pan",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+8+Inch&tag=cookinkitchen-20",
     pros: ["Affordable", "Heat indicator", "Dishwasher safe", "Lightweight"],
     cons: ["Not metal utensil safe"],
@@ -21,7 +20,6 @@ const products = [
     name: "Calphalon Classic Nonstick 10-Inch",
     price: "$49.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Calphalon+CC+0011+10+Inch+Nonstick+Skilelt&tag=cookinkitchen-20",
     pros: ["Hard-anodized aluminum", "PFOA-free", "Even heating", "Durable"],
     cons: ["Hand wash recommended"],
@@ -30,7 +28,6 @@ const products = [
     name: "GreenLife Soft Grip 9-Inch",
     price: "$27.99",
     rating: 4.5,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=GreenLife+CC+0012+Soft+9+Inch&tag=cookinkitchen-20",
     pros: ["Ceramic coating", "Soft grip handle", "Eco-friendly", "Budget-friendly"],
     cons: ["Less durable than PTFE"],
@@ -39,7 +36,6 @@ const products = [
     name: "All-Clad Hard Anodized 10-Inch",
     price: "$89.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=All+Clad+HA1+10010+Hard+Anodized+10+Inch&tag=cookinkitchen-20",
     pros: ["Premium quality", "Metal utensil safe", "Lifetime warranty", "Perfect heat distribution"],
     cons: ["Expensive", "Heavy"],
@@ -83,14 +79,7 @@ export default function BestNonStickPan() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

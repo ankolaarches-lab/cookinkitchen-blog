@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-18",
     authors: ["CookinKitchen"],
-    images: ["/images/kitchen/3.jpg"],
   },
 };
 
@@ -20,7 +19,6 @@ const products = [
     name: "GreenPan Valencia Pro Ceramic Nonstick 11-Piece Set",
     price: "$199.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=GreenPan+Valencia+Pro+Ceramic+Nonstick+11+Piece+Set&tag=cookinkitchen-20",
     pros: ["Healthy ceramic coating", "Durable hard-anodized aluminum", "Safe for metal utensils", "Excellent nonstick performance"],
     cons: ["Ceramic coating wears over time", "Hand wash recommended"],
@@ -29,7 +27,6 @@ const products = [
     name: "All-Clad HA1 Hard-Anodized Nonstick 10-Piece Set",
     price: "$349.99",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=All-Clad+HA1+Hard-Anodized+Nonstick+10+Piece+Set&tag=cookinkitchen-20",
     pros: ["Premium hard-anodized aluminum", "Safe for metal utensils", "Lifetime warranty", "Even heat distribution"],
     cons: ["Premium price", "Heavier than average"],
@@ -38,7 +35,6 @@ const products = [
     name: "Calphalon Premier Hard-Anodized 10-Piece Set",
     price: "$279.99",
     rating: 4.6,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Calphalon+Premier+Hard-Anodized+10+Piece+Set&tag=cookinkitchen-20",
     pros: ["Triple-layer nonstick coating", "Durable hard-anodized construction", "Modern design", "Excellent cooking performance"],
     cons: ["Mid-range price", "Nonstick can wear with heavy use"],
@@ -47,7 +43,6 @@ const products = [
     name: "Tramontina Tri-Ply Clad 10-Piece Stainless Steel Set",
     price: "$199.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Tramontina+Tri-Ply+Clad+10+Piece+Stainless+Steel&tag=cookinkitchen-20",
     pros: ["Premium tri-ply construction", "Compatible with all stovetop types", "Dishwasher safe", "Excellent value"],
     cons: ["Requires learning curve for stainless steel", "Can be heavy"],
@@ -56,7 +51,6 @@ const products = [
     name: "Lodge Pre-Seasoned Cast Iron 3-Piece Skillet Set",
     price: "$59.99",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Pre-Seasoned+Cast+Iron+3+Piece+Skillet+Set&tag=cookinkitchen-20",
     pros: ["Ultra-durable cast iron", "Naturally nonstick surface", "Compatible with all stovetops and ovens", "Exceptional value"],
     cons: ["Heavy", "Requires seasoning maintenance", "Not dishwasher safe"],
@@ -119,13 +113,8 @@ export default function BestCookwareSets2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

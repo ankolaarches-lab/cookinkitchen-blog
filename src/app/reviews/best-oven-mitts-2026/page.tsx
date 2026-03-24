@@ -20,7 +20,6 @@ const products = [
     name: "OXO Good Grips Silicone Oven Mitt",
     price: "$14.99",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Silicone+Oven+Mitt&tag=cookinkitchen-20",
     pros: ["Heat resistant to 500°F", "Waterproof silicone", "Non-slip grip"],
     cons: ["Can be bulky"],
@@ -29,7 +28,6 @@ const products = [
     name: "KitchenAid Premium Oven Mitts",
     price: "$19.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Premium+Oven+Mitts&tag=cookinkitchen-20",
     pros: ["Cotton lining", "Long cuff for wrist protection", "Machine washable"],
     cons: ["Not fully silicone"],
@@ -38,7 +36,6 @@ const products = [
     name: "Sulyn Premium Silicone Oven Mitts",
     price: "$15.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Sulyn+Premium+Silicone+Oven+Mitts&tag=cookinkitchen-20",
     pros: ["Set of 2", "Textured surface", "Flexible and comfortable"],
     cons: ["Smaller fit"],
@@ -47,7 +44,6 @@ const products = [
     name: "Homwe Professional Oven Mitts",
     price: "$24.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Homwe+Professional+Oven+Mitts&tag=cookinkitchen-20",
     pros: ["Extra long 15-inch", "Heat resistant to 500°F", "Non-slip pattern"],
     cons: ["Thicker bulk"],
@@ -56,7 +52,6 @@ const products = [
     name: "Amagabeli Oven Mitts Set",
     price: "$12.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Amagabeli+Oven+Mitts+Set&tag=cookinkitchen-20",
     pros: ["Affordable set", "Cotton and silicone combo", "Cute designs"],
     cons: ["Lower heat resistance"],
@@ -109,11 +104,11 @@ export default function BestOvenMitts2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition border border-stone-100">
-                <div className="flex gap-4">
+                <div>
                   <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center">
                     <span className="text-3xl">🧤</span>
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800 font-medium">{product.name}</h3>
                       <span className="text-emerald-600 font-lato font-bold">{product.rating} ★</span>

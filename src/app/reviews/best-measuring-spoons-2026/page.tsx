@@ -23,7 +23,6 @@ const products = [
     name: "U-Taste 18/8 Stainless Steel Measuring Spoons",
     price: "$19.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/U-Taste-Stainless-Measuring-Magnetic/dp/B07JRFTV5D?tag=cookinkitchen-20",
     pros: ["Premium 18/8 stainless steel", "Magnetic connection", "6-piece set", "Etched measurements", "Dishwasher safe"],
     cons: ["Higher price point"],
@@ -32,7 +31,6 @@ const products = [
     name: "Joseph Joseph Measure-Up Adjustable Measuring Spoon",
     price: "$8.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Joseph-Joseph-Measure-Up-Adjustable/dp/B00XKW5O42?tag=cookinkitchen-20",
     pros: ["Adjustable design", "Single tool replaces 6", "Space-saving", "Easy to read", "Dishwasher safe"],
     cons: ["Mechanical design may wear"],
@@ -41,7 +39,6 @@ const products = [
     name: "OXO Good Grips Double-Sided Measuring Spoons",
     price: "$14.99",
     rating: 4.6,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/OXO-Good-Grips-Measuring-Spoons/dp/B00004OCQ5?tag=cookinkitchen-20",
     pros: ["Non-slip grip", "Double-ended design", "6 measurements", "Dishwasher safe", "Durable"],
     cons: ["Larger storage size"],
@@ -50,7 +47,6 @@ const products = [
     name: "Cuisipro Stainless Steel Measuring Spoons",
     price: "$14.27",
     rating: 4.7,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/Cuisipro-746663-Measuring-Spoons-Stainless/dp/B000W6I4UY?tag=cookinkitchen-20",
     pros: ["Professional quality", "Mirror finish", "Nested set", "Wide mouths", "Lifetime warranty"],
     cons: ["No magnetic feature"],
@@ -59,7 +55,6 @@ const products = [
     name: "Yellrin Magnetic Measuring Spoons",
     price: "$13.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/Yellrin-Measuring-Magnetic-Stainless/dp/B09V3KXJPB?tag=cookinkitchen-20",
     pros: ["Magnetic snapping", "Dual-ended", "Tapered for small jars", "12 measurements", "Modern design"],
     cons: ["Magnets may detach over time"],
@@ -101,10 +96,7 @@ export default function BestMeasuringSpoons2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "KitchenAid Pasta Roller Attachment",
     price: "$149.99",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Pasta+Roller+Attachment&tag=cookinkitchen-20",
     pros: ["Compatible with KitchenAid stand mixers", "Multiple thickness settings", "Durable construction"],
     cons: ["Requires stand mixer purchase", "Limited to flat pasta shapes"],
@@ -21,7 +20,6 @@ const products = [
     name: "Atlas Pasta Machine",
     price: "$89.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Atlas+Pasta+Machine&tag=cookinkitchen-20",
     pros: ["Affordable", "Includes cutting attachments", "Manual operation"],
     cons: ["Requires hand-cranking", "Takes counter space"],
@@ -30,7 +28,6 @@ const products = [
     name: "Marcato Atlas 150 Manual Pasta Machine",
     price: "$124.99",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Marcato+Atlas+150+Pasta+Machine&tag=cookinkitchen-20",
     pros: ["Italian craftsmanship", "9 thickness settings", "Lifetime warranty"],
     cons: ["Hand-operated only", "Accessories sold separately"],
@@ -39,7 +36,6 @@ const products = [
     name: "Philips Pasta Maker Plus",
     price: "$299.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Philips+Pasta+Maker+Plus&tag=cookinkitchen-20",
     pros: ["Fully automatic", "Digital display", "Includes multiple shapes"],
     cons: ["Expensive", "Large footprint"],
@@ -48,7 +44,6 @@ const products = [
     name: "CucinaPro Manual Pasta Machine",
     price: "$69.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=CucinaPro+Manual+Pasta+Machine&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Chrome-plated steel", "Easy to clean"],
     cons: ["Limited settings", "Noisy operation"],
@@ -57,7 +52,6 @@ const products = [
     name: "KitchenAid Pasta Sheet Roller & Cutter Set",
     price: "$199.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Pasta+Sheet+Roller&tag=cookinkitchen-20",
     pros: ["Makes ravioli, fettuccine, linguine", "Storage case included", "Dishwasher safe parts"],
     cons: ["Pricey with attachments", "Complex for beginners"],
@@ -111,11 +105,8 @@ export default function BestPastaMakers2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

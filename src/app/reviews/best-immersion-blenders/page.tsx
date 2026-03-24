@@ -12,7 +12,6 @@ const products = [
     name: "Braun MQ5000 MultiQuick 5 Hand Blender",
     price: "$49.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=best+immersion+blenders&tag=cookinkitchen-20",
     pros: ["Powerful motor", "Easy to clean", "Multiple attachments"],
     cons: ["Can be loud"],
@@ -21,7 +20,6 @@ const products = [
     name: "KitchenAid Variable Speed Hand Blender",
     price: "$79.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=best+immersion+blenders&tag=cookinkitchen-20",
     pros: ["Sleek design", "Variable speed", "Durable"],
     cons: ["Premium price"],
@@ -30,7 +28,6 @@ const products = [
     name: "Immersion Hand Blender with Whisk",
     price: "$29.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=best+immersion+blenders&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Includes whisk", "Easy storage"],
     cons: ["Less powerful"],
@@ -39,7 +36,6 @@ const products = [
     name: "Cuisinart SmartStick Hand Blender",
     price: "$39.95",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=best+immersion+blenders&tag=cookinkitchen-20",
     pros: ["Comfortable grip", "BPA-free", "Stainless steel"],
     cons: ["Short cord"],
@@ -48,7 +44,6 @@ const products = [
     name: "Oster 2-Speed Hand Blender",
     price: "$24.99",
     rating: 4.4,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=best+immersion+blenders&tag=cookinkitchen-20",
     pros: ["Very affordable", "Simple to use", "2 speeds"],
     cons: ["Basic features"],
@@ -101,11 +96,8 @@ export default function ImmersionBlender() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

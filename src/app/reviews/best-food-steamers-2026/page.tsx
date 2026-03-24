@@ -23,7 +23,6 @@ const products = [
     name: "Hamilton Beach 3-Tier Electric Food Steamer",
     price: "$49.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/Hamilton-Beach-3-Tier-Steamer/dp/B00R08JGPU?tag=cookinkitchen-20",
     pros: ["3-tier capacity", "Digital controls", "Timer function", "Daisy chainable", "Dishwasher safe baskets"],
     cons: ["Requires counter space"],
@@ -32,7 +31,6 @@ const products = [
     name: "Bella 2-Tier Food Steamer",
     price: "$26.99",
     rating: 4.4,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/Bella-2-Tier-Food-Steamer/dp/B07Y8DWW4L?tag=cookinkitchen-20",
     pros: ["Affordable", "Compact design", "2-tier capacity", "Easy to use", "Great for beginners"],
     cons: ["No digital controls"],
@@ -41,7 +39,6 @@ const products = [
     name: "Amazon Basics 3-Tier Electric Food Steamer",
     price: "$34.99",
     rating: 4.3,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/Amazon-Basics-Electric-Steamer-3-Tier/dp/B07Y8DWW4L?tag=cookinkitchen-20",
     pros: ["Budget-friendly", "3-tier design", "BPA-free", "Simple operation", "Good capacity"],
     cons: ["Basic features"],
@@ -50,7 +47,6 @@ const products = [
     name: "Aroma Housewares 6-Cup Rice Cooker & Steamer",
     price: "$34.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/Aroma-Housewares-6-Cup-Cooker-Steamer/dp/B07Y8DWW4L?tag=cookinkitchen-20",
     pros: ["2-in-1 rice cooker and steamer", "Compact", "Multiple functions", "Easy cleanup", "Great value"],
     cons: ["Smaller steamer capacity"],
@@ -59,7 +55,6 @@ const products = [
     name: "Tovolo 3-Tier Stackable Steamer Basket",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/Tovolo-Stackable-Steamer-Basket/dp/B01H7JZVK6?tag=cookinkitchen-20",
     pros: ["Stovetop use", "Stackable design", "Durable", "Versatile", "No electricity needed"],
     cons: ["Requires stovetop"],
@@ -101,10 +96,7 @@ export default function BestFoodSteamers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Le Creuset Enameled Cast Iron Dutch Oven - 5.5 Qt",
     price: "$369.95",
     rating: 4.9,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Le+Creuset+Dutch+Oven+5.5+Qt&tag=cookinkitchen-20",
     pros: ["Exceptional heat retention", "Enamel coating prevents rust", "Lifetime warranty", "Beautiful colors available", "Even browning for perfect crust"],
     cons: ["Premium price", "Heavy (12+ lbs)", "Requires careful temperature management"],
@@ -21,7 +20,6 @@ const products = [
     name: "Lodge Cast Iron Dutch Oven - 6 Qt",
     price: "$69.99",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Dutch+Oven+6+Qt&tag=cookinkitchen-20",
     pros: ["Affordable", "Pre-seasoned ready to use", "Incredibly durable", "Great heat retention", "Can go from stovetop to oven"],
     cons: ["Requires seasoning maintenance", "No enamel coating", "Rough interior needs care"],
@@ -30,7 +28,6 @@ const products = [
     name: "Staub Enameled Cast Iron Dutch Oven - 5.5 Qt",
     price: "$319.95",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Staub+Dutch+Oven+5.5+Qt&tag=cookinkitchen-20",
     pros: ["Black matte enamel doesn't stick", "Excellent moisture retention", "Self-basting lid", "Oven-safe to 500°F", "Beautiful craftsmanship"],
     cons: ["Expensive", "Heavy", "Dishwasher not recommended"],
@@ -39,7 +36,6 @@ const products = [
     name: "Amazon Basics Enameled Cast Iron Dutch Oven - 6 Qt",
     price: "$79.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Good capacity", "Enamel coating", "Easy to clean", "Great for beginners"],
     cons: ["Less even heat distribution", "Not as durable long-term", "May chip over time"],
@@ -48,7 +44,6 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven - 6 Qt",
     price: "$99.99",
     rating: 4.6,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Enameled+Dutch+Oven+6+Qt&tag=cookinkitchen-20",
     pros: ["Great value", "Color options", "Enamel coating", "Oven safe", "6-quart capacity"],
     cons: ["Not as pretty as premium brands", "Slightly heavier", "Heat distribution could be better"],
@@ -57,7 +52,6 @@ const products = [
     name: "Romertopf Clay Baker",
     price: "$34.99",
     rating: 4.4,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Romertopf+Clay+Baker&tag=cookinkitchen-20",
     pros: ["Very affordable", "Creates incredible steam", "Lightweight", "Natural non-stick when seasoned", "No enamel to chip"],
     cons: ["Requires soaking before use", "Fragile - can crack", "Not stovetop safe", "Needs careful handling"],
@@ -97,10 +91,7 @@ export default function BestDutchOvensForBreadBaking() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

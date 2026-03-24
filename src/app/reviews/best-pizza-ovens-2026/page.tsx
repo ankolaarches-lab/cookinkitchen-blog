@@ -11,7 +11,6 @@ const products = [
     name: "Ooni Koda 12 Pizza Oven",
     price: "$349.00",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Ooni+Koda+12+Pizza+Oven&tag=cookinkitchen-20",
     pros: ["Heats to 932°F in 15 minutes", "Compact and portable", "Gas-powered convenience"],
     cons: ["Requires gas tank", "Small cooking area"],
@@ -20,7 +19,6 @@ const products = [
     name: "Breville Pizza Oven",
     price: "$599.95",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Breville+Smart+Oven+Pizza&tag=cookinkitchen-20",
     pros: ["Cordial technology", "Large capacity", "Multiple cooking functions"],
     cons: ["Expensive", "Takes up counter space"],
@@ -29,7 +27,6 @@ const products = [
     name: "Ooni Frya 12",
     price: "$449.00",
     rating: 4.6,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Ooni+Frya+12&tag=cookinkitchen-20",
     pros: ["Wood-fired flavor", "Runs on wood pellets", "Excellent heat retention"],
     cons: ["Needs pellet supply", "More smoke"],
@@ -38,7 +35,6 @@ const products = [
     name: "Ninja Woodfire Electric Oven",
     price: "$299.99",
     rating: 4.5,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Woodfire+Electric+Oven&tag=cookinkitchen-20",
     pros: ["Electric - no gas needed", "Woodfire technology", "Versatile cooking"],
     cons: ["Requires electricity", "Smaller pizza size"],
@@ -47,7 +43,6 @@ const products = [
     name: "BakerStone Pizza Oven Box",
     price: "$149.99",
     rating: 4.4,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=BakerStone+Pizza+Oven+Box&tag=cookinkitchen-20",
     pros: ["Fits on grill or stove", "Affordable", "Creates crispy crust"],
     cons: ["Needs grill or stove", "Not as hot as dedicated ovens"],
@@ -56,7 +51,6 @@ const products = [
     name: "Pizzacraft PizzaQue Pizza Oven",
     price: "$129.99",
     rating: 4.3,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Pizzacraft+PizzaQue&tag=cookinkitchen-20",
     pros: ["Fits on grill", " Affordable option", "Good for beginners"],
     cons: ["Limited temperature", "Requires grill"],
@@ -118,11 +112,8 @@ export default function BestPizzaOvens2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

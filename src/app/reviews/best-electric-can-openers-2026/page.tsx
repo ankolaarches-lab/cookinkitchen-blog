@@ -19,7 +19,6 @@ const products = [
     name: "Hamilton Beach Smooth Touch Electric Can Opener",
     price: "$34.99",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+Smooth+Touch+76625AS&tag=cookinkitchen-20",
     pros: ["Smooth edge technology", "One-touch operation", "Stainless steel finish", "Auto shut-off"],
     cons: ["Hand wash only", "Larger footprint"],
@@ -28,7 +27,6 @@ const products = [
     name: "KitchenAid Single Can Opener",
     price: "$29.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Can+Opener+Stainless+KC110PSSLR&tag=cookinkitchen-20",
     pros: ["Sleek design", "Magnetic lid holder", "Durable build", "Dishwasher safe"],
     cons: ["Manual start", "No automatic shut-off"],
@@ -37,7 +35,6 @@ const products = [
     name: "Cuisinart CCO-50 Deluxe Electric Can Opener",
     price: "$39.99",
     rating: 4.4,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+CCO+50+Deluxe+Can+Opener&tag=cookinkitchen-20",
     pros: ["Extra-long cord", "Opens all can sizes", "Metal housing", "Detachable lever"],
     cons: ["Can leave sharp edges", "Mixed durability reports"],
@@ -46,7 +43,6 @@ const products = [
     name: "Kitchen Mama Auto Electric Can Opener",
     price: "$24.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=KitchenMama+Auto+Electric+Can+Opener&tag=cookinkitchen-20",
     pros: ["One-button operation", "Compact design", "Battery operated", "Smooth edges"],
     cons: ["Requires batteries", "Smaller can capacity"],
@@ -55,7 +51,6 @@ const products = [
     name: "Zelmiro Electric Can Opener",
     price: "$27.99",
     rating: 4.3,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Zelmiro+Electric+Can+Opener+Stainless&tag=cookinkitchen-20",
     pros: ["Two power modes", "Magnetic lid", "Compact size", "Affordable"],
     cons: ["Lower rating", "Mixed reviews on durability"],
@@ -110,13 +105,8 @@ export default function BestElectricCanOpeners2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

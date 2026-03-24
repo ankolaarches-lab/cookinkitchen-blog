@@ -12,7 +12,6 @@ const products = [
     name: "Lodge Enameled Cast Iron Dutch Oven",
     price: "$69.99",
     rating: 4.8,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Enameled+Cast+Iron+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Excellent heat retention", "Durable enamel coating", "Oven-safe to 500°F", "Great value"],
     cons: ["Heavy (7 lbs)", "Some reports of uneven enamel"],
@@ -21,7 +20,6 @@ const products = [
     name: "Amazon Basics Enameled Cast Iron Dutch Oven",
     price: "$54.99",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Enameled+Cast+Iron+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "6 quart capacity", "Dishwasher safe", "Nice color options"],
     cons: ["Lighter construction", "May chip over time"],
@@ -30,7 +28,6 @@ const products = [
     name: "Cuisinart Enameled Cast Iron Dutch Oven",
     price: "$79.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Enameled+Cast+Iron+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Self-basting lid", "Smooth interior", "Great for bread baking", "Sturdy handles"],
     cons: ["Limited color selection"],
@@ -39,7 +36,6 @@ const products = [
     name: "Caraway Dutch Oven",
     price: "$89.00",
     rating: 4.7,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Caraway+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Beautiful design", "Non-toxic enamel", "Excellent heat distribution", "Stackable"],
     cons: ["Not induction compatible", "Hand wash recommended"],
@@ -48,7 +44,6 @@ const products = [
     name: "Tramontina Enameled Cast Iron Dutch Oven",
     price: "$59.99",
     rating: 4.5,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Tramontina+Enameled+Cast+Iron+Dutch+Oven&tag=cookinkitchen-20",
     pros: ["Very affordable", "6.5 quart capacity", "Traditional design", "Made in Brazil"],
     cons: ["Heavier than competitors", "Interior shows staining"],
@@ -127,11 +122,8 @@ export default function BestDutchOvensUnder100() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

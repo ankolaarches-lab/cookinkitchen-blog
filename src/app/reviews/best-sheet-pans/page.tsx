@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const products = [
-  { name: "Nordic Ware Half Sheet", price: "$14.95", rating: 4.9, image: "/images/kitchen/1.jpg", link: "https://www.amazon.com/s?k=best+sheet+pans&tag=cookinkitchen-20", pros: ["Natural aluminum", "USA made", "Durable"] },
+  { name: "Nordic Ware Half Sheet", price: "$14.95", rating: 4.9, link: "https://www.amazon.com/s?k=best+sheet+pans&tag=cookinkitchen-20", pros: ["Natural aluminum", "USA made", "Durable"] },
 ];
 
 export default function BestSheetPans2026() {
@@ -30,8 +30,7 @@ export default function BestSheetPans2026() {
         <section className="space-y-8">
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
-              <div className="flex gap-6">
-                <img src={product.image} alt={product.name} className="w-48 h-48 object-cover rounded-lg" />
+              <div>
                 <div>
                   <h2 className="text-xl font-bold">{product.name}</h2>
                   <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

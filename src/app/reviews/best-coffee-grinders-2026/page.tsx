@@ -12,7 +12,6 @@ const products = [
     name: "Baratza Encore ESP",
     price: "$169.00",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Baratza+Encore+ESP+Coffee+Grinder&tag=cookinkitchen-20",
     pros: ["40 grind settings", "Consistent burr grinding", "Easy to clean", "Great for espresso"],
     cons: ["Higher price point", "Loud operation"],
@@ -21,7 +20,6 @@ const products = [
     name: "OXO Brew Conical Grinder",
     price: "$99.00",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=OXO+Brew+Conical+Grinder&tag=cookinkitchen-20",
     pros: ["Stainless steel burrs", "One-touch timer", "Consistent grounds", "UV-blocking hopper"],
     cons: ["Limited espresso fine-tuning", "Static issues"],
@@ -30,7 +28,6 @@ const products = [
     name: "Capresso Infinity Plus",
     price: "$89.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Capresso+Infinity+Plus&tag=cookinkitchen-20",
     pros: ["16 grind settings", "Timer function", "Compact design", "Slow-speed motor"],
     cons: ["Can be messy", "Not ideal for espresso"],
@@ -39,7 +36,6 @@ const products = [
     name: "Krups EA8108",
     price: "$79.99",
     rating: 4.4,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Krups+EA8108+Coffee+Grinder&tag=cookinkitchen-20",
     pros: ["Automatic dosing", "Compact", "Easy to use", "Good for drip"],
     cons: ["Fewer settings", "Plastic construction"],
@@ -48,7 +44,6 @@ const products = [
     name: "Hamilton Beach Fresh Grind",
     price: "$29.99",
     rating: 4.3,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+Fresh+Grind&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Compact", "Easy to clean", "BPA-free"],
     cons: ["Blade grinder", "Inconsistent grounds", "Not for espresso"],
@@ -57,7 +52,6 @@ const products = [
     name: "JavaPresse Manual Grinder",
     price: "$34.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=JavaPresse+Manual+Coffee+Grinder&tag=cookinkitchen-20",
     pros: ["Portable", "No electricity needed", "Consistent conical burrs", "Lifetime warranty"],
     cons: ["Requires effort", "Takes time", "Not for large batches"],
@@ -121,11 +115,8 @@ export default function BestCoffeeGrinders2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

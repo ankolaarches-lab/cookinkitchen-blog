@@ -19,7 +19,6 @@ const products = [
     name: "Cuisinart Chef's Classic 12-Quart Stockpot",
     price: "$89.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Chef+Classic+Stainless+Steel&tag=cookinkitchen-20",
     pros: ["Tri-ply construction", "Cool-touch handles", "Dishwasher safe", "Excellent heat distribution"],
     cons: ["Heavy when full", "No measuring marks"],
@@ -28,7 +27,6 @@ const products = [
     name: "Rachael Ray Nonstick 12-Quart Stockpot",
     price: "$64.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Rachael+Ray+Nonstick+12+Quart+Stockpot&tag=cookinkitchen-20",
     pros: ["Nonstick easy release", "Vibrant color options", "Tempered glass lid", "Affordable"],
     cons: ["Not for metal utensils", "Hand wash recommended"],
@@ -37,7 +35,6 @@ const products = [
     name: "T-fal Ultimate Hard Anodized 12.5-Quart Stockpot",
     price: "$99.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=T+fal+Ultimate+Hard+Anodized+Stockpot&tag=cookinkitchen-20",
     pros: ["Hard anodized aluminum", "Thermo-Spot indicator", "Oven safe", "Durable construction"],
     cons: ["Weighty", "Nonstick coating can wear"],
@@ -46,7 +43,6 @@ const products = [
     name: "Instant Pot Stainless Steel 6-Quart",
     price: "$89.95",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Stainless+Steel+Multi+Cooker&tag=cookinkitchen-20",
     pros: ["Multi-cooker function", "Pressure cooking", "Durable steel", "Programmable"],
     cons: ["Smaller capacity", "More complex to use"],
@@ -55,7 +51,6 @@ const products = [
     name: "AmazonBasics Stainless Steel Stockpot - 12 Quart",
     price: "$49.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=AmazonBasics+Stainless+Stockpot+12+Quart&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Tri-ply bottom", "Mirror finish", "Amazon bestseller"],
     cons: ["Basic design", "Mixed durability reports"],
@@ -110,13 +105,8 @@ export default function BestStockpots2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

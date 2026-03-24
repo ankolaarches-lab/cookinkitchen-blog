@@ -8,8 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Oven Thermometers 2026 - Accurate Temperature Guide",
     description: "Stop guessing if your oven is at the right temperature. We tested the best oven thermometers to ensure precise baking and roasting results.",
-    type: "article",
-    images: ["/images/kitchen/thermometer-oven.jpg"],
+    type: "article"
   },
   twitter: {
     card: "summary_large_image",
@@ -23,7 +22,6 @@ const products = [
     name: "ThermoWorks CPO霸王",
     price: "$59.95",
     rating: 4.9,
-    image: "/images/kitchen/thermometer-1.jpg",
     link: "https://www.amazon.com/s?k=ThermoWorks+CPO+Oven+Thermometer&tag=cookinkitchen-20",
     pros: ["Professional grade accuracy", "NIST traceable calibration", "High-temperature rated"],
     cons: ["Premium price", "Requires magnetic mount"],
@@ -32,7 +30,6 @@ const products = [
     name: "Taylor Old Faithful Oven Thermometer",
     price: "$12.99",
     rating: 4.7,
-    image: "/images/kitchen/thermometer-2.jpg",
     link: "https://www.amazon.com/s?k=Taylor+Old+Faithful+Oven+Thermometer&tag=cookinkitchen-20",
     pros: ["Affordable", "Easy to read dial", "Wide temperature range"],
     cons: ["Not as precise as digital"],
@@ -41,7 +38,6 @@ const products = [
     name: "Rest-O-Matic Oven Thermometer",
     price: "$14.99",
     rating: 4.5,
-    image: "/images/kitchen/thermometer-3.jpg",
     link: "https://www.amazon.com/s?k=Rest-O-Matic+Oven+Thermometer&tag=cookinkitchen-20",
     pros: ["Durable stainless steel", "Oven-safe to 600°F", "Large display"],
     cons: ["Some accuracy issues reported"],
@@ -50,7 +46,6 @@ const products = [
     name: "KitchenAid Oven Thermometer",
     price: "$16.99",
     rating: 4.6,
-    image: "/images/kitchen/thermometer-4.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Oven+Thermometer&tag=cookinkitchen-20",
     pros: ["Trusted brand", "Clear dial", "Heat-resistant"],
     cons: ["Dial can be hard to read through oven window"],
@@ -59,7 +54,6 @@ const products = [
     name: "CDN Pro-Style Oven Thermometer",
     price: "$24.99",
     rating: 4.8,
-    image: "/images/kitchen/thermometer-5.jpg",
     link: "https://www.amazon.com/s?k=CDN+Oven+Thermometer&tag=cookinkitchen-20",
     pros: ["High accuracy", "Professional quality", "Wide temp range"],
     cons: ["Higher price point"],
@@ -68,7 +62,6 @@ const products = [
     name: "Probe Digital Oven Thermometer",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/thermometer-6.jpg",
     link: "https://www.amazon.com/s?k=Digital+Oven+Thermometer+Probe&tag=cookinkitchen-20",
     pros: ["Digital readout", "Probe style for precise reading", "Alarm function"],
     cons: ["Requires battery", "Wire can be in the way"],
@@ -89,12 +82,7 @@ export default function BestOvenThermometers2026() {
           </div>
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img 
-              src="/images/kitchen/thermometer-oven.jpg" 
-              alt="Best Oven Thermometers 2026" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
+</div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">Best Oven Thermometers 2026: Complete Guide</h1>
           <p className="font-lato text-xl text-stone-600 mb-8">Don't trust your oven's dial. We tested the best oven thermometers to ensure your baked goods come out perfectly every time.</p>
@@ -127,11 +115,8 @@ export default function BestOvenThermometers2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "WorkSharp Kitchen Knife Sharpener",
     price: "$79.99",
     rating: 4.7,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=best+knife+sharpeners&tag=cookinkitchen-20",
     pros: ["Precision guidance", "Angle guides included", "Works on all knives"],
     cons: ["Takes practice"],
@@ -21,7 +20,6 @@ const products = [
     name: "Chef'sChoice 15 Inch Knife Sharpener",
     price: "$99.95",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=best+knife+sharpeners&tag=cookinkitchen-20",
     pros: ["3-stage system", "Electric", "Professional results"],
     cons: ["Only for straight-edged knives"],
@@ -30,7 +28,6 @@ const products = [
     name: "Lansky NMK-003 Dual Grit Sharpener",
     price: "$24.95",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=best+knife+sharpeners&tag=cookinkitchen-20",
     pros: ["Portable", "Coarse and fine sides", "Affordable"],
     cons: ["Manual effort needed"],
@@ -39,7 +36,6 @@ const products = [
     name: "Smith's 50402 Adjustable Knife Sharpener",
     price: "$19.97",
     rating: 4.4,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=best+knife+sharpeners&tag=cookinkitchen-20",
     pros: ["Adjustable angle", "2-stage", "Budget-friendly"],
     cons: ["Not for serrated knives"],
@@ -48,7 +44,6 @@ const products = [
     name: "Accusharp 001 Knife Sharpener",
     price: "$12.99",
     rating: 4.3,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=best+knife+sharpeners&tag=cookinkitchen-20",
     pros: ["Simple to use", "Very affordable", "Compact"],
     cons: ["Limited control"],
@@ -101,11 +96,8 @@ export default function KnifeSharpeners() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

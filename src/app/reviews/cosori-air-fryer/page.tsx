@@ -11,7 +11,6 @@ const product = {
   name: "Cosori Air Fryer 5.8 Quart",
   price: "$89.99",
   rating: 4.7,
-  image: "/images/kitchen/1.jpg",
   link: "https://www.amazon.com/s?k=COSORI+5+8+Quart+Air+Fryer&tag=cookinkitchen-20",
   features: [
     "5.8-quart capacity",
@@ -60,9 +59,8 @@ export default function CosoriAirFryerReview() {
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-200 mb-8">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-80 h-64 bg-stone-100 rounded-xl flex-shrink-0 overflow-hidden">
-              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
             </div>
-            <div className="flex-1">
+            <div>
               <h2 className="text-2xl font-bold text-stone-900 mb-2">{product.name}</h2>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-amber-500 text-xl">{"★".repeat(Math.floor(product.rating))}{"☆".repeat(5 - Math.floor(product.rating))}</span>

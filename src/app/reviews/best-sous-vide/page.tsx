@@ -12,7 +12,6 @@ const products = [
     name: "Anova Culinary Sous Vide",
     price: "$199.00",
     rating: 4.8,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Anova+Culinary+Precision+Bluetooth+Immersion&tag=cookinkitchen-20",
     pros: ["Precise temperature", "Bluetooth connectivity", "Compact design", "Easy to use"],
     cons: ["Requires pot/container"],
@@ -21,7 +20,6 @@ const products = [
     name: "Instant Pot Accu Slim Sous Vide",
     price: "$59.95",
     rating: 4.6,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Accu+Slim+Sous+Vide&tag=cookinkitchen-20",
     pros: ["Affordable", "Slim design", "Reliable", "Easy storage"],
     cons: ["No app connectivity", "Less power"],
@@ -30,7 +28,6 @@ const products = [
     name: "Breville Joule Sous Vide",
     price: "$199.00",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Breville+Joule+Sous+Vide+Immersion&tag=cookinkitchen-20",
     pros: ["Compact", "App control", "Powerful", "Visual doneness guide"],
     cons: ["No display screen", "Premium price"],
@@ -39,7 +36,6 @@ const products = [
     name: "ChefSteps Joule Turbo",
     price: "$249.00",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=ChefSteps+Joule+Turbo+Sous+Vide&tag=cookinkitchen-20",
     pros: ["Fastest heating", "Advanced presets", "Premium build", "GuideMode"],
     cons: ["Most expensive", "App required"],
@@ -83,14 +79,7 @@ export default function BestSousVide() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -13,7 +13,6 @@ const products = [
     name: "OXO Good Grips Chef's Squeeze Bottle Set",
     price: "$14.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Chef+Squeeze+Bottle&tag=cookinkitchen-20",
     pros: ["Two sizes included", "Precision pour", "Dishwasher safe", "Leak-proof design"],
     cons: ["Plastic construction"],
@@ -22,7 +21,6 @@ const products = [
     name: "Dreamfarm Scizza Kitchen Shears",
     price: "$19.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Dreamfarm+Kitchen+Shears&tag=cookinkitchen-20",
     pros: ["Spring-loaded", "Comfortable grip", "Built-in herb stripper", "Dishwasher safe"],
     cons: ["Not for heavy-duty cutting"],
@@ -31,7 +29,6 @@ const products = [
     name: "Angry Mama Microwave Cleaner",
     price: "$9.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Angry+Mama+Microwave+Cleaner&tag=cookinkitchen-20",
     pros: ["Quick cleaning", "Natural ingredients", "Reusable", "Under $10"],
     cons: ["Specific use case"],
@@ -40,7 +37,6 @@ const products = [
     name: "OXO Good Grips Jar Opener",
     price: "$12.99",
     rating: 4.7,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Jar+Opener&tag=cookinkitchen-20",
     pros: ["Ergonomic handle", "Works on various sizes", "Durable", "Easy to use"],
     cons: ["Takes getting used to"],
@@ -49,7 +45,6 @@ const products = [
     name: "KitchenAid 5-Piece Kitchen Tool Set",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Kitchen+Tool+Set+5+Piece&tag=cookinkitchen-20",
     pros: ["Complete set", "Heat resistant", "Dishwasher safe", "Great value"],
     cons: ["Silicone tips can stain"],
@@ -58,7 +53,6 @@ const products = [
     name: "Herb Scissors (5-Blade)",
     price: "$11.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=5+Blade+Herb+Scissors&tag=cookinkitchen-20",
     pros: ["Cuts herbs quickly", "Easy to clean", "Multiple blades", "Affordable"],
     cons: ["Not for cutting meat"],
@@ -102,14 +96,7 @@ export default function BestKitchenGadgets2026() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative w-full md:w-48 h-48 flex-shrink-0 bg-stone-100 rounded-lg">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

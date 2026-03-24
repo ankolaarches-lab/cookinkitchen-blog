@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips Silicone Slotted Spoon",
     price: "$12.99",
     rating: 4.8,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/OXO-Good-Grips-Silicone-Slotted/dp/B00XJQ3L1G?tag=cookinkitchen-20",
     pros: ["Heat resistant to 600°F", "Non-scratch", "Sloped bowl design", "Dishwasher safe"],
     cons: ["Not for very heavy foods"],
@@ -21,7 +20,6 @@ const products = [
     name: "Stainless Steel Slotted Spoon Set",
     price: "$14.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/Stainless-Steel-Slotted-Spoon-Set/dp/B08J5K3ZKL?tag=cookinkitchen-20",
     pros: ["Set of 2 sizes", "Mirror polish", "Professional grade", "Dishwasher safe"],
     cons: ["Can scratch nonstick if metal"],
@@ -30,7 +28,6 @@ const products = [
     name: "KitchenAid Classic Slotted Spoon",
     price: "$9.99",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/KitchenAid-Classic-Slotted-Spoon/dp/B000KPDQ3E?tag=cookinkitchen-20",
     pros: ["Affordable", "Stainless steel", "Classic design", "Dishwasher safe"],
     cons: ["Basic handle"],
@@ -39,7 +36,6 @@ const products = [
     name: "3 Pcs Silicone Cooking Spoon Set",
     price: "$16.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Silicone-Cooking-Spoon-Set-Heat-Resistant/dp/B07YDXW1G3?tag=cookinkitchen-20",
     pros: ["Includes solid & slotted", "Heat resistant", "Food-grade silicone", "Non-scratch"],
     cons: ["Set price higher per unit"],
@@ -48,7 +44,6 @@ const products = [
     name: "Wooden Slotted Spoon",
     price: "$11.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/Wooden-Slotted-Spoon-Handcrafted/dp/B08J5K3ZKL?tag=cookinkitchen-20",
     pros: ["Natural material", "Gentle on cookware", "Heat resistant handle", "Classic look"],
     cons: ["Hand wash only", "Not dishwasher safe"],
@@ -69,12 +64,7 @@ export default function BestSlottedSpoons2026() {
           </div>
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img 
-              src="/images/kitchen/3.jpg" 
-              alt="Best Slotted Spoons 2026" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
+</div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">Best Slotted Spoons 2026: Complete Guide</h1>
           <p className="font-lato text-xl text-stone-600 mb-8">A slotted spoon is essential for draining liquids from pasta, vegetables, and more. We tested the top-rated slotted spoons for every kitchen.</p>
@@ -104,11 +94,11 @@ export default function BestSlottedSpoons2026() {
             <h2 className="font-playfair text-2xl text-stone-800 mb-6">Top Rated Slotted Spoons</h2>
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
+                <div>
                   <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center">
                     <span className="text-3xl">🥣</span>
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

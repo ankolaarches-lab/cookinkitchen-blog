@@ -12,7 +12,6 @@ const products = [
     name: "Breville The Smart Waffle Pro",
     price: "$304.00",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Breville+Smart+Waffle+Pro&tag=cookinkitchen-20",
     pros: ["6 browning settings", "Rotating design", "Professional results"],
     cons: ["Premium price", "Large footprint"],
@@ -21,7 +20,6 @@ const products = [
     name: "Cuisinart Double Flip Waffle Maker",
     price: "$139.95",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Double+Flip+Waffle+Maker&tag=cookinkitchen-20",
     pros: ["Unique flip design", "Even cooking", "Non-stick plates"],
     cons: ["Only makes 2 waffles"],
@@ -30,7 +28,6 @@ const products = [
     name: "Cuisinart 4-Slice Belgian Waffle Maker",
     price: "$74.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+4+Slice+Belgian+Waffle+Maker&tag=cookinkitchen-20",
     pros: ["Makes 4 at once", "Deep pockets", "Indicator lights"],
     cons: ["Takes up counter space"],
@@ -39,7 +36,6 @@ const products = [
     name: "Hamilton Beach Belgian Waffle Maker",
     price: "$49.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+Belgian+Waffle+Maker&tag=cookinkitchen-20",
     pros: ["PFAS-free ceramic", "Browning control", "Affordable"],
     cons: ["Basic features"],
@@ -48,7 +44,6 @@ const products = [
     name: "Presto FlipSide Belgian Waffle Maker",
     price: "$39.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Presto+FlipSide+Belgian+Waffle+Maker&tag=cookinkitchen-20",
     pros: ["Compact design", "Flips horizontally", "Great value"],
     cons: ["Uneven cooking sometimes"],
@@ -102,11 +97,8 @@ export default function BestWaffleMakers2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

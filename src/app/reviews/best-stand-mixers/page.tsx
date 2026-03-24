@@ -12,7 +12,6 @@ const products = [
     name: "KitchenAid Artisan Stand Mixer",
     price: "$449.99",
     rating: 4.9,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=cookinkitchen-20",
     pros: ["10 speeds", "5 quart bowl", "Multiple colors", "Huge accessory line"],
     cons: ["Pricey", "Can be loud"],
@@ -21,7 +20,6 @@ const products = [
     name: "Cuisinart Stand Mixer",
     price: "$249.99",
     rating: 4.7,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+SM+50BC+5+5+Quart+Stand&tag=cookinkitchen-20",
     pros: ["12 speeds", "5.5 quart bowl", "Includes accessories", "Better price"],
     cons: ["Larger footprint", "Less color options"],
@@ -30,7 +28,6 @@ const products = [
     name: "KitchenAid Professional 5qt",
     price: "$449.99",
     rating: 4.8,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Professional+5+Quart+Mixer&tag=cookinkitchen-20",
     pros: ["Bowl-lift design", "More powerful", "Professional grade", "6 quart bowl"],
     cons: ["Heavier", "No tilt head"],
@@ -58,10 +55,7 @@ export default function BestStandMixers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

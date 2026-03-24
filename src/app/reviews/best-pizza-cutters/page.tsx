@@ -12,7 +12,6 @@ const products = [
     name: "DXISheng Pizza Cutter",
     price: "$15.99",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=DXISheng+Stainless+Pizza+Cutter&tag=cookinkitchen-20",
     pros: ["Sharp blade", "Comfortable handle", "Easy to clean", "Affordable"],
     cons: ["Hand wash recommended"],
@@ -21,7 +20,6 @@ const products = [
     name: "KitchenAid Pizza Wheel",
     price: "$14.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+KF770DCOXAL+Pizza+Cutter&tag=cookinkitchen-20",
     pros: ["Sturdy", "Serrated edge", "Modern design", "Dishwasher safe"],
     cons: ["Only one style"],
@@ -49,10 +47,7 @@ export default function BestPizzaCutters2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Instant Pot Duo 7-in-1",
     price: "$89.95",
     rating: 4.8,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Multi+Use+Pressure+Cooker&tag=cookinkitchen-20",
     pros: ["7-in-1 functionality", "Easy to use", "Great recipes", "Durable"],
     cons: ["6-quart may be small for families"],
@@ -21,7 +20,6 @@ const products = [
     name: "Instant Pot Ultra 10-in-1",
     price: "$129.95",
     rating: 4.7,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Ultra+Multi+Use+Programmable&tag=cookinkitchen-20",
     pros: ["10-in-1 functions", "Altitude adjustment", "More program options", "Sleek design"],
     cons: ["More expensive", "Learning curve"],
@@ -30,7 +28,6 @@ const products = [
     name: "Instant Pot Duo Crisp 11-in-1",
     price: "$149.95",
     rating: 4.6,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Crisp+11+in+1&tag=cookinkitchen-20",
     pros: ["Air fryer lid included", "11 functions", "Crispy results", "Two lids"],
     cons: ["Expensive", "Takes more storage space"],
@@ -39,7 +36,6 @@ const products = [
     name: "Instant Pot Duo Mini 7-in-1",
     price: "$69.95",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo+Mini+3+Quart&tag=cookinkitchen-20",
     pros: ["Compact size", "Great for couples", "Affordable", "Perfect for small kitchens"],
     cons: ["Smaller capacity", "Limited batch cooking"],
@@ -83,14 +79,7 @@ export default function BestInstantPot() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Aura Digital Kitchen Scale",
     price: "$29.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Aura+Digital+Kitchen+Scale&tag=cookinkitchen-20",
     pros: ["Sleek design", "0.1g accuracy", "Multiple units", "Auto off"],
     cons: ["Max 11 lbs"],
@@ -21,7 +20,6 @@ const products = [
     name: "OXO Good Grips Pop Scale",
     price: "$34.99",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Pop+Container&tag=cookinkitchen-20",
     pros: ["Built-in storage", "Pull-out display", "Weighs in bowl", "Easy clean"],
     cons: ["A bit bulky"],
@@ -49,10 +47,7 @@ export default function BestKitchenScales2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

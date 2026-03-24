@@ -12,7 +12,6 @@ const products = [
     name: "Silpat Premium Non-Stick Baking Mat",
     price: "$34.95",
     rating: 4.9,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=cookinkitchen-20",
     pros: ["Premium quality", "Lifetime guarantee", "Even heat distribution", "French-made"],
     cons: ["Premium price"],
@@ -21,7 +20,6 @@ const products = [
     name: "Nordic Ware Natural Aluminum Commercial Baker's Half Sheet",
     price: "$14.99",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Baker&tag=cookinkitchen-20",
     pros: ["Heavy-duty aluminum", "Even baking", "Commercial quality", " Affordable"],
     cons: ["Not non-stick"],
@@ -30,7 +28,6 @@ const products = [
     name: "KitchenAid Premium Silicone Baking Mat",
     price: "$19.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Premium+Silicone+Baking+Mat&tag=cookinkitchen-20",
     pros: ["Flexible", "Dishwasher safe", "Reusable", "Great value"],
     cons: ["Can curl at edges"],
@@ -39,7 +36,6 @@ const products = [
     name: "Amazon Basics Non-Stick Baking Mat",
     price: "$12.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=AmazonBasics+Silicone+Baking+Mat&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "2-pack", "Easy cleanup", "FDA approved"],
     cons: ["Less durable"],
@@ -70,10 +66,7 @@ export default function BestBakingMats() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 bg-stone-100 rounded-lg flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

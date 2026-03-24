@@ -12,7 +12,6 @@ const products = [
     name: "Victorinox Swiss Classic 8-Inch Chef's Knife",
     price: "$39.99",
     rating: 4.9,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef&tag=cookinkitchen-20",
     pros: ["Excellent sharpness", "Comfortable Fibrox handle", "Lightweight", "Dishwasher safe"],
     cons: ["Plain design", "No bolster"],
@@ -21,7 +20,6 @@ const products = [
     name: "Wüsthof Classic 8-Inch Chef's Knife",
     price: "$179.95",
     rating: 4.8,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Wusthof+Classic+8+Inch+Chefs+Knife&tag=cookinkitchen-20",
     pros: ["German precision", "Full bolster", "Perfect balance", "Lifetime warranty"],
     cons: ["Expensive", "Heavy"],
@@ -30,7 +28,6 @@ const products = [
     name: "Mac MTH-80 8-Inch Chef's Knife",
     price: "$149.95",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Mac+MTH+80+8+Inch+Chef+Knife&tag=cookinkitchen-20",
     pros: ["Super thin blade", "Very sharp", "Lightweight", "Asian-style handle"],
     cons: ["Not full bolster", "More delicate"],
@@ -39,7 +36,6 @@ const products = [
     name: "Mercer Culinary Genesis 8-Inch Chef's Knife",
     price: "$34.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Mercer+Culinary+Genesis+8+Inch+Chef&tag=cookinkitchen-20",
     pros: ["Affordable", "Great value", "Ergonomic handle", "Good sharpness"],
     cons: ["Needs more frequent sharpening", "Not as premium"],
@@ -70,10 +66,7 @@ export default function BestChefKnivesHomeCooks() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

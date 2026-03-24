@@ -12,7 +12,6 @@ const products = [
     name: "Pepper Mate Traditional Pepper Mill",
     price: "$39.95",
     rating: 4.8,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Pepper+Mate+Traditional+Pepper+Mill&tag=cookinkitchen-20",
     pros: [" Ceramic grinder", "Adjustable coarseness", "Solid wood", "Lifetime warranty"],
     cons: ["Hand wash only"],
@@ -21,7 +20,6 @@ const products = [
     name: "OXO Good Grips Salt and Pepper Set",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Seasoning&tag=cookinkitchen-20",
     pros: ["Push button", "One-handed use", "Stainless steel", "Affordable"],
     cons: ["Acrylic not glass"],
@@ -49,10 +47,7 @@ export default function BestGrinders2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -23,7 +23,6 @@ const products = [
     name: "Zulay Kitchen Metal 2-in-1 Lemon Squeezer",
     price: "$14.99",
     rating: 4.7,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/Rated-Zulay-Premium-Quality-Squeezer/dp/B00YBP918M?tag=cookinkitchen-20",
     pros: ["2-in-1 design", "Stainless steel", "Maximum extraction", "Easy to clean", "Durable construction"],
     cons: ["Requires some hand strength"],
@@ -32,7 +31,6 @@ const products = [
     name: "Chef'n LemonDrop Handheld Citrus Juicer",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Chefn-2751001-LemonDrop-Citrus/dp/B00004OCK5?tag=cookinkitchen-20",
     pros: ["Innovative design", "Built-in filter", "Dishwasher safe", "Comfortable handle"],
     cons: ["Smaller capacity"],
@@ -41,7 +39,6 @@ const products = [
     name: "Kitchenaid Citrus Squeezer",
     price: "$24.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/KitchenAid-KT6090AQ-Citrus-Squeezer/dp/B00004OCMU?tag=cookinkitchen-20",
     pros: ["Ridged cup prevents slipping", "Stainless steel", "Professional quality", "Easy to use"],
     cons: ["Hand wash recommended"],
@@ -50,7 +47,6 @@ const products = [
     name: "Dreamfarm Fluicer Citrus Juicer",
     price: "$29.99",
     rating: 4.8,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/Dreamfarm-Fluicer-Citrus-Squeezer-Green/dp/B01H7JZVK6?tag=cookinkitchen-20",
     pros: ["Innovative flipping design", "Maximum juice extraction", "Catches seeds", "Ergonomic"],
     cons: ["Premium price"],
@@ -59,7 +55,6 @@ const products = [
     name: "OXO Good Grips Citrus Juicer",
     price: "$19.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/OXO-Good-Grips-Citrus-Juicer/dp/B00004OCLR?tag=cookinkitchen-20",
     pros: ["Non-slip handle", "Built-in filter", "Drip-free spout", "Dishwasher safe"],
     cons: ["May need more pressure"],
@@ -101,10 +96,7 @@ export default function BestCitrusJuicers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

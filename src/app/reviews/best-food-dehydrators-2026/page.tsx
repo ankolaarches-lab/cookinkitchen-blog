@@ -12,7 +12,6 @@ const products = [
     name: "Cosori Stainless Steel Dehydrator",
     price: "$116.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Cosori+Stainless+Steel+Dehydrator&tag=cookinkitchen-20",
     pros: ["6 trays", "Digital controls", " Stainless steel"],
     cons: ["Higher price point"],
@@ -21,7 +20,6 @@ const products = [
     name: "Magic Mill Food Dehydrator",
     price: "$89.99",
     rating: 4.6,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Magic+Mill+Food+Dehydrator&tag=cookinkitchen-20",
     pros: ["5 stackable trays", "Timer & temp control", "Quiet operation"],
     cons: ["Basic display"],
@@ -30,7 +28,6 @@ const products = [
     name: "Nesco FD-75A Snackmaster Pro",
     price: "$69.99",
     rating: 4.5,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Nesco+FD-75A+Snackmaster+Pro&tag=cookinkitchen-20",
     pros: ["Expandable to 12 trays", "Budget-friendly", "Flexible drying"],
     cons: ["No automatic shutoff"],
@@ -39,7 +36,6 @@ const products = [
     name: "LEM Products MightyBite 6-Tray",
     price: "$136.00",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=LEM+Products+MightyBite+Dehydrator&tag=cookinkitchen-20",
     pros: ["Clear top for monitoring", "Strong build", "Even air flow"],
     cons: ["Premium price"],
@@ -48,7 +44,6 @@ const products = [
     name: "Elite Gourmet Food Dehydrator",
     price: "$29.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Elite+Gourmet+Food+Dehydrator&tag=cookinkitchen-20",
     pros: ["Very affordable", "Compact", "5 trays included"],
     cons: ["Basic temperature control"],
@@ -102,11 +97,8 @@ export default function BestFoodDehydrators2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

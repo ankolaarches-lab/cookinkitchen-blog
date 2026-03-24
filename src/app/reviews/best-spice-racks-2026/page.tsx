@@ -12,7 +12,6 @@ const products = [
     name: "Simple Houseware 2-Tier Spice Rack",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Simple+Houseware+2-Tier+Spice+Rack&tag=cookinkitchen-20",
     pros: ["Compact 2-tier design", "Fits most cabinets", " Affordable", "Durable metal construction"],
     cons: ["Limited capacity", "No rotation"],
@@ -21,7 +20,6 @@ const products = [
     name: "Orii 20 Jar Revolving Spice Rack",
     price: "$49.99",
     rating: 4.5,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Orii+20+Jar+Revolving+Spice+Rack&tag=cookinkitchen-20",
     pros: ["20 jars included", "Rotating base", "Stainless steel", "Space-saving"],
     cons: ["Takes counter space", "Glass jars can break"],
@@ -30,7 +28,6 @@ const products = [
     name: "Oizeir Clear Spice Rack",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Oizeir+Clear+Spice+Rack&tag=cookinkitchen-20",
     pros: ["3-tier acrylic", "Clear visibility", "Stackable design", "Modern look"],
     cons: ["Acrylic can scratch", "Assembly required"],
@@ -39,7 +36,6 @@ const products = [
     name: "Mystozer Wall-Mounted Spice Rack",
     price: "$29.99",
     rating: 4.4,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Mystozer+Wall-Mounted+Spice+Rack&tag=cookinkitchen-20",
     pros: ["Saves counter space", "Easy wall mount", "Modern black finish", "3 size options"],
     cons: ["Requires installation", "Limited to wall space"],
@@ -48,7 +44,6 @@ const products = [
     name: "YouCopia StoreMore Spice Organizer",
     price: "$18.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=YouCopia+StoreMore+Spice+Organizer&tag=cookinkitchen-20",
     pros: ["Expandable", "Fits in drawers", "No tools needed", "Adjustable compartments"],
     cons: ["Drawer space required", "May not fit all containers"],
@@ -112,11 +107,8 @@ export default function BestSpiceRacks2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

@@ -11,7 +11,6 @@ const products = [
     name: "Zojirushi NS-LAC05XT Neuro Fuzzy Rice Cooker",
     price: "$99.95",
     rating: 4.9,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Zojirushi+NS-LAC05XT&tag=cookinkitchen-20",
     pros: ["Fuzzy logic technology", "Compact size", "Multiple settings", "Keep warm function"],
     cons: ["Higher price", "No quick cook mode"],
@@ -20,7 +19,6 @@ const products = [
     name: "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
     price: "$89.95",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Instant+Pot+Duo&tag=cookinkitchen-20",
     pros: ["Multi-functional", "Rice cooking mode", "Programmable", "Safety features"],
     cons: ["Learning curve", "More buttons to navigate"],
@@ -29,7 +27,6 @@ const products = [
     name: "Tiger JKT-S10U 5.5-Cup Rice Cooker",
     price: "$149.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Tiger+JKT-S10U&tag=cookinkitchen-20",
     pros: ["Induction heating", "T，操作面板", "Multiple rice types", "Timer function"],
     cons: ["Premium price", "Larger footprint"],
@@ -38,7 +35,6 @@ const products = [
     name: "Hamilton Beach 30865A Digital Rice Cooker",
     price: "$34.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+30865A&tag=cookinkitchen-20",
     pros: ["Affordable", "Digital controls", "Keep warm", "Steam function"],
     cons: ["Basic features", "Smaller capacity"],
@@ -47,7 +43,6 @@ const products = [
     name: "Aroma Housewares ARC-914SBD 8-Cup Rice Cooker",
     price: "$39.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Aroma+ARC-914SBD&tag=cookinkitchen-20",
     pros: ["Large capacity", "Steam function", "Affordable", "Easy to clean"],
     cons: ["Noisy operation", "Basic design"],
@@ -56,7 +51,6 @@ const products = [
     name: "Panasonic SR-DF101 5-Cup Rice Cooker",
     price: "$59.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Panasonic+SR-DF101&tag=cookinkitchen-20",
     pros: ["Fuzzy logic", "Compact", "Multiple cooking options", "Durable"],
     cons: ["Limited capacity", "Basic display"],
@@ -115,11 +109,8 @@ export default function BestRiceCookers2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

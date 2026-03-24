@@ -12,7 +12,6 @@ const cookware = [
     name: "Lodge Cast Iron Skillet",
     price: "$44.99",
     rating: 4.8,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=cast+iron+vs+carbon+steel&tag=cookinkitchen-20",
     type: "Cast Iron",
     pros: ["Pre-seasoned", "Affordable", "Great heat retention", "Made in USA"],
@@ -22,7 +21,6 @@ const cookware = [
     name: "Stargazer Carbon Steel Skillet",
     price: "$89.00",
     rating: 4.9,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=cast+iron+vs+carbon+steel&tag=cookinkitchen-20",
     type: "Carbon Steel",
     pros: ["Lighter than cast iron", "Slicker surface", "Heats faster", "Professional grade"],
@@ -62,10 +60,7 @@ export default function CastIronVsCarbonSteel() {
           {cookware.map((item, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={item.image} alt={item.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="text-sm text-emerald-600 font-bold uppercase tracking-wide mb-1">{item.type}</div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{item.name}</h2>

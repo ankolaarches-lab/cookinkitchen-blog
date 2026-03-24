@@ -23,7 +23,6 @@ const products = [
     name: "OXO Good Grips 3-in-1 Avocado Slicer",
     price: "$9.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/OXO-Good-Grips-Avocado-Slicer/dp/B0088LR592?tag=cookinkitchen-20",
     pros: ["3-in-1 functionality", "Non-slip grip", "Safe blade design", "Dishwasher safe", "Budget-friendly"],
     cons: ["Plastic construction"],
@@ -32,7 +31,6 @@ const products = [
     name: "Jokari Avocado Tool 5-in-1",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Avocado-Tool-5-Dishwasher-Guacamole/dp/B01D8LG0B0?tag=cookinkitchen-20",
     pros: ["5-in-1 versatility", "Ergonomic design", "Cuts, pits, scoops, peels, and mashes", "BPA free"],
     cons: ["More parts to clean"],
@@ -41,7 +39,6 @@ const products = [
     name: "Stainless Steel Avocado Slicer 3-in-1",
     price: "$12.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/All-One-Avocado-Slicer-Tool/dp/B0G81685BP?tag=cookinkitchen-20",
     pros: ["Stainless steel blade", "Strong pit remover", "6 even slices", "Non-slip handle"],
     cons: ["Sharp blades require care"],
@@ -50,7 +47,6 @@ const products = [
     name: "Joseph Joseph Avocado Slicer",
     price: "$14.99",
     rating: 4.4,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/Joseph-Joseph-20067-Avocado-Slicer/dp/B01MZCZ3QZ?tag=cookinkitchen-20",
     pros: ["Unique design", "Built-in storage", "Color-coded", "Easy to use"],
     cons: ["Limited availability"],
@@ -59,7 +55,6 @@ const products = [
     name: "Mueller Avocado Slicer 4-in-1",
     price: "$15.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/Mueller-Avocado-Slicer-Remover-Stainless/dp/B082M1LSLY?tag=cookinkitchen-20",
     pros: ["4-in-1 functionality", "Premium stainless steel", "Easy to store", "Giftable"],
     cons: ["May be complex for simple needs"],
@@ -101,10 +96,7 @@ export default function BestAvocadoSlicers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -10,13 +10,11 @@ export const metadata: Metadata = {
     description: "Effortlessly crush garlic cloves with the best garlic presses of 2026.",
     type: "article",
     url: "https://cookinkitchen.online/reviews/best-garlic-presses-2026",
-    images: ["/images/kitchen/7.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Garlic Presses 2026 - Complete Buying Guide",
     description: "Effortlessly crush garlic cloves with the best garlic presses of 2026.",
-    images: ["/images/kitchen/7.jpg"],
   },
   alternates: {
     canonical: "https://cookinkitchen.online/reviews/best-garlic-presses-2026",
@@ -28,7 +26,6 @@ const products = [
     name: "OXO Good Grips Garlic Press",
     price: "$19.99",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Garlic+Press&tag=cookinkitchen-20",
     pros: ["Comfortable handle", "Easy to clean", "Built-in cleaner"],
     cons: ["Requires some force"],
@@ -37,7 +34,6 @@ const products = [
     name: "Kuhn Rikon Garlic Press",
     price: "$34.95",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Kuhn+Rikon+Garlic+Press&tag=cookinkitchen-20",
     pros: ["Heavy-duty", "Professional quality", "Double-press action"],
     cons: ["Hand wash only"],
@@ -46,7 +42,6 @@ const products = [
     name: "Joseph Joseph Garlic Rocker",
     price: "$14.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Joseph+Joseph+Garlic+Rocker&tag=cookinkitchen-20",
     pros: ["Rocking motion", "Easy to use", "Dishwasher safe"],
     cons: ["Different technique needed"],
@@ -55,7 +50,6 @@ const products = [
     name: "Cuisinart Garlic Press",
     price: "$14.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Garlic+Press&tag=cookinkitchen-20",
     pros: ["Affordable", "Easy to clean", "Sturdy construction"],
     cons: ["Smaller capacity"],
@@ -64,7 +58,6 @@ const products = [
     name: "Norpro Garlic Press",
     price: "$9.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Norpro+Garlic+Press&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Simple design", "Lightweight"],
     cons: ["Less durable"],
@@ -85,12 +78,7 @@ export default function BestGarlicPresses2026() {
           </div>
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <img 
-              src="/images/kitchen/7.jpg" 
-              alt="Best Garlic Presses 2026" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
+</div>
           
           <h1 className="font-playfair text-4xl text-stone-800 mb-6">Best Garlic Presses 2026: Complete Guide</h1>
           <p className="font-lato text-xl text-stone-600 mb-8">Crush garlic cloves effortlessly with our tested picks for the best garlic presses in 2026.</p>
@@ -117,11 +105,8 @@ export default function BestGarlicPresses2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

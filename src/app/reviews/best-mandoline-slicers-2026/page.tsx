@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips V-Blade Mandoline Slicer",
     price: "$34.95",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Mandoline+Slicer&tag=cookinkitchen-20",
     pros: ["V-shaped blade", "Non-slip base", "Easy to clean", "Multiple slice thicknesses"],
     cons: ["Hand wash recommended"],
@@ -21,7 +20,6 @@ const products = [
     name: "Borner V-Power Mandoline",
     price: "$49.99",
     rating: 4.7,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Borner+V-Power+Mandoline&tag=cookinkitchen-20",
     pros: ["German engineering", "Very sharp blades", "Durable construction", "Made in Germany"],
     cons: ["No food holder included"],
@@ -30,7 +28,6 @@ const products = [
     name: "KitchenAid Mandoline Slicer",
     price: "$44.99",
     rating: 4.6,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+Mandoline+Slicer&tag=cookinkitchen-20",
     pros: ["Stainless steel blades", "Adjustable thickness", "Built-in food holder", "Dishwasher safe"],
     cons: ["Takes more storage space"],
@@ -39,7 +36,6 @@ const products = [
     name: "Mueller Austria Mandoline Pro",
     price: "$39.99",
     rating: 4.5,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Mueller+Mandoline+Pro+Slicer&tag=cookinkitchen-20",
     pros: ["4 blade types", "Julienne and wavy cuts", "Includes food holder", "Value pack"],
     cons: ["Plastic feel"],
@@ -48,7 +44,6 @@ const products = [
     name: "Chef'n Veggie Chop Hand-Powered Slicer",
     price: "$29.99",
     rating: 4.4,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Chef+n+Veggie+Chop&tag=cookinkitchen-20",
     pros: ["Compact design", "Easy to store", "No electricity needed", "Fun to use"],
     cons: ["Not for precision slicing"],
@@ -102,11 +97,8 @@ export default function BestMandolineSlicers2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

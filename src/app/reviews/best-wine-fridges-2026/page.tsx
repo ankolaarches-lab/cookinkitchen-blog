@@ -23,7 +23,6 @@ const products = [
     name: "Wine Enthusiast 32-Bottle Dual Zone MAX Compressor Wine Cooler",
     price: "$499.00",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/Wine-Enthusiast-272-MS-Dual-Zone/dp/B07Y8DWW4L?tag=cookinkitchen-20",
     pros: ["Dual zone cooling", "32 bottle capacity", "Compressor technology", "UV protection glass door", "Adjustable racks"],
     cons: ["Requires proper ventilation"],
@@ -32,7 +31,6 @@ const products = [
     name: "IKEA VARDAGEN Wine Chiller",
     price: "$79.00",
     rating: 4.3,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/IKEA-VARDAGEN-Wine-Chiller/dp/B01H7JZVK6?tag=cookinkitchen-20",
     pros: ["Affordable", "Compact size", "Fits under counter", "Simple design", "IKEA warranty"],
     cons: ["Single zone", "Smaller capacity"],
@@ -41,7 +39,6 @@ const products = [
     name: "Wine Cooler 12 Bottle Freestanding Wine Fridge",
     price: "$179.99",
     rating: 4.4,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/Freestanding-12-Bottle-Wine-Cooler/dp/B081JJZV8D?tag=cookinkitchen-20",
     pros: ["Compact design", "Freestanding", "Affordable", "Digital temperature control", "Soft LED lighting"],
     cons: ["12 bottle capacity limit"],
@@ -50,7 +47,6 @@ const products = [
     name: "hOmeLabs 18 Bottle Wine Cooler",
     price: "$229.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/hOmeLabs-18-Bottle-Wine-Cooler/dp/B01H7JZVK6?tag=cookinkitchen-20",
     pros: ["18 bottle capacity", "Digital display", "Reversible door", "Adjustable temperature", "Compact footprint"],
     cons: ["Single zone cooling"],
@@ -59,7 +55,6 @@ const products = [
     name: "Kalamera 24 Bottle Wine Cooler",
     price: "$349.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/Kalamera-Bottle-Wine-Cooler-Professional/dp/B01H7JZVK6?tag=cookinkitchen-20",
     pros: ["24 bottle capacity", "Dual zone", "Stainless steel door", "Built-in or freestanding", "Silent operation"],
     cons: ["Requires installation space"],
@@ -101,10 +96,7 @@ export default function BestWineFridges2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Lodge Cast Iron Skillet - 12-inch",
     price: "$44.99",
     rating: 4.9,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Skillet+12+inch&tag=cookinkitchen-20",
     pros: ["Pre-seasoned ready to use", "Made in USA", "Excellent heat retention", "Lifetime durability"],
     cons: ["Heavy (8+ lbs)", "Requires seasoning maintenance"],
@@ -21,7 +20,6 @@ const products = [
     name: "Lodge Cast Iron Skillet - 10.5-inch",
     price: "$29.99",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Skillet+10+inch&tag=cookinkitchen-20",
     pros: ["Great starter size", "Pre-seasoned", "Lightweight for cast iron", "Affordable"],
     cons: ["Smaller cooking surface", "No helper handle"],
@@ -30,7 +28,6 @@ const products = [
     name: "Stargazer Cast Iron Skillet - 10-inch",
     price: "$65.00",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Stargazer+Cast+Iron+Skillet&tag=cookinkitchen-20",
     pros: ["Ultra-smooth surface", "Hand-polished", "Helper handle", "Modern design"],
     cons: ["Higher price", "Not pre-seasoned"],
@@ -39,7 +36,6 @@ const products = [
     name: "Victoria Cast Iron Skillet - 12-inch",
     price: "$49.99",
     rating: 4.8,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Victoria+Cast+Iron+Skillet&tag=cookinkitchen-20",
     pros: ["Smooth surface", "Angled helper handle", "Pre-seasoned", "Great value"],
     cons: ["Requires initial seasoning", "Heavier than some"],
@@ -48,7 +44,6 @@ const products = [
     name: "Lodge Pro-Logic Cast Iron Skillet - 12-inch",
     price: "$59.99",
     rating: 4.8,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Lodge+Pro+Logic+Cast+Iron+Skillet&tag=cookinkitchen-20",
     pros: ["Ergonomic handle", "Professional grade", "Pre-seasoned", "Even heat distribution"],
     cons: ["Most expensive Lodge option", "Very heavy"],
@@ -57,7 +52,6 @@ const products = [
     name: "Amazon Basics Pre-Seasoned Cast Iron Skillet",
     price: "$24.99",
     rating: 4.4,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Amazon+Basics+Cast+Iron+Skillet&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Pre-seasoned", "Lightweight", "Good for beginners"],
     cons: ["Less refined surface", "Inconsistent quality", "Shorter lifespan"],
@@ -115,11 +109,8 @@ export default function BestCastIronSkillets2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

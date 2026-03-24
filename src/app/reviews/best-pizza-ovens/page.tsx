@@ -12,7 +12,6 @@ const products = [
     name: "Ooni Koda 12 Pizza Oven",
     price: "$399.00",
     rating: 4.8,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Ooni+Koda+Portable+Pizza+Oven&tag=cookinkitchen-20",
     pros: ["Heats in 15 minutes", "Gas powered", "Compact", "900°F max"],
     cons: ["Gas tank not included", "Needs outdoor space"],
@@ -21,7 +20,6 @@ const products = [
     name: "Ninja Foodi Pizza Oven",
     price: "$229.99",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Foodi+Pizza+Oven&tag=cookinkitchen-20",
     pros: ["Countertop friendly", "Multiple functions", "Digital controls", "Affordable"],
     cons: ["Smaller pizza size", "Less heat than Ooni"],
@@ -30,7 +28,6 @@ const products = [
     name: "Breville Smart Oven Pizzaiolo",
     price: "$599.95",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Breville+Smart+Oven+Pizzaiolo+BOV860BSS&tag=cookinkitchen-20",
     pros: ["Wood-fired style", "Dual heating elements", "Large capacity", "Precise controls"],
     cons: ["Expensive", "Requires 20 min preheat"],
@@ -58,10 +55,7 @@ export default function BestPizzaOvens2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

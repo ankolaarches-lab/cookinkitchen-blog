@@ -13,7 +13,6 @@ const products = [
     name: "Wüsthof 7-Slot Knife Block",
     price: "$39.99",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20",
     pros: ["Solid beech wood", "Fits most knife sizes", "Keeps blades sharp", "Durable"],
     cons: ["Takes counter space"],
@@ -22,7 +21,6 @@ const products = [
     name: "KitchenAid Knife Block Set",
     price: "$79.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+4+Slot+Knife+Block&tag=cookinkitchen-20",
     pros: ["Includes steak knives", "Rotating base", "Sleek design", "Giftable"],
     cons: ["Smaller slots"],
@@ -31,7 +29,6 @@ const products = [
     name: "Chef'sPath Magnetic Knife Strip (20 inch)",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip&tag=cookinkitchen-20",
     pros: ["Saves counter space", "Strong magnet", "Easy installation", "Fits any knife"],
     cons: ["Wall-mounted"],
@@ -40,7 +37,6 @@ const products = [
     name: "Joseph Joseph Expandable Knife Drawer",
     price: "$29.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer&tag=cookinkitchen-20",
     pros: ["Fits in drawer", "Expandable", "Non-slip", "Space-saving"],
     cons: ["Limited to drawer space"],
@@ -49,7 +45,6 @@ const products = [
     name: "McCook 15-Piece Knife Set with Block",
     price: "$59.99",
     rating: 4.4,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=McCook+Knife+Block+Set&tag=cookinkitchen-20",
     pros: ["Complete set", "Great value", "Sharpener included", "Modern look"],
     cons: ["Lower quality than premium"],
@@ -93,15 +88,7 @@ export default function BestKnifeBlocks() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative w-full md:w-48 h-48 flex-shrink-0">
-                  <Image 
-                    src={product.image} 
-                    alt={product.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

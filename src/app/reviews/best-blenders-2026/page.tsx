@@ -12,7 +12,6 @@ const products = [
     name: "Vitamix 5200",
     price: "$549.95",
     rating: 4.9,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Vitamix+5200+Standard+Blender+Professional&tag=cookinkitchen-20",
     pros: ["Commercial-grade motor", "Variable speed control", "Perfect for hot soups", "10-year warranty"],
     cons: ["Premium price", "Loud operation", "Heavy"],
@@ -21,7 +20,6 @@ const products = [
     name: "Vitamix Ascent X4",
     price: "$649.95",
     rating: 4.8,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Vitamix+Ascent+Blender+Set+Black&tag=cookinkitchen-20",
     pros: ["Smart auto-detection", "Multiple container sizes", "Touchscreen controls", "Self-cleaning"],
     cons: ["Very expensive", "Complex features"],
@@ -30,7 +28,6 @@ const products = [
     name: "Ninja Professional BL610",
     price: "$99.99",
     rating: 4.6,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Professional+Blender+Quiet&tag=cookinkitchen-20",
     pros: ["Affordable", "Large 72oz capacity", "Powerful 1000W motor", "Easy to clean"],
     cons: ["Not as durable", "No variable speed"],
@@ -39,7 +36,6 @@ const products = [
     name: "Ninja Foodi Power Pitcher",
     price: "$149.99",
     rating: 4.7,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Ninja+Foodi+Power+Pitcher+System&tag=cookinkitchen-20",
     pros: ["Built-in sensor", "Auto-iQ programs", "Smoothie cups included", "Nutrient extraction"],
     cons: ["Learning curve", "More parts to clean"],
@@ -48,7 +44,6 @@ const products = [
     name: "Oster Pro 1200",
     price: "$129.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Oster+Blender+Stainless+Brushed+Nickel&tag=cookinkitchen-20",
     pros: ["Good value", "Dual-direction blade", "Food processor jar included", "Smoothie cups"],
     cons: ["Less powerful", "Warranty shorter"],
@@ -57,7 +52,6 @@ const products = [
     name: "Blendtec Designer 725",
     price: "$699.95",
     rating: 4.8,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Blendtec+Designer+725+Blender+Black&tag=cookinkitchen-20",
     pros: ["Wildside+ jar", "Touchscreen interface", "Pre-programmed recipes", "10-year warranty"],
     cons: ["Very expensive", "Large footprint"],
@@ -111,11 +105,8 @@ export default function BestBlenders2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

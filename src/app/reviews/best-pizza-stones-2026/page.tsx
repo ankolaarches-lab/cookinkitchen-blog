@@ -20,7 +20,6 @@ const products = [
     name: "Baking Steel 14-Inch pizza Steel",
     price: "$79.00",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Baking+Steel+14-Inch+pizza+Steel&tag=cookinkitchen-20",
     pros: ["Superior heat transfer", "Durable steel", "Makes crispy crust"],
     cons: ["Heavy", "Requires preheating"],
@@ -29,7 +28,6 @@ const products = [
     name: "Old Stone Oven Pizza Stone",
     price: "$34.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Old+Stone+Oven+Pizza+Stone&tag=cookinkitchen-20",
     pros: ["14-inch size", "Includes pizza peel", "Even heat distribution"],
     cons: ["Can crack if not seasoned"],
@@ -38,7 +36,6 @@ const products = [
     name: "FibraMent D-BO-1416 Pizza Stone",
     price: "$49.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=FibraMent+D-BO-1416+Pizza+Stone&tag=cookinkitchen-20",
     pros: ["Professional grade", "18x14 inch", "Works great in ovens"],
     cons: ["Very heavy"],
@@ -47,7 +44,6 @@ const products = [
     name: "NerdChef Steel Pizza Stone",
     price: "$54.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=NerdChef+Steel+Pizza+Stone&tag=cookinkitchen-20",
     pros: ["Mirror finish", "14-inch", "Pre-seasoned"],
     cons: ["Higher price point"],
@@ -56,7 +52,6 @@ const products = [
     name: "AmazonBasics Pizza Stone",
     price: "$19.99",
     rating: 4.4,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=AmazonBasics+Pizza+Stone&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "12-inch size", "Cordierite material"],
     cons: ["Smaller than others"],
@@ -109,11 +104,11 @@ export default function BestPizzaStones2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition border border-stone-100">
-                <div className="flex gap-4">
+                <div>
                   <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center">
                     <span className="text-3xl">🍕</span>
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800 font-medium">{product.name}</h3>
                       <span className="text-emerald-600 font-lato font-bold">{product.rating} ★</span>

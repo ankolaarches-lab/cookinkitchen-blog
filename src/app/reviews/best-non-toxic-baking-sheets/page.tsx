@@ -12,7 +12,6 @@ const products = [
     name: "GreenLife Healthy Ceramic Nonstick Cookie Sheet",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=GreenLife+Ceramic+Non+Stick+Cookie+Turquoise&tag=cookinkitchen-20",
     category: "Ceramic",
     pros: ["PFAS-free ceramic coating", "60% fewer CO2 emissions in production", "Reinforced rims prevent warping", "Oven safe to 450°F", "Easy cleanup"],
@@ -22,7 +21,6 @@ const products = [
     name: "Caraway Non-Stick Ceramic Baking Sheet",
     price: "$44.00",
     rating: 4.5,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Caraway+Non+Stick+Ceramic+Baking+Sheet&tag=cookinkitchen-20",
     category: "Ceramic",
     pros: ["Beautiful design", "PFTE & PFOA free", "Naturally slick ceramic coating", "Sturdy construction", "Eco-friendly packaging"],
@@ -32,7 +30,6 @@ const products = [
     name: "Silpat Premium Non-Stick Baking Mat",
     price: "$34.95",
     rating: 4.9,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=cookinkitchen-20",
     category: "Silicone Mat",
     pros: ["Lifetime guarantee", "French-made quality", "Even heat distribution", "PFAS-free silicone", "Lasts for years"],
@@ -42,7 +39,6 @@ const products = [
     name: "Nordic Ware Naturals Half Sheet Pan",
     price: "$14.99",
     rating: 4.8,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Aluminum+Commercial&tag=cookinkitchen-20",
     category: "Natural Aluminum",
     pros: ["Natural aluminum - no coating", "Commercial quality", "Encapsulated rim prevents warping", "Made in USA", "Very affordable"],
@@ -52,7 +48,6 @@ const products = [
     name: "BRONYPRO Non-Stick Ceramic Baking Pan Set",
     price: "$39.99",
     rating: 4.4,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=BRONYPRO+Ceramic+Baking+Natural+Cookie&tag=cookinkitchen-20",
     category: "Ceramic",
     pros: ["PFOA/PTFE/PFAS free", "Set of 3 sizes", "Silicone handles", "Warp-resistant to 500°F", "Great value"],
@@ -62,7 +57,6 @@ const products = [
     name: "Premium Non-Stick Ceramic Baking Sheet",
     price: "$24.99",
     rating: 4.3,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Premium+Non+Stick+Ceramic+Baking+Sheet&tag=cookinkitchen-20",
     category: "Ceramic",
     pros: ["PFAS and PFOA free", "Healthy ceramic coating", "Non-toxic and non-allergic", "Warp-resistant", "Medium size versatile"],
@@ -72,7 +66,6 @@ const products = [
     name: "Our Place Griddle Pan / Baking Sheet",
     price: "$55.00",
     rating: 4.4,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Our+Place+Griddle+Pan+Toxin+Free&tag=cookinkitchen-20",
     category: "Ceramic",
     pros: ["Dual-function (stovetop & oven)", "Toxin-free ceramic coating", "No PFAS, PTFE, PFOA, lead, or cadmium", "Oven safe to 450°F", "Versatile design"],
@@ -82,7 +75,6 @@ const products = [
     name: "Amazon Basics Ceramic Nonstick Baking Sheet",
     price: "$18.99",
     rating: 4.3,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=AmazonBasics+Ceramic+Nonstick+Baking+Sheet&tag=cookinkitchen-20",
     category: "Ceramic",
     pros: ["Affordable", "PFAS-free ceramic", "Includes cooling rack", "Half sheet size", "Easy release"],
@@ -114,10 +106,7 @@ export default function BestNonToxicBakingSheets() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 bg-stone-100 rounded-lg flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2 py-1 rounded">{product.category}</span>
                   </div>

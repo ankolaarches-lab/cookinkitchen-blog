@@ -12,7 +12,6 @@ const products = [
     name: "Air Fryer Rack (3-Tier)",
     price: "$16.99",
     rating: 4.7,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=Multi+Layer+Air+Fryer+Rack+Expandable&tag=cookinkitchen-20",
     pros: ["3-tier cooking", "Expandable", "Dishwasher safe", "More capacity"],
     cons: ["May not fit all models"],
@@ -21,7 +20,6 @@ const products = [
     name: "Silicone Air Fryer Liners",
     price: "$12.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Silicone+Air+Fryer+Liners+Reusable&tag=cookinkitchen-20",
     pros: ["Reusable", "Non-stick", "Easy cleanup", "Food safe silicone"],
     cons: ["Need to size correctly"],
@@ -30,7 +28,6 @@ const products = [
     name: "Air Fryer Baking Pan Set",
     price: "$19.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Air+Fryer+Accessories+Baking+Cake&tag=cookinkitchen-20",
     pros: ["Multiple pieces", "Bake cakes", "Make muffins", "Parchment included"],
     cons: ["Small portions only"],
@@ -39,7 +36,6 @@ const products = [
     name: "Rotisserie Kit",
     price: "$24.99",
     rating: 4.5,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=Air+Fryer+Rotisserie+Kit+Universal&tag=cookinkitchen-20",
     pros: ["Whole roasted chicken", "Rotisserie effect", "Juicy results"],
     cons: ["Model specific"],
@@ -70,10 +66,7 @@ export default function BestAirFryerAccessories() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 bg-stone-100 rounded-lg flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

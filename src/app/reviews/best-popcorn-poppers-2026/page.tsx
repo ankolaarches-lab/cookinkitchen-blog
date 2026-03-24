@@ -23,7 +23,6 @@ const products = [
     name: "West Bend 8255 Stovetop Popcorn Popper",
     price: "$29.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/West-Bend-8255-Popcorn-Popper/dp/B00004S1BX?tag=cookinkitchen-20",
     pros: ["Classic stovetop design", "Makes 6 quarts", "Durable aluminum", "Temperature control", "Great nostalgia factor"],
     cons: ["Requires stovetop"],
@@ -32,7 +31,6 @@ const products = [
     name: "Presto 04820 PopLite Hot Air Popper",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/Presto-04820-PopLite-Popper/dp/B00004S1DJ?tag=cookinkitchen-20",
     pros: ["Hot air technology", "No oil needed", "Quick popping", "Easy to clean", "Compact storage"],
     cons: ["Can be noisy"],
@@ -41,7 +39,6 @@ const products = [
     name: "Cuisinart CPM-450W1 Popcorn Maker",
     price: "$39.99",
     rating: 4.6,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/Cuisinart-CPM-450W1-Popcorn-Maker-Stainless/dp/B07BJL3D7G?tag=cookinkitchen-20",
     pros: ["Stainless steel design", "7-quart capacity", "Dual-function", "LED light", "Keep-warm feature"],
     cons: ["Larger footprint"],
@@ -50,7 +47,6 @@ const products = [
     name: "Nostalgia Electrics Retro Popcorn Maker",
     price: "$34.99",
     rating: 4.5,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/Nostalgia-Electrics-Retro-Popcorn-Maker/dp/B001J3MD5W?tag=cookinkitchen-20",
     pros: ["Retro design", "4-quart capacity", "Stir rod included", "Great gift idea", "Easy operation"],
     cons: ["Smaller capacity"],
@@ -59,7 +55,6 @@ const products = [
     name: "Microwave Popcorn Popper Bowl",
     price: "$14.99",
     rating: 4.4,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/Microwave-Popcorn-Popper-Bowl-Collapsible/dp/B08XYZ1234?tag=cookinkitchen-20",
     pros: ["Microwave friendly", "Collapsible design", "No oil needed", "Easy cleanup", "Budget-friendly"],
     cons: ["Less theatrical"],
@@ -101,10 +96,7 @@ export default function BestPopcornPoppers2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Breville Die-Cast 2-Slice Smart Toaster",
     price: "$199.95",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Breville+Die+Cast+2+Slice+Smart+Toaster&tag=cookinkitchen-20",
     pros: ["Smart heating technology", "Multiple functions", "Premium build"],
     cons: ["Premium price", "Heavy"],
@@ -21,7 +20,6 @@ const products = [
     name: "Breville Die-Cast 4-Slice Smart Toaster",
     price: "$299.95",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Breville+Die+Cast+4+Slice+Smart+Toaster&tag=cookinkitchen-20",
     pros: ["Larger capacity", "Smart technology", "Even toasting"],
     cons: ["Very expensive"],
@@ -30,7 +28,6 @@ const products = [
     name: "Cuisinart CPT-T40 4-Slice Touchscreen",
     price: "$89.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+4+Slice+Touchscreen+Toaster&tag=cookinkitchen-20",
     pros: ["Touchscreen controls", "6 shade settings", "Great value"],
     cons: ["Some users report issues"],
@@ -39,7 +36,6 @@ const products = [
     name: "Hamilton Beach 2-Slice Toaster",
     price: "$24.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Hamilton+Beach+2+Slice+Toaster&tag=cookinkitchen-20",
     pros: ["Extra-wide slots", "Affordable", "Bagel setting"],
     cons: ["Basic features"],
@@ -48,7 +44,6 @@ const products = [
     name: "OXO Good Grips 2-Slice Toaster",
     price: "$79.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+2+Slice+Toaster&tag=cookinkitchen-20",
     pros: ["Consistent results", "Sleek design", "Toast boost feature"],
     cons: ["Mid-range price"],
@@ -102,11 +97,8 @@ export default function BestToasters2026() {
           <div className="grid gap-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-stone-100 hover:shadow-md transition">
-                <div className="flex gap-4">
-                  <div className="w-32 h-32 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

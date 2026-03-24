@@ -12,7 +12,6 @@ const products = [
     name: "Victorinox Fibrox Pro 8-Inch Chef's Knife",
     price: "$39.99",
     rating: 4.8,
-    image: "/images/kitchen/7.jpg",
     link: "https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=cookinkitchen-20",
     pros: ["Excellent value", "Fibrox handle provides great grip", "Swiss-made quality", "Dishwasher safe"],
     cons: ["Requires occasional sharpening"],
@@ -21,7 +20,6 @@ const products = [
     name: "Mercer Culinary Genesis 8-Inch Chef's Knife",
     price: "$29.99",
     rating: 4.6,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Mercer+Culinary+Genesis+8+Inch+Chefs&tag=cookinkitchen-20",
     pros: ["Very affordable", "High-carbon stainless steel", "Comfortable grip", "Great for beginners"],
     cons: ["Not as durable as premium options"],
@@ -30,7 +28,6 @@ const products = [
     name: "Wüsthof Classic IKON 7-Inch Chef's Knife",
     price: "$44.99",
     rating: 4.7,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=W%C3%BCsthof+Classic+IKON+Chefs+7+Inch&tag=cookinkitchen-20",
     pros: ["German precision", "Full tang construction", "Beautiful handle", "Holds edge well"],
     cons: ["Slightly shorter blade"],
@@ -39,7 +36,6 @@ const products = [
     name: "Chicago Cutlery 8-Inch Chef's Knife",
     price: "$24.99",
     rating: 4.4,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Chicago+Cutlery+8+Inch+Chef+Knife&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Stainless steel", "Lifetime warranty"],
     cons: ["Heavier feel", "Less ergonomic handle"],
@@ -48,7 +44,6 @@ const products = [
     name: "OXO Good Grips 8-Inch Chef's Knife",
     price: "$49.99",
     rating: 4.5,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Good+Grips+Stainless+8+Inch+Knife&tag=cookinkitchen-20",
     pros: ["Soft-grip handle", "Non-slip", "Built-in finger guard"],
     cons: ["Slightly above $50", "Not as sharp out of box"],
@@ -92,14 +87,7 @@ export default function BestKnivesUnder50() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

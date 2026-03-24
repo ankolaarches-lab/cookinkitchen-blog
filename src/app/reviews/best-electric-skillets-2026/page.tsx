@@ -12,7 +12,6 @@ const products = [
     name: "Zojirushi Gourmet d'Expert Electric Skillet",
     price: "$205.00",
     rating: 4.7,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Zojirushi+Gourmet+dExpert+Electric+Skillet&tag=cookinkitchen-20",
     pros: ["Comes with two pan inserts", "Steamer included", "Excellent heat distribution", "Durable stainless steel"],
     cons: ["Higher price point", "Takes up counter space"],
@@ -21,7 +20,6 @@ const products = [
     name: "Cuisinart Nonstick Oval Electric Skillet",
     price: "$112.00",
     rating: 4.6,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+Nonstick+Oval+Electric+Skillet&tag=cookinkitchen-20",
     pros: ["Oval shape great for fish", "Glass lid", "Dishwasher safe", "Affordable premium option"],
     cons: ["Oval may not fit all stovetops"],
@@ -30,7 +28,6 @@ const products = [
     name: "Presto 16-Inch Electric Skillet",
     price: "$61.99",
     rating: 4.5,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Presto+16+Inch+Electric+Skillet+22+Quart&tag=cookinkitchen-20",
     pros: ["Extra large capacity", "High sides prevent splatters", "Affordable", "Removable temperature control"],
     cons: ["Basic nonstick coating"],
@@ -39,7 +36,6 @@ const products = [
     name: "Black & Decker Electric Skillet",
     price: "$59.99",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Black+Decker+Electric+Skillet+Family+Size&tag=cookinkitchen-20",
     pros: ["Family sized", "Tempered glass lid", "Great value", "4.6+ star rating"],
     cons: ["Not dishwasher safe"],
@@ -48,7 +44,6 @@ const products = [
     name: "Elite Gourmet Extra Deep Electric Skillet",
     price: "$44.99",
     rating: 4.4,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Elite+Gourmet+Extra+Deep+Electric+Skillet&tag=cookinkitchen-20",
     pros: ["Extra deep for soups", "Pour spout", "Dishwasher safe", "Best seller on Amazon"],
     cons: ["Lower rating than competitors"],
@@ -103,13 +98,8 @@ export default function BestElectricSkillets2026() {
           <div className="space-y-6">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <div className="flex gap-4">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-24 h-24 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
+                <div>
+                  <div>
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-playfair text-lg text-stone-800">{product.name}</h3>
                       <span className="font-lato text-emerald-600 font-bold">{product.price}</span>

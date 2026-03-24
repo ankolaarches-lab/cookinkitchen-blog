@@ -12,7 +12,6 @@ const products = [
     name: "Fullstar Kitchen Utensil Set",
     price: "$29.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Fullstar+Kitchen+Utensil+Set&tag=cookinkitchen-20",
     pros: ["20 pieces included", "Rotating holder", "Heat resistant", "Great value"],
     cons: ["Some plastic parts"],
@@ -21,7 +20,6 @@ const products = [
     name: "Home Hero Kitchen Utensil 18-Piece",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Home+Hero+Kitchen+Utensil+18+Piece&tag=cookinkitchen-20",
     pros: ["Complete set", "Wooden handles", "Utensil holder", "Budget-friendly"],
     cons: ["Not dishwasher safe"],
@@ -30,7 +28,6 @@ const products = [
     name: "StarPack Home Kitchen Utensil Set",
     price: "$34.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=StarPack+Home+Kitchen+Utensil+Set&tag=cookinkitchen-20",
     pros: ["Stainless steel", "Modern design", "Durable", "5-year warranty"],
     cons: ["No rotating holder"],
@@ -39,7 +36,6 @@ const products = [
     name: "KitchenAid 5-Piece Nylon Utensil Set",
     price: "$24.99",
     rating: 4.8,
-    image: "/images/kitchen/6.jpg",
     link: "https://www.amazon.com/s?k=KitchenAid+5+Piece+Nylon+Utensil&tag=cookinkitchen-20",
     pros: ["Heat resistant to 400°F", "Trusted brand", "Dishwasher safe", "Comfortable grip"],
     cons: ["Only 5 pieces"],
@@ -83,14 +79,7 @@ export default function BestKitchenUtensilSet() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 relative flex-shrink-0">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

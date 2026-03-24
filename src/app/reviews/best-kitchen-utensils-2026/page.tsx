@@ -13,7 +13,6 @@ const products = [
     name: "Stainless Steel Cooking Utensil Set (6-Piece)",
     price: "$29.99",
     rating: 4.7,
-    image: "/images/kitchen/8.jpg",
     link: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20",
     pros: ["Heat resistant", "Dishwasher safe", "Durable stainless steel", "Wooden handle option"],
     cons: ["Can scratch nonstick"],
@@ -22,7 +21,6 @@ const products = [
     name: "OXO Good Grips 3-Piece Cooking Utensil Set",
     price: "$34.99",
     rating: 4.8,
-    image: "/images/kitchen/9.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Stainless&tag=cookinkitchen-20",
     pros: ["Comfortable grip", "Stainless steel", "Dishwasher safe", "Spatula, whisk, tongs"],
     cons: ["Limited pieces"],
@@ -31,7 +29,6 @@ const products = [
     name: "Chef'sStar Silicone Kitchen Utensil Set (10-Piece)",
     price: "$24.99",
     rating: 4.6,
-    image: "/images/kitchen/10.jpg",
     link: "https://www.amazon.com/s?k=Silicone+Kitchen+Utensil+Set+10+Piece&tag=cookinkitchen-20",
     pros: ["Complete set", "Heat resistant to 600°F", "Non-slip handles", "Great value"],
     cons: ["Silicone can stain"],
@@ -40,7 +37,6 @@ const products = [
     name: "Di Oro Stainless Steel Ladle (12 inch)",
     price: "$19.99",
     rating: 4.9,
-    image: "/images/kitchen/11.jpg",
     link: "https://www.amazon.com/s?k=Di+Oro+Stainless+Ladle+12+Inch&tag=cookinkitchen-20",
     pros: ["Professional quality", "Deep bowl", "Ergonomic handle", "Lifetime warranty"],
     cons: ["Single utensil"],
@@ -49,7 +45,6 @@ const products = [
     name: "StarPack Home Stainless Steel Kitchen Utensil Set",
     price: "$39.99",
     rating: 4.5,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=StarPack+Home+Stainless+Kitchen+Utensil&tag=cookinkitchen-20",
     pros: ["5-piece set", "Modern design", "Hanging holes", "Food safe"],
     cons: ["No storage container"],
@@ -93,15 +88,7 @@ export default function BestKitchenUtensils2026() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative w-full md:w-48 h-48 flex-shrink-0">
-                  <Image 
-                    src={product.image} 
-                    alt={product.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

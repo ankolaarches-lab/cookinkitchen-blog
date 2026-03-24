@@ -12,7 +12,6 @@ const products = [
     name: "Breville Smart Oven",
     price: "$199.95",
     rating: 4.8,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Breville+Smart+Oven+BOV850BSS&tag=cookinkitchen-20",
     presets: ["Element IQ", "9 functions", "Large capacity", "Convection"],
     cons: ["Expensive", "Large counter footprint"],
@@ -21,7 +20,6 @@ const products = [
     name: "Cuisinart TOA-60 Air Fryer Toaster Oven",
     price: "$149.95",
     rating: 4.6,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Cuisinart+TOA+60+Recipe+Book+Included&tag=cookinkitchen-20",
     presets: ["Air fryer built-in", "7 functions", "Includes accessories", "Affordable"],
     cons: ["Louder than others", "Controls can be tricky"],
@@ -30,7 +28,6 @@ const products = [
     name: "Panasonic FlashXpress",
     price: "$129.00",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Panasonic+FlashXpress+Toaster+Infrared&tag=cookinkitchen-20",
     presets: ["Double infrared heating", "Compact", "Fast preheat", "Toast function"],
     cons: ["No convection", "Smaller capacity"],
@@ -58,10 +55,7 @@ export default function BestToasterOvens2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

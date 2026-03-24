@@ -12,7 +12,6 @@ const products = [
     name: "OXO Good Grips Silicone Spatula Set",
     price: "$19.99",
     rating: 4.8,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=OXO+Good+Grips+Silicone+Spatula&tag=cookinkitchen-20",
     pros: ["Heat resistant", "Stainless core", "Comfortable", "Dishwasher safe"],
     cons: ["Set of 3"],
@@ -21,7 +20,6 @@ const products = [
     name: "Di Oro Silicone Spatula Set",
     price: "$24.99",
     rating: 4.7,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=Di+Oro+Silicone+Spatula+Set&tag=cookinkitchen-20",
     pros: ["6-piece set", "Lifetime warranty", "Metal reinforced", "Great colors"],
     cons: ["Higher price"],
@@ -49,10 +47,7 @@ export default function BestSpatulas2026() {
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

@@ -12,7 +12,6 @@ const products = [
     name: "Pyrex Glass Food Storage Set (18-Piece)",
     price: "$44.99",
     rating: 4.8,
-    image: "/images/kitchen/1.jpg",
     link: "https://www.amazon.com/s?k=Pyrex+18+Piece+Smart+Seal&tag=cookinkitchen-20",
     pros: ["Glass is microwave-safe", "BPA-free", "Stackable", "Oven safe"],
     cons: ["Glass can break if dropped"],
@@ -21,7 +20,6 @@ const products = [
     name: "Rubbermaid Brilliance Clear Food Storage (14-Piece)",
     price: "$29.99",
     rating: 4.7,
-    image: "/images/kitchen/2.jpg",
     link: "https://www.amazon.com/s?k=Rubbermaid+Brilliance+Storage+14+Piece&tag=cookinkitchen-20",
     pros: ["Crystal clear", "Leak-proof", "BPA-free", "Stain-resistant"],
     cons: ["Not oven-safe"],
@@ -30,7 +28,6 @@ const products = [
     name: "Stainless Steel Lunch Box by Lunchbots",
     price: "$32.00",
     rating: 4.6,
-    image: "/images/kitchen/3.jpg",
     link: "https://www.amazon.com/s?k=Lunchbots+Stainless+Steel+Food&tag=cookinkitchen-20",
     pros: ["Eco-friendly", "No plastic", "Durable", "Non-toxic"],
     cons: ["Not microwave-safe", "No lids"],
@@ -39,7 +36,6 @@ const products = [
     name: "Glasslock Glass Food Container Set (18-Piece)",
     price: "$39.99",
     rating: 4.5,
-    image: "/images/kitchen/4.jpg",
     link: "https://www.amazon.com/s?k=Glasslock+18+Piece+Container+Modular&tag=cookinkitchen-20",
     pros: ["Tempered glass", "Snap lock lids", "Microwave safe", "Freezer safe"],
     cons: ["Lids can stain"],
@@ -48,7 +44,6 @@ const products = [
     name: "OXO Good Grips POP Container Set (10-Piece)",
     price: "$69.99",
     rating: 4.8,
-    image: "/images/kitchen/5.jpg",
     link: "https://www.amazon.com/s?k=OXO+Grips+POP+Container+Set&tag=cookinkitchen-20",
     pros: ["Airtight seal", "Stackable", "BPA-free", "Modern design"],
     cons: ["Premium price", "Lids sold separately"],
@@ -92,10 +87,7 @@ export default function BestFoodStorageContainers() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-48 h-48 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
-                </div>
-                <div className="flex-1">
+                <div>
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
                     <span className="text-2xl font-bold text-emerald-600">{product.price}</span>

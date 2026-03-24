@@ -10,15 +10,15 @@ import AuthorBio from "@/components/AuthorBio";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const categoryImages: Record<string, string> = {
-  "Kitchen Utensils": "/images/kitchen/1.jpg",
-  "Knives": "/images/kitchen/2.jpg",
-  "Cookware": "/images/kitchen/3.jpg",
-  "Appliances": "/images/kitchen/4.jpg",
-  "Gadgets": "/images/kitchen/5.jpg",
+  "Kitchen Utensils": "/images/reviews/hero-kitchen.jpg",
+  "Knives": "/images/reviews/hero-kitchen.jpg",
+  "Cookware": "/images/reviews/hero-kitchen.jpg",
+  "Appliances": "/images/reviews/hero-kitchen.jpg",
+  "Gadgets": "/images/reviews/hero-kitchen.jpg",
 };
 
 const getImageUrl = (category: string): string => {
-  return categoryImages[category] || "/images/kitchen/6.jpg";
+  return categoryImages[category] || "/images/reviews/hero-kitchen.jpg";
 };
 
 const reviews = [
@@ -29,12 +29,11 @@ const reviews = [
     category: "Appliances",
     rating: 4.6,
     date: "Mar 22, 2026",
-    image: "/images/kitchen/4.jpg",
     affiliateLink: "https://www.amazon.com/s?k=Breville+Smart+Oven+Convection&tag=cookinkitchen-20",
     tableImages: [
-      "/images/kitchen/9.jpg",
-      "/images/kitchen/10.jpg",
-      "/images/kitchen/11.jpg"
+      "/images/reviews/hero-kitchen.jpg",
+      "/images/reviews/hero-kitchen.jpg",
+      "/images/reviews/hero-kitchen.jpg"
     ],
     content: `
 ## The Best Countertop Convection Ovens for 2026
@@ -178,7 +177,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: review.date,
       images: [
         {
-          url: review.image || "https://cookinkitchen.online/images/og-image.jpg",
+          url: getImageUrl(review.category),
           alt: review.title,
         },
       ],
@@ -206,7 +205,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
     "@type": "Product",
     name: review.title.split(":")[0].trim(),
     description: review.excerpt,
-    image: review.image,
+    image: getImageUrl(review.category),
     review: {
       "@type": "Review",
       reviewRating: {
@@ -249,7 +248,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
           <div className="relative rounded-2xl overflow-hidden mb-8 shadow-lg h-64 md:h-96 w-full">
             <Image
-              src={review.image || getImageUrl(review.category)}
+              src={getImageUrl(review.category)}
               alt={review.title}
               fill
               priority
@@ -284,7 +283,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <ComparisonTable items={[
             {
               name: "Breville Smart Oven Pro",
-              image: review.tableImages?.[0] || review.image || getImageUrl(review.category),
+              image: review.tableImages?.[0] || getImageUrl(review.category),
               badge: "Editor's Choice",
               rating: 4.8,
               price: "$$$",
@@ -293,7 +292,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Cuisinart TOA-60",
-              image: review.tableImages?.[1] || review.image || getImageUrl(review.category),
+              image: review.tableImages?.[1] || getImageUrl(review.category),
               badge: "Best Value",
               rating: 4.6,
               price: "$",
@@ -302,7 +301,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Ninja Foodi Digital Oven",
-              image: review.tableImages?.[2] || review.image || getImageUrl(review.category),
+              image: review.tableImages?.[2] || getImageUrl(review.category),
               badge: "Best for Air Frying",
               rating: 4.5,
               price: "$$",
@@ -402,19 +401,16 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             {
               title: "Best Toaster Ovens 2026",
               href: "/reviews/best-toaster-ovens-2026",
-              image: "/images/kitchen/4.jpg",
               category: "Appliances"
             },
             {
               title: "Best Air Fryers 2026",
               href: "/reviews/best-air-fryer-2026",
-              image: "/images/kitchen/4.jpg",
               category: "Appliances"
             },
             {
               title: "Best Pizza Ovens 2026",
               href: "/reviews/best-pizza-ovens-2026",
-              image: "/images/kitchen/4.jpg",
               category: "Appliances"
             }
           ]}
