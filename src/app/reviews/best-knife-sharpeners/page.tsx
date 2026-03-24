@@ -65,7 +65,7 @@ export default function KnifeSharpeners() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/reviews/knife-set.jpg" 
+              src="/images/reviews/hero-knives.png" 
               alt="Best Knife Sharpeners 2026" 
               className="w-full h-64 object-cover"
             />
