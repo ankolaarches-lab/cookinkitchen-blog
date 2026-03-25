@@ -598,6 +598,24 @@ const reviews = [
     rating: 4.3,
     date: "Feb 5, 2026",
   },
+  {
+    id: 2,
+    slug: "best-coffee-percolators-2026",
+    title: "Best Coffee Percolators 2026 - Stovetop & Electric Reviews",
+    excerpt: "Brew rich, bold coffee with the best coffee percolators of 2026. We tested stovetop and electric percolators for perfect brewing.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 25, 2026",
+  },
+  {
+    id: 1,
+    slug: "best-milk-frothers-2026",
+    title: "Best Milk Frothers 2026 - Handheld & Electric Reviews",
+    excerpt: "Create cafe-quality foam at home with the best milk frothers of 2026. We tested handheld wands, electric frothers, and more.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 25, 2026",
+  },
 ];
 
 const categories = ["All", "Knives", "Cookware", "Appliances", "Gadgets", "Kitchen Utensils", "Baking Sheets"];
