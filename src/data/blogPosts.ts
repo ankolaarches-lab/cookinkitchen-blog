@@ -3463,6 +3463,8 @@ Remember: there's no single "best" oil. Each has its place in the kitchen. Under
 - [Cast Iron Maintenance 2026](/blog/cast-iron-maintenance-2026) — The best pan for high-heat cooking
 `
   },
+  {
+    slug: "cooking-temperature-guide-2026",
     title: "The Complete Cooking Temperature Guide for 2026",
     excerpt: "Master the numbers that separate perfectly cooked food from disasters. From safe internal temperatures to optimal searing heat, this guide covers everything you need to cook with confidence.",
     category: "Guide",
