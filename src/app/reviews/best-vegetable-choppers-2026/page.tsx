@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     description: "Save time in the kitchen with the best vegetable choppers of 2026.",
     type: "article",
     url: "https://cookinkitchen.online/reviews/best-vegetable-choppers-2026",
-    images: ["/images/gadgets.png"],
+    images: ["/images/reviews/vegetable-choppers-hero.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Vegetable Choppers 2026 - Complete Buying Guide",
     description: "Save time in the kitchen with the best vegetable choppers of 2026.",
-    images: ["/images/gadgets.png"],
+    images: ["/images/reviews/vegetable-choppers-hero.png"],
   },
   alternates: {
     canonical: "https://cookinkitchen.online/reviews/best-vegetable-choppers-2026",
@@ -28,7 +28,7 @@ const products = [
     name: "Mueller Pro-Series Vegetable Chopper",
     price: "$27.99",
     rating: 4.7,
-    image: "/images/kitchen/1.jpg",
+    image: "/images/reviews/mueller-vegetable-chopper.png",
     link: "https://www.amazon.com/s?k=Mueller+Pro+Series+Vegetable+Chopper&tag=cookinkitchen-20",
     pros: ["10-in-1 functionality", "Sharp stainless steel blades", "Dishwasher safe", "Large 2L container"],
     cons: ["Requires some hand strength"],
@@ -37,7 +37,7 @@ const products = [
     name: "Fullstar Vegetable Chopper",
     price: "$27.99",
     rating: 4.6,
-    image: "/images/kitchen/2.jpg",
+    image: "/images/reviews/fullstar-vegetable-chopper.png",
     link: "https://www.amazon.com/s?k=Fullstar+Vegetable+Chopper&tag=cookinkitchen-20",
     pros: ["Multiple blade options", "Easy to use", "BPA-free materials", "Storage container included"],
     cons: ["Blades need careful handling"],
@@ -46,7 +46,7 @@ const products = [
     name: "KitchenAid 5-Cup Food Chopper",
     price: "$39.99",
     rating: 4.7,
-    image: "/images/kitchen/3.jpg",
+    image: "/images/reviews/kitchenaid-food-chopper.png",
     link: "https://www.amazon.com/s?k=KitchenAid+Food+Chopper&tag=cookinkitchen-20",
     pros: ["Compact size", "Easy to clean", "Multiple speed settings", "Compact storage"],
     cons: ["Smaller capacity"],
@@ -55,7 +55,7 @@ const products = [
     name: "Cuisinart 7-Cup Food Processor",
     price: "$89.99",
     rating: 4.8,
-    image: "/images/kitchen/4.jpg",
+    image: "/images/reviews/cuisinart-food-processor.png",
     link: "https://www.amazon.com/s?k=Cuisinart+Food+Processor&tag=cookinkitchen-20",
     pros: ["Large capacity", " Powerful motor", "Multiple attachments", "Reversible disc"],
     cons: ["Takes more storage space"],
@@ -64,7 +64,7 @@ const products = [
     name: "Veggie Chopper Manual Food Chopper",
     price: "$19.99",
     rating: 4.5,
-    image: "/images/kitchen/5.jpg",
+    image: "/images/reviews/manual-veggie-chopper.png",
     link: "https://www.amazon.com/s?k=Veggie+Chopper+Manual+Food+Chopper&tag=cookinkitchen-20",
     pros: ["Budget-friendly", "Easy to assemble", "Portable", "No electricity needed"],
     cons: ["Less powerful than electric"],
@@ -86,7 +86,7 @@ export default function BestVegetableChoppers2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/gadgets.png" 
+              src="/images/reviews/vegetable-choppers-hero.png" 
               alt="Best Vegetable Choppers 2026" 
               className="w-full h-64 object-cover"
             />

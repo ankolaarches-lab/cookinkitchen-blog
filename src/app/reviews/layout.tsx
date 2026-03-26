@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Kitchen Product Reviews | CookinKitchen",
@@ -15,5 +16,10 @@ export default function ReviewsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <AffiliateDisclosure />
+      {children}
+    </>
+  );
 }

@@ -59,15 +59,67 @@ export default function ChatWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const formatMessage = (content: string) => {
-    // Simple markdown-like formatting
-    return content
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/^- (.+)$/gm, '<li>$1</li>')
-      .replace(/(<li>[\s\S]*?<\/li>)/g, '<ul>$1</ul>')
-      .replace(/\n\n/g, '<br/><br/>')
-      .replace(/\n/g, '<br/>');
+  const formatMessage = (content: string): React.ReactNode => {
+    // Split by double newlines for paragraphs
+    const paragraphs = content.split(/\n\n/);
+    return paragraphs.map((para, pIdx) => {
+      // Check if paragraph is a list
+      const lines = para.split('\n');
+      const listItems = lines.filter(l => l.startsWith('- '));
+      if (listItems.length > 0) {
+        return (
+          <ul key={pIdx} className="list-disc pl-4 my-1 space-y-1">
+            {lines.map((line, lIdx) => {
+              if (line.startsWith('- ')) {
+                return <li key={lIdx}>{formatInline(line.slice(2))}</li>;
+              }
+              return <span key={lIdx}>{formatInline(line)}</span>;
+            })}
+          </ul>
+        );
+      }
+      return (
+        <p key={pIdx} className={pIdx > 0 ? "mt-2" : ""}>
+          {formatInline(para.replace(/\n/g, ' '))}
+        </p>
+      );
+    });
+  };
+
+  const formatInline = (text: string): React.ReactNode => {
+    // Bold, italic, and link formatting using regex split
+    const parts: React.ReactNode[] = [];
+    // Match **bold**, *italic*, and [text](url)
+    const regex = /(\*\*.*?\*\*|\*.*?\*|\[.*?\]\(.*?\))/g;
+    let lastIndex = 0;
+    let match;
+    let key = 0;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      const segment = match[0];
+      if (segment.startsWith('**') && segment.endsWith('**')) {
+        parts.push(<strong key={key++}>{segment.slice(2, -2)}</strong>);
+      } else if (segment.startsWith('*') && segment.endsWith('*')) {
+        parts.push(<em key={key++}>{segment.slice(1, -1)}</em>);
+      } else if (segment.startsWith('[')) {
+        const linkMatch = segment.match(/\[(.*?)\]\((.*?)\)/);
+        if (linkMatch) {
+          parts.push(
+            <a key={key++} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-teal-600 underline hover:text-teal-700">
+              {linkMatch[1]}
+            </a>
+          );
+        }
+      }
+      lastIndex = match.index + segment.length;
+    }
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+    return parts.length > 0 ? parts : text;
   };
 
   const scrollToBottom = () => {
@@ -168,11 +220,7 @@ export default function ChatWidget() {
                       : "bg-white border border-gray-200 text-gray-800"
                   }`}
                 >
-                  {msg.role === "assistant" ? (
-                    <div dangerouslySetInnerHTML={{ __html: formatMessage(msg.content) }} />
-                  ) : (
-                    msg.content
-                  )}
+                  {msg.role === "assistant" ? formatMessage(msg.content) : msg.content}
                 </div>
               </div>
             ))}

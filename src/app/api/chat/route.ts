@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const OPENROUTER_API_KEY = "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";
 const OPENROUTER_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions";
 const MODEL = "meta-llama/llama-3.2-1b-instruct";
 
@@ -21,6 +20,15 @@ PRODUCT CATALOG (use this info to answer questions):
 
 export async function POST(request: NextRequest) {
   try {
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    if (!apiKey) {
+      console.error("OPENROUTER_API_KEY is not set");
+      return NextResponse.json(
+        { error: "Chat service is not configured" },
+        { status: 500 }
+      );
+    }
+
     const { message } = await request.json();
 
     if (!message) {
@@ -31,7 +39,7 @@ export async function POST(request: NextRequest) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
+        Authorization: `Bearer ${apiKey}`,
         "HTTP-Referer": "https://cookinkitchen.online",
         "X-Title": "CookinKitchen",
       },

@@ -4,16 +4,38 @@ import React, { useState } from 'react';
 export default function NewsletterSignup() {
     const [email, setEmail] = useState('');
     const [subscribed, setSubscribed] = useState(false);
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (email) {
-            // In a real app, this would send the email to an API route
-            setSubscribed(true);
-            setEmail('');
-            setTimeout(() => setSubscribed(false), 5000);
+        if (!email) return;
+
+        setLoading(true);
+        setError('');
+
+        try {
+            const res = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email }),
+            });
+            const data = await res.json();
+
+            if (!res.ok) {
+                setError(data.error || 'Something went wrong.');
+            } else {
+                setSubscribed(true);
+                setEmail('');
+                setTimeout(() => setSubscribed(false), 5000);
+            }
+        } catch {
+            setError('Network error. Please try again.');
+        } finally {
+            setLoading(false);
         }
     };
+
 
     return (
         <div className="my-16 bg-slate-900 rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl border border-emerald-900/40 w-full max-w-4xl mx-auto">
@@ -60,10 +82,14 @@ export default function NewsletterSignup() {
                             </div>
                             <button
                                 type="submit"
-                                className="w-full bg-emerald-600 text-white font-bold text-sm tracking-wider uppercase py-4 rounded-xl hover:bg-emerald-500 transition-colors shadow-lg shadow-emerald-900/20"
+                                disabled={loading}
+                                className="w-full bg-emerald-600 text-white font-bold text-sm tracking-wider uppercase py-4 rounded-xl hover:bg-emerald-500 transition-colors shadow-lg shadow-emerald-900/20 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                Subscribe Now
+                                {loading ? 'Subscribing...' : 'Subscribe Now'}
                             </button>
+                            {error && (
+                                <p className="text-center text-red-400 text-xs mt-1">{error}</p>
+                            )}
                             <p className="text-center text-slate-500 text-xs mt-2">
                                 By subscribing, you agree to our Terms of Service and Privacy Policy.
                             </p>

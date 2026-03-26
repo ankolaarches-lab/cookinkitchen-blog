@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Lato, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import Header from "@/components/Header";
 
 const GA_MEASUREMENT_ID = "G-0KVR8EH0TE";
 
@@ -133,34 +133,7 @@ export default function RootLayout({
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM268LC3" height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe></noscript>
 
         <Analytics />
-        <header className="glass-premium sticky top-0 z-50 transition-all duration-300">
-          <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-            <Link href="/" className="font-serif text-3xl font-black text-gray-900 hover:text-emerald-700 transition-all group flex items-center gap-3">
-              <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-stone-200/50 shadow-sm">
-                <Image
-                  src="/favicon.png"
-                  alt="CookinKitchen Intelligence Logo"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <span className="bg-gradient-to-r from-teal-700 to-emerald-600 bg-clip-text text-transparent">
-                CookinKitchen
-              </span>
-            </Link>
-            <div className="hidden md:flex gap-10 text-[13px] font-bold uppercase tracking-[0.15em]">
-              <Link href="/" className="animated-link text-gray-500 hover:text-emerald-600 transition">Home</Link>
-              <Link href="/reviews" className="animated-link text-gray-500 hover:text-emerald-600 transition">Reviews</Link>
-              <Link href="/blog" className="animated-link text-gray-500 hover:text-emerald-600 transition">Blog</Link>
-              <Link href="/buying-guides" className="animated-link text-gray-500 hover:text-emerald-600 transition">Guides</Link>
-            </div>
-            <button className="md:hidden text-gray-600">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
-            </button>
-          </nav>
-        </header>
+        <Header />
         <main>{children}</main>
 
         <div className="px-6 mt-16 pb-16">
