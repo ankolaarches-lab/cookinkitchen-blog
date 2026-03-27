@@ -23,6 +23,24 @@ const getImageUrl = (category: string): string => {
 
 const reviews = [
   {
+    id: 83,
+    slug: "best-butter-dishes",
+    title: "Best Butter Dishes 2026 - Butter Crocks & Keepers Guide",
+    excerpt: "Keep butter soft and spreadable with the best butter dishes and crocks. We tested top-rated options for your countertop.",
+    category: "Kitchen Utensils",
+    rating: 4.7,
+    date: "Mar 27, 2026",
+  },
+  {
+    id: 82,
+    slug: "best-bench-scrapers",
+    title: "Best Bench Scrapers 2026 - Dough Scraper Guide",
+    excerpt: "Speed up your baking prep with the best bench scrapers. We tested top-rated dough scrapers and pastry cutters.",
+    category: "Baking Supplies",
+    rating: 4.7,
+    date: "Mar 27, 2026",
+  },
+  {
     id: 81,
     slug: "best-vegetable-choppers-2026",
     title: "Best Vegetable Choppers 2026 - Complete Buying Guide",
