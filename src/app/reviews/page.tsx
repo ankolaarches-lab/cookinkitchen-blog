@@ -10,6 +10,7 @@ const categoryImages: Record<string, string> = {
   "Knives": "/images/reviews/hero-knives.png",
   "Cookware": "/images/reviews/hero-cookware.png",
   "Appliances": "/images/reviews/hero-appliances.png",
+  "Air Fryer Toaster Ovens": "/images/reviews/hero-appliances.png",
   "Gadgets": "/images/gadgets.png",
   "Cutting Boards": "/images/reviews/hero-cutting-boards.png",
   "Baking Sheets": "/images/reviews/hero-baking.png",
@@ -22,6 +23,15 @@ const getImageUrl = (category: string): string => {
 };
 
 const reviews = [
+  {
+    id: 84,
+    slug: "best-air-fryer-toaster-ovens",
+    title: "Best Air Fryer Toaster Ovens 2026 - Complete Buying Guide",
+    excerpt: "Two appliances in one. We tested the best air fryer toaster oven combos for versatile cooking and crispy results.",
+    category: "Appliances",
+    rating: 4.6,
+    date: "Mar 28, 2026",
+  },
   {
     id: 83,
     slug: "best-butter-dishes",

@@ -10,15 +10,15 @@ import AuthorBio from "@/components/AuthorBio";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const categoryImages: Record<string, string> = {
-  "Kitchen Utensils": "/images/reviews/hero-kitchen.jpg",
-  "Knives": "/images/reviews/hero-kitchen.jpg",
-  "Cookware": "/images/reviews/hero-kitchen.jpg",
-  "Appliances": "/images/reviews/hero-kitchen.jpg",
-  "Gadgets": "/images/reviews/hero-kitchen.jpg",
+  "Kitchen Utensils": "/images/reviews/hero-kitchen-utensils.png",
+  "Knives": "/images/reviews/hero-knives.png",
+  "Cookware": "/images/reviews/hero-cookware.png",
+  "Appliances": "/images/reviews/hero-appliances.png",
+  "Gadgets": "/images/gadgets.png",
 };
 
 const getImageUrl = (category: string): string => {
-  return categoryImages[category] || "/images/reviews/hero-kitchen.jpg";
+  return categoryImages[category] || "/images/reviews/hero-appliances.png";
 };
 
 const reviews = [
@@ -31,9 +31,9 @@ const reviews = [
     date: "Mar 22, 2026",
     affiliateLink: "https://www.amazon.com/s?k=Breville+Smart+Oven+Convection&tag=cookinkitchen-20",
     tableImages: [
-      "/images/reviews/hero-kitchen.jpg",
-      "/images/reviews/hero-kitchen.jpg",
-      "/images/reviews/hero-kitchen.jpg"
+      "/images/reviews/hero-appliances.png",
+      "/images/reviews/hero-appliances.png",
+      "/images/reviews/hero-appliances.png"
     ],
     content: `
 ## The Best Countertop Convection Ovens for 2026

@@ -17,6 +17,7 @@ const reviews = [
     rating: 4.5,
     date: "Mar 20, 2026",
     affiliateLink: "https://www.amazon.com/Hamilton-Beach-Breakfast-Sandwich-Maker/dp/B07YJ4YB1G?tag=cookinkitchen-20",
+    image: "/images/reviews/breakfast-sandwich-maker.jpg",
     content: `
 ## The Best Breakfast Sandwich Makers for 2026
 
@@ -869,7 +870,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <ComparisonTable items={[
             {
               name: "Top Recommended Option",
-              image: "/images/reviews/hero-kitchen.jpg",
+              image: review.image || "/images/reviews/hero-appliances.png",
               badge: "Editor's Choice",
               rating: 4.9,
               price: "$$",
@@ -878,7 +879,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Best Value Option",
-              image: "/images/reviews/hero-kitchen.jpg",
+              image: review.image || "/images/reviews/hero-appliances.png",
               badge: "Best Value",
               rating: 4.7,
               price: "$",
@@ -887,7 +888,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             },
             {
               name: "Premium Option",
-              image: "/images/reviews/hero-kitchen.jpg",
+              image: review.image || "/images/reviews/hero-appliances.png",
               badge: "Premium Pick",
               rating: 4.8,
               price: "$$$",
@@ -987,7 +988,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             .map(r => ({
               title: r.title,
               href: `/reviews/${r.slug}`,
-              image: "/images/reviews/hero-kitchen.jpg",
+              image: r.image || "/images/reviews/hero-appliances.png",
               category: r.category
             }))
           }
