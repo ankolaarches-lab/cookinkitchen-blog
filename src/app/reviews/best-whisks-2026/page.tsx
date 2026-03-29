@@ -73,7 +73,7 @@ export default function BestWhisks2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/reviews/mixing-bowls.jpg" 
+              src="/images/reviews/hero-kitchen-utensils.png" 
               alt="Best Whisks 2026" 
               className="w-full h-64 object-cover"
             />
