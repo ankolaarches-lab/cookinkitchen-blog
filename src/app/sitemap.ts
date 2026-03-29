@@ -55,21 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog posts
   const blogPosts = [
-    'instant-read-thermometer-guide-2026', 'air-fryer-accessories-guide', 'kitchen-shears-essential-guide',
-    'chefs-knives-how-to-choose', 'dutch-ovens-bread-baking-braising', 'cast-iron-care-seasoning-guide',
-    'air-fryer-recipes-tips', 'instant-pot-beginner-guide', 'stand-mixer-baking-basics',
-    'knives-101-everything-you-need-to-know', 'nonstick-cookware-pros-cons', 'cutting-board-guide-materials',
-    'blender-buying-guide', 'measuring-cups-spoons-accuracy', 'spatula-spoon-set-essentials',
-    'food-processor-time-saver', 'rice-cooker-recipes-beyond-rice', 'sous-vide-precision-cooking',
-    'kitchen-organization-2026', 'best-kitchen-timer-2026', 'air-fryer-beginners-guide',
-    'espresso-machine-guide', 'coffee-grinder-types', 'knives-101-beginners', 'cooking-terms-glossary',
-    'kitchen-conversion-chart', 'temperature-guide-meat', 'kitchen-safety-tips',
-    'spring-kitchen-organization', 'vegetable-cutting-techniques', 'pizza-stone-vs-steel',
-    'cast-iron-troubleshooting', 'knife-skills-basics', 'herb-storage-guide',
-    'air-fryer-maintenance-tips', 'stand-mixer-attachments', 'nonstick-cookware-care',
-    'kitchen-measurement-basics', 'bread-maker-home', 'sous-vide-precision',
-    'thermometer-cooking', 'kitchen-timer-digital', 'trivet-hot-pads',
-    'best-dutch-oven-recipes', 'kitchen-organization-hacks-2026',
+    'air-fryer-101-beginners-guide', 'best-jar-openers-2026', 'essential-cookware-guide-2026',
+    'kitchen-tools-replacing-2026', 'must-have-kitchen-tools-save-time',
+    'smart-kitchen-gadgets-ces-2026', 'tiny-ways-better-cook-2026',
+    'victorinox-swiss-classic-deep-dive',
   ];
 
   const blogUrls = blogPosts.map((slug) => ({
