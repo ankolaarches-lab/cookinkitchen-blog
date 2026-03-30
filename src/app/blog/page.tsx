@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { blogPosts } from "@/data/blogPosts";
+import { supabase, formatDate, BlogPost } from "@/lib/supabase";
+
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "The Intelligence Hub - CookinKitchen Blog",
@@ -12,11 +14,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const { data: posts } = await supabase
+    .from('blog_posts')
+    .select('*')
+    .eq('published', true)
+    .order('date', { ascending: false })
+
+  const blogPosts: BlogPost[] = posts ?? []
+
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Skip Link for Accessibility */}
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg"
@@ -24,29 +33,26 @@ export default function BlogPage() {
           Skip to main content
         </a>
 
-        {/* Header Section */}
         <header className="text-center mb-16">
           <h1 className="font-playfair text-5xl md:text-6xl text-stone-800 mb-6 font-bold">
             The Intelligence Hub
           </h1>
           <p className="font-lato text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
-            Deep-dive guides, expert techniques, and the latest trends 
+            Deep-dive guides, expert techniques, and the latest trends
             shaping the modern kitchen in 2026.
           </p>
         </header>
 
-        {/* Blog Grid */}
         <main id="main-content" className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {blogPosts.map((post) => (
-            <Link 
-              key={post.slug} 
+            <Link
+              key={post.slug}
               href={`/blog/${post.slug}`}
               className="group bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl hover:shadow-stone-200/50 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full"
             >
-              {/* Image Container */}
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src={post.image}
+                  src={post.image_url}
                   alt={post.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -58,36 +64,35 @@ export default function BlogPage() {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-8 flex flex-col flex-grow">
                 <div className="flex items-center gap-3 text-stone-400 text-xs font-bold uppercase tracking-tighter mb-4">
-                  <span>{post.date}</span>
+                  <span>{formatDate(post.date)}</span>
                   <span className="w-1 h-1 bg-stone-300 rounded-full" />
-                  <span>{post.readTime}</span>
+                  <span>{post.read_time}</span>
                 </div>
-                
+
                 <h2 className="font-playfair text-2xl text-stone-800 mb-4 group-hover:text-emerald-600 transition-colors duration-300 line-clamp-2">
                   {post.title}
                 </h2>
-                
+
                 <p className="font-lato text-stone-600 leading-relaxed mb-6 line-clamp-3">
                   {post.excerpt}
                 </p>
 
                 <div className="mt-auto pt-4 flex items-center text-emerald-600 font-bold text-sm tracking-wider uppercase group-hover:translate-x-2 transition-transform duration-300">
                   Read Analysis
-                  <svg 
-                    className="w-4 h-4 ml-2" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth="2" 
-                      d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
                 </div>
@@ -96,7 +101,6 @@ export default function BlogPage() {
           ))}
         </main>
 
-        {/* Newsletter / CTA Section */}
         <footer className="mt-24 bg-stone-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 bg-[url('/images/kitchen/7.jpg')] bg-cover bg-center" role="img" aria-label="Decorative kitchen background"></div>
           <div className="relative z-10">
@@ -104,13 +108,13 @@ export default function BlogPage() {
               Join the Culinary Vanguard
             </h2>
             <p className="text-stone-400 text-lg mb-10 max-w-xl mx-auto">
-              Get our biannual intelligence report on kitchen technology 
+              Get our biannual intelligence report on kitchen technology
               and essential culinary techniques.
             </p>
-              <div className="flex flex-col md:flex-row gap-4 justify-center max-w-md mx-auto">
-              <input 
+            <div className="flex flex-col md:flex-row gap-4 justify-center max-w-md mx-auto">
+              <input
                 id="email-input"
-                type="email" 
+                type="email"
                 placeholder="Enter your email"
                 className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder:text-stone-500 focus:outline-none focus:border-emerald-500 transition-colors flex-grow"
                 aria-label="Enter your email"

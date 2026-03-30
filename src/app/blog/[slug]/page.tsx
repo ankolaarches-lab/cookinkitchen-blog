@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/data/blogPosts";
+import { supabase, formatDate, BlogPost } from "@/lib/supabase";
+
+export const dynamic = 'force-dynamic';
 
 function Breadcrumbs({ items }: { items: { label: string; href: string }[] }) {
   return (
@@ -32,8 +34,8 @@ function RelatedContent({ title, articles }: { title: string; articles: any[] })
       <h2 className="font-playfair text-3xl text-stone-800 mb-10">{title}</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {articles.map((article) => (
-          <Link 
-            key={article.href} 
+          <Link
+            key={article.href}
             href={article.href}
             className="group"
           >
@@ -57,20 +59,19 @@ function RelatedContent({ title, articles }: { title: string; articles: any[] })
   );
 }
 
-export function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
-}
-
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
-  
+  const { data: post } = await supabase
+    .from('blog_posts')
+    .select('title, excerpt, date, image_url')
+    .eq('slug', slug)
+    .eq('published', true)
+    .single()
+
   if (!post) {
     return { title: 'Blog Post Not Found' };
   }
-  
+
   return {
     title: post.title,
     description: post.excerpt,
@@ -79,19 +80,36 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.excerpt,
       type: 'article',
       publishedTime: post.date,
-      images: [post.image],
+      images: [post.image_url],
     },
   };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
+
+  const [{ data: post }, { data: related }] = await Promise.all([
+    supabase
+      .from('blog_posts')
+      .select('*')
+      .eq('slug', slug)
+      .eq('published', true)
+      .single(),
+    supabase
+      .from('blog_posts')
+      .select('slug, title, image_url, category')
+      .eq('published', true)
+      .neq('slug', slug)
+      .order('date', { ascending: false })
+      .limit(3),
+  ])
 
   if (!post) {
     notFound();
     return null;
   }
+
+  const relatedPosts = (related ?? []) as Pick<BlogPost, 'slug' | 'title' | 'image_url' | 'category'>[]
 
   return (
     <div className="min-h-screen py-12">
@@ -105,7 +123,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <article className="glass-premium bg-white rounded-3xl shadow-sm border border-stone-200 overflow-hidden">
           <div className="relative h-80 bg-slate-900">
             <img
-              src={post.image}
+              src={post.image_url}
               alt={post.title}
               className="w-full h-full object-cover opacity-60 mix-blend-overlay"
             />
@@ -115,7 +133,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-lg shadow-emerald-900/20">
                   {post.category}
                 </span>
-                <span className="text-emerald-50 text-sm font-medium tracking-wide">{post.readTime}</span>
+                <span className="text-emerald-50 text-sm font-medium tracking-wide">{post.read_time}</span>
               </div>
               <h1 className="font-serif text-3xl md:text-5xl font-black text-white leading-tight">
                 {post.title}
@@ -125,7 +143,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           <div className="p-8 md:p-12">
             <div className="prose prose-stone prose-lg max-w-none font-lato text-slate-600 prose-headings:font-playfair prose-headings:text-slate-900 prose-a:text-emerald-600 hover:prose-a:text-emerald-700">
-              {post.content.split('\n').map((paragraph, i) => {
+              {post.content.split('\n').map((paragraph: string, i: number) => {
                 const trimmed = paragraph.trim();
                 if (!trimmed) return null;
 
@@ -144,21 +162,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 if (trimmed.match(/^\d+\./)) {
                   return <p key={i} className="font-bold text-slate-800 mt-6 mb-2">{trimmed}</p>;
                 }
-                
-                // Enhanced Link Rendering: Convert Amazon or "Shop" links to buttons
+
                 const linkMatch = trimmed.match(/\[([^\]]+)\]\(([^)]+)\)/);
                 if (linkMatch) {
-                  const [full, text, url] = linkMatch;
+                  const [, text, url] = linkMatch;
                   const isAmazon = url.includes('amazon.com') || url.includes('amzn.to');
                   const isShop = text.toLowerCase().includes('shop') || text.toLowerCase().includes('check price') || text.toLowerCase().includes('buy');
-                  
+
                   if (isAmazon || isShop) {
                     return (
                       <div key={i} className="my-10 flex justify-center">
-                        <a 
-                          href={url} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center justify-center bg-slate-950 text-white px-10 py-5 rounded-2xl font-bold hover:bg-emerald-600 hover:shadow-[0_20px_40px_rgba(16,185,129,0.2)] hover:-translate-y-1 transition-all duration-300 no-underline text-base uppercase tracking-[0.1em] shadow-xl group"
                         >
                           <span className="mr-2">{text}</span>
@@ -170,7 +187,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     );
                   }
 
-                  // Handle internal links (related content)
                   if (url.startsWith('/')) {
                     return (
                       <p key={i} className="ml-4 mb-2 flex items-center gap-2">
@@ -187,14 +203,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               })}
             </div>
 
-            {/* Premium CTA Box */}
             <div className="mt-16 p-10 bg-slate-950 rounded-[2rem] border border-emerald-900/30 text-center relative overflow-hidden shadow-2xl">
               <div className="absolute inset-0 opacity-10 bg-[url('/images/kitchen/8.jpg')] bg-cover bg-center mix-blend-overlay"></div>
               <div className="relative z-10">
                 <h3 className="font-serif text-2xl font-bold text-white mb-3">Upgrade Your Arsenal</h3>
                 <p className="text-emerald-50/70 mb-8 font-medium">Equip your kitchen with the exact gear our analysts recommend.</p>
                 <a
-                  href={post.amazonLink}
+                  href={`https://www.amazon.com/s?k=${encodeURIComponent(post.title)}&tag=provenpantry3-20`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-10 py-4 rounded-xl font-bold hover:from-emerald-500 hover:to-teal-400 hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all duration-300 transform hover:-translate-y-1 text-sm uppercase tracking-widest"
@@ -206,7 +221,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </article>
 
-        {/* Related Reviews - Strategic internal linking */}
         <div className="mt-20 pt-10 border-t border-stone-100">
           <h3 className="font-playfair text-2xl text-stone-800 mb-8 font-bold">Related Intelligence</h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -228,19 +242,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </div>
 
-        <RelatedContent
-          title="More from the Intelligence Hub"
-          articles={blogPosts
-            .filter(p => p.slug !== post.slug)
-            .slice(0, 3)
-            .map(p => ({
+        {relatedPosts.length > 0 && (
+          <RelatedContent
+            title="More from the Intelligence Hub"
+            articles={relatedPosts.map(p => ({
               title: p.title,
               href: `/blog/${p.slug}`,
-              image: p.image,
+              image: p.image_url,
               category: p.category
-            }))
-          }
-        />
+            }))}
+          />
+        )}
       </div>
     </div>
   );

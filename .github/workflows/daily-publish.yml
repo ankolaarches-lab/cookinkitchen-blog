@@ -1,0 +1,51 @@
+name: Daily Content Publish
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 7am UTC daily
+  workflow_dispatch:       # allow manual trigger for testing
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Publish next blog post
+        run: |
+          BLOG_ID=$(curl -s \
+            "https://dancjwbxcycncrkdiyug.supabase.co/rest/v1/blog_posts?published=eq.false&order=date.asc&limit=1&select=id" \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            | jq -r '.[0].id // empty')
+
+          if [ -n "$BLOG_ID" ]; then
+            curl -s -X PATCH \
+              "https://dancjwbxcycncrkdiyug.supabase.co/rest/v1/blog_posts?id=eq.$BLOG_ID" \
+              -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+              -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+              -H "Content-Type: application/json" \
+              -d '{"published": true}'
+            echo "Published blog post: $BLOG_ID"
+          else
+            echo "No unpublished blog posts in queue"
+          fi
+
+      - name: Publish next review
+        run: |
+          REVIEW_ID=$(curl -s \
+            "https://dancjwbxcycncrkdiyug.supabase.co/rest/v1/reviews?published=eq.false&order=date.asc&limit=1&select=id" \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            | jq -r '.[0].id // empty')
+
+          if [ -n "$REVIEW_ID" ]; then
+            curl -s -X PATCH \
+              "https://dancjwbxcycncrkdiyug.supabase.co/rest/v1/reviews?id=eq.$REVIEW_ID" \
+              -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+              -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+              -H "Content-Type: application/json" \
+              -d '{"published": true}'
+            echo "Published review: $REVIEW_ID"
+          else
+            echo "No unpublished reviews in queue"
+          fi
