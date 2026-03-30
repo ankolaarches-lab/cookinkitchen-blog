@@ -12,7 +12,7 @@ const products = [
     name: "Joseph Joseph Tri-Prep Cutting Board",
     price: "$24.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=Joseph+Joseph+Tri+Prep+Cutting+Board&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Joseph+Joseph+Tri+Prep+Cutting+Board&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["3 different sizes", "Non-slip edges", "Juice grooves", "Dishwasher safe"],
     cons: ["Plastic material"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "OXO Good Grips 3-Piece Cutting Board Set",
     price: "$29.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Cutting&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=OXO+Good+Grips+3+Piece+Cutting&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Color coded", "Non-slip grips", "BPA-free plastic", "Dishwasher safe"],
     cons: ["Can warp over time"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Teakhaus by Proteak End-Grain Cutting Board",
     price: "$89.99",
     rating: 4.9,
-    link: "https://www.amazon.com/s?k=Teakhaus+Proteak+End+Grain+Cutting&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Teakhaus+Proteak+End+Grain+Cutting&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["End-grain construction", "Self-healing", "FDA approved", "Beautiful wood grain"],
     cons: ["Premium price", "Requires oiling"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "John Boos Maple Wood Cutting Board",
     price: "$79.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=John+Boos+Blended+Maple+18+Inch&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=John+Boos+Blended+Maple+18+Inch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Professional grade", "Reversible", "Rubber feet", "Made in USA"],
     cons: ["Heavy", "Needs regular oiling"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "Totally Bamboo Kitchen Board Set",
     price: "$34.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=Totally+Bamboo+Kitchen+3+Piece+Set&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Totally+Bamboo+Kitchen+3+Piece+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Eco-friendly bamboo", "3 sizes", "Stain resistant", "Affordable"],
     cons: ["Not for heavy duty"],
   },
@@ -136,7 +136,7 @@ export default function BestCuttingBoards2026() {
             Plus, it's FDA approved and looks stunning on your countertop.
           </p>
           <a
-            href="https://www.amazon.com/s?k=Teakhaus+Proteak+End+Grain+Cutting&tag=cookinkitchen-20"
+            href={`https://www.amazon.com/s?k=Teakhaus+Proteak+End+Grain+Cutting&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

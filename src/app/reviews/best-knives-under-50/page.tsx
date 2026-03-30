@@ -12,7 +12,7 @@ const products = [
     name: "Victorinox Fibrox Pro 8-Inch Chef's Knife",
     price: "$39.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Excellent value", "Fibrox handle provides great grip", "Swiss-made quality", "Dishwasher safe"],
     cons: ["Requires occasional sharpening"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Mercer Culinary Genesis 8-Inch Chef's Knife",
     price: "$29.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=Mercer+Culinary+Genesis+8+Inch+Chefs&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Mercer+Culinary+Genesis+8+Inch+Chefs&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Very affordable", "High-carbon stainless steel", "Comfortable grip", "Great for beginners"],
     cons: ["Not as durable as premium options"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Wüsthof Classic IKON 7-Inch Chef's Knife",
     price: "$44.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=W%C3%BCsthof+Classic+IKON+Chefs+7+Inch&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=W%C3%BCsthof+Classic+IKON+Chefs+7+Inch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["German precision", "Full tang construction", "Beautiful handle", "Holds edge well"],
     cons: ["Slightly shorter blade"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Chicago Cutlery 8-Inch Chef's Knife",
     price: "$24.99",
     rating: 4.4,
-    link: "https://www.amazon.com/s?k=Chicago+Cutlery+8+Inch+Chef+Knife&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Chicago+Cutlery+8+Inch+Chef+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Budget-friendly", "Stainless steel", "Lifetime warranty"],
     cons: ["Heavier feel", "Less ergonomic handle"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "OXO Good Grips 8-Inch Chef's Knife",
     price: "$49.99",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=Good+Grips+Stainless+8+Inch+Knife&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Good+Grips+Stainless+8+Inch+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Soft-grip handle", "Non-slip", "Built-in finger guard"],
     cons: ["Slightly above $50", "Not as sharp out of box"],
   },
@@ -131,7 +131,7 @@ export default function BestKnivesUnder50() {
             incredible deal that will last for years.
           </p>
           <a
-            href="https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=cookinkitchen-20"
+            href={`https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

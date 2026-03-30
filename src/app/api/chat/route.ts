@@ -5,17 +5,17 @@ const MODEL = "meta-llama/llama-3.2-1b-instruct";
 
 const productsContext = `
 PRODUCT CATALOG (use this info to answer questions):
-- Victorinox Chef's Knife: $39.99, 4.8★ - https://www.amazon.com/Victorinox-Fibrox-Pro-Chefs-Knife/dp/B001NBTV2A?tag=cookinkitchen-20
-- Lodge Dutch Oven: $59.99, 4.9★ - https://www.amazon.com/Lodge-5-Quart-Cast-Iron-Dutch/dp/B00004S9HE?tag=cookinkitchen-20
-- KitchenAid Stand Mixer: $449.99, 4.8★ - https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-5-Quart/dp/B00005UP77?tag=cookinkitchen-20
-- Shun Santoku Knife: $169.95, 4.7★ - https://www.amazon.com/Shun-DM0706-Classic-7-Inch-Santoku/dp/B0000Y7LYM?tag=cookinkitchen-20
-- Ninja Blender: $99.99, 4.6★ - https://www.amazon.com/Ninja-BL610-Professional-72-Watt-Blender/dp/B00NG5H436?tag=cookinkitchen-20
-- Ninja Air Fryer: $149.99, 4.6★ - https://www.amazon.com/Ninja-AF101-Fryer-Black-gray/dp/B07FDJMC9Q?tag=cookinkitchen-20
-- OXO Kitchen Scale: $29.99, 4.4★ - https://www.amazon.com/OXO-Stainless-Compact-Grip-11-Pound/dp/B079D9F86W?tag=cookinkitchen-20
-- OXO Cutting Board: $24.99, 4.5★ - https://www.amazon.com/OXO-GOOD-Grips-Cutting-17-Inch/dp/B00E6GUF5W?tag=cookinkitchen-20
-- T-fal Non-Stick Pan: $29.99, 4.6★ - https://www.amazon.com/T-fal-E93808-Professional-Nonstick-Dishwasher/dp/B000W5XHQW?tag=cookinkitchen-20
-- Instant Pot Duo: $89.99, 4.3★ - https://www.amazon.com/Instant-Pot-Duo-Electric-Pressure/dp/B00FLBUERN?tag=cookinkitchen-20
-- StarPack Utensil Set: $24.99, 4.6★ - https://www.amazon.com/Stainless-Steel-Cooking-Utensil-Set/dp/B0BY8X3G8K?tag=cookinkitchen-20
+- Victorinox Chef's Knife: $39.99, 4.8★ - https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Lodge Dutch Oven: $59.99, 4.9★ - https://www.amazon.com/s?k=Lodge+5+Quart+Cast+Iron+Dutch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- KitchenAid Stand Mixer: $449.99, 4.8★ - https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Shun Santoku Knife: $169.95, 4.7★ - https://www.amazon.com/s?k=Shun+DM0706+Classic+7+Inch+Santoku&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Ninja Blender: $99.99, 4.6★ - https://www.amazon.com/s?k=Ninja+BL610+Professional+72+Watt+Blender&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Ninja Air Fryer: $149.99, 4.6★ - https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- OXO Kitchen Scale: $29.99, 4.4★ - https://www.amazon.com/s?k=OXO+Stainless+Compact+Grip+11+Pound&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- OXO Cutting Board: $24.99, 4.5★ - https://www.amazon.com/s?k=OXO+GOOD+Grips+Cutting+17+Inch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- T-fal Non-Stick Pan: $29.99, 4.6★ - https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+Dishwasher&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Instant Pot Duo: $89.99, 4.3★ - https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- StarPack Utensil Set: $24.99, 4.6★ - https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
 `;
 
 export async function POST(request: NextRequest) {
@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
 Guidelines:
 - Be conversational and friendly
 - Help users find the right kitchen tools based on their needs and budget
-- When recommending products, always include affiliate links with the tag "cookinkitchen-20"
+- When recommending products, always include affiliate links with the tag "${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}"
 - Format recommendations like: "I'd recommend the [Product Name](amazon link) - here's why..."
 - Be honest about pros and cons
 - If you don't have specific information, say so honestly

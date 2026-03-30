@@ -69,7 +69,7 @@ export default function BlogPost() {
               <p className="mb-6">Mincing garlic by hand is tedious, and old-fashioned garlic presses are a nightmare to clean. The modern solution? A garlic press with a built-in cleaning function that pops out the skins and residue with one squeeze.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔧 Our Pick</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B08XZHQ7XR?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips Garlic Press</a> features a unique cleaning function that makes mincemeat out of the cleanup. Dishwasher safe and incredibly durable.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=OXO+Good+Grips+Garlic+Press&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips Garlic Press</a> features a unique cleaning function that makes mincemeat out of the cleanup. Dishwasher safe and incredibly durable.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">2. Instant-Read Digital Thermometer</h2>
@@ -77,7 +77,7 @@ export default function BlogPost() {
               <p className="mb-6">Look for one with a thin probe that gives readings in 2-3 seconds. The best ones have a large, easy-to-read display and auto-shutoff to preserve battery life.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔥 Top Pick</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B07WNJS5S7?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">ThermoPop Instant-Read Thermometer</a> from ThermoWorks gives readings in 2-3 seconds, has a backlit display, and survives dishwasher cleaning.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=smart+plug+kitchen&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">ThermoPop Instant-Read Thermometer</a> from ThermoWorks gives readings in 2-3 seconds, has a backlit display, and survives dishwasher cleaning.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">3. Adjustable Measuring Cups (Magnetic)</h2>
@@ -85,7 +85,7 @@ export default function BlogPost() {
               <p className="mb-6">The adjustable slider lets you measure any amount from ¼ cup to 1 cup with a single tool. This is one of those "why didn't I have this before" upgrades.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🛒 Great Value</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B08DHD4BWS?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips Adjustable Measuring Cups</a> nest magnetically and measure everything from ¼ cup to 1 cup. A kitchen drawer game-changer.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=OXO+Good+Grips+Adjustable+Measuring+Cups&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips Adjustable Measuring Cups</a> nest magnetically and measure everything from ¼ cup to 1 cup. A kitchen drawer game-changer.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">4. Silicone Spatula Set with Metal Core</h2>
@@ -97,7 +97,7 @@ export default function BlogPost() {
               <p className="mb-6">Look for one with multiple speed settings and a powerful motor (at least 200 watts). The best ones come with additional attachments like a whisk or chopper bowl.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">💡 Budget Option</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B07XQKHQTL?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Hamilton Beach Immersion Blender</a> offers excellent value with 2 speeds, a whisk attachment, and a chopping bowl—all under $30.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=Hamilton+Beach+Immersion+Blender&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Hamilton Beach Immersion Blender</a> offers excellent value with 2 speeds, a whisk attachment, and a chopping bowl—all under $30.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">6. Kitchen Shears with Blade Release</h2>
@@ -109,7 +109,7 @@ export default function BlogPost() {
               <p className="mb-6">Look for ones with ergonomic handles and stainless steel blades that stay sharp for years.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔧 Our Pick</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B00004S7V8?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Microplane 4-Piece Classic Grater Set</a> includes everything you need—from fine zest to coarse shredding.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=Microplane+4-Piece+Classic+Grater+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Microplane 4-Piece Classic Grater Set</a> includes everything you need—from fine zest to coarse shredding.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">8. Silicone Baking Mat</h2>
@@ -121,7 +121,7 @@ export default function BlogPost() {
               <p className="mb-6">The newer models include smart features like WiFi connectivity and preset programs, but the basic functionality remains the same game-changer.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔥 Top Pick</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B07W55DDFW?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Instant Pot Duo 7-in-1</a> remains the gold standard. It pressure cooks, slow cooks, steams, sautes, and more—perfect for hands-off weeknight meals.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=Instant+Pot+Duo+7-in-1&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Instant Pot Duo 7-in-1</a> remains the gold standard. It pressure cooks, slow cooks, steams, sautes, and more—perfect for hands-off weeknight meals.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">10. Spiralizer</h2>
@@ -133,7 +133,7 @@ export default function BlogPost() {
               <p className="mb-6">Look for one with a tare function (subtracts the bowl weight), a clear display, and at least an 11-pound capacity.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🛒 Great Value</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B07GQT2JPQ?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Etekcity Digital Kitchen Scale</a> features a tare function, multiple units, and a sleek design—all for under $15.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=Etekcity+Digital+Kitchen+Scale&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Etekcity Digital Kitchen Scale</a> features a tare function, multiple units, and a sleek design—all for under $15.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">12. Mandoline Slicer</h2>
@@ -202,7 +202,7 @@ export default function BlogPost() {
                 <h3 className="text-2xl font-black mb-4 text-emerald-900">Ready to Upgrade Your Kitchen?</h3>
                 <p className="text-emerald-800 mb-4">We've curated the best time-saving kitchen tools on Amazon—tested and recommended:</p>
                 <a 
-                  href="https://www.amazon.com/s?k=kitchen+tools+essentials&tag=cookinkitchen-20" 
+                  href={`https://www.amazon.com/s?k=kitchen+tools+essentials&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} 
                   target="_blank" 
                   rel="nofollow"
                   className="inline-block bg-emerald-600 text-white font-bold py-3 px-8 rounded-full hover:bg-emerald-700 transition-colors"

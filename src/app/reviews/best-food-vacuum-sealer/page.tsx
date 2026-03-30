@@ -64,7 +64,7 @@ export default function Page() {
               <li className="mb-2">Compatible with FoodSaver accessories</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=FoodSaver+V4840+2+in+1+Automatic&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=FoodSaver+V4840+2+in+1+Automatic&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -104,7 +104,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a 
-                href="https://www.amazon.com/s?k=FoodSaver+V4840+2+in+1+Automatic&tag=cookinkitchen-20"
+                href={`https://www.amazon.com/s?k=FoodSaver+V4840+2+in+1+Automatic&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-600 font-medium hover:underline"

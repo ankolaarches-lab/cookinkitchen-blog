@@ -11,7 +11,7 @@ const product = {
   name: "Ninja Air Fryer Pro XL 6-in-1 (AF181)",
   price: "$169.99",
   rating: 4.8,
-  link: "https://www.amazon.com/s?k=Ninja+Air+Fryer+Pro+XL+6+in+1&tag=cookinkitchen-20",
+  link: `https://www.amazon.com/s?k=Ninja+Air+Fryer+Pro+XL+6+in+1&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
   features: [
     "6.5-quart capacity",
     "MaxCrisp technology for extra crispy results",

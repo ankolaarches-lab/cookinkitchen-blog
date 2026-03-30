@@ -25,7 +25,7 @@ const products = [
     price: "$34.95",
     rating: 4.8,
     reviews: "10,000+",
-    link: "https://www.amazon.com/Le-Creuset-Classic-Butter-Crock/dp/B000VLRU5E?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Le+Creuset+Classic+Butter+Crock&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/1.jpg",
     pros: ["Signature enamel", "Dishwasher safe", "Multiple colors", "Keeps butter soft"],
     cons: ["Premium price"],
@@ -35,7 +35,7 @@ const products = [
     price: "$15.99",
     rating: 4.7,
     reviews: "10,200+",
-    link: "https://www.amazon.com/Dowan-Ceramic-Butter-Crock-Set/dp/B07S8JYQZG?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Dowan+Ceramic+Butter+Crock+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/2.jpg",
     pros: ["Ceramic design", "Water seal", "Affordable", "Multiple colors"],
     cons: ["Fragile"],
@@ -45,7 +45,7 @@ const products = [
     price: "$24.99",
     rating: 4.6,
     reviews: "8,500+",
-    link: "https://www.amazon.com/Mora-Ceramics-Butter-Crock-Serving/dp/B08HR5Y7M4?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Mora+Ceramics+Butter+Crock+Serving&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/3.jpg",
     pros: ["Doubles as serving tray", "Holds 2 sticks", "Modern design", "Great reviews"],
     cons: ["Larger footprint"],
@@ -55,7 +55,7 @@ const products = [
     price: "$9.00",
     rating: 4.5,
     reviews: "9,000+",
-    link: "https://www.amazon.com/Pisol-Butter-Dish-Dispenser-Counter/dp/B09VSXYD1G?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Pisol+Butter+Dish+Dispenser+Counter&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/4.jpg",
     pros: ["Budget-friendly", "Silicone seal", "Easy to use", "Compact"],
     cons: ["Basic design"],
@@ -65,7 +65,7 @@ const products = [
     price: "$12.99",
     rating: 4.7,
     reviews: "6,200+",
-    link: "https://www.amazon.com/Zulay-Kitchen-Butter-Crock-Knife/dp/B0BSHF2K4V?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Zulay+Kitchen+Butter+Crock+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/5.jpg",
     pros: ["Includes spreader knife", "Ceramic design", "Value set", "Cute design"],
     cons: ["Smaller capacity"],
@@ -146,7 +146,7 @@ export default function BestButterDishes() {
           <p className="text-stone-700 mb-4">
             For those who want premium quality, the <strong>Le Creuset Classic Butter Crock</strong> delivers legendary durability in signature enamel colors—it's an investment that lasts decades.
           </p>
-          <a href="https://www.amazon.com/Dowan-Ceramic-Butter-Crock-Set/dp/B07S8JYQZG?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">Buy on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=Dowan+Ceramic+Butter+Crock+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">Buy on Amazon</a>
         </section>
 
         <section className="mt-12">

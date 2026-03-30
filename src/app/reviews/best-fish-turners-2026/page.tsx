@@ -12,7 +12,7 @@ const products = [
     name: "OXO Good Grips Stainless Steel Fish Turner",
     price: "$14.99",
     rating: 4.8,
-    link: "https://www.amazon.com/OXO-1130900-Turner-Stainless-Comfortable/dp/B000YDO2MK?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=OXO+1130900+Turner+Stainless+Comfortable&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Slim flexible blade", "Comfortable grip", "Dishwasher safe", "Perfect for delicate foods"],
     cons: ["Not ideal for heavy foods"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Staruby Kitchen Fish Spatula",
     price: "$15.99",
     rating: 4.7,
-    link: "https://www.amazon.com/STARUBY-Kitchen-Stainless-Silicone-Resistant/dp/B07GPPXHXZ?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=STARUBY+Kitchen+Stainless+Silicone+Resistant&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Stainless steel core", "Silicone tips", "Heat resistant", "Locking mechanism"],
     cons: ["Slightly bulky"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Newness Metal Fish Turner Spatula",
     price: "$11.99",
     rating: 4.6,
-    link: "https://www.amazon.com/Newness-Metal-Fish-Turner-Stainless/dp/B07YDXW1G3?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Newness+Metal+Fish+Turner+Stainless&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Ultra thin blade", "Professional grade", "Ergonomic wooden handle", "Great for fish and eggs"],
     cons: ["Hand wash recommended"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Stainless Steel Fish Spatula Set",
     price: "$18.99",
     rating: 4.5,
-    link: "https://www.amazon.com/Stainless-Fish-Spatula-Set-Professional/dp/B08J5K3ZKL?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Stainless+Fish+Spatula+Set+Professional&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Set of 2 sizes", "Mirror polished", "Durable construction", "Versatile use"],
     cons: ["No silicone tips"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "GIR Fish Turner",
     price: "$16.99",
     rating: 4.7,
-    link: "https://www.amazon.com/GIR-Ultra-Flexible-Fish-Turner/dp/B00XJQ3L1G?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=GIR+Ultra+Flexible+Fish+Turner&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Extremely flexible", "Stainless steel reinforced", "Non-scratch", "Perfect for delicate flip"],
     cons: ["Premium price"],
   },
@@ -133,7 +133,7 @@ export default function BestFishTurners2026() {
               The <strong>OXO Good Grips Stainless Steel Fish Turner</strong> earns our top spot for its slim flexible blade that effortlessly slides under delicate foods. The comfortable grip and dishwasher-safe construction make it a kitchen essential.
             </p>
             <a 
-              href="https://www.amazon.com/OXO-1130900-Turner-Stainless-Comfortable/dp/B000YDO2MK?tag=cookinkitchen-20"
+              href={`https://www.amazon.com/s?k=OXO+1130900+Turner+Stainless+Comfortable&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-lato font-bold hover:bg-emerald-700 transition"

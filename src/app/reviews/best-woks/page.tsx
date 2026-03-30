@@ -12,7 +12,7 @@ const products = [
     name: "Carbon Steel Wok",
     price: "$44.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=Carbon+Steel+Wok+14+inch&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Carbon+Steel+Wok+14+inch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Excellent heat", "Lightweight", "Natural nonstick", "Affordable"],
     cons: ["Requires seasoning"],
   },

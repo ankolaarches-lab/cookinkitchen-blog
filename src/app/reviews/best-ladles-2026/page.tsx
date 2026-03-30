@@ -12,7 +12,7 @@ const products = [
     name: "OXO Good Grips Stainless Steel Ladle",
     price: "$16.95",
     rating: 4.8,
-    link: "https://www.amazon.com/OXO-Good-Grips-Stainless-Ladle/dp/B000YLDPQ4?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Ladle&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Comfortable non-slip handle", "Dishwasher safe", "Mirror finish stainless steel", "Perfect capacity for soups"],
     cons: ["Handle can get hot near stovetop"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Tovolo Flex Core Silicone Ladle",
     price: "$14.99",
     rating: 4.7,
-    link: "https://www.amazon.com/Tovolo-Flex-Core-Silicone-Ladle/dp/B01N2PMGYS?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Tovolo+Flex+Core+Silicone+Ladle&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Heat resistant up to 500°F", "Non-scratch for nonstick", "Precision pour lip", "BPA free"],
     cons: ["Not for heavy-duty use"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Fissler Essential Soup Ladle",
     price: "$24.99",
     rating: 4.6,
-    link: "https://www.amazon.com/Fissler-Essential-Stainless-Ladle/dp/B07YDXW1G3?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Fissler+Essential+Stainless+Ladle&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["18/10 stainless steel", "Ergonomic handle", "Professional quality", "Dishwasher safe"],
     cons: ["Premium price"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Stainless Steel Ladle with Wooden Handle",
     price: "$12.99",
     rating: 4.5,
-    link: "https://www.amazon.com/Stainless-Steel-Ladle-Wooden-Handle/dp/B08J5K3ZKL?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Stainless+Steel+Ladle+Wooden+Handle&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Heat-resistant wooden handle", "Durable stainless bowl", "Great for wok cooking"],
     cons: ["Hand wash recommended"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "KitchenAid Classic Basting Spoon",
     price: "$8.99",
     rating: 4.5,
-    link: "https://www.amazon.com/KitchenAid-Classic-Basting-Spoon/dp/B000KPDQ3E?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=KitchenAid+Classic+Basting+Spoon&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Affordable", "Deep bowl for sauces", "Stainless steel", "Dishwasher safe"],
     cons: ["Not a traditional ladle shape"],
   },
@@ -133,7 +133,7 @@ export default function BestLadles2026() {
               The <strong>OXO Good Grips Stainless Steel Ladle</strong> earns our top spot for its comfortable non-slip handle, perfect capacity, and durable construction. It's the kitchen workhorse that makes serving soups a breeze.
             </p>
             <a 
-              href="https://www.amazon.com/OXO-Good-Grips-Stainless-Ladle/dp/B000YLDPQ4?tag=cookinkitchen-20"
+              href={`https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Ladle&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-lato font-bold hover:bg-emerald-700 transition"

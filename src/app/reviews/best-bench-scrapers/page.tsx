@@ -25,7 +25,7 @@ const products = [
     price: "$9.99",
     rating: 4.8,
     reviews: "18,000+",
-    link: "https://www.amazon.com/OXO-Good-Grips-Bench-Scraper/dp/B000VLRUR8?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=OXO+Good+Grips+Bench+Scraper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/1.jpg",
     pros: ["Measurement markings", "Non-slip grip", "Dishwasher safe", "Versatile"],
     cons: ["Plastic not metal"],
@@ -35,7 +35,7 @@ const products = [
     price: "$12.99",
     rating: 4.7,
     reviews: "8,000+",
-    link: "https://www.amazon.com/Spring-Chef-Dough-Scraper-Stainless/dp/B07YLF7XR6?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Spring+Chef+Dough+Scraper+Stainless&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/2.jpg",
     pros: ["Stainless steel blade", "Comfortable handle", "Sharp edge", "Durable"],
     cons: ["Hand wash recommended"],
@@ -45,7 +45,7 @@ const products = [
     price: "$24.95",
     rating: 4.9,
     reviews: "2,500+",
-    link: "https://www.amazon.com/Lamson-Professional-Dough-Scraper-Walnut/dp/B01N5EZT3G?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Lamson+Professional+Dough+Scraper+Walnut&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/3.jpg",
     pros: ["Walnut handle", "American stainless steel", "Lifetime warranty", "Professional quality"],
     cons: ["Premium price"],
@@ -55,7 +55,7 @@ const products = [
     price: "$14.99",
     rating: 4.6,
     reviews: "5,000+",
-    link: "https://www.amazon.com/Di-Oro-Stainless-Bench-Scraper/dp/B072C4RK2L?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Di+Oro+Stainless+Bench+Scraper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/4.jpg",
     pros: ["Razor-sharp edge", "Mirror finish", "Comfort grip", "Affordable"],
     cons: ["May dull over time"],
@@ -65,7 +65,7 @@ const products = [
     price: "$7.99",
     rating: 4.5,
     reviews: "3,500+",
-    link: "https://www.amazon.com/Rachael-Ray-Non-Stick-Bench-Scraper/dp/B0041OS5X4?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Rachael+Ray+Non+Stick+Bench+Scraper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     image: "/images/kitchen/5.jpg",
     pros: ["Non-stick surface", "Dishwasher safe", "Budget-friendly", "Colorful"],
     cons: ["Not as durable"],
@@ -146,7 +146,7 @@ export default function BestBenchScrapers() {
           <p className="text-stone-700 mb-4">
             If you want professional-grade quality, the <strong>Lamson Professional Dough Scraper</strong> with its walnut handle and lifetime warranty is worth the investment.
           </p>
-          <a href="https://www.amazon.com/OXO-Good-Grips-Bench-Scraper/dp/B000VLRUR8?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Buy on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=OXO+Good+Grips+Bench+Scraper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Buy on Amazon</a>
         </section>
 
         <section className="mt-12">

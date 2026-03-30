@@ -66,7 +66,7 @@ export default function BlogPost() {
               <p className="mb-6">The latest generation of smart thermometers now features AI that learns your preferred doneness levels. These devices connect to your phone and provide real-time guidance through voice prompts. Perfect for anyone who wants perfectly cooked meat without the guesswork.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔥 Top Pick</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B08FC5L3RG?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">ThermoWorks Smart Thermometer</a> remains our go-to for precision cooking. While the 2026 models add more AI features, this reliable favorite gets the job done at a fraction of the price.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=ThermoWorks+Smart+Thermometer&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">ThermoWorks Smart Thermometer</a> remains our go-to for precision cooking. While the 2026 models add more AI features, this reliable favorite gets the job done at a fraction of the price.</p>
               </div>
 
               <h3 className="text-xl font-bold mt-8 mb-4 border-b border-emerald-100 pb-2 inline-block text-slate-800">Recipe-Reading Cameras</h3>
@@ -96,7 +96,7 @@ export default function BlogPost() {
               </ul>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">💡 Budget Option</p>
-                <p className="text-emerald-700">Not ready for a $2,000 smart oven? Start with a <a href="https://www.amazon.com/dp/B07WNJS5S7?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">smart plug</a> that lets you control any oven remotely, or a <a href="https://www.amazon.com/dp/B07QYCHM1V?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900"> countertop smart thermometer</a> that sends alerts to your phone.</p>
+                <p className="text-emerald-700">Not ready for a $2,000 smart oven? Start with a <a href={`https://www.amazon.com/s?k=smart+plug+kitchen&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">smart plug</a> that lets you control any oven remotely, or a <a href={`https://www.amazon.com/s?k=countertop+smart+thermometer&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900"> countertop smart thermometer</a> that sends alerts to your phone.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">Voice-Controlled Kitchen Ecosystem</h2>
@@ -124,7 +124,7 @@ export default function BlogPost() {
               </ul>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🛒 Great Value</p>
-                <p className="text-emerald-700">Smart fridge not in the budget? Try <a href="https://www.amazon.com/dp/B09V3KXJPB?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">smart food containers</a> that track freshness, or simple <a href="https://www.amazon.com/dp/B07XJ8C8F5?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">digital labels</a> that sync with your phone.</p>
+                <p className="text-emerald-700">Smart fridge not in the budget? Try <a href={`https://www.amazon.com/s?k=smart+food+containers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">smart food containers</a> that track freshness, or simple <a href={`https://www.amazon.com/s?k=digital+food+labels+smart&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">digital labels</a> that sync with your phone.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">The Smart Kitchen Starter Kit</h2>
@@ -197,7 +197,7 @@ export default function BlogPost() {
                 <h3 className="text-2xl font-black mb-4 text-emerald-900">Ready to Smarten Up Your Kitchen?</h3>
                 <p className="text-emerald-800 mb-4">We've curated the best smart kitchen gadgets on Amazon—tested and recommended:</p>
                 <a 
-                  href="https://www.amazon.com/s?k=smart+kitchen+gadgets&tag=cookinkitchen-20" 
+                  href={`https://www.amazon.com/s?k=smart+kitchen+gadgets&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} 
                   target="_blank" 
                   rel="nofollow"
                   className="inline-block bg-emerald-600 text-white font-bold py-3 px-8 rounded-full hover:bg-emerald-700 transition-colors"

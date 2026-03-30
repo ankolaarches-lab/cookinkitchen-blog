@@ -11,7 +11,7 @@ const product = {
   name: "Cosori Air Fryer 5.8 Quart",
   price: "$89.99",
   rating: 4.7,
-  link: "https://www.amazon.com/s?k=COSORI+5+8+Quart+Air+Fryer&tag=cookinkitchen-20",
+  link: `https://www.amazon.com/s?k=COSORI+5+8+Quart+Air+Fryer&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
   features: [
     "5.8-quart capacity",
     "12 cooking presets",

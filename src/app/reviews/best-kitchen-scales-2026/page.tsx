@@ -58,7 +58,7 @@ export default function Page() {
               <li className="mb-2">Stainless steel platform</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Steel+Kitchen+Scale&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Steel+Kitchen+Scale&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -74,7 +74,7 @@ export default function Page() {
               <li className="mb-2">Includes 2 AAA batteries</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Ozeri+Pronto+Digital+Kitchen+Scale&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Ozeri+Pronto+Digital+Kitchen+Scale&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -90,7 +90,7 @@ export default function Page() {
               <li className="mb-2">Backlit LCD display</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Etekcity+Digital+Food+Scale+22lb&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Etekcity+Digital+Food+Scale+22lb&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -106,7 +106,7 @@ export default function Page() {
               <li className="mb-2">Auto-off to save battery</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Amazon+Basics+Digital+Kitchen+Scale&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Amazon+Basics+Digital+Kitchen+Scale&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -136,7 +136,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a 
-                href="https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Steel+Kitchen+Scale&tag=cookinkitchen-20"
+                href={`https://www.amazon.com/s?k=OXO+Good+Grips+Stainless+Steel+Kitchen+Scale&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-600 font-medium hover:underline"

@@ -70,7 +70,7 @@ export default function BlogPost() {
               <p className="mb-6">The built-in LED light illuminates your workspace, and the non-slip base keeps everything stable. This is the closest thing to "set it and forget it" jar opening gets.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔥 Top Pick</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B000I1OE1S?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">KitchenAid Electric Jar Opener</a> handles all standard jar sizes and requires zero hand strength. Perfect for anyone with grip issues or frequent canning.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=KitchenAid+Electric+Jar+Opener&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">KitchenAid Electric Jar Opener</a> handles all standard jar sizes and requires zero hand strength. Perfect for anyone with grip issues or frequent canning.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">2. OXO Good Grips Jar Opener</h2>
@@ -78,7 +78,7 @@ export default function BlogPost() {
               <p className="mb-6">The comfortable, non-slip handle fits comfortably in your hand, and the durable construction means it'll last for years. It's small enough to store in a drawer but sturdy enough to handle daily use.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🔧 Best Manual</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B000B7M5HK?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips Jar Opener</a> uses leverage to make opening jars easy. The stainless steel head won't slip, and the soft handle absorbs pressure.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=OXO+Good+Grips+Jar+Opener&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips Jar Opener</a> uses leverage to make opening jars easy. The stainless steel head won't slip, and the soft handle absorbs pressure.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">3. Chef's Path Jar Opener Set</h2>
@@ -86,7 +86,7 @@ export default function BlogPost() {
               <p className="mb-6">The variety means you'll always have the right tool for the job, whether you're facing a wide-mouth pickle jar or a tall spaghetti sauce container.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">🛒 Best Value</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B01LXJPP2W?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Chef's Path Jar Opener Set</a> includes 3 different styles for under $15—great for households with various jar types.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=Chef+Path+Jar+Opener+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">Chef's Path Jar Opener Set</a> includes 3 different styles for under $15—great for households with various jar types.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">4. Good Cook Home Jar Opener</h2>
@@ -98,7 +98,7 @@ export default function BlogPost() {
               <p className="mb-6">It's compact enough for kitchen drawers but durable enough for outdoor entertaining—picnics, camping, and tailgates.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
                 <p className="text-sm font-semibold text-emerald-800 mb-2">💡 Space Saver</p>
-                <p className="text-emerald-700">The <a href="https://www.amazon.com/dp/B001CC6P9G?tag=cookinkitchen-20" target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips 3-in-1 Avocado Tool</a> doubles as a jar opener—great for compact kitchens.</p>
+                <p className="text-emerald-700">The <a href={`https://www.amazon.com/s?k=OXO+Good+Grips+3-in-1+Avocado+Tool&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="nofollow" className="underline hover:text-emerald-900">OXO Good Grips 3-in-1 Avocado Tool</a> doubles as a jar opener—great for compact kitchens.</p>
               </div>
 
               <h2 className="text-3xl font-black mt-12 mb-6 tracking-tight text-slate-900">How to Choose the Right Jar Opener</h2>
@@ -165,7 +165,7 @@ export default function BlogPost() {
                 <h3 className="text-2xl font-black mb-4 text-emerald-900">Find Your Perfect Jar Opener</h3>
                 <p className="text-emerald-800 mb-4">We've curated the best jar openers on Amazon—from electric to manual, there's an option for every kitchen:</p>
                 <a 
-                  href="https://www.amazon.com/s?k=jar+opener&tag=cookinkitchen-20" 
+                  href={`https://www.amazon.com/s?k=jar+opener&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} 
                   target="_blank" 
                   rel="nofollow"
                   className="inline-block bg-emerald-600 text-white font-bold py-3 px-8 rounded-full hover:bg-emerald-700 transition-colors"

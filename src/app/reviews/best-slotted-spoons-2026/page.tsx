@@ -12,7 +12,7 @@ const products = [
     name: "OXO Good Grips Silicone Slotted Spoon",
     price: "$12.99",
     rating: 4.8,
-    link: "https://www.amazon.com/OXO-Good-Grips-Silicone-Slotted/dp/B00XJQ3L1G?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=OXO+Good+Grips+Silicone+Slotted&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Heat resistant to 600°F", "Non-scratch", "Sloped bowl design", "Dishwasher safe"],
     cons: ["Not for very heavy foods"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Stainless Steel Slotted Spoon Set",
     price: "$14.99",
     rating: 4.7,
-    link: "https://www.amazon.com/Stainless-Steel-Slotted-Spoon-Set/dp/B08J5K3ZKL?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Stainless+Steel+Slotted+Spoon+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Set of 2 sizes", "Mirror polish", "Professional grade", "Dishwasher safe"],
     cons: ["Can scratch nonstick if metal"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "KitchenAid Classic Slotted Spoon",
     price: "$9.99",
     rating: 4.6,
-    link: "https://www.amazon.com/KitchenAid-Classic-Slotted-Spoon/dp/B000KPDQ3E?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=KitchenAid+Classic+Slotted+Spoon&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Affordable", "Stainless steel", "Classic design", "Dishwasher safe"],
     cons: ["Basic handle"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "3 Pcs Silicone Cooking Spoon Set",
     price: "$16.99",
     rating: 4.6,
-    link: "https://www.amazon.com/Silicone-Cooking-Spoon-Set-Heat-Resistant/dp/B07YDXW1G3?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Silicone+Cooking+Spoon+Set+Heat+Resistant&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Includes solid & slotted", "Heat resistant", "Food-grade silicone", "Non-scratch"],
     cons: ["Set price higher per unit"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "Wooden Slotted Spoon",
     price: "$11.99",
     rating: 4.5,
-    link: "https://www.amazon.com/Wooden-Slotted-Spoon-Handcrafted/dp/B08J5K3ZKL?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Wooden+Slotted+Spoon+Handcrafted&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Natural material", "Gentle on cookware", "Heat resistant handle", "Classic look"],
     cons: ["Hand wash only", "Not dishwasher safe"],
   },
@@ -133,7 +133,7 @@ export default function BestSlottedSpoons2026() {
               The <strong>OXO Good Grips Silicone Slotted Spoon</strong> earns our top spot for its excellent heat resistance, non-scratch design, and smart sloped bowl that drains perfectly. It's safe for all cookware and dishwasher safe for easy cleanup.
             </p>
             <a 
-              href="https://www.amazon.com/OXO-Good-Grips-Silicone-Slotted/dp/B00XJQ3L1G?tag=cookinkitchen-20"
+              href={`https://www.amazon.com/s?k=OXO+Good+Grips+Silicone+Slotted&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-lato font-bold hover:bg-emerald-700 transition"

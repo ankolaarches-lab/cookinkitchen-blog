@@ -23,7 +23,7 @@ const products = [
     name: "West Bend 8255 Stovetop Popcorn Popper",
     price: "$29.99",
     rating: 4.8,
-    link: "https://www.amazon.com/West-Bend-8255-Popcorn-Popper/dp/B00004S1BX?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=West+Bend+8255+Popcorn+Popper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Classic stovetop design", "Makes 6 quarts", "Durable aluminum", "Temperature control", "Great nostalgia factor"],
     cons: ["Requires stovetop"],
   },
@@ -31,7 +31,7 @@ const products = [
     name: "Presto 04820 PopLite Hot Air Popper",
     price: "$24.99",
     rating: 4.7,
-    link: "https://www.amazon.com/Presto-04820-PopLite-Popper/dp/B00004S1DJ?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Presto+04820+PopLite+Popper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Hot air technology", "No oil needed", "Quick popping", "Easy to clean", "Compact storage"],
     cons: ["Can be noisy"],
   },
@@ -39,7 +39,7 @@ const products = [
     name: "Cuisinart CPM-450W1 Popcorn Maker",
     price: "$39.99",
     rating: 4.6,
-    link: "https://www.amazon.com/Cuisinart-CPM-450W1-Popcorn-Maker-Stainless/dp/B07BJL3D7G?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Cuisinart+CPM+450W1+Popcorn+Maker+Stainless&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Stainless steel design", "7-quart capacity", "Dual-function", "LED light", "Keep-warm feature"],
     cons: ["Larger footprint"],
   },
@@ -47,7 +47,7 @@ const products = [
     name: "Nostalgia Electrics Retro Popcorn Maker",
     price: "$34.99",
     rating: 4.5,
-    link: "https://www.amazon.com/Nostalgia-Electrics-Retro-Popcorn-Maker/dp/B001J3MD5W?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Nostalgia+Electrics+Retro+Popcorn+Maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Retro design", "4-quart capacity", "Stir rod included", "Great gift idea", "Easy operation"],
     cons: ["Smaller capacity"],
   },
@@ -55,7 +55,7 @@ const products = [
     name: "Microwave Popcorn Popper Bowl",
     price: "$14.99",
     rating: 4.4,
-    link: "https://www.amazon.com/Microwave-Popcorn-Popper-Bowl-Collapsible/dp/B08XYZ1234?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Microwave+Popcorn+Popper+Bowl+Collapsible&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Microwave friendly", "Collapsible design", "No oil needed", "Easy cleanup", "Budget-friendly"],
     cons: ["Less theatrical"],
   },
@@ -137,7 +137,7 @@ export default function BestPopcornPoppers2026() {
             The stovetop method gives you that authentic buttery theater taste with the satisfying crackle 
             that hot air poppers can't match.
           </p>
-          <a href="https://www.amazon.com/West-Bend-8255-Popcorn-Popper/dp/B00004S1BX?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Buy on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=West+Bend+8255+Popcorn+Popper&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Buy on Amazon</a>
         </div>
       </main>
     </div>

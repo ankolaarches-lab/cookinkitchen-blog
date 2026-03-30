@@ -14,7 +14,7 @@ export default function BlogPostPage() {
     date: "Mar 21, 2026",
     readTime: "12 min read",
     image: "/images/kitchen/4.jpg",
-    amazonLink: "https://www.amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef&tag=cookinkitchen-20",
+    amazonLink: `https://www.amazon.com/s?k=Victorinox+Swiss+Classic+8+Inch+Chef&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     content: `
 ## The Knife That Changed Everything
 

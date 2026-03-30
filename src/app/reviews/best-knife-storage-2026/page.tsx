@@ -12,7 +12,7 @@ const products = [
     name: "Wüsthof 7-Slot Knife Block",
     price: "$39.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Solid beech wood construction", "Fits most knife sizes", "Keeps blades sharp", "Lifetime warranty"],
     cons: ["Takes counter space"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Chef'sPath Magnetic Knife Strip (20 inch)",
     price: "$24.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Saves valuable counter space", "Strong magnet", "Easy wall installation", "Fits any knife size"],
     cons: ["Requires wall mounting"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Joseph Joseph Expandable Knife Drawer Organizer",
     price: "$29.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Fits inside drawer", "Expandable design", "Non-slip base", "Maximum space-saving"],
     cons: ["Requires drawer space"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Knife Safe Magnetic Knife Block",
     price: "$34.99",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=Magnetic+Knife+Block+Organizer+Set&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Magnetic+Knife+Block+Organizer+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Compact design", "Dual magnetic sides", "Includes sharpening rod", "Modern look"],
     cons: ["Limited knife capacity"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "Prociension Knife Bar Magnetic Strip (24 inch)",
     price: "$39.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=Prociension+Knife+Bar+Magnetic+Strip&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Prociension+Knife+Bar+Magnetic+Strip&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Extra long 24 inch", "Heavy-duty magnet", "Screw or adhesive mount", "Professional grade"],
     cons: ["Premium price"],
   },
@@ -137,7 +137,7 @@ export default function BestKnifeStorage2026() {
             excellent value at under $25 while keeping knives easily accessible and sharp.
           </p>
           <a
-            href="https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20"
+            href={`https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"

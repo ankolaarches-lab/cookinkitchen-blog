@@ -42,7 +42,7 @@ export default function Page() {
               <li className="mb-2">Great for drip, pour-over, and espresso</li>
               <li className="mb-2">Easy to clean and maintain</li>
             </ul>
-            <p className="mb-4"><a href="https://www.amazon.com/s?k=Baratza+Encore+Burr+Grinder&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon →</a></p>
+            <p className="mb-4"><a href={`https://www.amazon.com/s?k=Baratza+Encore+Burr+Grinder&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon →</a></p>
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Best Value: Krups Fast Touch</h2>
             <p className="mb-4 text-stone-600">Under $50 and gets the job done. Not as consistent as burr grinders, but a solid entry point.</p>
             <h2 className="font-playfair text-2xl text-stone-800 mt-8 mb-4">Best Premium: Eureka Mignon Libra</h2>
@@ -53,7 +53,7 @@ export default function Page() {
           <div className="mt-12 bg-stone-100 rounded-xl p-6 border border-stone-200">
             <h3 className="font-semibold text-lg text-stone-800 mb-3">Where to Buy</h3>
             <p className="text-stone-500 text-sm mb-4">We may earn a commission when you buy through our links.</p>
-            <a href="https://www.amazon.com/s?k=Baratza+Encore+Burr+Grinder&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon</a>
+            <a href={`https://www.amazon.com/s?k=Baratza+Encore+Burr+Grinder&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">Check Price on Amazon</a>
           </div>
         </article>
       </div>

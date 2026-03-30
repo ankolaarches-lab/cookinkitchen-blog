@@ -12,7 +12,7 @@ const products = [
     name: "Instant Pot 4-in-1 Electric Frother",
     price: "$28.99",
     rating: 4.7,
-    link: "https://www.amazon.com/Instant-Pot-Frother-Milk-Steamer/dp/B09V2L7K6F?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Instant+Pot+Frother+Milk+Steamer&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["4-in-1 functionality", "Hot and cold foam", "Affordable", "Easy to clean"],
     cons: ["Larger footprint"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Bodum Bistro Electric Milk Frother",
     price: "$89.99",
     rating: 4.6,
-    link: "https://www.amazon.com/Bodum-11942-250-Bistro-Milk/dp/B004VJ2L4W?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Bodum+11942+250+Bistro+Milk&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Premium design", "Consistent froth", "Hot and cold options", "Dishwasher safe"],
     cons: ["Higher price"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Zulay Kitchen Powerful Milk Frother Wand",
     price: "$14.99",
     rating: 4.8,
-    link: "https://www.amazon.com/Zulay-Kitchen-Milk-Frother/dp/B07Y3K3T9Q?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Zulay+Kitchen+Milk+Frother&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Very affordable", "Portable", "Works with any container", "Includes batteries"],
     cons: ["Requires hand holding"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Aerolatte Original Handheld Milk Frother",
     price: "$19.99",
     rating: 4.5,
-    link: "https://www.amazon.com/Aerolatte-Original-Handheld-Milk-Frother/dp/B0018MCK8W?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Aerolatte+Original+Handheld+Milk+Frother&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Compact", "Battery operated", "Works in any cup", "Great for travel"],
     cons: ["Battery replacement needed"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "MatchaBar Electric Matcha Whisk",
     price: "$35.00",
     rating: 4.6,
-    link: "https://www.amazon.com/MatchaBar-Electric-Matcha-Whisk/dp/B08G9W4QKQ?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=MatchaBar+Electric+Matcha+Whisk&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Perfect for matcha", "Portable", "USB rechargeable", " Whisks smoothly"],
     cons: ["Specialized use"],
   },
@@ -103,7 +103,7 @@ export default function BestMilkFrothers() {
         <section className="mt-12 bg-stone-100 rounded-2xl p-8 border border-stone-200">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Instant Pot 4-in-1 Electric Frother</strong> offers incredible versatility at an affordable price. It can make hot or cold foam, warm milk, and even hot chocolate. The easy cleanup and reliable performance make it our top choice for most home baristas.</p>
-          <a href="https://www.amazon.com/Instant-Pot-Frother-Milk-Steamer/dp/B09V2L7K6F?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-stone-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-stone-800 transition">Buy on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=Instant+Pot+Frother+Milk+Steamer&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-stone-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-stone-800 transition">Buy on Amazon</a>
         </section>
         
       </main>

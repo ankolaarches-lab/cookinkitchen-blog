@@ -58,7 +58,7 @@ export default function Page() {
               <li className="mb-2">Dishwasher-safe carafe</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Hamilton+Beach+12+Cup+Programmable+Coffee+Maker&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Hamilton+Beach+12+Cup+Programmable+Coffee+Maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -75,7 +75,7 @@ export default function Page() {
               <li className="mb-2">Gold tone and regular coffee presets</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Breville+Precision+Brewer+Coffee+Maker&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Breville+Precision+Brewer+Coffee+Maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -92,7 +92,7 @@ export default function Page() {
               <li className="mb-2">2-year warranty</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Black+Decker+12+Cup+Thermal+Coffee+Maker&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Black+Decker+12+Cup+Thermal+Coffee+Maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -109,7 +109,7 @@ export default function Page() {
               <li className="mb-2">Compact footprint</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Ninja+Coffee+Bar++coffee+maker&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Ninja+Coffee+Bar++coffee+maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -126,7 +126,7 @@ export default function Page() {
               <li className="mb-2">Includes charcoal water filter</li>
             </ul>
             <p className="mb-4">
-              <a href="https://www.amazon.com/s?k=Cuisinart+SS-10P1+coffee+maker&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
+              <a href={`https://www.amazon.com/s?k=Cuisinart+SS-10P1+coffee+maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-medium hover:underline">
                 Check Price on Amazon →
               </a>
             </p>
@@ -156,7 +156,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a 
-                href="https://www.amazon.com/s?k=Hamilton+Beach+12+Cup+Programmable+Coffee+Maker&tag=cookinkitchen-20"
+                href={`https://www.amazon.com/s?k=Hamilton+Beach+12+Cup+Programmable+Coffee+Maker&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-600 font-medium hover:underline"

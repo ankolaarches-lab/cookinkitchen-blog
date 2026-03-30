@@ -12,7 +12,7 @@ const products = [
     name: "Presto 12-Cup Stainless Steel Coffee Maker",
     price: "$79.99",
     rating: 4.8,
-    link: "https://www.amazon.com/Presto-12-Cup-Stainless-Coffee/dp/B00006IUXV?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Presto+12+Cup+Stainless+Coffee&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Premium stainless steel", "Electric with keep-warm", "Fast brewing", "Dishwasher safe"],
     cons: ["Higher price point"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "Farberware 12-Cup Stainless Steel Coffee Percolator",
     price: "$34.99",
     rating: 4.6,
-    link: "https://www.amazon.com/Farberware-12-Cup-Stainless-Percolator/dp/B004VJ2M7Y?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Farberware+12+Cup+Stainless+Percolator&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Affordable", "Classic design", "Dishwasher safe", "Full brew indicator"],
     cons: ["No keep-warm function"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Stanley Classic StaySeq 12-Cup Percolator",
     price: "$79.95",
     rating: 4.7,
-    link: "https://www.amazon.com/Stanley-Classic-Percolator-Stainless/dp/B00X15AWNW?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Stanley+Classic+Percolator+Stainless&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Legendary durability", "Built to last", "Double-wall stainless", "Classic styling"],
     cons: ["Premium price"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Euro Cuisine PER12 Electric Coffee Percolator",
     price: "$59.99",
     rating: 4.5,
-    link: "https://www.amazon.com/Euro-Cuisine-PER12-Electric-Percolator/dp/B001UEH6QS?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Euro+Cuisine+PER12+Electric+Percolator&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Electric with keep-warm", "Polished copper finish", "Dripless gooseneck spout", "Clear glass knob"],
     cons: ["Some reports of durability issues"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "Elite Platinum Maxi-Matic 12-Cup Percolator",
     price: "$39.99",
     rating: 4.4,
-    link: "https://www.amazon.com/Elite-Platinum-Maxi-Matic-Percolator/dp/B004L4CPOE?tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Elite+Platinum+Maxi+Matic+Percolator&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Very affordable", "12-cup capacity", "Automatic keep-warm", "Compact design"],
     cons: ["Mixed durability reviews"],
   },
@@ -105,7 +105,7 @@ export default function BestCoffeePercolators() {
         <section className="mt-12 bg-amber-50 rounded-2xl p-8 border border-amber-200">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Presto 12-Cup Stainless Steel Coffee Maker</strong> delivers the perfect balance of quality and performance. Its premium stainless steel construction ensures durability, while the electric design with keep-warm function makes it incredibly convenient. The fast brewing and dishwasher-safe parts seal the deal.</p>
-          <a href="https://www.amazon.com/Presto-12-Cup-Stainless-Coffee/dp/B00006IUXV?tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-amber-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-800 transition">Buy on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=Presto+12+Cup+Stainless+Coffee&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-amber-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-800 transition">Buy on Amazon</a>
         </section>
         
       </main>

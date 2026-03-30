@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const products = [
-  { name: "Zojirushi Bread Maker", price: "$199.95", rating: 4.8, link: "https://www.amazon.com/s?k=best+bread+makers&tag=cookinkitchen-20", pros: ["Quiet", "Multiple settings", "Great bread"] },
+  { name: "Zojirushi Bread Maker", price: "$199.95", rating: 4.8, link: `https://www.amazon.com/s?k=best+bread+makers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`, pros: ["Quiet", "Multiple settings", "Great bread"] },
 ];
 
 export default function BestBreadMakers2026() {

@@ -158,7 +158,7 @@ export default function BlogPost() {
                 <h3 className="font-serif text-2xl font-bold text-white mb-3">Upgrade Your Toolkit</h3>
                 <p className="text-emerald-50/70 mb-8 font-medium">Start with the essentials—a great knife and instant thermometer transform everything.</p>
                 <a
-                  href="https://www.amazon.com/s?k=chef+knife+instant+thermometer+set&tag=cookinkitchen-20"
+                  href={`https://www.amazon.com/s?k=chef+knife+instant+thermometer+set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-10 py-4 rounded-xl font-bold hover:from-emerald-500 hover:to-teal-400 hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all duration-300 transform hover:-translate-y-1 text-sm uppercase tracking-widest"

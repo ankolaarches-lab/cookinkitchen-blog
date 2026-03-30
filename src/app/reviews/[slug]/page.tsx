@@ -16,7 +16,7 @@ const reviews = [
     category: "Appliances",
     rating: 4.5,
     date: "Mar 20, 2026",
-    affiliateLink: "https://www.amazon.com/Hamilton-Beach-Breakfast-Sandwich-Maker/dp/B07YJ4YB1G?tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Hamilton+Beach+Breakfast+Sandwich+Maker&tag=provenpantry3-20",
     image: "/images/reviews/breakfast-sandwich-maker.jpg",
     content: `
 ## The Best Breakfast Sandwich Makers for 2026
@@ -37,7 +37,7 @@ The Hamilton Beach Breakfast Sandwich Maker earns our top spot for its perfect c
 **What We Loved:**
 The quick cooking time is a game-changer for busy mornings. Eggs cook perfectly with runny yolks or fully set, cheese melts evenly, and bacon crisps nicely. The simple one-button operation means no complicated settings to navigate.
 
-[Check Hamilton Beach Price on Amazon →](https://www.amazon.com/Hamilton-Beach-Breakfast-Sandwich-Maker/dp/B07YJ4YB1G?tag=cookinkitchen-20)
+[Check Hamilton Beach Price on Amazon →](https://www.amazon.com/s?k=Hamilton+Beach+Breakfast+Sandwich+Maker&tag=provenpantry3-20)
 
 ### Best Premium: Breville Toast & Bagel Maker
 
@@ -53,7 +53,7 @@ For those willing to invest more, the Breville offers superior toasting quality 
 **What We Loved:**
 While not a dedicated sandwich maker, the Breville produces perfectly toasted bread that forms an excellent base for breakfast sandwiches. The consistent results and durability justify the higher price.
 
-[Check Breville Price on Amazon →](https://www.amazon.com/Breville-BOV650XL-Toast-Bagel-Maker/dp/B003N2K1IC?tag=cookinkitchen-20)
+[Check Breville Price on Amazon →](https://www.amazon.com/s?k=Breville+BOV650XL+Toast+Bagel+Maker&tag=provenpantry3-20)
 
 ### Best Value: Black+Decker 3-in-1 Breakfast Station
 
@@ -68,7 +68,7 @@ The Black+Decker offers the best value with multiple functions in one compact un
 **What We Loved:**
 This station lets you cook eggs and bacon while brewing coffee — all in one place. It's perfect for small kitchens or dorm rooms where counter space is at a premium.
 
-[Check Black+Decker Price on Amazon →](https://www.amazon.com/Black-Decker-3-in-1-Breakfast-Station/dp/B07YJFVX5Q?tag=cookinkitchen-20)
+[Check Black+Decker Price on Amazon →](https://www.amazon.com/s?k=Black+Decker+3+in+1+Breakfast+Station&tag=provenpantry3-20)
 
 ## Comparison Table
 
@@ -94,7 +94,7 @@ If you're willing to spend more for versatility and don't mind a larger applianc
     category: "Appliances",
     rating: 4.4,
     date: "Mar 12, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=provenpantry3-20",
     content: `
 ## The Slow Cooker Showdown
 
@@ -114,7 +114,7 @@ The Instant Pot is far more than a slow cooker. It's a pressure cooker, rice coo
 **Cooking Results:**
 We made pulled pork, chili, and braised chicken. The pressure cooking function produced incredibly tender meat in a fraction of the time. The slow cooker function works well but isn't the Instant Pot's standout feature.
 
-[Check Instant Pot Price on Amazon →](https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20)
+[Check Instant Pot Price on Amazon →](https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=provenpantry3-20)
 
 ### Crock-Pot: The Original Slow Cooker
 
@@ -131,7 +131,7 @@ The Crock-Pot has been perfecting slow cooking since the 1970s. It's a dedicated
 **Cooking Results:**
 The Crock-Pot excelled at classic slow cooker recipes. We made beef stew, pulled pork, and apple crumble. The consistent low heat produced perfectly cooked, fall-apart tender meals. There's something special about the "set it and forget it" simplicity.
 
-[Check Crock-Pot Price on Amazon →](https://www.amazon.com/s?k=Crock+Pot+7+Quart+Manual+Slow+Cooker&tag=cookinkitchen-20)
+[Check Crock-Pot Price on Amazon →](https://www.amazon.com/s?k=Crock+Pot+7+Quart+Manual+Slow+Cooker&tag=provenpantry3-20)
 
 ## Side-by-Side Comparison
 
@@ -167,7 +167,7 @@ Get the Instant Pot if you want one appliance. Get both if you take slow cooking
     category: "Kitchen Utensils",
     rating: 4.6,
     date: "Feb 16, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=provenpantry3-20",
     content: `
 ## The Essential Toolkit
 
@@ -177,25 +177,25 @@ Every home cook needs reliable kitchen utensils. We tested 12 top-rated utensil 
 
 This 5-piece set includes everything you need: slotted spoon, solid spoon, spatula, fork, and ladle. The stainless steel is durable, heat-resistant, and dishwasher safe.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=provenpantry3-20)
 
 ### Best Silicone: OXO Good Grips 3-Piece Set
 
 For non-stick cookware protection, OXO's silicone utensils are excellent. Heat-resistant to 600°F and gentle on your pans.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=Good+Grips+Silicone+Kitchen+Utensil&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Good+Grips+Silicone+Kitchen+Utensil&tag=provenpantry3-20)
 
 ### Best Wood: walnut Walnut Wood Set
 
 If you prefer the classic look and feel of wood, this set delivers beauty and functionality. The craftsmanship is exceptional.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=Walnut+Wood+Kitchen+Utensil+Set&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Walnut+Wood+Kitchen+Utensil+Set&tag=provenpantry3-20)
 
 ### Best Value: AmazonBasics Kitchen Utensil Set
 
 Under $25 for 5 essential tools. Not as premium as other options, but solid performance for everyday cooking.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=AmazonBasics+Kitchen+Utensil+5+Piece&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=AmazonBasics+Kitchen+Utensil+5+Piece&tag=provenpantry3-20)
 
 ### How We Tested
 - Heat resistance at high temperatures
@@ -212,7 +212,7 @@ Under $25 for 5 essential tools. Not as premium as other options, but solid perf
     category: "Knives",
     rating: 4.8,
     date: "Feb 10, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=provenpantry3-20",
     content: `
 ## The Search for the Perfect Blade
 
@@ -241,7 +241,7 @@ For those on a budget, the Victorinox Swiss Classic offers incredible value. It'
     category: "Cookware",
     rating: 4.5,
     date: "Feb 8, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Skillet+12+inch&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Lodge+Cast+Iron+Skillet+12+inch&tag=provenpantry3-20",
     content: `
 ## The Showdown
 
@@ -270,7 +270,7 @@ For most home cooks, carbon steel offers the best balance of performance and usa
     category: "Appliances",
     rating: 4.3,
     date: "Feb 5, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=provenpantry3-20",
     content: `
 ## Multicooker Madness
 
@@ -299,7 +299,7 @@ For traditional pressure cooking, the Instant Pot wins. For versatility and air-
     category: "Appliances",
     rating: 4.7,
     date: "Feb 2, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=provenpantry3-20",
     content: `
 ## Mixing It Up
 
@@ -328,7 +328,7 @@ The KitchenAid Artisan remains the gold standard, but the Cuisinart offers excel
     category: "Cookware",
     rating: 4.6,
     date: "Jan 28, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+Dishwasher&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+Dishwasher&tag=provenpantry3-20",
     content: `
 ## The Great Egg Test
 
@@ -360,7 +360,7 @@ For under $30, this pan outperforms many competitors twice its price. It's light
     category: "Cookware",
     rating: 4.9,
     date: "Jan 25, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Lodge+5+Quart+Cast+Iron+Dutch&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Lodge+5+Quart+Cast+Iron+Dutch&tag=provenpantry3-20",
     content: `
 ## The Braising Champion
 
@@ -370,19 +370,19 @@ Dutch ovens are the most versatile pot in any kitchen. We tested the top brands 
 
 The gold standard. Even heat distribution, beautiful enamel that lasts generations, and excellent self-basting lid.
 
-[Shop Le Creuset on Amazon →](https://www.amazon.com/s?k=le+creuset+dutch+oven&tag=cookinkitchen-20)
+[Shop Le Creuset on Amazon →](https://www.amazon.com/s?k=le+creuset+dutch+oven&tag=provenpantry3-20)
 
 ### Best Value: Lodge Enameled Cast Iron
 
 Nearly half the price of Le Creuset with nearly identical performance. The enamel isn't as colorful, but it gets the job done beautifully.
 
-[Shop Lodge on Amazon →](https://www.amazon.com/s?k=lodge+enameled+dutch+oven&tag=cookinkitchen-20)
+[Shop Lodge on Amazon →](https://www.amazon.com/s?k=lodge+enameled+dutch+oven&tag=provenpantry3-20)
 
 ### Best Budget: AmazonBasics Enameled Cast Iron
 
 Surprisingly good for the price. Great for beginners who want to try Dutch oven cooking without a big investment.
 
-[Shop AmazonBasics on Amazon →](https://www.amazon.com/s?k=amazonbasics+dutch+oven&tag=cookinkitchen-20)
+[Shop AmazonBasics on Amazon →](https://www.amazon.com/s?k=amazonbasics+dutch+oven&tag=provenpantry3-20)
 
 ### Our Recommendation
 If you bake bread, the Le Creuset's weight is essential. For everyday cooking, Lodge offers the best value.
@@ -395,7 +395,7 @@ If you bake bread, the Le Creuset's weight is essential. For everyday cooking, L
     category: "Knives",
     rating: 4.7,
     date: "Mar 3, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=provenpantry3-20",
     content: `
 ## Protect Your Investment
 
@@ -405,19 +405,19 @@ Proper knife storage is essential for maintaining sharp edges and extending the 
 
 The quality beech wood construction protects blades, the slots fit most knife sizes, and it's backed by Wüsthof's lifetime warranty.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=W%C3%BCsthof+7+Slot+Knife+Block&tag=provenpantry3-20)
 
 ### Best Space-Saving: Chef'sPath Magnetic Knife Strip
 
 For those short on counter space, this magnetic strip offers excellent value at under $25 while keeping knives easily accessible.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Ch%C2%B4fsPath+Magnetic+Knife+Strip&tag=provenpantry3-20)
 
 ### Best Drawer Option: Joseph Joseph Expandable Organizer
 
 Maximum space-saving with an expandable design that fits in any drawer.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Joseph+Jos+Select+Drawer+Organizer&tag=provenpantry3-20)
 
 ### How We Tested
 - Knife edge protection
@@ -434,7 +434,7 @@ Maximum space-saving with an expandable design that fits in any drawer.
     category: "Gadgets",
     rating: 4.4,
     date: "Jan 20, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=OXO+Stainless+Compact+Grip+11+Pound&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=OXO+Stainless+Compact+Grip+11+Pound&tag=provenpantry3-20",
     content: `
 ## Why You Need a Scale
 
@@ -463,7 +463,7 @@ The OXO Pop Scale balances precision, design, and price perfectly for home baker
     category: "Gadgets",
     rating: 4.5,
     date: "Jan 15, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Cutting+17+Inch&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Cutting+17+Inch&tag=provenpantry3-20",
     content: `
 ## The Board Basics
 
@@ -492,7 +492,7 @@ We recommend having both: a large wood board for vegetables and a dedicated plas
     category: "Knives",
     rating: 4.7,
     date: "Jan 12, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Shun+DM0706+Classic+7+Inch+Santoku&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Shun+DM0706+Classic+7+Inch+Santoku&tag=provenpantry3-20",
     content: `
 ## Japanese Precision
 
@@ -520,7 +520,7 @@ Victorinox delivers again with an affordable option that outperforms knives twic
     category: "Appliances",
     rating: 4.5,
     date: "Jan 10, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Ninja+BL610+Professional+72+Watt+Blender&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Ninja+BL610+Professional+72+Watt+Blender&tag=provenpantry3-20",
     content: `
 ## The Blender Showdown
 
@@ -546,7 +546,7 @@ The Oster Pro's blender bottle system makes on-the-go smoothies a breeze.
     category: "Appliances",
     rating: 4.6,
     date: "Jan 8, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Technivorm+Moccamaster+10+Cup+Coffee+Brewer&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Technivorm+Moccamaster+10+Cup+Coffee+Brewer&tag=provenpantry3-20",
     content: `
 ## Brewing Excellence
 
@@ -572,7 +572,7 @@ Great coffee doesn't have to be expensive. This brewer delivers solid results.
     category: "Appliances",
     rating: 4.4,
     date: "Jan 5, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=provenpantry3-20",
     content: `
 ## Crispy Without the Oil
 
@@ -582,19 +582,19 @@ Air fryers have revolutionized home cooking. We tested the top models to find wh
 
 Large capacity, consistent results, and versatile cooking functions make this our top pick.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=provenpantry3-20)
 
 ### Best Premium: Philips Premium Airfryer XXL
 
 The Philips delivers restaurant-quality air frying with its unique basket design.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products&tag=provenpantry3-20)
 
 ### Best Value: Cosori Air Fryer
 
 Affordable and reliable, Cosori offers great results without breaking the bank.
 
-[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products&tag=cookinkitchen-20)
+[Check Price on Amazon →](https://www.amazon.com/s?k=best+kitchen+products&tag=provenpantry3-20)
     `,
   },
   {
@@ -604,7 +604,7 @@ Affordable and reliable, Cosori offers great results without breaking the bank.
     category: "Gadgets",
     rating: 4.3,
     date: "Jan 3, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=ChefsChoice+15+Inch+Conventional+Sharpener&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=ChefsChoice+15+Inch+Conventional+Sharpener&tag=provenpantry3-20",
     content: `
 ## Keep Your Blades Sharp
 
@@ -630,7 +630,7 @@ Affordable and effective for quick touch-ups between full sharpenings.
     category: "Gadgets",
     rating: 4.2,
     date: "Jan 1, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Cuisinox+Stainless+Steel+Strainer&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Cuisinox+Stainless+Steel+Strainer&tag=provenpantry3-20",
     content: `
 ## Essential Kitchen Tools
 
@@ -656,7 +656,7 @@ Multiple sizes cover all your straining needs.
     category: "Gadgets",
     rating: 4.4,
     date: "Dec 28, 2025",
-    affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Measuring+Cups&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=OXO+GOOD+Grips+Measuring+Cups&tag=provenpantry3-20",
     content: `
 ## Measure Right
 
@@ -682,7 +682,7 @@ Everything you need in one comprehensive set.
     category: "Gadgets",
     rating: 4.5,
     date: "Dec 25, 2025",
-    affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Spatula+Set+Utensil&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Stainless+Steel+Spatula+Set+Utensil&tag=provenpantry3-20",
     content: `
 ## Essential Tools
 
@@ -708,7 +708,7 @@ This set includes everything you need and lasts forever.
     category: "Cookware",
     rating: 4.7,
     date: "Dec 22, 2025",
-    affiliateLink: "https://www.amazon.com/s?k=All+Clad+Stainless+Tri+Ply+Cookware&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=All+Clad+Stainless+Tri+Ply+Cookware&tag=provenpantry3-20",
     content: `
 ## The All-Clad Showdown
 
@@ -734,7 +734,7 @@ Great non-stick performance with the durability of hard anodized aluminum.
     category: "Appliances",
     rating: 4.5,
     date: "Dec 20, 2025",
-    affiliateLink: "https://www.amazon.com/s?k=Bonavita+Electric+Gooseneck+Kettle&tag=cookinkitchen-20",
+    affiliateLink: "https://www.amazon.com/s?k=Bonavita+Electric+Gooseneck+Kettle&tag=provenpantry3-20",
     content: `
 ## Hot Water on Demand
 

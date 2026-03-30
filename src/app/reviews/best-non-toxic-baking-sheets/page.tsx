@@ -12,7 +12,7 @@ const products = [
     name: "GreenLife Healthy Ceramic Nonstick Cookie Sheet",
     price: "$19.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=GreenLife+Ceramic+Non+Stick+Cookie+Turquoise&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=GreenLife+Ceramic+Non+Stick+Cookie+Turquoise&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Ceramic",
     pros: ["PFAS-free ceramic coating", "60% fewer CO2 emissions in production", "Reinforced rims prevent warping", "Oven safe to 450°F", "Easy cleanup"],
     cons: ["Hand wash recommended", "Not as durable as metal"],
@@ -21,7 +21,7 @@ const products = [
     name: "Caraway Non-Stick Ceramic Baking Sheet",
     price: "$44.00",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=Caraway+Non+Stick+Ceramic+Baking+Sheet&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Caraway+Non+Stick+Ceramic+Baking+Sheet&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Ceramic",
     pros: ["Beautiful design", "PFTE & PFOA free", "Naturally slick ceramic coating", "Sturdy construction", "Eco-friendly packaging"],
     cons: ["Premium price", "Ceramic can chip if dropped"],
@@ -30,7 +30,7 @@ const products = [
     name: "Silpat Premium Non-Stick Baking Mat",
     price: "$34.95",
     rating: 4.9,
-    link: "https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Silicone Mat",
     pros: ["Lifetime guarantee", "French-made quality", "Even heat distribution", "PFAS-free silicone", "Lasts for years"],
     cons: ["Premium price", "Can retain odors if not washed properly"],
@@ -39,7 +39,7 @@ const products = [
     name: "Nordic Ware Naturals Half Sheet Pan",
     price: "$14.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Aluminum+Commercial&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Nordic+Ware+Natural+Aluminum+Commercial&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Natural Aluminum",
     pros: ["Natural aluminum - no coating", "Commercial quality", "Encapsulated rim prevents warping", "Made in USA", "Very affordable"],
     cons: ["Not non-stick (needs parchment)", "Can discolor over time"],
@@ -48,7 +48,7 @@ const products = [
     name: "BRONYPRO Non-Stick Ceramic Baking Pan Set",
     price: "$39.99",
     rating: 4.4,
-    link: "https://www.amazon.com/s?k=BRONYPRO+Ceramic+Baking+Natural+Cookie&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=BRONYPRO+Ceramic+Baking+Natural+Cookie&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Ceramic",
     pros: ["PFOA/PTFE/PFAS free", "Set of 3 sizes", "Silicone handles", "Warp-resistant to 500°F", "Great value"],
     cons: ["Newer brand", "Mixed reviews on durability"],
@@ -57,7 +57,7 @@ const products = [
     name: "Premium Non-Stick Ceramic Baking Sheet",
     price: "$24.99",
     rating: 4.3,
-    link: "https://www.amazon.com/s?k=Premium+Non+Stick+Ceramic+Baking+Sheet&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Premium+Non+Stick+Ceramic+Baking+Sheet&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Ceramic",
     pros: ["PFAS and PFOA free", "Healthy ceramic coating", "Non-toxic and non-allergic", "Warp-resistant", "Medium size versatile"],
     cons: ["Smaller than standard half sheet", "Hand wash recommended"],
@@ -66,7 +66,7 @@ const products = [
     name: "Our Place Griddle Pan / Baking Sheet",
     price: "$55.00",
     rating: 4.4,
-    link: "https://www.amazon.com/s?k=Our+Place+Griddle+Pan+Toxin+Free&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Our+Place+Griddle+Pan+Toxin+Free&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Ceramic",
     pros: ["Dual-function (stovetop & oven)", "Toxin-free ceramic coating", "No PFAS, PTFE, PFOA, lead, or cadmium", "Oven safe to 450°F", "Versatile design"],
     cons: ["Not a traditional baking sheet", "Premium price"],
@@ -75,7 +75,7 @@ const products = [
     name: "Amazon Basics Ceramic Nonstick Baking Sheet",
     price: "$18.99",
     rating: 4.3,
-    link: "https://www.amazon.com/s?k=AmazonBasics+Ceramic+Nonstick+Baking+Sheet&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=AmazonBasics+Ceramic+Nonstick+Baking+Sheet&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Ceramic",
     pros: ["Affordable", "PFAS-free ceramic", "Includes cooling rack", "Half sheet size", "Easy release"],
     cons: ["Less durable long-term", "Can stain with tomato-based foods"],
@@ -141,7 +141,7 @@ export default function BestNonToxicBakingSheets() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>Silpat Premium</strong> remains the gold standard for non-toxic baking. Made in France with a lifetime guarantee, this silicone mat provides perfect release, even heat distribution, and will last for years with proper care. While the upfront cost is higher, the longevity makes it a worthwhile investment. Pair it with Nordic Ware's natural aluminum pans for the ultimate non-toxic baking setup.</p>
-          <a href="https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy Silpat on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=Silpat+Classic+Non+Stick+Baking+Mat&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy Silpat on Amazon</a>
         </section>
         <section className="mt-8 bg-stone-100 rounded-2xl p-8 border border-stone-200">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">What to Look For</h2>

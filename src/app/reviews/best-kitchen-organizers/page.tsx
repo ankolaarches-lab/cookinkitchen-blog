@@ -13,7 +13,7 @@ const products = [
     name: "YouCopia StoraLazzy Cabinet Organizer",
     price: "$29.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Cabinet Organizer",
     pros: ["Expands cabinet space", "Smooth 360° turn", "Fits most cabinets", "Easy installation"],
     cons: ["Limited weight capacity"],
@@ -22,7 +22,7 @@ const products = [
     name: "LAMU 2-Tier Lazy Susan Turntable",
     price: "$24.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Cabinet Organizer",
     pros: ["Doubles vertical space", "Clear design shows contents", "Stackable", "Great for spices"],
     cons: ["Requires 9.25\" cabinet depth"],
@@ -32,7 +32,7 @@ const products = [
     name: "Pipishell Bamboo Expandable Silverware Tray",
     price: "$19.99",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Drawer Organizer",
     pros: ["Natural bamboo material", "Expandable design", "Fits most drawer sizes", "Eco-friendly"],
     cons: ["Fixed slots not adjustable"],
@@ -41,7 +41,7 @@ const products = [
     name: "Homecor Expandable Cutlery Drawer Organizer",
     price: "$24.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Drawer Organizer",
     pros: ["Removable knife blocks", "Expandable 13-22 inches", "7 compartments", "Non-slip base"],
     cons: ["Takes up drawer space"],
@@ -51,7 +51,7 @@ const products = [
     name: "Vtopmart Clear Food Storage Bins (4-Pack)",
     price: "$27.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Pantry Organizer",
     pros: ["Clear see-through design", "Stackable", "Handles for easy pulling", "4 sizes included"],
     cons: ["Not as sturdy as higher-end"],
@@ -60,7 +60,7 @@ const products = [
     name: "madesmart Classic Organizer",
     price: "$14.99",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Pantry Organizer",
     pros: ["Removable dividers", "Versatile use", "FDA approved", "Stackable"],
     cons: ["Smaller than expected"],
@@ -70,7 +70,7 @@ const products = [
     name: "KitchenAid 15-Slot Knife Block",
     price: "$39.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Countertop Organizer",
     pros: ["Holds 15 knives", "Sturdy construction", "Universal fit", "Classic design"],
     cons: ["Takes counter space"],
@@ -79,7 +79,7 @@ const products = [
     name: "Joseph Joseph Easy-Press Paper Towel Holder",
     price: "$24.99",
     rating: 4.4,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Countertop Organizer",
     pros: ["One-handed dispensing", "Weighted base", "Holds most paper roll sizes", "Sleek design"],
     cons: ["Base can slide on smooth counters"],
@@ -89,7 +89,7 @@ const products = [
     name: "SpaceAid Wall-Mounted Spice Rack",
     price: "$34.99",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Spice Rack",
     pros: ["Wall or door mount", "Holds 12 jars", "Hardware included", "Modern look"],
     cons: ["Jars not included"],
@@ -98,7 +98,7 @@ const products = [
     name: "Lynk Professional Pull-Out Spice Rack",
     price: "$59.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     category: "Spice Rack",
     pros: ["Mounts inside cabinet", "Pull-out drawers", "Holds 20+ jars", "Commercial quality"],
     cons: ["Premium price", "Requires cabinet modification"],
@@ -164,7 +164,7 @@ export default function BestOrganizers2026() {
         <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
           <p className="text-stone-700 mb-4"><strong>YouCopia StoraLazzy</strong> remains our top pick for cabinet organization. It doubles your storage space with smooth 360° rotation, making items in the back accessible without digging. The sturdy construction and universal fit make it a winner for any kitchen.</p>
-          <a href="https://www.amazon.com/s?k=best+kitchen+organizers&tag=cookinkitchen-20" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
+          <a href={`https://www.amazon.com/s?k=best+kitchen+organizers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy on Amazon</a>
         </section>
         
       </main>

@@ -12,7 +12,7 @@ const products = [
     name: "Nordic Ware Natural Aluminum Commercial Baker's Half Sheet",
     price: "$24.95",
     rating: 4.9,
-    link: "https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Bakers&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Bakers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Excellent heat distribution", "Durable natural aluminum", "Made in USA"],
     cons: ["Hand wash recommended"],
   },
@@ -20,7 +20,7 @@ const products = [
     name: "USA Pan Bakeware Half Sheet Pan",
     price: "$18.99",
     rating: 4.8,
-    link: "https://www.amazon.com/s?k=USA+Pan+Bakeware+Half+Cookie&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=USA+Pan+Bakeware+Half+Cookie&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Professional grade", "Non-stick coating", "Heavy duty"],
     cons: ["Can warp with extreme temperature changes"],
   },
@@ -28,7 +28,7 @@ const products = [
     name: "Calphalon Nonstick Bakeware Set",
     price: "$79.99",
     rating: 4.7,
-    link: "https://www.amazon.com/s?k=Calphalon+Nonstick+Bakeware+3+Piece&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Calphalon+Nonstick+Bakeware+3+Piece&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Easy release", "Oven safe to 500°F", "Dishwasher safe"],
     cons: ["Higher price point"],
   },
@@ -36,7 +36,7 @@ const products = [
     name: "Wilton Performance Baking Sheet Set",
     price: "$29.99",
     rating: 4.6,
-    link: "https://www.amazon.com/s?k=Wilton+Performance+Non+Stick+Baking+3+Piece&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=Wilton+Performance+Non+Stick+Baking+3+Piece&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Great value", "Non-stick", "Set of 3"],
     cons: ["Not as durable as premium options"],
   },
@@ -44,7 +44,7 @@ const products = [
     name: "AmazonBasics Non-Stick Baking Sheet Set",
     price: "$24.99",
     rating: 4.5,
-    link: "https://www.amazon.com/s?k=AmazonBasics+Non+Stick+Baking+Sheet&tag=cookinkitchen-20",
+    link: `https://www.amazon.com/s?k=AmazonBasics+Non+Stick+Baking+Sheet&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
     pros: ["Budget-friendly", "Easy cleanup", "Set of 2"],
     cons: ["May need replacing after heavy use"],
   },
@@ -147,7 +147,7 @@ export default function BestBakingSheets2026() {
             produces perfectly golden cookies every time.
           </p>
           <a
-            href="https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Bakers&tag=cookinkitchen-20"
+            href={`https://www.amazon.com/s?k=Nordic+Ware+Natural+Commercial+Bakers&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"
