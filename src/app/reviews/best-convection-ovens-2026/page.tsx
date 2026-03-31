@@ -29,7 +29,7 @@ const reviews = [
     category: "Appliances",
     rating: 4.6,
     date: "Mar 22, 2026",
-    affiliateLink: "https://www.amazon.com/s?k=Breville+Smart+Oven+Convection&tag=provenpantry3-20",
+    affiliateLink: "https://www.amazon.com/s?k=Breville+Smart+Oven+Convection&tag=cookinkitchen-20",
     tableImages: [
       "/images/reviews/hero-appliances.png",
       "/images/reviews/hero-appliances.png",
@@ -62,7 +62,7 @@ The Breville Smart Oven Pro earns our top spot as the most versatile countertop 
 **What We Loved:**
 The convection mode produced the most evenly roasted chickens we've ever made in a countertop oven. Cookies baked uniformly with no uneven browning. The included accessories (baking pan, oven rack, pizza pan) add immediate value. While pricey, the build quality suggests this will last for years.
 
-[Check Breville Smart Oven Pro Price on Amazon →](https://www.amazon.com/s?k=Breville+Smart+Oven+Pro&tag=provenpantry3-20)
+[Check Breville Smart Oven Pro Price on Amazon →](https://www.amazon.com/s?k=Breville+Smart+Oven+Pro&tag=cookinkitchen-20)
 
 ### Best Value: Cuisinart TOA-60 Convection Toaster Oven
 
@@ -78,7 +78,7 @@ The Cuisinart TOA-60 offers the best bang for your buck, delivering solid convec
 **What We Loved:**
 For everyday cooking, the Cuisinart excels. It toasts evenly, bakes cookies well, and the air-fry basket attachment produces surprisingly crispy foods with minimal oil. The simpler controls make it accessible for anyone, while still delivering quality results.
 
-[Check Cuisinart TOA-60 Price on Amazon →](https://www.amazon.com/s?k=Cuisinart+TOA-60+Convection+Toaster+Oven&tag=provenpantry3-20)
+[Check Cuisinart TOA-60 Price on Amazon →](https://www.amazon.com/s?k=Cuisinart+TOA-60+Convection+Toaster+Oven&tag=cookinkitchen-20)
 
 ### Best Premium: Breville Bit Pro
 
@@ -94,7 +94,7 @@ For serious home bakers and cooking enthusiasts, the Breville Bit Pro offers pro
 **What We Loved:**
 This oven handles everything with ease. The larger interior accommodates multiple dishes at once, and the more precise temperature control produces exceptional results for bread baking and pastry. It's an investment, but one that pays off for avid cooks.
 
-[Check Breville Bit Pro Price on Amazon →](https://www.amazon.com/s?k=Breville+Bit+Pro+Oven&tag=provenpantry3-20)
+[Check Breville Bit Pro Price on Amazon →](https://www.amazon.com/s?k=Breville+Bit+Pro+Oven&tag=cookinkitchen-20)
 
 ### Best Compact: Hamilton Beach Countertop Oven
 
@@ -110,7 +110,7 @@ Not everyone has space for a large countertop oven. The Hamilton Beach delivers 
 **What We Loved:**
 This compact oven proves you don't need a massive appliance for quality results. It's perfect for apartments, dorm rooms, or as a secondary oven. The convection mode works well for smaller batches, making it ideal for singles or couples.
 
-[Check Hamilton Beach Price on Amazon →](https://www.amazon.com/s?k=Hamilton+Beach+Countertop+Oven&tag=provenpantry3-20)
+[Check Hamilton Beach Price on Amazon →](https://www.amazon.com/s?k=Hamilton+Beach+Countertop+Oven&tag=cookinkitchen-20)
 
 ### Best for Air Frying: Ninja Foodi Digital Oven
 
@@ -126,7 +126,7 @@ If air frying is a priority, the Ninja Foodi Digital Oven delivers excellent con
 **What We Loved:**
 The air fry function produces incredibly crispy results with minimal oil. Roast chicken comes out with crispy skin and juicy meat. The versatility to air fry, bake, roast, and dehydrate makes it a true multi-cooker. For health-conscious cooks, this is an excellent choice.
 
-[Check Ninja Foodi Digital Oven Price on Amazon →](https://www.amazon.com/s?k=Ninja+Foodi+Digital+Oven&tag=provenpantry3-20)
+[Check Ninja Foodi Digital Oven Price on Amazon →](https://www.amazon.com/s?k=Ninja+Foodi+Digital+Oven&tag=cookinkitchen-20)
 
 ## Comparison Table
 

@@ -13,7 +13,7 @@ export default function BlogPostPage() {
     date: "Mar 21, 2026",
     readTime: "8 min read",
     image: "/images/kitchen/6.jpg",
-    amazonLink: "https://www.amazon.com/s?k=air+fryer&tag=provenpantry3-20",
+    amazonLink: "https://www.amazon.com/s?k=air+fryer&tag=cookinkitchen-20",
     content: `
 ## Why Air Fryers Are Worth Mastering
 
@@ -120,7 +120,7 @@ Start with the basics, practice with simple recipes, and soon you'll wonder how 
 - [Air Fryer Accessories Guide](/blog/air-fryer-accessories-guide) — Expand what's possible
 - [Ninja Air Fryer Pro 6-in-1 Review](/reviews/ninja-air-fryer-pro-6-in-1) — Our top versatility pick
 
-[Shop Air Fryers on Amazon →](https://www.amazon.com/s?k=air+fryer&tag=provenpantry3-20)
+[Shop Air Fryers on Amazon →](https://www.amazon.com/s?k=air+fryer&tag=cookinkitchen-20)
 `
   };
 

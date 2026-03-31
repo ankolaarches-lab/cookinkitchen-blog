@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { supabase, formatDate, BlogPost } from "@/lib/supabase";
+import { formatDate, BlogPost, getBlogPostBySlug, getBlogPosts } from "@/lib/supabase";
 
 export const dynamic = 'force-dynamic';
 
@@ -61,12 +61,7 @@ function RelatedContent({ title, articles }: { title: string; articles: any[] })
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { data: post } = await supabase
-    .from('blog_posts')
-    .select('title, excerpt, date, image_url')
-    .eq('slug', slug)
-    .eq('published', true)
-    .single()
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     return { title: 'Blog Post Not Found' };
@@ -87,29 +82,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-
-  const [{ data: post }, { data: related }] = await Promise.all([
-    supabase
-      .from('blog_posts')
-      .select('*')
-      .eq('slug', slug)
-      .eq('published', true)
-      .single(),
-    supabase
-      .from('blog_posts')
-      .select('slug, title, image_url, category')
-      .eq('published', true)
-      .neq('slug', slug)
-      .order('date', { ascending: false })
-      .limit(3),
-  ])
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     notFound();
     return null;
   }
 
-  const relatedPosts = (related ?? []) as Pick<BlogPost, 'slug' | 'title' | 'image_url' | 'category'>[]
+  const allPosts = getBlogPosts();
+  const relatedPosts = allPosts
+    .filter(p => p.slug !== slug)
+    .slice(0, 3) as Pick<BlogPost, 'slug' | 'title' | 'image_url' | 'category'>[];
 
   return (
     <div className="min-h-screen py-12">
@@ -209,7 +192,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <h3 className="font-serif text-2xl font-bold text-white mb-3">Upgrade Your Arsenal</h3>
                 <p className="text-emerald-50/70 mb-8 font-medium">Equip your kitchen with the exact gear our analysts recommend.</p>
                 <a
-                  href={`https://www.amazon.com/s?k=${encodeURIComponent(post.title)}&tag=provenpantry3-20`}
+                  href={`https://www.amazon.com/s?k=${encodeURIComponent(post.title)}&tag=cookinkitchen-20`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-10 py-4 rounded-xl font-bold hover:from-emerald-500 hover:to-teal-400 hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all duration-300 transform hover:-translate-y-1 text-sm uppercase tracking-widest"

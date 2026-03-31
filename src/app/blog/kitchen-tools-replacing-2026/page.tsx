@@ -13,7 +13,7 @@ export default function BlogPostPage() {
     date: "Mar 21, 2026",
     readTime: "6 min read",
     image: "/images/kitchen/7.jpg",
-    amazonLink: "https://www.amazon.com/s?k=kitchen+tool+set+stainless+steel&tag=provenpantry3-20",
+    amazonLink: "https://www.amazon.com/s?k=kitchen+tool+set+stainless+steel&tag=cookinkitchen-20",
     content: `
 ## The Great Kitchen Tool Refresh
 
@@ -27,7 +27,7 @@ Silicone has been marketed as a safe, non-toxic alternative to plastic. And whil
 
 **What to buy instead:** Stainless steel utensils. They're durable, completely inert (meaning no chemicals leaching), and with proper care, they'll last a lifetime.
 
-[Shop Stainless Steel Utensil Sets on Amazon](https://www.amazon.com/s?k=stainless+steel+kitchen+utensil+set&tag=provenpantry3-20)
+[Shop Stainless Steel Utensil Sets on Amazon](https://www.amazon.com/s?k=stainless+steel+kitchen+utensil+set&tag=cookinkitchen-20)
 
 ## 2. Plastic Cutting Boards — Time for an Upgrade
 
@@ -35,7 +35,7 @@ Plastic cutting boards are convenient, but they're also porous at a microscopic 
 
 **What to buy instead:** Wooden cutting boards (preferably end-grain walnut or teak). Wood has natural antimicrobial properties and, when properly maintained, is actually more hygienic than plastic long-term.
 
-[Shop Wooden Cutting Boards on Amazon](https://www.amazon.com/s?k=walnut+cutting+board&tag=provenpantry3-20)
+[Shop Wooden Cutting Boards on Amazon](https://www.amazon.com/s?k=walnut+cutting+board&tag=cookinkitchen-20)
 
 ## 3. Non-Stick Cookware with PTFE (Teflon)
 
@@ -43,7 +43,7 @@ The convenience of non-stick pans is undeniable—until they start flaking. Once
 
 **What to buy instead:** Cast iron or stainless steel cookware. Yes, they require a little more care, but they're virtually indestructible, naturally non-stick when properly seasoned, and completely free of synthetic coatings.
 
-[Shop Cast Iron Cookware Sets on Amazon](https://www.amazon.com/s?k=cast+iron+cookware+set&tag=provenpantry3-20)
+[Shop Cast Iron Cookware Sets on Amazon](https://www.amazon.com/s?k=cast+iron+cookware+set&tag=cookinkitchen-20)
 
 ## 4. Plastic Food Storage Containers
 
@@ -51,7 +51,7 @@ Here's a shocking fact: plastic containers, even " BPA-free" ones, can still rel
 
 **What to buy instead:** Glass containers with bamboo or stainless steel lids. They microwave safely, don't stain, and won't leach anything into your food.
 
-[Shop Glass Food Storage Sets on Amazon](https://www.amazon.com/s?k=glass+food+storage+containers+bamboo+lids&tag=provenpantry3-20)
+[Shop Glass Food Storage Sets on Amazon](https://www.amazon.com/s?k=glass+food+storage+containers+bamboo+lids&tag=cookinkitchen-20)
 
 ## 5. Plastic Measuring Cups and Spoons
 
@@ -59,7 +59,7 @@ Those cheap plastic measuring cups that came with your first apartment? They're 
 
 **What to buy instead:** Stainless steel measuring cups and spoons. They never warp, are dishwasher safe, and maintain their accuracy forever.
 
-[Shop Stainless Steel Measuring Cups on Amazon](https://www.amazon.com/s?k=stainless+steel+measuring+cups+set&tag=provenpantry3-20)
+[Shop Stainless Steel Measuring Cups on Amazon](https://www.amazon.com/s?k=stainless+steel+measuring+cups+set&tag=cookinkitchen-20)
 
 ## 6. Slotted Spoons and Ladles — Plastic to Metal
 
@@ -67,7 +67,7 @@ When you're stirring a pot of soup or sauce, your slotted spoon sits in the heat
 
 **What to buy instead:** Stainless steel slotted spoons and ladles. They conduct heat away from the handle and won't melt or degrade.
 
-[Shop Stainless Steel Spoons and Ladles on Amazon](https://www.amazon.com/s?k=stainless+steel+ladle+slotted+spoon+set&tag=provenpantry3-20)
+[Shop Stainless Steel Spoons and Ladles on Amazon](https://www.amazon.com/s?k=stainless+steel+ladle+slotted+spoon+set&tag=cookinkitchen-20)
 
 ## 7. Plastic Salad Spinners
 
@@ -75,7 +75,7 @@ Salad spinners are one of those gadgets that seem great until you realize how mu
 
 **What to buy instead:** A stainless steel salad bowl with a separate insert, or simply use a clean kitchen towel. Sometimes simpler is better.
 
-[Shop Stainless Steel Salad Bowls on Amazon](https://www.amazon.com/s?k=stainless+steel+salad+bowl&tag=provenpantry3-20)
+[Shop Stainless Steel Salad Bowls on Amazon](https://www.amazon.com/s?k=stainless+steel+salad+bowl&tag=cookinkitchen-20)
 
 ## 8. Plastic Can Openers
 
@@ -83,7 +83,7 @@ Most can openers are plastic-bodied, which means they've absorbed every odor fro
 
 **What to buy instead:** A stainless steel handheld can opener or—better yet—an electric can opener with stainless steel cutting mechanics. The electric version is smoother to use and more durable.
 
-[Shop Stainless Steel Can Openers on Amazon](https://www.amazon.com/s?k=stainless+steel+can+opener&tag=provenpantry3-20)
+[Shop Stainless Steel Can Openers on Amazon](https://www.amazon.com/s?k=stainless+steel+can+opener&tag=cookinkitchen-20)
 
 ## Making the Switch: Where to Start
 

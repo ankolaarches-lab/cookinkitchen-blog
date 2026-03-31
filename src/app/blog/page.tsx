@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { supabase, formatDate, BlogPost } from "@/lib/supabase";
+import { formatDate, BlogPost, getBlogPosts } from "@/lib/supabase";
 
 export const dynamic = 'force-dynamic';
 
@@ -15,13 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const { data: posts } = await supabase
-    .from('blog_posts')
-    .select('*')
-    .eq('published', true)
-    .order('date', { ascending: false })
-
-  const blogPosts: BlogPost[] = posts ?? []
+  const blogPosts = getBlogPosts()
 
   return (
     <div className="min-h-screen py-16">

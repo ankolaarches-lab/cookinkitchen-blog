@@ -12,7 +12,7 @@ export default function BlogPostPage() {
     date: "Mar 17, 2026",
     readTime: "8 min read",
     image: "/images/kitchen/1.jpg",
-    amazonLink: "https://www.amazon.com/s?k=cookware+set&tag=provenpantry3-20",
+    amazonLink: "https://www.amazon.com/s?k=cookware+set&tag=cookinkitchen-20",
     content: `
 ## Why Cookware Matters More Than Recipes
 
@@ -39,7 +39,7 @@ This is the single most versatile pan in any kitchen. A quality stainless steel 
 - Oven-safe to at least 500°F
 - Stainless steel handle (not plastic)
 
-[Shop Stainless Steel Skillets on Amazon →](https://www.amazon.com/s?k=stainless+steel+skillet&tag=provenpantry3-20)
+[Shop Stainless Steel Skillets on Amazon →](https://www.amazon.com/s?k=stainless+steel+skillet&tag=cookinkitchen-20)
 
 ### 2. Cast Iron Skillet (The Searer)
 
@@ -56,7 +56,7 @@ If stainless steel is your workhorse, cast iron is your specialist. Nothing sear
 - Pre-seasoned for immediate use
 - Comfortable handle length
 
-[Shop Cast Iron Skillets on Amazon →](https://www.amazon.com/s?k=cast+iron+skillet&tag=provenpantry3-20)
+[Shop Cast Iron Skillets on Amazon →](https://www.amazon.com/s?k=cast+iron+skillet&tag=cookinkitchen-20)
 
 ### 3. Dutch Oven (The All-Purpose Pot)
 
@@ -73,7 +73,7 @@ A Dutch oven is a thick-walled pot with a tight-fitting lid. It transitions seam
 - 5-7 quart capacity
 - Heavy lid for proper moisture retention
 
-[Shop Dutch Ovens on Amazon →](https://www.amazon.com/s?k=dutch+oven&tag=provenpantry3-20)
+[Shop Dutch Ovens on Amazon →](https://www.amazon.com/s?k=dutch+oven&tag=cookinkitchen-20)
 
 ### 4. 3-4 Quart Saucepan with Lid (The Sauce Expert)
 
@@ -89,7 +89,7 @@ A medium saucepan is essential for sauces, grains, soups, blanching vegetables, 
 - Tri-ply stainless steel for even heat
 - Long, heat-resistant handle
 
-[Shop Saucepans on Amazon →](https://www.amazon.com/s?k=saucepan&tag=provenpantry3-20)
+[Shop Saucepans on Amazon →](https://www.amazon.com/s?k=saucepan&tag=cookinkitchen-20)
 
 ### 5. Large Stockpot (The Batch Cooker's Friend)
 
@@ -105,7 +105,7 @@ A stockpot is essential for pasta, stock, chili, boils, and large-batch cooking.
 - Stainless steel (won't react with acidic stock)
 - Tri-ply base prevents scorching
 
-[Shop Stockpots on Amazon →](https://www.amazon.com/s?k=stockpot&tag=provenpantry3-20)
+[Shop Stockpots on Amazon →](https://www.amazon.com/s?k=stockpot&tag=cookinkitchen-20)
 
 ### 6. Nonstick Skillet (The Egg Specialist)
 
@@ -121,7 +121,7 @@ While stainless handles most tasks, nothing beats a good nonstick for eggs, fish
 - 8-10 inch size
 - Silicone or wooden utensils only—never metal
 
-[Shop Nonstick Skillets on Amazon →](https://www.amazon.com/s?k=nonstick+skillet&tag=provenpantry3-20)
+[Shop Nonstick Skillets on Amazon →](https://www.amazon.com/s?k=nonstick+skillet&tag=cookinkitchen-20)
 
 ### 7. Sheet Pans (The Roasting Essentials)
 
@@ -137,7 +137,7 @@ At least two quality sheet pans for roasting vegetables, cookies, and more.
 - Rimmed edges (contain juices)
 - Set of 2-3
 
-[Shop Sheet Pans on Amazon →](https://www.amazon.com/s?k=sheet+pan&tag=provenpantry3-20)
+[Shop Sheet Pans on Amazon →](https://www.amazon.com/s?k=sheet+pan&tag=cookinkitchen-20)
 
 ## Material Comparison: Which is Right for You?
 
