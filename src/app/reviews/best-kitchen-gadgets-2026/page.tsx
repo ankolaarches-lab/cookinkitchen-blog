@@ -1,0 +1,155 @@
+import Link from "next/link";
+import { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
+
+export const metadata: Metadata = {
+  title: "Best Kitchen Gadgets Under $25 - 2026 Buying Guide",
+  description: "Smart kitchen tools under $25 that make cooking easier. We tested the best affordable gadgets from Oxo, Dreamfarm, and more.",
+};
+
+// Using search URLs - more reliable than direct product links
+const products = [
+  {
+    name: "OXO Good Grips Chef's Squeeze Bottle Set",
+    price: "$14.99",
+    rating: 4.7,
+    link: `https://www.amazon.com/s?k=OXO+Good+Grips+Chef+Squeeze+Bottle&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
+    pros: ["Two sizes included", "Precision pour", "Dishwasher safe", "Leak-proof design"],
+    cons: ["Plastic construction"],
+  },
+  {
+    name: "Dreamfarm Scizza Kitchen Shears",
+    price: "$19.99",
+    rating: 4.8,
+    link: `https://www.amazon.com/s?k=Dreamfarm+Kitchen+Shears&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
+    pros: ["Spring-loaded", "Comfortable grip", "Built-in herb stripper", "Dishwasher safe"],
+    cons: ["Not for heavy-duty cutting"],
+  },
+  {
+    name: "Angry Mama Microwave Cleaner",
+    price: "$9.99",
+    rating: 4.6,
+    link: `https://www.amazon.com/s?k=Angry+Mama+Microwave+Cleaner&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
+    pros: ["Quick cleaning", "Natural ingredients", "Reusable", "Under $10"],
+    cons: ["Specific use case"],
+  },
+  {
+    name: "OXO Good Grips Jar Opener",
+    price: "$12.99",
+    rating: 4.7,
+    link: `https://www.amazon.com/s?k=OXO+Good+Grips+Jar+Opener&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
+    pros: ["Ergonomic handle", "Works on various sizes", "Durable", "Easy to use"],
+    cons: ["Takes getting used to"],
+  },
+  {
+    name: "KitchenAid 5-Piece Kitchen Tool Set",
+    price: "$24.99",
+    rating: 4.6,
+    link: `https://www.amazon.com/s?k=KitchenAid+Kitchen+Tool+Set+5+Piece&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
+    pros: ["Complete set", "Heat resistant", "Dishwasher safe", "Great value"],
+    cons: ["Silicone tips can stain"],
+  },
+  {
+    name: "Herb Scissors (5-Blade)",
+    price: "$11.99",
+    rating: 4.5,
+    link: `https://www.amazon.com/s?k=5+Blade+Herb+Scissors&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`,
+    pros: ["Cuts herbs quickly", "Easy to clean", "Multiple blades", "Affordable"],
+    cons: ["Not for cutting meat"],
+  },
+];
+
+export default function BestKitchenGadgets2026() {
+  return (
+    <div className="min-h-screen bg-stone-50">
+      <header className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Best Kitchen Gadgets Under $25
+          </h1>
+          <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
+            Smart tools that won't break the bank. We tested affordable gadgets that actually make cooking easier in 2026.
+          </p>
+        </div>
+      </header>
+
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="mb-6">
+          <Breadcrumbs items={[
+            { label: 'Intelligence Hub', href: '/' },
+            { label: 'Reviews', href: '/reviews' },
+            { label: 'Review', href: '/reviews/best-kitchen-gadgets-2026' }
+          ]} />
+        </div>
+        <section className="mb-12">
+          <p className="text-lg text-stone-700 leading-relaxed">
+            You don't need expensive gadgets to make cooking easier. 
+            We've tested dozens of affordable kitchen tools under $25 to find the ones that actually deliver. 
+            From ergonomic jar openers to handy herb scissors, these budget-friendly picks prove great tools don't have to cost a fortune.
+          </p>
+        </section>
+
+        <section className="space-y-8">
+          {products.map((product, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:shadow-md transition"
+            >
+              <div className="flex flex-col md:flex-row gap-6">
+                <div>
+                  <div className="flex justify-between items-start mb-2">
+                    <h2 className="text-xl font-bold text-stone-900">{product.name}</h2>
+                    <span className="text-2xl font-bold text-emerald-600">{product.price}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-amber-500">
+                      {"★".repeat(Math.floor(product.rating))}
+                      {"☆".repeat(5 - Math.floor(product.rating))}
+                    </span>
+                    <span className="text-stone-600">{product.rating}/5</span>
+                  </div>
+                  <ul className="text-stone-600 text-sm mb-4 space-y-1">
+                    {product.pros.map((pro, i) => (
+                      <li key={i}>✓ {pro}</li>
+                    ))}
+                  </ul>
+                  <a
+                    href={product.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-stone-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-stone-800 transition"
+                  >
+                    Check Price on Amazon
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <section className="mt-12 bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Our Top Pick</h2>
+          <p className="text-stone-700 mb-4">
+            The <strong>Dreamfarm Scizza Kitchen Shears</strong> are our top pick for 2026. 
+            The spring-loaded design makes cutting herbs, paper, and light tasks effortless. 
+            Plus the built-in herb stripper is a game-changer for cooking. At under $20, it's an incredible value.
+          </p>
+          <a
+            href={`https://www.amazon.com/s?k=Dreamfarm+Kitchen+Shears&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition"
+          >
+            Buy on Amazon
+          </a>
+        </section>
+
+        <div className="mt-12 text-center">
+          <Link href="/reviews" className="text-emerald-600 font-medium hover:underline">
+            ← Back to All Reviews
+          </Link>
+        </div>
+      </main>
+    </div>
+  );
+}

@@ -1,0 +1,96 @@
+import { NextRequest, NextResponse } from "next/server";
+
+const OPENROUTER_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions";
+const MODEL = "meta-llama/llama-3.2-1b-instruct";
+
+const productsContext = `
+PRODUCT CATALOG (use this info to answer questions):
+- Victorinox Chef's Knife: $39.99, 4.8★ - https://www.amazon.com/s?k=Victorinox+Fibrox+Pro+Chefs+Knife&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Lodge Dutch Oven: $59.99, 4.9★ - https://www.amazon.com/s?k=Lodge+5+Quart+Cast+Iron+Dutch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- KitchenAid Stand Mixer: $449.99, 4.8★ - https://www.amazon.com/s?k=KitchenAid+KSM150PSER+Artisan+Tilt+Head+5+Quart&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Shun Santoku Knife: $169.95, 4.7★ - https://www.amazon.com/s?k=Shun+DM0706+Classic+7+Inch+Santoku&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Ninja Blender: $99.99, 4.6★ - https://www.amazon.com/s?k=Ninja+BL610+Professional+72+Watt+Blender&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Ninja Air Fryer: $149.99, 4.6★ - https://www.amazon.com/s?k=Ninja+AF101+Fryer+Black+gray&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- OXO Kitchen Scale: $29.99, 4.4★ - https://www.amazon.com/s?k=OXO+Stainless+Compact+Grip+11+Pound&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- OXO Cutting Board: $24.99, 4.5★ - https://www.amazon.com/s?k=OXO+GOOD+Grips+Cutting+17+Inch&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- T-fal Non-Stick Pan: $29.99, 4.6★ - https://www.amazon.com/s?k=T+fal+E93808+Professional+Nonstick+Dishwasher&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- Instant Pot Duo: $89.99, 4.3★ - https://www.amazon.com/s?k=Instant+Pot+Duo+Electric+Pressure&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+- StarPack Utensil Set: $24.99, 4.6★ - https://www.amazon.com/s?k=Stainless+Steel+Cooking+Utensil+Set&tag=${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}
+`;
+
+export async function POST(request: NextRequest) {
+  try {
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    if (!apiKey) {
+      console.error("OPENROUTER_API_KEY is not set");
+      return NextResponse.json(
+        { error: "Chat service is not configured" },
+        { status: 500 }
+      );
+    }
+
+    const { message } = await request.json();
+
+    if (!message) {
+      return NextResponse.json({ error: "Message is required" }, { status: 400 });
+    }
+
+    const response = await fetch(OPENROUTER_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+        "HTTP-Referer": "https://cookinkitchen.online",
+        "X-Title": "CookinKitchen",
+      },
+      body: JSON.stringify({
+        model: MODEL,
+        messages: [
+          { 
+            role: "system", 
+            content: `You are a helpful kitchen tool expert at CookinKitchen. ${productsContext}
+
+Guidelines:
+- Be conversational and friendly
+- Help users find the right kitchen tools based on their needs and budget
+- When recommending products, always include affiliate links with the tag "${process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG}"
+- Format recommendations like: "I'd recommend the [Product Name](amazon link) - here's why..."
+- Be honest about pros and cons
+- If you don't have specific information, say so honestly
+- Keep responses concise but helpful`
+          },
+          { role: "user", content: message },
+        ],
+        temperature: 0.7,
+        max_tokens: 500,
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      console.error("OpenRouter API error:", response.status, errorData);
+      return NextResponse.json(
+        { error: "Failed to get response from AI" },
+        { status: response.status }
+      );
+    }
+
+    const data = await response.json();
+    
+    if (data.choices && data.choices.length > 0) {
+      const assistantMessage = data.choices[0].message?.content || "I apologize, but I couldn't generate a response. Please try again.";
+      return NextResponse.json({ response: assistantMessage });
+    } else {
+      return NextResponse.json(
+        { error: "Invalid response from AI", debug: data },
+        { status: 500 }
+      );
+    }
+  } catch (error) {
+    console.error("Chat API error:", error);
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
+  }
+}
