@@ -65,7 +65,7 @@ export default function OilDispensers() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/reviews/nonstick-pan.jpg" 
+              src="/images/reviews/hero-kitchen-utensils.png" 
               alt="Best Oil Dispensers & Sprayers 2026" 
               className="w-full h-64 object-cover"
             />

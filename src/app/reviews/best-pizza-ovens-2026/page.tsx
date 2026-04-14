@@ -72,7 +72,7 @@ export default function BestPizzaOvens2026() {
           
           <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img 
-              src="/images/reviews/pizza-stone.jpg" 
+              src="/images/reviews/hero-appliances.png" 
               alt="Best Pizza Ovens 2026" 
               className="w-full h-64 object-cover"
             />
