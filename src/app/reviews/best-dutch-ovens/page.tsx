@@ -73,6 +73,13 @@ export default function BestDutchOvens2026() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
+          <img 
+            src="/images/reviews/dutch-oven.jpg" 
+            alt="Best Dutch Ovens 2026" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <div className="mb-6">
           <Breadcrumbs items={[
             { label: 'Intelligence Hub', href: '/' },
