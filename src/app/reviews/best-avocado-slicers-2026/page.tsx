@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Avocado Slicers 2026 - Buying Guide",
     description: "Slice, pit, and scoop avocados safely with the best avocado tools.",
     type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -80,6 +81,13 @@ export default function BestAvocadoSlicers2026() {
         </div>
         
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-200 mb-8">
+          <div className="rounded-xl overflow-hidden mb-6">
+            <img 
+              src="/images/reviews/hero-kitchen-utensils.png" 
+              alt="Best Avocado Slicers 2026" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Why You Need an Avocado Slicer</h2>
           <p className="text-stone-600 mb-4">
             Avocados are a kitchen staple, but cutting them safely can be tricky. An avocado slicer 

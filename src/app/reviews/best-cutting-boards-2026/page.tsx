@@ -5,6 +5,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Cutting Boards 2026 - Buying Guide",
   description: "From plastic to wood to bamboo, we tested the best cutting boards for every kitchen. Find your perfect board for meal prep.",
+  openGraph: {
+    images: ["/images/reviews/hero-cutting-boards.png"],
+  },
 };
 
 const products = [
@@ -76,6 +79,13 @@ export default function BestCuttingBoards2026() {
         </div>
         {/* Intro */}
         <section className="mb-12">
+          <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
+            <img 
+              src="/images/reviews/hero-cutting-boards.png" 
+              alt="Best Cutting Boards 2026" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <p className="text-lg text-stone-700 leading-relaxed">
             After testing over 15 cutting boards, we've found the best options for every budget and cooking style. 
             Whether you need a lightweight plastic board for quick prep or a professional-grade wooden board that lasts decades 

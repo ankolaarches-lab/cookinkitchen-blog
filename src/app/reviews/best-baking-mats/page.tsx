@@ -5,6 +5,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Baking Mats 2026 - Silicone & Non-Stick Mats",
   description: "Replace parchment paper forever. We tested the best baking mats for easy release, even baking, and simple cleanup.",
+  openGraph: {
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [
@@ -60,6 +63,13 @@ export default function BestBakingMats() {
           ]} />
         </div>
         <section className="mb-12">
+          <div className="rounded-xl overflow-hidden mb-6">
+            <img 
+              src="/images/reviews/hero-baking.png" 
+              alt="Best Baking Mats 2026" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <p className="text-lg text-stone-700 leading-relaxed">A good baking mat is an investment that pays for itself. Whether you're baking cookies, roasting vegetables, or making candy, silicone mats provide even heat distribution and easy release. No more stuck pastries or wasted parchment paper.</p>
         </section>
         <section className="space-y-8">

@@ -5,6 +5,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Egg Cookers 2026 - Buying Guide",
   description: "The best egg cookers for perfectly cooked eggs every time. We tested the top-rated options.",
+  openGraph: {
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [
@@ -73,6 +76,13 @@ export default function BestEggCookers() {
           ]} />
         </div>
         <section className="bg-white rounded-2xl p-8 mb-8 shadow-sm border border-stone-200">
+          <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
+            <img 
+              src="/images/reviews/hero-appliances.png" 
+              alt="Best Egg Cookers 2026" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <h2 className="text-2xl font-bold text-stone-900 mb-4">Why Get an Egg Cooker?</h2>
           <p className="text-stone-600 mb-4">Egg cookers take the guesswork out of cooking eggs. Whether you want hard-boiled, soft-boiled, poached, or scrambled eggs, these appliances deliver consistent results with minimal effort. Perfect for meal prep or busy mornings!</p>
         </section>
