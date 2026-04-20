@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cast Iron Skillets 2026 - Complete Buying Guide",
-  description: "From seasoning to searing, we tested the best cast iron skillets for every kitchen. Find your perfect pan for life.",
+  description: "Best Cast Iron Skillet 2026 - Complete guide",
+  openGraph: {
+    title: "Best Cast Iron Skillet 2026",
+    description: "Best Cast Iron Skillet 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

@@ -5,7 +5,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Jar Openers 2026 - For Weak Hands & Easy Opening",
-  description: "Struggling with stuck lids? We tested the best jar openers for seniors, weak hands, and everyone in between. Open jars with ease.",
+  description: "Best Jar Openers - Complete guide",
+  openGraph: {
+    title: "Best Jar Openers",
+    description: "Best Jar Openers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

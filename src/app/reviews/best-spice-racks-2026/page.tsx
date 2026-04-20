@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Spice Racks 2026 - Complete Buying Guide",
-  description: "Organize your kitchen with the best spice racks of 2026. We tested wall-mounted, drawer, and countertop organizers to find the perfect solution for your spices.",
+  description: "Best Spice Racks 2026 - Complete guide",
+  openGraph: {
+    title: "Best Spice Racks 2026",
+    description: "Best Spice Racks 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Sous Vide Immersion Circulators - 2026 Guide",
-  description: "We tested the best sous vide machines for perfect, restaurant-quality results at home. Find your perfect sous vide.",
+  description: "Best Sous Vide - Complete guide",
+  openGraph: {
+    title: "Best Sous Vide",
+    description: "Best Sous Vide - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

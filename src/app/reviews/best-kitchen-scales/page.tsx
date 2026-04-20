@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Scales 2026 - Buying Guide",
-  description: "Digital and mechanical kitchen scales for baking and cooking. We tested the most accurate.",
+  description: "Best Kitchen Scales - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Scales",
+    description: "Best Kitchen Scales - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

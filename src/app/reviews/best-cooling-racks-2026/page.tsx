@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cooling Racks 2026 - Complete Buying Guide",
-  description: "Find the best cooling racks for your baked goods. We tested wire racks, chrome, and non-stick options for cookies, cakes, and breads.",
+  description: "Best Cooling Racks 2026 - Complete guide",
+  openGraph: {
+    title: "Best Cooling Racks 2026",
+    description: "Best Cooling Racks 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [

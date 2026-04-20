@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Coffee Percolators 2026 - Stovetop & Electric Reviews",
-  description: "Brew rich, bold coffee with the best coffee percolators of 2026. We tested stovetop and electric percolators for perfect brewing.",
+  description: "Best Coffee Percolators 2026 - Complete guide",
+  openGraph: {
+    title: "Best Coffee Percolators 2026",
+    description: "Best Coffee Percolators 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

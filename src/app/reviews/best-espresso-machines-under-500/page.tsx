@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Espresso Machines Under $500 - 2026 Buying Guide",
-  description: "Barista-quality espresso at home without breaking the bank. We tested the best espresso machines under $500 for beginners and enthusiasts.",
+  description: "Best Espresso Machines Under $500 - Complete guide",
+  openGraph: {
+    title: "Best Espresso Machines Under $500",
+    description: "Best Espresso Machines Under $500 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

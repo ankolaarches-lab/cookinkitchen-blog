@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     title: "Best Bench Scrapers 2026 - Dough Scraper & Pastry Cutter Guide",
     description: "Speed up your baking prep with the best bench scrapers. We tested top-rated dough scrapers and pastry cutters for every kitchen need.",
     type: "article",
-    url: "https://cookinkitchen.online/reviews/best-bench-scrapers",
+    url: "https://cookinkitchen.online/reviews/best-bench-scrapers",,
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {
     card: "summary_large_image",

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Pizza Ovens 2026 - Buying Guide",
-  description: "Ooni vs Ninja vs Breville. We tested the best pizza ovens for crispy, restaurant-quality pizza at home.",
+  description: "Best Pizza Ovens - Complete guide",
+  openGraph: {
+    title: "Best Pizza Ovens",
+    description: "Best Pizza Ovens - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

@@ -3,7 +3,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best Pizza Ovens 2026 - Complete Buying Guide",
-  description: "Make restaurant-quality pizza at home with the best pizza ovens. We tested gas, electric, and wood-fired pizza ovens for every budget.",
+  description: "Best Pizza Ovens 2026 - Complete guide",
+  openGraph: {
+    title: "Best Pizza Ovens 2026",
+    description: "Best Pizza Ovens 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Dutch Ovens 2026 - Buying Guide",
-  description: "From Le Creuset to Lodge, we tested the best Dutch ovens for braising, baking bread, and slow cooking.",
+  description: "Best Dutch Ovens - Complete guide",
+  openGraph: {
+    title: "Best Dutch Ovens",
+    description: "Best Dutch Ovens - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 // JSON-LD Schema for SEO

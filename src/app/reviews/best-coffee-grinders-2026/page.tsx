@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Coffee Grinders 2026 - Expert Buying Guide",
-  description: "Freshly ground coffee is the secret to amazing coffee. We tested the best coffee grinders for every budget - from blade to burr grinders.",
+  description: "Best Coffee Grinders 2026 - Complete guide",
+  openGraph: {
+    title: "Best Coffee Grinders 2026",
+    description: "Best Coffee Grinders 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

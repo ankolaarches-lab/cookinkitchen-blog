@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Waffle Makers 2026 - Ultimate Buying Guide",
-  description: "From Belgian to classic, we tested the best waffle makers. Find the perfect waffle iron for crispy, golden results every time.",
+  description: "Best Waffle Makers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Waffle Makers 2026",
+    description: "Best Waffle Makers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

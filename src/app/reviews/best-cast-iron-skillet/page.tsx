@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cast Iron Skillets - 2026 Buying Guide",
-  description: "From Lodge to Le Creuset, we tested the best cast iron skillets for searing, baking, and versatility.",
+  description: "Best Cast Iron Skillet - Complete guide",
+  openGraph: {
+    title: "Best Cast Iron Skillet",
+    description: "Best Cast Iron Skillet - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Tongs 2026 - Buying Guide",
-  description: "Kitchen tongs for flipping, serving, and more. We tested the best for every task.",
+  description: "Best Tongs - Complete guide",
+  openGraph: {
+    title: "Best Tongs",
+    description: "Best Tongs - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

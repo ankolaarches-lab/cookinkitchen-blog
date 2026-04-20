@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Lazy Susans 2026 - Buying Guide",
-  description: "Turntable storage for cabinets and tables. We tested the best lazy Susans.",
+  description: "Best Lazy Susans - Complete guide",
+  openGraph: {
+    title: "Best Lazy Susans",
+    description: "Best Lazy Susans - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

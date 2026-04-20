@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Sheet Pans 2026 - Buying Guide",
-  description: "Half sheet, full sheet, and jelly roll pans. We tested the best for baking.",
+  description: "Best Sheet Pans - Complete guide",
+  openGraph: {
+    title: "Best Sheet Pans",
+    description: "Best Sheet Pans - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

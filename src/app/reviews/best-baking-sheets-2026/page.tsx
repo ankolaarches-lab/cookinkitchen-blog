@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Baking Sheets 2026 - Ultimate Buying Guide",
-  description: "From cookie sheets to jelly roll pans, we tested the best baking sheets for every budget. Find your perfect pan with our expert reviews.",
+  description: "Best Baking Sheets 2026 - Complete guide",
+  openGraph: {
+    title: "Best Baking Sheets 2026",
+    description: "Best Baking Sheets 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [

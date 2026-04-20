@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Non-Stick Frying Pans - 2026 Buying Guide",
-  description: "From ceramic to PTFE, we tested the best non-stick pans for easy cooking and cleanup. Find your perfect pan.",
+  description: "Best Nonstick Pan - Complete guide",
+  openGraph: {
+    title: "Best Nonstick Pan",
+    description: "Best Nonstick Pan - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

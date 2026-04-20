@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Whisks 2026 - Buying Guide",
-  description: "Balloon whisks, flat whisks, and more. We tested the best whisks for every kitchen task.",
+  description: "Best Whisks - Complete guide",
+  openGraph: {
+    title: "Best Whisks",
+    description: "Best Whisks - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

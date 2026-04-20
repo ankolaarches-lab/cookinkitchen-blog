@@ -4,8 +4,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: 'Best Wooden Kitchen Utensils 2026 - Natural & Durable Cookware Tools',
-  description: 'Discover the best wooden kitchen utensils for your kitchen. We tested top-rated wooden spoons, spatulas, and more for durability and performance.',
-};
+  description: 'Best Wooden Kitchen Utensils 2026 - Complete guide',
+  openGraph: {
+    title: 'Best Wooden Kitchen Utensils 2026',
+    description: 'Best Wooden Kitchen Utensils 2026 - Complete guide for home cooks',
+    type: 'article',
+    images: ['/images/reviews/hero-kitchen-utensils.png'],
+  },
+};)
 
 const products = [
   {

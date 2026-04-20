@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Milk Frothers 2026 - Handheld & Electric Reviews",
-  description: "Create cafe-quality foam at home with the best milk frothers of 2026. We tested handheld wands, electric frothers, and more.",
+  description: "Best Milk Frothers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Milk Frothers 2026",
+    description: "Best Milk Frothers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Measuring Cups 2026 - Buying Guide",
-  description: "Dry and liquid measuring cups. We tested the best for accurate recipes.",
+  description: "Best Measuring Cups - Complete guide",
+  openGraph: {
+    title: "Best Measuring Cups",
+    description: "Best Measuring Cups - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

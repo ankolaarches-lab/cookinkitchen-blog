@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Breakfast Sandwich Makers 2026 - Complete Buying Guide",
-  description: "Make restaurant-quality breakfast sandwiches at home. We tested the best breakfast sandwich makers for perfect eggs, bacon, and more.",
+  description: "Best Breakfast Sandwich Makers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Breakfast Sandwich Makers 2026",
+    description: "Best Breakfast Sandwich Makers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

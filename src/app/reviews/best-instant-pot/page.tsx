@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Instant Pot - 2026 Multi-Cooker Review",
-  description: "We tested the best Instant Pot models for pressure cooking, slow cooking, and more. Find your perfect multi-cooker.",
+  description: "Best Instant Pot - Complete guide",
+  openGraph: {
+    title: "Best Instant Pot",
+    description: "Best Instant Pot - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

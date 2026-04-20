@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Non-Toxic Baking Sheets 2026 - PFAS-Free Guide",
-  description: "Skip the toxic chemicals. We tested the best PFAS-free, ceramic, and silicone baking mats and sheets for safe, easy baking.",
+  description: "Best Non-Toxic Baking Sheets - Complete guide",
+  openGraph: {
+    title: "Best Non-Toxic Baking Sheets",
+    description: "Best Non-Toxic Baking Sheets - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [

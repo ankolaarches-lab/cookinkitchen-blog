@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Instant Read Meat Thermometers 2026 - Digital Thermometer Guide",
-  description: "Perfect temps every time. We tested the best instant read meat thermometers for grilling, baking, and smoking. Find your perfect match.",
+  description: "Best Instant Read Meat Thermometer - Complete guide",
+  openGraph: {
+    title: "Best Instant Read Meat Thermometer",
+    description: "Best Instant Read Meat Thermometer - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

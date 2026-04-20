@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cheese Graters 2026 - Buying Guide",
-  description: "Microplane, box, and rotary graters. We tested the best for every cheese type.",
+  description: "Best Cheese Graters - Complete guide",
+  openGraph: {
+    title: "Best Cheese Graters",
+    description: "Best Cheese Graters - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

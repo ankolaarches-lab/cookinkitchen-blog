@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Casserole Dishes 2026 - Buying Guide",
-  description: "Glass, ceramic, and enamel casserole dishes. We tested the best for baking and serving.",
+  description: "Best Casserole Dishes - Complete guide",
+  openGraph: {
+    title: "Best Casserole Dishes",
+    description: "Best Casserole Dishes - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

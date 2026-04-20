@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Grill Pans 2026 - Buying Guide",
-  description: "Cast iron, stainless steel, and nonstick grill pans. We tested the best for indoor grilling.",
+  description: "Best Grill Pans - Complete guide",
+  openGraph: {
+    title: "Best Grill Pans",
+    description: "Best Grill Pans - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Pizza Cutters 2026 - Buying Guide",
-  description: "Wheel and rocker pizza cutters. We tested the best for perfect slices.",
+  description: "Best Pizza Cutters - Complete guide",
+  openGraph: {
+    title: "Best Pizza Cutters",
+    description: "Best Pizza Cutters - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Immersion Blenders 2026 - Hand Blender Guide",
-  description: "Smooth soups and sauces in seconds. We tested the best immersion blenders for blending, whipping, and mixing. Find your perfect hand blender.",
+  description: "Best Immersion Blenders - Complete guide",
+  openGraph: {
+    title: "Best Immersion Blenders",
+    description: "Best Immersion Blenders - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

@@ -3,7 +3,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best Rice Cookers 2026 - Ultimate Buying Guide",
-  description: "Perfect rice every time. We tested the best rice cookers from Zojirushi, Instant Pot, Tiger, and more for fluffy grains.",
+  description: "Best Rice Cookers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Rice Cookers 2026",
+    description: "Best Rice Cookers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

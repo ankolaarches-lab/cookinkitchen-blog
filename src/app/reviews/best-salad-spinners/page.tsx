@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Salad Spinners 2026 - Buying Guide",
-  description: "Dry your greens with ease. We tested the best salad spinners for clean, crisp salads.",
+  description: "Best Salad Spinners - Complete guide",
+  openGraph: {
+    title: "Best Salad Spinners",
+    description: "Best Salad Spinners - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

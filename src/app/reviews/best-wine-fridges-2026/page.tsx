@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Wine Fridges 2026 - Wine Cooler Buying Guide",
     description: "Store your wine collection at the perfect temperature with the best wine fridges.",
     type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
   },
   twitter: {
     card: "summary_large_image",

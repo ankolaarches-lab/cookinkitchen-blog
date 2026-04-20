@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Muffin Tins 2026 - Buying Guide",
-  description: "Standard, silicone, and nonstick muffin tins. We tested the best for perfect muffins.",
+  description: "Best Muffin Tins - Complete guide",
+  openGraph: {
+    title: "Best Muffin Tins",
+    description: "Best Muffin Tins - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [

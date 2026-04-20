@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Knife Set - Expert Tested 2026",
-  description: "From budget to premium, we tested the best kitchen knife sets for home cooks. Find the perfect combination for your cooking needs.",
+  description: "Best Kitchen Knife Set - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Knife Set",
+    description: "Best Kitchen Knife Set - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 export default function Page() {

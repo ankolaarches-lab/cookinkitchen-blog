@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Carbon Steel Wok - Expert Tested 2026",
-  description: "We tested the best carbon steel woks for stir-fry. Find the perfect wok for your kitchen - from traditional flat-bottom to classic round-bottom designs.",
+  description: "Best Carbon Steel Wok - Complete guide",
+  openGraph: {
+    title: "Best Carbon Steel Wok",
+    description: "Best Carbon Steel Wok - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 export default function Page() {

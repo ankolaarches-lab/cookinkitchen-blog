@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Chef's Knives Under $50 - 2026 Buying Guide",
-  description: "Quality doesn't have to be expensive. We tested the best chef's knives under $50 for home cooks.",
+  description: "Best Knives Under $50 - Complete guide",
+  openGraph: {
+    title: "Best Knives Under $50",
+    description: "Best Knives Under $50 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

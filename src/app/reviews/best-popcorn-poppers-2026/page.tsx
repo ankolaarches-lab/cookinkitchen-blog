@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Popcorn Poppers 2026 - Buying Guide",
     description: "Make theater-quality popcorn at home with the best popcorn poppers.",
     type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
   },
   twitter: {
     card: "summary_large_image",

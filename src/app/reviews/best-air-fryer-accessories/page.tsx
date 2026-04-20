@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Air Fryer Accessories 2026 - Must-Have Add-Ons",
-  description: "Get more from your air fryer with these essential accessories. From racks to molds, we tested the best add-ons for 2026.",
+  description: "Best Air Fryer Accessories 2026 - Complete guide",
+  openGraph: {
+    title: "Best Air Fryer Accessories 2026",
+    description: "Best Air Fryer Accessories 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

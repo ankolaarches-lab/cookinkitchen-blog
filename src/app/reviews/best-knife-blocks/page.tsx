@@ -5,7 +5,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Knife Blocks & Storage - 2026 Buying Guide",
-  description: "Keep your knives safe and organized. We tested the best knife blocks, magnetic strips, and storage solutions.",
+  description: "Best Knife Blocks - Complete guide",
+  openGraph: {
+    title: "Best Knife Blocks",
+    description: "Best Knife Blocks - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Electric Griddles - 2026 Buying Guide",
-  description: "Discover the best electric griddles for perfect pancakes, burgers, and more. We tested top-rated options for home kitchens.",
+  description: "Best Electric Griddles 2026 - Complete guide",
+  openGraph: {
+    title: "Best Electric Griddles 2026",
+    description: "Best Electric Griddles 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best YETI Rambler Tumblers 2026 - Buying Guide",
-  description: "The best YETI Rambler tumblers and bottles for keeping drinks cold or hot. We reviewed the top options.",
+  description: "Yeti Rambler Tumblers - Complete guide",
+  openGraph: {
+    title: "Yeti Rambler Tumblers",
+    description: "Yeti Rambler Tumblers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

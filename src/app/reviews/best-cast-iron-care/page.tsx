@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cast Iron Care Products - 2026 Buying Guide",
-  description: "Keep your cast iron in perfect condition with the best care products. From chain mail scrubbers to seasoning oils, we tested the top cast iron care essentials.",
+  description: "Best Cast Iron Care - Complete guide",
+  openGraph: {
+    title: "Best Cast Iron Care",
+    description: "Best Cast Iron Care - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

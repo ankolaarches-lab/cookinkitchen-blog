@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Knife Storage Solutions 2026 - Buyer Guide",
-  description: "Keep your knives safe and sharp with the best knife storage. We tested blocks, magnetic strips, and drawer organizers.",
+  description: "Best Knife Storage 2026 - Complete guide",
+  openGraph: {
+    title: "Best Knife Storage 2026",
+    description: "Best Knife Storage 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

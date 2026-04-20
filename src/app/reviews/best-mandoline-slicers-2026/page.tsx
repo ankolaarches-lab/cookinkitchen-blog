@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Mandoline Slicers 2026 - Ultimate Buying Guide",
-  description: "Slice like a pro. We tested the best mandoline slicers for uniform cuts, from预算-friendly to professional-grade. Find your perfect slicer.",
+  description: "Best Mandoline Slicers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Mandoline Slicers 2026",
+    description: "Best Mandoline Slicers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

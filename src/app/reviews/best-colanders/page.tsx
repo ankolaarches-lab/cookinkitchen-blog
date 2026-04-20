@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Colanders 2026 - Buying Guide",
-  description: "Stainless steel, plastic, and ceramic colanders. We tested the best for draining pasta.",
+  description: "Best Colanders - Complete guide",
+  openGraph: {
+    title: "Best Colanders",
+    description: "Best Colanders - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

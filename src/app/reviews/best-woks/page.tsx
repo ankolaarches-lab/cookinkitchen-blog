@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Woks 2026 - Buying Guide",
-  description: "Carbon steel, cast iron, and nonstick woks. We tested the best for stir fry.",
+  description: "Best Woks - Complete guide",
+  openGraph: {
+    title: "Best Woks",
+    description: "Best Woks - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

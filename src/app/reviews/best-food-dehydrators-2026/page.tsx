@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Food Dehydrators 2026 - Ultimate Buying Guide",
-  description: "Make dried fruits, jerky, and more at home. We tested the best food dehydrators for preserving and snack-making.",
+  description: "Best Food Dehydrators 2026 - Complete guide",
+  openGraph: {
+    title: "Best Food Dehydrators 2026",
+    description: "Best Food Dehydrators 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

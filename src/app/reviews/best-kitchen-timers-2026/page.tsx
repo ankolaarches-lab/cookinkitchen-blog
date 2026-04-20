@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Timers 2026 - Ultimate Buying Guide",
-  description: "Never burn anything again. We tested the best kitchen timers for every need - from digital to mechanical, magnetic to mounted.",
+  description: "Best Kitchen Timers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Timers 2026",
+    description: "Best Kitchen Timers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

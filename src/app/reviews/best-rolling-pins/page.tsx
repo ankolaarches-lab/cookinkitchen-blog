@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Rolling Pins 2026 - Buying Guide",
-  description: "French, American, and wooden rolling pins. We tested the best for pie dough and pasta.",
+  description: "Best Rolling Pins - Complete guide",
+  openGraph: {
+    title: "Best Rolling Pins",
+    description: "Best Rolling Pins - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [

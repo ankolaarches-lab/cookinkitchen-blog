@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Chef's Knives for Home Cooks 2026",
-  description: "We tested 15 chef's knives to find the perfect balance of sharpness, comfort, and durability.",
+  description: "Best Chef Knives for Home Cooks - Complete guide",
+  openGraph: {
+    title: "Best Chef Knives for Home Cooks",
+    description: "Best Chef Knives for Home Cooks - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

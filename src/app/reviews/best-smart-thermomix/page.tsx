@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Smart Thermomix - Expert Tested 2026",
-  description: "The Thermomix vs. alternatives. We tested the best smart kitchen robots for automated cooking, blending, and meal prep.",
+  description: "Best Smart Thermomix - Complete guide",
+  openGraph: {
+    title: "Best Smart Thermomix",
+    description: "Best Smart Thermomix - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 export default function Page() {

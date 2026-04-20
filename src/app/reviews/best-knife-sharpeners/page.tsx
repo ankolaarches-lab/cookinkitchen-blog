@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Knife Sharpeners 2026 - Keep Your Blades Sharp",
-  description: "Restore dull knives to razor sharpness. We tested the best knife sharpeners for home cooks. Find the right sharpener for your kitchen.",
+  description: "Best Knife Sharpeners - Complete guide",
+  openGraph: {
+    title: "Best Knife Sharpeners",
+    description: "Best Knife Sharpeners - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

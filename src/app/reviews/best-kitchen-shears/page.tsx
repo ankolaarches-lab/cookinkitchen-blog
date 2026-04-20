@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Shears 2026 - Multi-Purpose Scissors",
-  description: "Cut, trim, and slice like a pro. We tested the best kitchen shears for every task from herbs to chicken.",
+  description: "Best Kitchen Shears - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Shears",
+    description: "Best Kitchen Shears - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-knives.png"],
+  },
 };
 
 const products = [

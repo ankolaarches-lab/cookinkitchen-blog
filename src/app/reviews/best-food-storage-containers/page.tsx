@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Food Storage Containers - 2026 Buying Guide",
-  description: "Keep your food fresh with the best food storage containers. We tested glass, plastic, and stainless steel options.",
+  description: "Best Food Storage Containers - Complete guide",
+  openGraph: {
+    title: "Best Food Storage Containers",
+    description: "Best Food Storage Containers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-food-storage.png"],
+  },
 };
 
 const products = [

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Dutch Ovens Under $100 - 2026 Buying Guide",
-  description: "Find the best Dutch oven under $100. We tested affordable enameled cast iron pots from Lodge, Amazon Basics, and more for braising, bread, and soups.",
+  description: "Best Dutch Ovens Under $100 - Complete guide",
+  openGraph: {
+    title: "Best Dutch Ovens Under $100",
+    description: "Best Dutch Ovens Under $100 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

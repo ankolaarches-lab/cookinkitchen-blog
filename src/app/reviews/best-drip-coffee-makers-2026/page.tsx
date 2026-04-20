@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Drip Coffee Makers 2026 - Expert Tested",
-  description: "From budget-friendly to premium, we tested the best drip coffee makers for perfectly brewed coffee every morning.",
+  description: "Best Drip Coffee Makers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Drip Coffee Makers 2026",
+    description: "Best Drip Coffee Makers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 export default function Page() {

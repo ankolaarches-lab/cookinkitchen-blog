@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Slotted Spoons 2026 - Complete Buying Guide",
-  description: "Find the perfect slotted spoon for draining and serving. We tested top-rated cooking spoons in stainless steel, silicone, and wood for every kitchen need.",
+  description: "Best Slotted Spoons 2026 - Complete guide",
+  openGraph: {
+    title: "Best Slotted Spoons 2026",
+    description: "Best Slotted Spoons 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

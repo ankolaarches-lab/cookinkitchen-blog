@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Organizers 2026 - Buying Guide",
-  description: "Drawer organizers, cabinet systems, pantry bins, and more. We tested the best kitchen organizers to maximize your storage space.",
+  description: "Best Kitchen Organizers - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Organizers",
+    description: "Best Kitchen Organizers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

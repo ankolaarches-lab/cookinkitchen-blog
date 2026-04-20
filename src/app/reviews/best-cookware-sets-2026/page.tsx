@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     description: "We tested the best cookware sets for every budget. From ceramic nonstick to stainless steel and cast iron.",
     type: "article",
     publishedTime: "2026-03-18",
-    authors: ["CookinKitchen"],
+    authors: ["CookinKitchen"],,
+    images: ["/images/reviews/hero-cookware.png"],
   },
 };
 

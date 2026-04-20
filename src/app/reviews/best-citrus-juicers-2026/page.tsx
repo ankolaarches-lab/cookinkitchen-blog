@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Citrus Juicers 2026 - Lemon & Lime Squeezers Buying Guide",
     description: "Get fresh citrus juice with the best lemon squeezers and citrus juicers.",
     type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -70,6 +71,13 @@ export default function BestCitrusJuicers2026() {
           <p className="text-xl text-amber-100 max-w-2xl mx-auto">Fresh citrus juice at your fingertips. We tested the best lemon squeezers and citrus juicers.</p>
         </div>
       </header>
+        <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
+          <img 
+            src="/images/reviews/hero-kitchen-utensils.png" 
+            alt="best citrus juicers 2026" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
       <main className="max-w-4xl mx-auto px-6 py-12">
         <div className="mb-6">
           <Breadcrumbs items={[

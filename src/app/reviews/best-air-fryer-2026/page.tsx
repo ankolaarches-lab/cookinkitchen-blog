@@ -5,7 +5,13 @@ import ReviewSchema from "@/components/ReviewSchema";
 
 export const metadata: Metadata = {
   title: "Best Air Fryers 2026 - Ultimate Buying Guide",
-  description: "Crispy results with less oil. We tested the best air fryers from Ninja, Instant Pot, and more. Find your perfect air fryer.",
+  description: "Best Air Fryers 2026 - Ultimate Buying Guide - Complete guide",
+  openGraph: {
+    title: "Best Air Fryers 2026 - Ultimate Buying Guide",
+    description: "Best Air Fryers 2026 - Ultimate Buying Guide - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

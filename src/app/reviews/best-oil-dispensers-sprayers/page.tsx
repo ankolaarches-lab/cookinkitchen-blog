@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Oil Dispensers & Sprayers 2026 - Kitchen Oil Bottles Guide",
-  description: "Control your oil usage with precision. We tested the best oil dispensers and sprayers for healthy cooking. Find your perfect kitchen companion.",
+  description: "Best Oil Dispensers & Sprayers - Complete guide",
+  openGraph: {
+    title: "Best Oil Dispensers & Sprayers",
+    description: "Best Oil Dispensers & Sprayers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

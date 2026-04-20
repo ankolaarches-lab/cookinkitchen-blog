@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Best Air Fryer Toaster Ovens 2026 - Complete Buying Guide",
     description: "Maximize counter space with a combo air fryer and toaster oven. We tested the best air fryer toaster ovens for crispy results.",
     type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -76,6 +77,13 @@ export default function BestAirFryerToasterOvens() {
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">Two appliances in one. We tested the best air fryer toaster oven combos for versatile cooking.</p>
         </div>
       </header>
+        <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
+          <img 
+            src="/images/reviews/hero-appliances.png" 
+            alt="best air fryer toaster ovens" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
       <main className="max-w-4xl mx-auto px-6 py-12">
         <div className="mb-6">
           <Breadcrumbs items={[

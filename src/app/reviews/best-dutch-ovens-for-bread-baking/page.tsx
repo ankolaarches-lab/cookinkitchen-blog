@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Dutch Ovens for Bread Baking 2026",
-  description: "Bake bakery-quality bread at home. We tested the best Dutch ovens for sourdough, no-knead, and artisan bread recipes.",
+  description: "Best Dutch Ovens for Bread Baking - Complete guide",
+  openGraph: {
+    title: "Best Dutch Ovens for Bread Baking",
+    description: "Best Dutch Ovens for Bread Baking - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-cookware.png"],
+  },
 };
 
 const products = [

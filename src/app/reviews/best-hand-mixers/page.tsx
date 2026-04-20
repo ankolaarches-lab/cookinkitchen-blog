@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Hand Mixers 2026 - Buying Guide",
-  description: "Electric hand mixers for baking. We tested the best for cookies, cakes, and more.",
+  description: "Best Hand Mixers - Complete guide",
+  openGraph: {
+    title: "Best Hand Mixers",
+    description: "Best Hand Mixers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

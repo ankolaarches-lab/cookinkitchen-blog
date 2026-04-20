@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Ladles 2026 - Complete Buying Guide",
-  description: "Find the perfect ladle for serving soups, stews, and sauces. We tested top-rated ladles in stainless steel, silicone, and wood for every kitchen need.",
+  description: "Best Ladles 2026 - Complete guide",
+  openGraph: {
+    title: "Best Ladles 2026",
+    description: "Best Ladles 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

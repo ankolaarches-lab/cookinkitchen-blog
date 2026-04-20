@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Electric Kettle 2026 - Expert Tested",
-  description: "From gooseneck pour-over to rapid boiling, we tested the best electric kettles for tea and coffee lovers in 2026.",
+  description: "Best Electric Kettle 2026 - Complete guide",
+  openGraph: {
+    title: "Best Electric Kettle 2026",
+    description: "Best Electric Kettle 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 export default function Page() {

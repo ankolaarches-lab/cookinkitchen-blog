@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Instant Read Thermometers 2026 - Perfect Results Every Time",
-  description: "Stop guessing if your meat is done. We tested the best instant read thermometers for accuracy, speed, and durability.",
+  description: "Best Instant Read Thermometers - Complete guide",
+  openGraph: {
+    title: "Best Instant Read Thermometers",
+    description: "Best Instant Read Thermometers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

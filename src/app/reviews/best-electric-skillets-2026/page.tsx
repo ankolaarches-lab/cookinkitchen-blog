@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Electric Skillets 2026 - Complete Buying Guide",
-  description: "Versatile cooking solutions for every kitchen. We tested the best electric skillets from Zojirushi, Cuisinart, and more. Find your perfect skillet.",
+  description: "Best Electric Skillets 2026 - Complete guide",
+  openGraph: {
+    title: "Best Electric Skillets 2026",
+    description: "Best Electric Skillets 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

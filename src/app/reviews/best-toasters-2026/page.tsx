@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Toasters 2026 - Ultimate Buying Guide",
-  description: "Perfect toast every morning. We tested the best toasters from budget to premium for consistent browning and features.",
+  description: "Best Toasters 2026 - Complete guide",
+  openGraph: {
+    title: "Best Toasters 2026",
+    description: "Best Toasters 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

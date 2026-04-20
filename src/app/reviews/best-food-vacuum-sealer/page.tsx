@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Food Vacuum Sealer - Expert Tested 2026",
-  description: "Keep food fresh longer with the best vacuum sealers. We tested top models for sous vide, meal prep, and freezer organization.",
+  description: "Best Food Vacuum Sealer - Complete guide",
+  openGraph: {
+    title: "Best Food Vacuum Sealer",
+    description: "Best Food Vacuum Sealer - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 export default function Page() {

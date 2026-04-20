@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Whisks 2026 - Ultimate Buying Guide",
-  description: "Find the perfect whisk for your kitchen. We tested the best whisks for baking, cooking, and mixing - from balloon whisks to flat whisks.",
+  description: "Best Whisks 2026 - Complete guide",
+  openGraph: {
+    title: "Best Whisks 2026",
+    description: "Best Whisks 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

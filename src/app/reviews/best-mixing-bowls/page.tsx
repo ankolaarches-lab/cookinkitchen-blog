@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Mixing Bowls 2026 - Buying Guide",
-  description: "Stainless steel, glass, and ceramic mixing bowls. We tested the best for every kitchen.",
+  description: "Best Mixing Bowls - Complete guide",
+  openGraph: {
+    title: "Best Mixing Bowls",
+    description: "Best Mixing Bowls - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

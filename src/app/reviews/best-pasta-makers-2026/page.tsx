@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Pasta Makers 2026 - Ultimate Buying Guide",
-  description: "Fresh homemade pasta in minutes. We tested the best pasta makers from KitchenAid, Atlas, and more. Find the perfect machine for your kitchen.",
+  description: "Best Pasta Makers 2026 - Complete guide",
+  openGraph: {
+    title: "Best Pasta Makers 2026",
+    description: "Best Pasta Makers 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

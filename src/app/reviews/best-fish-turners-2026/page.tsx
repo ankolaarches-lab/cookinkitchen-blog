@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Fish Turners 2026 - Complete Buying Guide",
-  description: "Find the perfect fish turner for delicate flipping. We tested top-rated fish spatulas in stainless steel and silicone for perfect pancakes, fish, and more.",
+  description: "Best Fish Turners 2026 - Complete guide",
+  openGraph: {
+    title: "Best Fish Turners 2026",
+    description: "Best Fish Turners 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

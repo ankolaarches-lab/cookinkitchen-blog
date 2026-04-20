@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Blenders 2026 - Ultimate Buying Guide",
-  description: "From smoothies to soups, we tested the best blenders from Vitamix, Ninja, and more. Find the perfect blender for your kitchen.",
+  description: "Best Blenders 2026 - Complete guide",
+  openGraph: {
+    title: "Best Blenders 2026",
+    description: "Best Blenders 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

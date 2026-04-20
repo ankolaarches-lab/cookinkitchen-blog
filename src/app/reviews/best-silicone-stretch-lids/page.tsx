@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Silicone Stretch Lids 2026 - Reusable Food Covers",
-  description: "Replace plastic wrap with these reusable silicone stretch lids. We tested the best stretchy bowl covers for freshness and sustainability.",
+  description: "Best Silicone Stretch Lids - Complete guide",
+  openGraph: {
+    title: "Best Silicone Stretch Lids",
+    description: "Best Silicone Stretch Lids - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

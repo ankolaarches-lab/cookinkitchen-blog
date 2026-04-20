@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Stand Mixers 2026 - Buying Guide",
-  description: "KitchenAid vs Cuisinart vs Bosch. We tested the best stand mixers for baking, pasta, and more.",
+  description: "Best Stand Mixers - Complete guide",
+  openGraph: {
+    title: "Best Stand Mixers",
+    description: "Best Stand Mixers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

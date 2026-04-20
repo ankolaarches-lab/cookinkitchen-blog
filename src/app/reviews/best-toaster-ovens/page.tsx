@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Toaster Ovens 2026 - Buying Guide",
-  description: "Breville vs Cuisinart vs Panasonic. We tested the best toaster ovens for baking, broiling, and more.",
+  description: "Best Toaster Ovens - Complete guide",
+  openGraph: {
+    title: "Best Toaster Ovens",
+    description: "Best Toaster Ovens - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

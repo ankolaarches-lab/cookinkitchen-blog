@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Utensil Sets - 2026 Buying Guide",
-  description: "From silicone to wood, we tested the best kitchen utensil sets for every cooking style. Find your perfect set.",
+  description: "Best Kitchen Utensil Set - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Utensil Set",
+    description: "Best Kitchen Utensil Set - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

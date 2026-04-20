@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Garlic Presses 2026 - Buying Guide",
-  description: "Mince garlic without the mess. We tested the best garlic presses.",
+  description: "Best Garlic Presses - Complete guide",
+  openGraph: {
+    title: "Best Garlic Presses",
+    description: "Best Garlic Presses - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Measuring Spoons 2026 - Buying Guide",
     description: "Find the perfect measuring spoons for accurate baking and cooking.",
     type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {
     card: "summary_large_image",

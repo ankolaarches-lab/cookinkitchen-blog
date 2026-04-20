@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Mandolines 2026 - Buying Guide",
-  description: "Slice like a pro. We tested the best mandolines for uniform cuts, fries, and more.",
+  description: "Best Mandolines - Complete guide",
+  openGraph: {
+    title: "Best Mandolines",
+    description: "Best Mandolines - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-kitchen-utensils.png"],
+  },
 };
 
 const products = [

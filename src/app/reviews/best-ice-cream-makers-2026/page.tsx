@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Ice Cream Makers 2026 - Complete Buying Guide",
     description: "Make delicious homemade ice cream, gelato, and sorbet with the best ice cream makers.",
     type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -70,6 +71,13 @@ export default function BestIceCreamMakers2026() {
           <p className="text-xl text-pink-100 max-w-2xl mx-auto">Create delicious homemade ice cream, gelato, and frozen treats with the best ice cream makers for every budget.</p>
         </div>
       </header>
+        <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
+          <img 
+            src="/images/reviews/hero-appliances.png" 
+            alt="best ice cream makers 2026" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
       <main className="max-w-4xl mx-auto px-6 py-12">
         <div className="mb-6">
           <Breadcrumbs items={[

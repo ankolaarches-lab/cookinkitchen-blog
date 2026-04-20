@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Pressure Cookers 2026 - Buying Guide",
-  description: "Instant Pot vs Ninja Foodi vs stovetop. We tested the best pressure cookers for fast, delicious meals.",
+  description: "Best Pressure Cookers - Complete guide",
+  openGraph: {
+    title: "Best Pressure Cookers",
+    description: "Best Pressure Cookers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

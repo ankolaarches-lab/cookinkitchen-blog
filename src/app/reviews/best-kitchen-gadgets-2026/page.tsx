@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Kitchen Gadgets Under $25 - 2026 Buying Guide",
-  description: "Smart kitchen tools under $25 that make cooking easier. We tested the best affordable gadgets from Oxo, Dreamfarm, and more.",
+  description: "Best Kitchen Gadgets 2026 - Complete guide",
+  openGraph: {
+    title: "Best Kitchen Gadgets 2026",
+    description: "Best Kitchen Gadgets 2026 - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 // Using search URLs - more reliable than direct product links

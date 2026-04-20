@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Food Processors - 2026 Buying Guide",
-  description: "We tested the best food processors for chopping, slicing, and blending. Find the perfect processor for your kitchen.",
+  description: "Best Food Processor - Complete guide",
+  openGraph: {
+    title: "Best Food Processor",
+    description: "Best Food Processor - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

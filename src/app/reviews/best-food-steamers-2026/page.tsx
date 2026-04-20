@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Best Food Steamers 2026 - Electric & Basket Steamers",
     description: "Cook healthy meals with the best food steamers.",
     type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
   },
   twitter: {
     card: "summary_large_image",

@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Salt and Pepper Grinders 2026 - Buying Guide",
-  description: "Premium pepper mills and salt grinders. We tested the best for even seasoning.",
+  description: "Best Salt & Pepper Grinders - Complete guide",
+  openGraph: {
+    title: "Best Salt & Pepper Grinders",
+    description: "Best Salt & Pepper Grinders - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

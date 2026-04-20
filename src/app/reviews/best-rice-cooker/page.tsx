@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Rice Cookers - 2026 Buying Guide",
-  description: "From basic to high-tech, we tested the best rice cookers for perfect rice every time. Find your perfect match.",
+  description: "Best Rice Cooker - Complete guide",
+  openGraph: {
+    title: "Best Rice Cooker",
+    description: "Best Rice Cooker - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

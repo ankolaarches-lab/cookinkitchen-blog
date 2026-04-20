@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Bread Makers 2026 - Buying Guide",
-  description: "Automated bread baking at home. We tested the best bread makers.",
+  description: "Best Bread Makers - Complete guide",
+  openGraph: {
+    title: "Best Bread Makers",
+    description: "Best Bread Makers - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-appliances.png"],
+  },
 };
 
 const products = [

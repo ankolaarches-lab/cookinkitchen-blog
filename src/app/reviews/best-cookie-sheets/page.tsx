@@ -4,7 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Best Cookie Sheets 2026 - Buying Guide",
-  description: "Aluminum, steel, and nonstick cookie sheets. We tested the best for perfect cookies.",
+  description: "Best Cookie Sheets - Complete guide",
+  openGraph: {
+    title: "Best Cookie Sheets",
+    description: "Best Cookie Sheets - Complete guide for home cooks",
+    type: "article",
+    images: ["/images/reviews/hero-baking.png"],
+  },
 };
 
 const products = [
