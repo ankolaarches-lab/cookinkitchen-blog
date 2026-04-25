@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Coffee Grinders 2026",
     description: "Best Coffee Grinders 2026 - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/coffee-grinder.jpg"],
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Toaster Ovens",
     description: "Best Toaster Ovens - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/toaster-oven.jpg"],
   },
 };
 

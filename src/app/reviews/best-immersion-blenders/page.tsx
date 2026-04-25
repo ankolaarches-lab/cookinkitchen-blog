@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Immersion Blenders",
     description: "Best Immersion Blenders - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/immersion-blender.jpg"],
   },
 };
 

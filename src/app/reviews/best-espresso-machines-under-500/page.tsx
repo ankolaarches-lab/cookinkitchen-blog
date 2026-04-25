@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Espresso Machines Under $500",
     description: "Best Espresso Machines Under $500 - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/espresso-machine.jpg"],
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Electric Kettle 2026",
     description: "Best Electric Kettle 2026 - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/electric-kettle.jpg"],
   },
 };
 

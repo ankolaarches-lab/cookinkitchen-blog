@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Stand Mixers",
     description: "Best Stand Mixers - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/stand-mixer.jpg"],
   },
 };
 

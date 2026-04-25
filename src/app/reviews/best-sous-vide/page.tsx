@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Sous Vide",
     description: "Best Sous Vide - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/sous-vide.jpg"],
   },
 };
 

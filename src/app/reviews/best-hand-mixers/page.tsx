@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Hand Mixers",
     description: "Best Hand Mixers - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/hand-mixer.jpg"],
   },
 };
 

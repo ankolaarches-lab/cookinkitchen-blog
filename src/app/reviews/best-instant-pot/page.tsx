@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Instant Pot",
     description: "Best Instant Pot - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/pressure-cooker.jpg"],
   },
 };
 

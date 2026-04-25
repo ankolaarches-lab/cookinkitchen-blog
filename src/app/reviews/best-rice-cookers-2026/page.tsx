@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Best Rice Cookers 2026",
     description: "Best Rice Cookers 2026 - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/rice-cooker.jpg"],
   },
 };
 

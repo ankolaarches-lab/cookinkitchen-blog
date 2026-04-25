@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Garlic Presses 2026 - Complete Buying Guide",
     description: "Effortlessly crush garlic cloves with the best garlic presses of 2026.",
     type: "article",
-    url: "https://cookinkitchen.online/reviews/best-garlic-presses-2026",,
+    url: "https://cookinkitchen.online/reviews/best-garlic-presses-2026",
     images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {

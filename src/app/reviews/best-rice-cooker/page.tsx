@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Rice Cooker",
     description: "Best Rice Cooker - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/rice-cooker.jpg"],
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Pressure Cookers",
     description: "Best Pressure Cookers - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/pressure-cooker.jpg"],
   },
 };
 

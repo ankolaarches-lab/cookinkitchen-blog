@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Oven Thermometers 2026 - Accurate Temperature Guide",
     description: "Stop guessing if your oven is at the right temperature. We tested the best oven thermometers to ensure precise baking and roasting results.",
-    type: "article"
+    type: "article",
     images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {

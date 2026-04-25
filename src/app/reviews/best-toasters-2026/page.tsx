@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Toasters 2026",
     description: "Best Toasters 2026 - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/toaster-oven.jpg"],
   },
 };
 

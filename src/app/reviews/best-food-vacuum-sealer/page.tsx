@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Food Vacuum Sealer",
     description: "Best Food Vacuum Sealer - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/food-vacuum-sealer.jpg"],
   },
 };
 

@@ -73,7 +73,7 @@ export default function BestIceCreamMakers2026() {
       </header>
         <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
           <img 
-            src="/images/reviews/hero-appliances.png" 
+            src="/images/reviews/ice-cream-maker.jpg" 
             alt="best ice cream makers 2026" 
             className="w-full h-64 object-cover"
           />

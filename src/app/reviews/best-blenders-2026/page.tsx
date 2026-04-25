@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Blenders 2026",
     description: "Best Blenders 2026 - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/blender.jpg"],
   },
 };
 

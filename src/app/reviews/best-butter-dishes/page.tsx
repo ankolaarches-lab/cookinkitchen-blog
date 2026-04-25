@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Best Butter Dishes 2026 - Butter Crocks & Butter Keepers Guide",
     description: "Keep butter soft and spreadable with the best butter dishes. We tested top-rated butter crocks and keepers for your countertop.",
     type: "article",
-    url: "https://cookinkitchen.online/reviews/best-butter-dishes",,
+    url: "https://cookinkitchen.online/reviews/best-butter-dishes",
     images: ["/images/reviews/hero-kitchen-utensils.png"],
   },
   twitter: {

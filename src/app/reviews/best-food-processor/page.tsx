@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Food Processor",
     description: "Best Food Processor - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/food-processor.jpg"],
   },
 };
 

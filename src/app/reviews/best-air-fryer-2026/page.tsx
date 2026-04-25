@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Best Air Fryers 2026 - Ultimate Buying Guide",
     description: "Best Air Fryers 2026 - Ultimate Buying Guide - Complete guide for home cooks",
     type: "article",
-    images: ["/images/reviews/hero-appliances.png"],
+    images: ["/images/reviews/air-fryer.jpg"],
   },
 };
 

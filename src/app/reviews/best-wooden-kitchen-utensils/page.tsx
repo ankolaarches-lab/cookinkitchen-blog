@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: ['/images/reviews/hero-kitchen-utensils.png'],
   },
-};)
+}
 
 const products = [
   {
